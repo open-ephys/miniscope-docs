@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 
 
-<html lang="en" data-theme="light">
+<html lang="en" data-content_root="./" data-theme="light">
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Home &#8212; Open Ephys Doc Template</title>
+    <title>Open Ephys Miniscope Documentation &#8212; Open Ephys Doc Template</title>
   
   
   
@@ -18,30 +18,34 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
 
   
-  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" href="_static/theme_overrides.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/documentation_options.js?v=5c79bd3c"></script>
+    <script src="_static/doctools.js?v=888ff710"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/design-tabs.js?v=36754332"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="About" href="About/index.html" />
+    <link rel="next" title="Miniscope Overview" href="overview/index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -52,6 +56,15 @@
   
   
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -92,9 +105,11 @@
     <span class="fa-solid fa-bars"></span>
   </label>
   
-  <div class="navbar-header-items__start">
+  
+  <div class="col-lg-3 navbar-header-items__start">
     
       <div class="navbar-item">
+
   
 
 <a class="navbar-brand logo" href="#">
@@ -102,23 +117,24 @@
   
   
   
+  
     
     
     
-    <img src="_static/oe_logo_name.svg" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="_static/oe_logo_name.svg" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
+    <script>document.write(`<img src="_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
   
   
 </a></div>
     
   </div>
   
-  
   <div class="col-lg-9 navbar-header-items">
     
     <div class="me-auto navbar-header-items__center">
       
-        <div class="navbar-item"><nav class="navbar-nav">
+        <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -128,8 +144,22 @@
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="About/index.html">
-                        About
+                      <a class="nav-link nav-internal" href="overview/index.html">
+                        Miniscope Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="ucla-miniscope-v4/index.html">
+                        UCLA Miniscope V4
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="glossary.html">
+                        Glossary
                       </a>
                     </li>
                 
@@ -150,13 +180,16 @@
       
         <div class="navbar-item navbar-persistent--container">
           
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
         </div>
       
       
@@ -171,8 +204,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -183,8 +216,8 @@ document.write(`
           
           
           
-          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter"></i></span>
-            <label class="sr-only">Twitter</label></a>
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
         </li>
         <li class="nav-item">
           
@@ -195,8 +228,8 @@ document.write(`
           
           
           
-          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord"></i></span>
-            <label class="sr-only">Discord</label></a>
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
         </li>
 </ul></div>
       
@@ -206,18 +239,21 @@ document.write(`
   
   
     <div class="navbar-persistent--mobile">
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass"></i>
-  </button>
-`);
-</script>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
       <span class="fa-solid fa-outdent"></span>
     </label>
   
@@ -237,7 +273,8 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item"><nav class="navbar-nav">
+          <div class="navbar-item">
+<nav class="navbar-nav">
   <p class="sidebar-header-items__title"
      role="heading"
      aria-level="1"
@@ -247,8 +284,22 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="About/index.html">
-                        About
+                      <a class="nav-link nav-internal" href="overview/index.html">
+                        Miniscope Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="ucla-miniscope-v4/index.html">
+                        UCLA Miniscope V4
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="glossary.html">
+                        Glossary
                       </a>
                     </li>
                 
@@ -279,8 +330,8 @@ document.write(`
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github"></i></span>
-            <label class="sr-only">GitHub</label></a>
+          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
           
@@ -291,8 +342,8 @@ document.write(`
           
           
           
-          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter"></i></span>
-            <label class="sr-only">Twitter</label></a>
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
         </li>
         <li class="nav-item">
           
@@ -303,8 +354,8 @@ document.write(`
           
           
           
-          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord"></i></span>
-            <label class="sr-only">Discord</label></a>
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
         </li>
 </ul></div>
         
@@ -355,73 +406,98 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <img alt="A placeholder image" src="_images/main-image.png" />
-<div class="line-block">
-<div class="line"><br /></div>
+  <section id="open-ephys-miniscope-documentation">
+<h1>Open Ephys Miniscope Documentation<a class="headerlink" href="#open-ephys-miniscope-documentation" title="Link to this heading">#</a></h1>
+<p>Welcome to the Open Ephys Miniscope Documentation. The contents of this documentation covers all necessary information for you to:</p>
+<ul class="simple">
+<li><p>familiarize yourself with the miniscope ecosystem</p></li>
+<li><p>DIY your own miniscope</p></li>
+<li><p>acquire data with miniscopes</p></li>
+<li><p>design a custom miniscope solution for your experiment</p></li>
+<li><p>and much more</p></li>
+</ul>
+<p>insofar as it relates to hardware sold or software supported by Open Ephys.</p>
+<p>If you’re new to miniscopes, click the tab(s) of interest in the ribbon above as a starting point for your exploration. If you’re pursuing specific information, try the search bar (<code class="docutils literal notranslate"><span class="pre">ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">k</span></code>) on the left or browse the table of contents below.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="overview/index.html">Miniscope Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="overview/miniscopes.html">Miniscopes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/data-acq-hardware.html">Data Acquisition Hardware</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/data-acq-software.html">Data Acquisition Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="overview/accessories.html">Accessories</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ucla-miniscope-v4/index.html">UCLA Miniscope V4</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="ucla-miniscope-v4/quick-start/index.html">Quick Start Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/quick-start/onix-quick.html">ONIX &amp; UCLA Miniscope v4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/quick-start/miniscope-daq-quick.html">Miniscope-DAQ &amp; UCLA Miniscope v4</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucla-miniscope-v4/user/index.html">User Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/user/preparation/index.html">Planning Ahead</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/index.html">Assembly</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/preparation.html">Preparation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/excitation.html">Excitation Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/objective.html">Objective Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/emission.html">Emission Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/pcb.html">PCB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/validate-finish.html">Validate &amp; Finish</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/index.html">Data Acquisition</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/miniscope-daq.html">With Miniscope-DAQ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/onix.html">With ONIX</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/commutator.html">With Open Ephys Coaxial Commutator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/minicam.html">With MiniCAM</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/user/analysis/index.html">Calcium Imaging Analysis</a><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucla-miniscope-v4/developer/index.html">Developer Guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/developer/electrical.html">Electrical Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/developer/optomechanical.html">Optomechanical Design</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/developer/common-mods/index.html">Common Modifications</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/developer/common-mods/lenses-combo.html">Modify Lenses Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/developer/common-mods/led-filters-dichroic-combo.html">Modify LED/Dichroic/Filters Configuration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ucla-miniscope-v4/faq-troubleshoot/index.html">FAQ, Troubleshooting &amp; Additional Resources</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/faq-troubleshoot/faq.html">FAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/faq-troubleshoot/troubleshoot.html">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
+</ul>
 </div>
-<p>The <strong>&lt;device&gt;</strong> is &lt;add description here&gt;.</p>
-<br>
-
-<div class="card-columns">
-    <a class="reference internal" href="About/example1.html"><span class="std std-ref custom-card">
-    <div class="card text-center intro-card">
-        <img src="_static/images/noun_screwdriver.svg" class="card-img-top hover-zoom" alt="hardware user guide" height="100">
-        <div class="card-body flex-fill">
-            <h5 class="card-title">Topic 1</h5>
-            <p class="card-text">Description of topic.</p>
-        </div>
-    </div>
-    <a class="reference internal" href="About/example2.html"><span class="std std-ref custom-card">
-    <div class="card text-center intro-card">
-        <img src="_static/images/noun_books.svg" class="card-img-top hover-zoom" alt="hardware user guide" height="100">
-        <div class="card-body flex-fill">
-            <h5 class="card-title">Topic 2</h5>
-            <p class="card-text">Description of topic.</p>
-        </div>
-    </div>
-    <a class="reference internal" href="About/index.html"><span class="std std-ref custom-card">
-    <div class="card text-center intro-card ">
-        <img src="_static/images/paper.svg" class="card-img-top" alt="onix api references" height="100">
-        <div class="card-body flex-fill">
-            <h5 class="card-title">Topic 3</h5>
-            <p class="card-text">Description of topic.</p>
-        </div>
-    </div>
-    <a class="reference external" href="https://github.com/open-ephys" target="_blank" rel="noopener noreferrer"><span class="std std-ref custom-card">
-    <div class="card text-center intro-card">
-        <img src="_static/images/noun_macbook.svg" class="card-img-top" alt="onix software guide" height="100">
-        <div class="card-body flex-fill">
-            <h5 class="card-title">Topic 4</h5>
-            <p class="card-text">This is an external link.</p>
-        </div>
-    </div>
-</div><div class="toctree-wrapper compound">
-</div>
+</section>
 
 
                 </article>
               
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="About/index.html"
+       href="overview/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">About</p>
+        <p class="prev-next-title">Miniscope Overview</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -431,9 +507,10 @@ document.write(`
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
 
   <div class="sidebar-secondary-item">
+
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/open-ephys/doc-template/edit/main/source/index.rst">
+    <a href="https://github.com/open-ephys/miniscope-docs/edit/main/source/index.rst">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -446,6 +523,7 @@ document.write(`
 </div>
 
   <div class="sidebar-secondary-item">
+
   <div class="tocsection sourcelink">
     <a href="_sources/index.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
@@ -466,8 +544,8 @@ document.write(`
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
@@ -475,9 +553,10 @@ document.write(`
     <div class="footer-items__start">
       
         <div class="footer-item">
+
   <p class="copyright">
     
-      © Copyright 2010-2023, Open Ephys &amp; Contributors.
+      © Copyright 2010-2024, Open Ephys &amp; Contributors.
       <br/>
     
   </p>
@@ -486,10 +565,12 @@ document.write(`
     </div>
   
   
+  
     <div class="footer-items__end">
       
-        <div class="footer-item"><p class="theme-version">
-  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
 </p></div>
       
     </div>

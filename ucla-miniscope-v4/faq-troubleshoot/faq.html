@@ -1,0 +1,694 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>FAQ &#8212; Open Ephys Doc Template</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script src="../../_static/documentation_options.js?v=5c79bd3c"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ucla-miniscope-v4/faq-troubleshoot/faq';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Troubleshooting" href="troubleshoot.html" />
+    <link rel="prev" title="FAQ, Troubleshooting &amp; Additional Resources" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="../../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
+    <script>document.write(`<img src="../../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../overview/index.html">
+                        Miniscope Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        UCLA Miniscope V4
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../glossary.html">
+                        Glossary
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://open-ephys.org">
+                    Open Ephys
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../overview/index.html">
+                        Miniscope Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        UCLA Miniscope V4
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../glossary.html">
+                        Glossary
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://open-ephys.org">
+                    Open Ephys
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../quick-start/index.html">Quick Start Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quick-start/onix-quick.html">ONIX &amp; UCLA Miniscope v4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quick-start/miniscope-daq-quick.html">Miniscope-DAQ &amp; UCLA Miniscope v4</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../user/index.html">User Guide</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user/preparation/index.html">Planning Ahead</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../user/assembly/index.html">Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user/assembly/preparation.html">Preparation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/assembly/excitation.html">Excitation Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/assembly/objective.html">Objective Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/assembly/emission.html">Emission Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/assembly/pcb.html">PCB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/assembly/validate-finish.html">Validate &amp; Finish</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../user/data-acq/index.html">Data Acquisition</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/miniscope-daq.html">With Miniscope-DAQ</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/onix.html">With ONIX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/commutator.html">With Open Ephys Coaxial Commutator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/minicam.html">With MiniCAM</a></li>
+</ul>
+</li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../user/analysis/index.html">Calcium Imaging Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../developer/index.html">Developer Guide</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developer/electrical.html">Electrical Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer/optomechanical.html">Optomechanical Design</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../developer/common-mods/index.html">Common Modifications</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developer/common-mods/lenses-combo.html">Modify Lenses Configuration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/common-mods/led-filters-dichroic-combo.html">Modify LED/Dichroic/Filters Configuration</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">FAQ, Troubleshooting &amp; Additional Resources</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">FAQ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshoot.html">Troubleshooting</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">UCLA Miniscope V4</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">FAQ, Troubleshooting &amp; Additional Resources</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="faq">
+<h1>FAQ<a class="headerlink" href="#faq" title="Link to this heading">#</a></h1>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>do we need more readable list of FAQ?</p>
+</div>
+<section id="what-led-intensity-should-i-use">
+<h2>What LED Intensity Should I Use?<a class="headerlink" href="#what-led-intensity-should-i-use" title="Link to this heading">#</a></h2>
+<p>The optimal LED intensity maximizes SNR while avoiding photo-bleaching your indicators or saturating your sensor. The exact power setting this corresponds to in software depends on the UCLA Miniscope version and other parameters of the experimental setup (e.g. type of Calcium indicator, how much Calcium indicator is expressed, imaging depth, etc.). Measuring the light output of your miniscope so that you know how much the luminosity of light you are sending to the brain can be helpful data when switching between Miniscope versions. Suitable  excitation light levels for Calcium Imaging with the UCLA Miniscope v4 is designed to work at</p>
+<p>Excitation light contamination can sometimes become an issue if setting power settings high in software. On the UCLA Miniscope v4, power settings of about</p>
+<p>At very high values, the thin coated filters inside the scope will leak light, resulting in this bright patch or ‘flare’ on the image. At these intensities the LED will be emitting several mW, which will lead to rapid photobleaching while imaging and is more appropriate for optogenetics. This was less likely to happen on older scopes as their LEDs were less bright.</p>
+<p>At very high values, the thin coated filters inside the scope will leak light, resulting in this bright patch or ‘flare’ on the image. At these intensities the LED will be emitting several mW, which will lead to rapid photobleaching while imaging and is more appropriate for optogenetics. This was less likely to happen on older scopes as their LEDs were less bright.</p>
+<p>We recommend always using a lightmeter to confirm the light output of the Miniscope in mW before starting experiments, and using values of well under 1mW output (starting at around 200 uW) to reduce photobleaching.</p>
+<p>Note that if you follow the</p>
+</section>
+<section id="i-have-more-experimental-subjects-than-ucla-miniscope-v4s-how-can-i-habituate-them-all-to-the-ucla-miniscope-v4-simultaneously">
+<h2>I Have More Experimental Subjects than UCLA Miniscope v4s. How Can I Habituate Them All to the UCLA Miniscope v4 Simultaneously?<a class="headerlink" href="#i-have-more-experimental-subjects-than-ucla-miniscope-v4s-how-can-i-habituate-them-all-to-the-ucla-miniscope-v4-simultaneously" title="Link to this heading">#</a></h2>
+<p>Dummy UCLA Miniscope v4s emulate the shape and weight distribution of a real UCLA Miniscope v4 without the tether. Dummy UCLA Miniscope v4 designs are <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Body-Parts/Parts%20v4_2/Miniscope_v4_Dummy.step">open-source for self-producing</a>; Dummy UCLA Miniscope v4 products are <a class="reference external" href="https://open-ephys.org/miniscope-v4/miniscope-v4-dummy-scope">available for purchasing</a>. They are for use on animals that have been implanted with the standard Base Plate Variant 2. Similarily: Base Plate Variant 2 designs are <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Body-Parts/Parts%20v4_2/Mounting_Variation_2">open-source for self-producing</a>; Base Plate Variant 2 products are <a class="reference external" href="https://open-ephys.org/miniscope-v4/miniscope-v4-base-plate-variant-2">available for purchasing</a>. Dummy UCLA Miniscope v4s cannot produce images.</p>
+</section>
+<section id="how-do-i-perform-the-surgery-for-using-the-ucla-miniscope-v4">
+<h2>How Do I Perform the Surgery for Using the UCLA Miniscope v4?<a class="headerlink" href="#how-do-i-perform-the-surgery-for-using-the-ucla-miniscope-v4" title="Link to this heading">#</a></h2>
+<p>Open Ephys does not provide support for surgeries. Refer to <a class="reference external" href="https://www.youtube.com/watch?v=SZPAQps_uVo">this video</a> from the 2021 Virtual Miniscope Workshop about the protocol for implanting GRIN lenses and baseplating for imaging CA1 with UCLA Miniscope v4 by Susie Feng from the Shuman lab.</p>
+</section>
+<section id="what-video-codec-should-i-use-to-save-miniscope-data">
+<h2>What Video CODEC Should I Use to Save Miniscope Data?<a class="headerlink" href="#what-video-codec-should-i-use-to-save-miniscope-data" title="Link to this heading">#</a></h2>
+<p>GREY and FFV1 are recommended for neural recordings.</p>
+<ul class="simple">
+<li><p>GREY does not perform data compression.</p></li>
+<li><p>FFV1 performs lossless compresses data. It is capable of cutting files sizes by ~1/3. However, some softwares don’t natively support decoding FFV1. Viewing or processing FFV1 data might require additional effort.</p></li>
+</ul>
+<p>For behavioral recordings, MJPG or similar is fine.</p>
+</section>
+<section id="what-are-the-differences-between-ucla-miniscope-v3-and-ucla-miniscope-v4">
+<h2>What Are the Differences Between UCLA Miniscope v3 and UCLA Miniscope v4?<a class="headerlink" href="#what-are-the-differences-between-ucla-miniscope-v3-and-ucla-miniscope-v4" title="Link to this heading">#</a></h2>
+<p>We advise against using the UCLA Miniscope v3 for numerous technical reasons: the field of view on the v3 Miniscope is smaller, it does not have an electrowetting lens so it cannot be remotely adjusted by software and has worse excitation efficiency than v4. We don’t carry v3 at OEPS because it has been superseded by v4, which does have a tunable lens, a longer working distance (and can even image through cranial windows) as well as using GRIN lenses for deeper structures, better power management for enhanced excitation efficiency and prolonged recording capabilities and the onboard head-orientation sensor for commutator use. (though our commutators can be used with orientation information from another source, like real-time pose estimation with SLEAP or DLC, but it is more straightforward, reliable and less computationally expensive to use a headborne sensor).</p>
+<p>Refer to this Comparison Chart</p>
+</section>
+<section id="how-do-i-procure-grin-lenses-which-grin-lens-should-i-use">
+<h2>How Do I Procure GRIN Lenses? Which GRIN lens Should I Use?<a class="headerlink" href="#how-do-i-procure-grin-lenses-which-grin-lens-should-i-use" title="Link to this heading">#</a></h2>
+<p>We don’t sell relay GRIN lenses, so for more information about that you’d be better off asking Inscopix or GRINtech or Go!Foton (CLH series lenses following this post).
+Please note relay GRIN lenses for implantation compatible with the Miniscope v4 are listed as having pitch close to a multiple of 0.5 (as opposed to objective GRIN lenses previously used with the v3 miniscope which have pitches close to 0.25).</p>
+<p>Relay GRIN lenses for implantation compatible with the Miniscope v4 are listed as having pitch close to a multiple of 0.5 (as opposed to objective GRIN lenses previously used with the v3 miniscope which have pitches close to 0.25, explained here). The v4 is compatible with all relay GRIN lens diameters, from 0.5mm to 2mm (according to this).</p>
+<p>You might want to browse the Miniscope forum, the wiki or the virtual miniscope workshop for more information about what other researchers in the miniscope community use and recommend.</p>
+<p>—
+If you use a 0.25 pitch lens, the image is formed at infinity, so they can be used as objective lenses in some miniscopes such as the v3.
+At 0.5 pitch (or multiples), the image is focused just above the lens surface, making it a suitable lens for relaying the image from deep structures.</p>
+<p><a class="reference external" href="https://groups.google.com/g/miniscope/c/9LWngOlzN-E/m/-DGFPpg2BQAJ">https://groups.google.com/g/miniscope/c/9LWngOlzN-E/m/-DGFPpg2BQAJ</a>
+GoFoton also produces compatible relay GRIN lenses but in our experience they have slightly lower optical performance than Grintech (the lenses sold by Inscopix) lenses. You can contract Walter Boyles , walter.boyles _at_ gofoton.com, for more info.</p>
+</section>
+<section id="what-is-the-difference-between-ucla-miniscopes-from-open-ephys-and-ucla-miniscopes-from-competitors">
+<h2>What Is the Difference Between UCLA Miniscopes from Open Ephys and UCLA Miniscopes from Competitors?<a class="headerlink" href="#what-is-the-difference-between-ucla-miniscopes-from-open-ephys-and-ucla-miniscopes-from-competitors" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Each of these differences between Open Ephys Miniscopes and Labmaker Miniscopes was true at one point. These differences might still be true. It could be the case that Labmaker has changed their product since publishing this documentation, but since we aren’t up-to-date with Labmaker’s manufacturing, .</p>
+</div>
+<p>Labmaker Miniscopes are not compatible with baseplates sold by Open Ephys. Labmaker Miniscope DAQs have 3 SMA connectors whereas Open Ephys Miniscope DAQs have 4 SMA connectors. This additional SMA conncetor exposes an additional I/O. Labmaker Miniscope DAQs are not 5V tolerant. Open Ephys and Labmaker might not sell the same version at all points in time. Open Ephys and Labmaker Miniscopes use different LEDs as excitation light sources. This could affect signal contamination or power settings set in software. Open Ephys equipment comes with Open Ephys quality assurance and customer service.</p>
+</section>
+<section id="what-cable-lengths-can-be-used-with-ucla-miniscope-v4">
+<h2>What Cable Lengths Can Be Used With UCLA Miniscope v4?<a class="headerlink" href="#what-cable-lengths-can-be-used-with-ucla-miniscope-v4" title="Link to this heading">#</a></h2>
+<p>Cable lengths longer than three meters are problematic. Significant voltage drop and power losses can occur over such distances with the coaxial cable provided by Open Ephys.</p>
+<p>The distance between the commutator and the acquisition system must be kept short to avoid data loss.</p>
+<p>The Miniscope DAQ can be mounted near the commutator so that this distance can be kept very short (10-15 cm) and have a long USB cable going from the DAQ to the PC.</p>
+</section>
+<section id="configuration-file-problems">
+<h2>Configuration File Problems<a class="headerlink" href="#configuration-file-problems" title="Link to this heading">#</a></h2>
+<p>My video is split up into several files instead of one long video matching the recording time I specified
+The default way that data gets saved is by saving 1000 frames per video file. You can change this value on the userConfig file.
+If you want to save your whole recording in a single video just put a large value there (&gt;100000). To answer your question about the delay, there is no delay between the time that consecutively files get saved.</p>
+<p>My recorded video plays back too quickly
+About the playback, what you are looking at is a speed-up display of your video. The displayed length value that your player shows doesn’t match  the actual length of the recording because its played at a higher frame rate. You can easily check this by looking at the timestamp file. Each frame gets timestamped, and if you calculate the time between frames you can check the actual frame rate.</p>
+</section>
+<section id="what-flourophores-or-what-range-of-wavelengths-of-excitation-emission-light-are-compatible-with-the-ucla-miniscope-v4-from-open-ephys-how-do-i-adapt-the-ucla-miniscope-v4-to-a-fluorophore-not-natively-supported-by-the-standard-ucla-miniscope-v4-configuration">
+<h2>What Flourophores or What Range of Wavelengths of Excitation/Emission Light are Compatible with the UCLA Miniscope v4 from Open Ephys? How Do I Adapt the UCLA Miniscope v4 to a Fluorophore Not Natively Supported by the Standard UCLA Miniscope v4 Configuration?<a class="headerlink" href="#what-flourophores-or-what-range-of-wavelengths-of-excitation-emission-light-are-compatible-with-the-ucla-miniscope-v4-from-open-ephys-how-do-i-adapt-the-ucla-miniscope-v4-to-a-fluorophore-not-natively-supported-by-the-standard-ucla-miniscope-v4-configuration" title="Link to this heading">#</a></h2>
+<p>The UCLA Miniscope v4 as sold by Open Ephys is compatible with green indicators (e.g. GCAMP6f) or red indicators (e.g. RCaMP).</p>
+<p>Is it also possible to adapt the UCLA Miniscope v4 to a fluorophore other than one that shares spectral characteristics of GCAMP6f or RCaMP. To learn about your options in this respect, refer to <a class="reference internal" href="../developer/common-mods/led-filters-dichroic-combo.html"><span class="doc">Modify LED/Dichroic/Filters Configuration</span></a> page of this documentation.</p>
+</section>
+<section id="how-do-i-adjust-magnification-field-of-view-or-working-distance">
+<h2>How Do I Adjust Magnification/Field-of-View or Working Distance?<a class="headerlink" href="#how-do-i-adjust-magnification-field-of-view-or-working-distance" title="Link to this heading">#</a></h2>
+<p>Refer to <a class="reference internal" href="../developer/common-mods/lenses-combo.html"><span class="doc">Modify Lenses Configuration</span></a> page of this documentation.</p>
+</section>
+<section id="how-do-i-adjust-dynamic-range-of-led-excitation-light-source">
+<h2>How Do I Adjust Dynamic Range of LED Excitation Light Source?<a class="headerlink" href="#how-do-i-adjust-dynamic-range-of-led-excitation-light-source" title="Link to this heading">#</a></h2>
+<p>Refer to <span class="xref std std-doc">/ucla-miniscope-v4/developer/common-mods/led-resistor</span> page of this documentation.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">FAQ, Troubleshooting &amp; Additional Resources</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="troubleshoot.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Troubleshooting</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-led-intensity-should-i-use">What LED Intensity Should I Use?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#i-have-more-experimental-subjects-than-ucla-miniscope-v4s-how-can-i-habituate-them-all-to-the-ucla-miniscope-v4-simultaneously">I Have More Experimental Subjects than UCLA Miniscope v4s. How Can I Habituate Them All to the UCLA Miniscope v4 Simultaneously?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-perform-the-surgery-for-using-the-ucla-miniscope-v4">How Do I Perform the Surgery for Using the UCLA Miniscope v4?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-video-codec-should-i-use-to-save-miniscope-data">What Video CODEC Should I Use to Save Miniscope Data?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-the-differences-between-ucla-miniscope-v3-and-ucla-miniscope-v4">What Are the Differences Between UCLA Miniscope v3 and UCLA Miniscope v4?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-procure-grin-lenses-which-grin-lens-should-i-use">How Do I Procure GRIN Lenses? Which GRIN lens Should I Use?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-difference-between-ucla-miniscopes-from-open-ephys-and-ucla-miniscopes-from-competitors">What Is the Difference Between UCLA Miniscopes from Open Ephys and UCLA Miniscopes from Competitors?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-cable-lengths-can-be-used-with-ucla-miniscope-v4">What Cable Lengths Can Be Used With UCLA Miniscope v4?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-file-problems">Configuration File Problems</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-flourophores-or-what-range-of-wavelengths-of-excitation-emission-light-are-compatible-with-the-ucla-miniscope-v4-from-open-ephys-how-do-i-adapt-the-ucla-miniscope-v4-to-a-fluorophore-not-natively-supported-by-the-standard-ucla-miniscope-v4-configuration">What Flourophores or What Range of Wavelengths of Excitation/Emission Light are Compatible with the UCLA Miniscope v4 from Open Ephys? How Do I Adapt the UCLA Miniscope v4 to a Fluorophore Not Natively Supported by the Standard UCLA Miniscope v4 Configuration?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-adjust-magnification-field-of-view-or-working-distance">How Do I Adjust Magnification/Field-of-View or Working Distance?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-adjust-dynamic-range-of-led-excitation-light-source">How Do I Adjust Dynamic Range of LED Excitation Light Source?</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/open-ephys/miniscope-docs/edit/main/source/ucla-miniscope-v4/faq-troubleshoot/faq.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/ucla-miniscope-v4/faq-troubleshoot/faq.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2010-2024, Open Ephys &amp; Contributors.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
