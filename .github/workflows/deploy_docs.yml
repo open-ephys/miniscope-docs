@@ -19,7 +19,9 @@ jobs:
           mkdir html
           cd html
           gh run --repo ${repo} download ${run_id} -n ${artifact}
-      
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
       - name: Commit documentation changes
         run: |
           git clone https://github.com/${{ github.repository_owner }}/miniscope-docs.git --branch gh-pages --single-branch gh-pages
