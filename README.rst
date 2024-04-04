@@ -1,5 +1,5 @@
 *************************************************
-Template for Open Ephys Documentation
+Miniscope Documentation
 *************************************************
 This repo serves as the template is for Open Ephys documentation sites.
 
