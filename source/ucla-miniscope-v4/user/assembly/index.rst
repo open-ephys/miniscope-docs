@@ -54,11 +54,12 @@ To contextualize the assembly process, a breakdown of each module is provided. F
 
         .. tab-item:: PCB
 
-            ..  image:: /_static/images/pcb-module.webp
-                :alt:   image of pcb module
-                :align: center
-
             Mounts the various electronics for controlling the sensor, ETL, LED and communication with the data acquisition hardware
+
+            .. 
+              ..  image:: /_static/images/pcb-module.webp
+              :alt:   image of pcb module
+              :align: center
 
 The following assembly instructions are divided into distinct steps according to the UCLA Miniscope v4's four modules in addition to a :doc:`/ucla-miniscope-v4/user/assembly/preparation` step and a :doc:`/ucla-miniscope-v4/user/assembly/validate-finish` step.
 

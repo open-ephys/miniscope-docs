@@ -3,7 +3,8 @@
 PCB
 ###
 
-..  image:: ucla-miniscope-v4-pcb-flaps.webp
+..
+  ..  image:: ucla-miniscope-v4-pcb-flaps.webp
     :alt:   image of UCLA Miniscope v4 PCB flaps 
 
 ***********
@@ -12,7 +13,8 @@ Preparation
 
 #.  If your UCLA Miniscope v4 PCB has tabs on the ETL/EWL rings, cut those tabs off
 
-..  image:: ucla-miniscope-v4-tabs.webp
+..
+  ..  image:: ucla-miniscope-v4-tabs.webp
     :alt:   image of without tabs
 
 ***************************************
@@ -24,12 +26,14 @@ Fasten the Excitation Module to the PCB
 
 #.  Insert two ____ screws for fastening the PCB to the excitation module into the two holes that are located on the LED/EWL flap of the PCB 
 
-..  image:: ucla-miniscope-v4-excitation-holes.webp
+..
+  ..  image:: ucla-miniscope-v4-excitation-holes.webp
     :alt:   image of without tabs
 
 #.  Fit the LED/EWL flap of the PCB onto excitation module. Finish screwing the two screws into the excitation module, securing the excitation module against the PCB
 
-..  image:: ucla-miniscope-v4-excitation-module-fastened.webp
+..
+  ..  image:: ucla-miniscope-v4-excitation-module-fastened.webp
     :alt:   image of without tabs
 
 **************************************************

@@ -23,10 +23,12 @@ Finish
 
 #.  Secure the UCLA Miniscope v4 upside down with tape, in a vise, or between fingers
 
-..  image:: ucla-miniscope-v4-secured-upside-down.webp
+..
+  ..  image:: ucla-miniscope-v4-secured-upside-down.webp
     :alt:   image of UCLA Miniscope v4 secured upside down
 
 #.  Glue one side at a time without excess (first side without PCB, then next side, then final side) and let cure completely
 
-..  image:: ucla-miniscope-v4-glue.webp
+..
+  ..  image:: ucla-miniscope-v4-glue.webp
     :alt:   image of UCLA Miniscope v4 getting glued

@@ -232,8 +232,13 @@ html_context = {
 }
 
 # Option for linkcheck
-linkcheck_anchors = False
+linkcheck_anchors = True
+
+linkcheck_anchors_ignore = [
+  'imaging-your-surroundings',
+  'glueepoxy'
+]
 
 suppress_warnings = [
-    'image.not_readable'
+    # 'image.not_readable'
 ]
