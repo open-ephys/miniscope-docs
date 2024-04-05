@@ -26,7 +26,7 @@ How to use this template
 
 What to customize
 ####################################
-Each documentation page is saved as an individual .rst file in the :code:`source`` folder. Docs are written primarily in reStructuredText, and HTML can be used within the .rst file. Images are saved under :code:`_static`. Assuming you are making a new Open Ephys Doc site, besides obviously customizing the content of the pages, you will need to make sure to update:
+Each documentation page is saved as an individual .rst file in the :code:`source` folder. Docs are written primarily in reStructuredText, and HTML can be used within the .rst file. Images are saved under :code:`_static`. Assuming you are making a new Open Ephys Doc site, besides obviously customizing the content of the pages, you will need to make sure to update:
 
 * source/index.rst
    * Insert a new main image
@@ -117,8 +117,8 @@ Exit the virtualenv with
 Troubleshooting 
 ######################################
 
-No :code:`gh-pages`` branch? 
-If the :code:`gh-pages`` branch is not automatically created, the build will fail and complain that there is no such branch. In that case, make an empty branch as follows: 
+No :code:`gh-pages` branch? 
+If the :code:`gh-pages` branch is not automatically created, the build will fail and complain that there is no such branch. In that case, make an empty branch as follows: 
 
 .. code:: empty
 
