@@ -5,8 +5,9 @@ Quick Start Guide
 
 ..  todo::  create the below image of miniscope responding to adjustment of LED intensity and imaging depth
 
-..  image:: /_static/images/ucla-miniscope-v4-in-action.webp
-    :alt: image of ucla miniscope v4 in action
+..
+  ..  image:: /_static/images/ucla-miniscope-v4-in-action.webp
+      :alt: image of ucla miniscope v4 in action
 
 The `Quick Start Guide` serves to familiarize yourself with and validate the functionaliy of the UCLA Miniscope v4 and associated hardware. For acquiring and analyzing data, refer to the :doc:`/ucla-miniscope-v4/user/index`. 
 

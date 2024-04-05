@@ -131,5 +131,6 @@ Refer to :doc:`/ucla-miniscope-v4/developer/common-mods/lenses-combo` page of th
 How Do I Adjust Dynamic Range of LED Excitation Light Source?
 *************************************************************
 
-Refer to :doc:`/ucla-miniscope-v4/developer/common-mods/led-resistor` page of this documentation.
+..
+  Refer to :doc:`/ucla-miniscope-v4/developer/common-mods/led-resistor` page of this documentation.
 

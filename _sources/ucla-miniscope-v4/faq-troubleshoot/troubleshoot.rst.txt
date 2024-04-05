@@ -6,9 +6,9 @@ Troubleshooting
 *******************************
 Image Contains Stripes or Bands
 *******************************
-
-..  image:: horizontal-stripes.webp
-    :alt:   image of black horizontal stripes on UCLA Miniscope v4 mimage
+..
+  ..  image:: horizontal-stripes.webp
+      :alt:   image of black horizontal stripes on UCLA Miniscope v4 mimage
 
 The stripes appear when there is a bad connection between the Miniscope and the DAQ, so there is a mismatch between frames coming to the DAQ. Would you check if the coaxial cable has any signs of wear or damage?
 

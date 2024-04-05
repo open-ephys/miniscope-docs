@@ -13,5 +13,5 @@ Calcium Imaging Analysis
 ..  toctree::
     :hidden:
 
-    caiman-pipeline
+.. caiman-pipeline
     

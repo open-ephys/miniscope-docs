@@ -8,22 +8,23 @@ To understand broadly what a miniscope is, refer to the :ref:`overview/index:Wha
 Open Ephys sells the following miniscopes:
 
 ..  todo::  replace with image of ONIX 2.0 once that exists
+  
+..
+  ..  grid:: 2
+    ..
+      ..  grid-item-card:: UCLA Miniscope v3 Wireless
+          :link: /ucla-miniscope-v3-wireless/index
+          :link-type: doc
+          :link-alt: UCLA Miniscope v3 Wireless index
+          :img-top: /_static/images/ucla-miniscope-v3-wireless.webp
+          :img-alt: image of UCLA Miniscope v3 Wireless
 
-..  grid:: 2
-
-    ..  grid-item-card:: UCLA Miniscope v3 Wireless
-        :link: /ucla-miniscope-v3-wireless/index
-        :link-type: doc
-        :link-alt: UCLA Miniscope v3 Wireless index
-        :img-top: /_static/images/ucla-miniscope-v3-wireless.webp
-        :img-alt: image of UCLA Miniscope v3 Wireless
-
-    ..  grid-item-card:: UCLA Miniscope v4
-        :link: /ucla-miniscope-v4/index
-        :link-type: doc
-        :link-alt: UCLA Miniscope v4 index
-        :img-top: /_static/images/ucla-miniscope-v4.webp
-        :img-alt: image of UCLA Miniscope v4
+      ..  grid-item-card:: UCLA Miniscope v4
+          :link: /ucla-miniscope-v4/index
+          :link-type: doc
+          :link-alt: UCLA Miniscope v4 index
+          :img-top: /_static/images/ucla-miniscope-v4.webp
+          :img-alt: image of UCLA Miniscope v4
 
 ****************
 Comparison Chart

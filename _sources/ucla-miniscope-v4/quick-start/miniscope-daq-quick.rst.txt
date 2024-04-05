@@ -23,33 +23,39 @@ Connect Hardware
 
     *   Connect Miniscope-DAQ to the UCLA Miniscope v4 using the provided coaxial SMA plug ↔ MMCX plug tether:
         
-        .. image:: /_static/images/sma-plug_mmcx-plug_cable.webp
-            :alt: photograph of provided coaxial SMA plug ↔ MMCX plug cable
+        .. .. image:: /_static/images/sma-plug_mmcx-plug_cable.webp
 
-        *   Insert the cable’s SMA plug into Miniscope-DAQ’s SMA jack labeled `Miniscope`. Gently hand-tighten the SMA connector with light-force until you are no longer able to turn the connector
+        ..    :alt: photograph of provided coaxial SMA plug ↔ MMCX plug cable
 
-            .. image:: /_static/images/cable-sma-plug_miniscope-daq-sma-jack.webp
-                :alt: photograph of sma plug going into miniscope-daq sma jack
+        *   Insert the cable's SMA plug into Miniscope-DAQ's SMA jack labeled `Miniscope`. Gently hand-tighten the SMA connector with light-force until you are no longer able to turn the connector
 
-        *   Insert the cable’s MMCX plug into UCLA Miniscope’s MMCX jack. Confirm that a click is felt and heard before proceeding from this step.
+            .. .. image:: /_static/images/cable-sma-plug_miniscope-daq-sma-jack.webp
 
-            .. image:: /_static/images/cable-mmcx-plug_ucla-miniscope-v4-mmcx-jack.webp
-                :alt: photograph of mmcx plug going into ucla miniscope v4 mmcx jack
+            ..    :alt: photograph of sma plug going into miniscope-daq sma jack
+
+        *   Insert the cable's MMCX plug into UCLA Miniscope's MMCX jack. Confirm that a click is felt and heard before proceeding from this step.
+
+            .. .. image:: /_static/images/cable-mmcx-plug_ucla-miniscope-v4-mmcx-jack.webp
+            
+            ..    :alt: photograph of mmcx plug going into ucla miniscope v4 mmcx jack
 
     *   Connect Miniscope-DAQ to your computer using the provided USB3.0 Micro Type B plug ↔ USB3.0 Type A plug cable:
 
-        .. image:: /_static/images/usb3,0-microb-plug_usb3,0-a-plug_cable.webp
-            :alt: photograph of provided USB3.0 Micro Type B plug ↔ USB3.0 Type A plug cable
+        .. .. image:: /_static/images/usb3,0-microb-plug_usb3,0-a-plug_cable.webp
 
-        *   Insert the cable’s USB3.0 Micro Type B plug into the Miniscope-DAQ’s USB3.0 Micro Type B jack located on the Miniscope DAQ’s back face. 
+        ..    :alt: photograph of provided USB3.0 Micro Type B plug ↔ USB3.0 Type A plug cable
 
-            .. image:: /_static/images/cable-usb3,0-microb-plug_miniscope-daq-usb3,0-microb-jack.webp
-                :alt: photograph of usbplug going into miniscope-daq jack        
+        *   Insert the cable's USB3.0 Micro Type B plug into the Miniscope-DAQ's USB3.0 Micro Type B jack located on the Miniscope DAQ's back face. 
 
-        *   Insert the cable’s USB3.0 Type A plug into your computer's USB3.0 Type A jack.
+          ..  .. image:: /_static/images/cable-usb3,0-microb-plug_miniscope-daq-usb3,0-microb-jack.webp
+            
+            ..    :alt: photograph of usbplug going into miniscope-daq jack        
 
-            .. image:: /_static/images/cable-usb3,0-a-plug_computer-usb3,0-a-jack.webp
-                :alt: photograph of usb plug going into computer usb jack
+        *   Insert the cable's USB3.0 Type A plug into your computer's USB3.0 Type A jack.
+
+            .. .. image:: /_static/images/cable-usb3,0-a-plug_computer-usb3,0-a-jack.webp
+               
+              ..  :alt: photograph of usb plug going into computer usb jack
 
 #.  Confirm that all three indicators on the miniscope DAQ are illuminated before proceeding from this step as indicated in the below potos. If not all three indicators are illuminated, refer to :doc:`/ucla-miniscope-v4/faq-troubleshoot/index` section.
 
