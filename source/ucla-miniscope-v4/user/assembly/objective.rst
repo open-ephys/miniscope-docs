@@ -24,11 +24,13 @@ Insert 1st Lens
 
 #.  Position first lens convex-up on lens tissue paper on work surface. Confirm the lens does not wobble when laterally perturbed. Concentrically align the objective module's bore with the optical axis of the first lens
 
+..
     ..  image:: first-lens-objective-aligned.webp
         :alt:   image of first lens objective aligned
 
 #.  Press objective module down and over first lens until the objective module is flush with work surface. Gentle force is acceptable provided that the lens and objective module maintain parallel alignment through the pressing process
 
+..
     ..  image:: first-lens-objective-flush.webp
         :alt:   image of first lens objective flush
 
@@ -37,6 +39,7 @@ Insert 1st Lens
 
 #.  Pre-screw 3 screws on objective module without protruding
 
+..
     ..  image:: three-screws.webp
         :alt:   image of three screws
 
@@ -45,6 +48,7 @@ Insert 1st Lens
 
 #.  Clean bottom edge of lens with lens cloth
 
+..
     ..  image:: clean-1st-lens.webp
         :alt:   image of cleaning 1st lens
 
@@ -54,16 +58,19 @@ Insert 2nd Lens
 
 #.  Insertion of the first lens sometimes introduces burrs. If those burrs are not loose, use forceps to remove them; do not scratch lens in this process. If those burrs are loose, gently tap the objective module against the work surface such that they fall out. Confirm that there are no burrs in the optical path before proceeding. Such burrs interfere image formation and are more difficult to remove after the following steps are carried out.
 
-..  image:: objective-module-burr-inspection.webp
+..
+  ..  image:: objective-module-burr-inspection.webp
     :alt:   image of inspecting and removing burrs
 
 #.  Position second lens convex-up on lens tissue paper on work surface. Confirm the lens does not wobble when laterally perturbed. Concentrically align the objective module's bore with the optical axis of the second lens 
 
+..
     ..  image:: second-lens-objective-aligned.webp
         :alt:   image of first lens objective
 
 #.  Press objective module down and over second lens until the objective module is flush with work surface. Gentle force is acceptable provided that the lens and objective module maintain parallel alignment through the pressing process
 
+..
     ..  image:: second-lens-objective-flush.webp
         :alt:   image of first lens objective
 
