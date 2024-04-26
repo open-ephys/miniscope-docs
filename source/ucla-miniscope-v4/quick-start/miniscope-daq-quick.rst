@@ -1,12 +1,12 @@
 
-#################################
-Miniscope-DAQ & UCLA Miniscope v4
-#################################
+#############
+Miniscope-DAQ
+#############
 
 .. image::  /_static/images/miniscope-daq_ucla-miniscope-v4.webp
     :alt:   photograph of ucla miniscope v4 & miniscope-daq
 
-This guide serves as quick hardware-validation and familiarization with the UCLA Miniscope v4 and Miniscope-DAQ hardware. 
+This guide serves as quick hardware-validation of and familiarization with the UCLA Miniscope v4 using the Miniscope-DAQ hardware. 
 
 ..  include::   includes.rst
     :start-line:    2
@@ -16,89 +16,203 @@ This guide serves as quick hardware-validation and familiarization with the UCLA
 Connect Hardware
 ****************
 
-..  todo:: 
-    create the below images
+..  todo:: better pictures here
 
-#.  Disconnect any previously connected hardware from Miniscope-DAQ and UCLA Miniscope v4. Connect only the following hardware for this guide:
+#.  Disconnect any previously connected hardware from Miniscope-DAQ and UCLA Miniscope v4. 
 
-    *   Connect Miniscope-DAQ to the UCLA Miniscope v4 using the provided coaxial SMA plug ↔ MMCX plug tether:
+#.  Connect only the following hardware for this guide:
+
+    #.  Connect Miniscope-DAQ to the UCLA Miniscope v4 using the provided coaxial SMA plug ↔ U.FL plug tether:
+
+        #.  Insert the cable’s SMA plug into Miniscope-DAQ’s SMA jack labeled `Miniscope`. Gently hand-tighten the SMA connector until the connector no longer turns:
+
+            ..  image:: /_static/images/cable-sma-plug_miniscope-daq-sma-jack.webp
+                :align: center
+                :alt:   photograph of SMA plug going into Miniscope-DAQ SMA jack
+                :height:    500px
+
+        #.  Insert the cable’s U.FL plug into UCLA Miniscope’s U.FL jack. Confirm that a click is felt and heard before proceeding from this step:
+
+            ..  image:: /_static/images/cable-mmcx-plug_ucla-miniscope-v4-ufl-jack.jpg
+                :align: center
+                :alt:   photograph of U.FL plug going into UCLA Miniscope v4 U.FL jack
+                :height:    500px
+
+    #.  Connect Miniscope-DAQ to your computer using the provided USB3.0 Micro Type B plug ↔ USB3.0 Type A plug cable:
+
+        #.  Insert the cable’s USB3.0 Micro Type B plug into the Miniscope-DAQ’s USB3.0 Micro Type B jack located on the Miniscope-DAQ’s back face:
+
+            .. image:: /_static/images/cable-usb3,0-microb-plug_miniscope-daq-usb3,0-microb-jack.webp
+                :align: center 
+                :alt:   photograph of usb plug going into miniscope-daq jack
+                :height:    500px
+
+        #.  Insert the cable’s USB3.0 Type A plug into your computer's USB3.0 Type A jack:
+
+            .. image:: /_static/images/cable-usb3,0-a-plug_computer-usb3,0-a-jack.webp
+                :align: center
+                :alt:   photograph of usb plug going into computer usb jack
+                :height:    500px
+
+#.  Confirm that all three indicators on the miniscope-DAQ are illuminated before proceeding from this step as indicated in the below potos. If not all three indicators are illuminated, refer to :doc:`/ucla-miniscope-v4/faq-troubleshoot-resources/index` section.
         
-        .. .. image:: /_static/images/sma-plug_mmcx-plug_cable.webp
+..       .. image:: /_static/images/sma-plug_ufl-plug.webp
+            :align: center
+            :alt:   photograph of provided coaxial SMA plug ↔ U.FL plug cable
+            :height:    500px
 
-        ..    :alt: photograph of provided coaxial SMA plug ↔ MMCX plug cable
-
-        *   Insert the cable's SMA plug into Miniscope-DAQ's SMA jack labeled `Miniscope`. Gently hand-tighten the SMA connector with light-force until you are no longer able to turn the connector
-
-            .. .. image:: /_static/images/cable-sma-plug_miniscope-daq-sma-jack.webp
-
-            ..    :alt: photograph of sma plug going into miniscope-daq sma jack
-
-        *   Insert the cable's MMCX plug into UCLA Miniscope's MMCX jack. Confirm that a click is felt and heard before proceeding from this step.
-
-            .. .. image:: /_static/images/cable-mmcx-plug_ucla-miniscope-v4-mmcx-jack.webp
             
-            ..    :alt: photograph of mmcx plug going into ucla miniscope v4 mmcx jack
+..        .. image:: /_static/images/usb3,0-microb-plug_usb3,0-a-plug_cable.webp
+                :align: center
+                :alt:   photograph of provided USB3.0 Micro Type B plug ↔ USB3.0 Type A plug cable
+                :height:    500px
 
-    *   Connect Miniscope-DAQ to your computer using the provided USB3.0 Micro Type B plug ↔ USB3.0 Type A plug cable:
+***************************************
+Download, Install, and Configure Bonsai
+***************************************
 
-        .. .. image:: /_static/images/usb3,0-microb-plug_usb3,0-a-plug_cable.webp
+#.  If you have not already done so, 
 
-        ..    :alt: photograph of provided USB3.0 Micro Type B plug ↔ USB3.0 Type A plug cable
+    #.  `Download and Install Bonsai <https://bonsai-rx.org/docs/articles/installation.html>`_
 
-        *   Insert the cable's USB3.0 Micro Type B plug into the Miniscope-DAQ's USB3.0 Micro Type B jack located on the Miniscope DAQ's back face. 
+    #.  `Install the necessary Bonsai packages: <https://bonsai-rx.org/docs/articles/packages.html>`_
 
-          ..  .. image:: /_static/images/cable-usb3,0-microb-plug_miniscope-daq-usb3,0-microb-jack.webp
-            
-            ..    :alt: photograph of usbplug going into miniscope-daq jack        
+        #.  Open Bonsai
 
-        *   Insert the cable's USB3.0 Type A plug into your computer's USB3.0 Type A jack.
+        #.  Open the Bonsai package manager
+        
+            *   From Bonsai's landing window, select *Manage Packages*:
 
-            .. .. image:: /_static/images/cable-usb3,0-a-plug_computer-usb3,0-a-jack.webp
-               
-              ..  :alt: photograph of usb plug going into computer usb jack
+                ..  image:: /_static/images/bonsai-landing-page-package-manager-button.webp
+                    :alt:   screenshot of Bonsai landing window with *Manage Packages* text highlighted
+                    :align: center
+                    :height: 300px
 
-#.  Confirm that all three indicators on the miniscope DAQ are illuminated before proceeding from this step as indicated in the below potos. If not all three indicators are illuminated, refer to :doc:`/ucla-miniscope-v4/faq-troubleshoot/index` section.
+            or
 
-**************************************
-Download, Install and Configure Bonsai
-**************************************
+            *   From Bonsai's workflow editor, hover over the *Tools* tab in the top ribbon to reveal a drop-down menu, and single left-click *Manage Packages...*.
 
-*   If you have not already done so, 
+                ..  image:: /_static/images/bonsai-workflow-editor-package-manager-button.webp
+                    :alt:   screenshot of Bonsai workflow editor with *Manage Packages...* text highlighted
+                    :align: center
+                    :height: 300px
+
+        #.  Select the *Browse* tab in the top ribbon:
+
+            ..  image:: /_static/images/bonsai-package-manager-browse-button.webp
+                :alt:   screenshot of Bonsai package manager with *Browse* tab highlighted
+                :align: center
+                :height: 400px
+
+        #.  Configure the *Package Source* field to *All* using the drop-down menu:
+
+            ..  image:: /_static/images/bonsai-package-manager-package-source-dropdown.webp
+                :alt:   screenshot of Bonsai package manager with the Package Source drop-down higlighted
+                :align: center
+                :height: 400px
+
+        #.  Download and install the required Bonsai packages:
+
+            *   Bonsai.StarterPack
+
+            *   OpenEphys.Bonsai.Miniscope
+
+            For each one, search its name in the search bar, single left-click its corresponding entry, and single left-click the *Install* button:
+
+            ..  image:: /_static/images/bonsai-starterpack.webp
+                :alt:   screenshot of Bonsai package manager with search bar higlighted
+                :align: center
+                :height: 400px
+
+            Click the *I Accept* button when prompted.
+
+**************************************************
+Interact with the UCLA Miniscope v4 Through Bonsai
+**************************************************
+
+..  todo::  tighter animations
+
+#.  Download the following workflow (.bonsai file) and open it with Bonsai:
+
+    ..  raw:: html
+
+        {% with static_path = '../../_static', name = 'miniscope-daq_quick-start' %}
+            {% include 'workflow.html' %}
+        {% endwith %}
+
+#.  Set the ``UCLAMiniscopeV4`` node's ``Index`` property to the value that corresponds to the index of your miniscope.
+
+    #.  Single left-click on the ``UCLAMiniscopeV4`` node. 
+
+    #.  Set the ``Index`` value to 0. 
     
-    *   `Download and Install Bonsai <https://bonsai-rx.org/docs/articles/installation.html>`_
+    #.  If there are no additional cameras connected to your PC, skip this step. If there are additional cameras connected to your PC (including laptop webcams), finding the correct index value involves an iterative trial-and-error process.
+    
+        #.  Increment the ``Index`` value by 1.
+        
+        #.  Test the selected ``Index`` value by starting the workflow [1]_ and double left-clicking the ``Image`` node. If the displayed video stream corresponds to that of your miniscope, proceed to the next steps. Otherwise, return to the previous step.
 
-    *   `Install the necessary Bonsai Packages: <https://bonsai-rx.org/docs/articles/packages.html>`_
+#.  Start the Bonsai workflow [1]_ and test various features:
 
-        *   Bonsai.StarterPack
+    **Real-time Data Visualization**
 
-        *   Bonsai.Miniscope
+    :Image Data:    Double left-click the ``Image`` node. This displays a real-time visualization of image data from the sensor. Attenuate the sensor's exposure to ambient light or try imaging a target. Confirm that the ``Image`` node visualizer comports with expectations:
 
-*   Download and open the following Bonsai workflow:
+                    ..  image:: /_static/images/image-demo.webp
+                        :alt:   screenshot of Bonsai package manager with search bar higlighted
+                        :align: center
+                        :height: 400px
 
-**************************************************
-Interact with the UCLA Miniscope v4 through Bonsai
-**************************************************
+    :Orientation Data:   Double left-click the ``Quaternion`` node. This displays a real-time visualization of quarternion data which represents the miniscope's orientation. Single right-click the visualization, and single left-click the drop-down menu. Set the value in the ``History Length`` field to 100. Reorient the UCLA Miniscope v4. Confirm the quarternion visualization responds accordingly:
 
-#.  Download and open the following .bonsai ile Bonsai workflow:
+                        ..  image:: /_static/images/quarternion-demo.webp
+                            :alt:   screenshot of Bonsai package manager with search bar higlighted
+                            :align: center
+                            :height: 400px
 
-#.  Start the Bonsai workflow and test the various features:
+    **UCLA Miniscope v4 Settings**
 
-#.  Single-left click on the UCLAMiniscopeV4 node. Depending on the cameras connected to your PC, the value in the Index field located in the Properties window may need to change. If there are no additional cameras connected to your PC, the Index value should be 0. If there are additional cameras connected to your PC (including laptop cameras), try incrementing the value of the Index field by 1 until the workflow functions as described in the following instructions. If the workflow does not work as described in the following instructions, return to this step and increment the value of the Index field by 1 until it works. 
+    ..  note:: 
 
-    .. note:: Index refers to __.  
+        *   When adjusting the *Frame Rate* and *Sensor Gain* settings, avoid under- or over- exposing the sensor.
 
-#.  Single-left click the start button at top or press F5 to start the workflow
+        *   To adjust the *Dynamic Imaging Depth* setting, the UCLA Miniscope v4 must be fully assembled.
 
-#.  Double-left click the Image node. This shows a real-time visualization of the data from the sensor. Expose the sensor to ambient light and obstruct the sensor from ambient light. Confirm that data visualization comports with light exposure. 
+    Single-left click the ``UCLAMiniscopeV4`` node.
 
-#.  Double-left click the Quaternion node. Single-right click the plot that appears and single-left click the drop-down menu. Set the value in the History Length field to 100. This shows real-time visualization of the orientation data from the sensor. Reorient the UCLA Miniscope v4 to confirm the visualization reflects orientation of the UCLA Miniscope v4
+    :Frame Rate:    Change the ``FramesPerSecond`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* pane and selecting a different option. Frame rate and exposure-duration-per-frame are inversely related, so higher frame rates produce darker images (supposing you're operating the miniscope within its sensor's dynamic range). Use this information and look at the ``Image`` node visualizer to confirm that the frame rate adjusts according to the ``FramesPerSecond`` value. 
 
-#.  Single-left click the UCLAMiniscopeV4 node. Change the value of the FramesPerSecond field located in the Properties window by left clicking the field’s drop-down menu and selecting another option. To maximize SNR, the miniscope firmware always exposes the sensor to light. Therefore, exposure-per-frame is reduced at higher fps, and, as long as sensor data is not over- or under-exposed, the Image node visualizer may appear darker or brighter depending on the fps. Use this information or evaluate the choppiness/smoothness of the Image node visualizer to confirm that the video’s fps is adjusted. 
+                    ..  image:: /_static/images/fps-demo.webp
+                        :alt:   screenshot of Bonsai package manager with search bar higlighted
+                        :align: center
+                        :height: 400px
 
-#.  Single-left click the UCLAMiniscopeV4 node. Change the value of the LEDBrightness field located in the Properties window by left clicking the field’s drop-down menu and sliding the scrollbar. Visually confirm that the LED brightness is adjusted.
+                    A discerning eye can also notice changes in frame rate, but that's typically less noticeable than changes in exposure duration.
 
-#.  For this step, avoid under- or over- exposing the sensor. Single-left click the UCLAMiniscopeV4 node. Change the value of the SensorGain field located in the Properties window by left clicking the field’s drop-down menu and selecting another option. Confirm that the data shown Image node visualizer is adjusted is amplified or attenuated depending respectively on if the sensor gain is increased or decreased.
+    :Sensor Gain:   Change the ``SensorGain`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* paneand selecting a different option. Look at the ``Image`` node visualizer to confirm the that the gain is adjusted according to the value of ``SensorGain`` value.
 
-#.  To test the EWL, the UCLA Miniscope v4 must be fully assembled. After following the assembly guide, place the assembled miniscope approximately one millimeter away from a surface to be the subject of a miniscope image. The subject could be a table surface or a Kimwipe for instance. Single-left click the UCLAMiniscopeV4 node. Change the value of the EWL field located in the Properties window by left clicking the field’s drop-down menu and selecting another option. Confirm that the surface shown in the Image node visualizer is moved in and out of focus as the value of the EWL field is adjusted. If the surface is not entering the focus, try readjusting the distance of the miniscope from the surface and performing the test again. If the focus field of the optical system is not adjusted, try reassembling the EWL module and repeating this step. 
+                    ..  image:: /_static/images/gain-demo.webp
+                        :alt:   screenshot of Bonsai package manager with search bar higlighted
+                        :align: center
+                        :height: 400px
 
-#.  Great! Your UCLA Miniscope v4 is fully functional. Silly hopefully not too cheesy way to end this guide
+    :Excitation Light Intensity:    Change the ``LEDBrightness`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* pane and sliding the scrollbar. Confirm that the intensity of the excitation light adjusts according to the ``LEDBrightness`` value.
+
+                                    ..  image:: /_static/images/led-demo.webp
+                                        :alt:   screenshot of Bonsai package manager with search bar higlighted
+                                        :align: center
+                                        :height: 400px
+
+    :Dynamic Focusing:  Place the assembled miniscope approximately its working distance away from an imaging target (e.g. a Kimwipe). Change the ``EWL`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* pane and selecting a different option. Look at the ``Image`` node visualizer moves in-and-out according to the ``EWL`` value. 
+
+                        ..  image:: /_static/images/focus-demo.webp
+                            :alt:   screenshot of Bonsai package manager with search bar higlighted
+                            :align: center
+                            :height: 400px
+
+                        If the imaging target does not enter the depth of focus, try readjusting the distance of the miniscope from the imaging target and performing the test again. If the working distance does not adjust, try reassembling the EWL module according to the *Assembly* instructions and repeating this part. 
+
+..  [1] Start a workflow by single left-clicking the *Start* button at the top of the Bonsai workflow editor or pressing ``F5`` while the Bonsai workflow editor is the active window.
+
+
+.. 0:10, 3:13, 6:10

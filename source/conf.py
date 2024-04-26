@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 
 # -- Project information -----------------------------------------------------
 
-project = "Open Ephys Doc Template"
+project = "Open Ephys Documentation"
 copyright = "2010-{}, Open Ephys & Contributors".format(datetime.now(timezone.utc).year)
 author = "Open Ephys & Contributors"
 
@@ -46,7 +46,8 @@ extensions = [
     'sphinx.ext.autosectionlabel',
     'sphinx_design',
     'sphinxcontrib.email',
-    'nbsphinx'
+    'nbsphinx',
+    # 'sphinx_jinja'
 ]
 
 autosectionlabel_prefix_document = True
@@ -79,8 +80,6 @@ exclude_patterns = []
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
 
-todo_include_todos = True
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -94,9 +93,8 @@ html_title = project
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-# html_static_path = ["_static"]
-
-# html_style = "_static/theme_overrides.css"
+html_static_path = ["_static"]
+html_style = "theme_overrides.css"
 
 html_sidebars = {
     'index': ['search-field.html'],
@@ -198,7 +196,7 @@ html_theme_options = {
      "external_links": [{"name": "Open Ephys", "url": "https://open-ephys.org"},],
     'icon_links': [
         dict(name='GitHub',
-             url='https://github.com/open-ephys/doc-template',
+             url='https://github.com/open-ephys/miniscope-docs',
              icon='fab fa-github'),
         dict(name='Twitter',
              url='https://twitter.com/openephys',
@@ -232,13 +230,37 @@ html_context = {
 }
 
 # Option for linkcheck
-linkcheck_anchors = True
-
-linkcheck_anchors_ignore = [
-  'imaging-your-surroundings',
-  'glueepoxy'
-]
+linkcheck_anchors = False
 
 suppress_warnings = [
-    # 'image.not_readable'
+    'image.not_readable'
 ]
+
+
+def rstjinja(app, docname, source):
+    '''
+    Render pages as a jinja template.
+    '''
+    # Make sure we're outputting HTML
+    if app.builder.format != 'html':
+        return
+    src = source[0]
+    rendered = app.builder.templates.render_string(
+        src, app.config.html_context
+    )
+    # if src[0:8] == ":orphan:":
+    #     print(src)
+    #     print(docname)
+    #     new_filename = os.path.splitext(docname)[0]+'.html'
+    #     with open('source/'+new_filename, 'w') as file:
+    #         file.write(rendered)
+    #     print(rendered)
+    source[0] = rendered
+
+
+def setup(app):
+    app.connect('source-read', rstjinja)
+    app.add_js_file('copyURLToClipboard.js')
+
+
+todo_include_todos = False

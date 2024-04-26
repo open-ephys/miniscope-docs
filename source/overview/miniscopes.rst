@@ -1,30 +1,29 @@
 
-##########
-Miniscopes
-##########
-
-To understand broadly what a miniscope is, refer to the :ref:`overview/index:What Is a Miniscope?`
+#####################
+Miniscopes Comparison 
+#####################
 
 Open Ephys sells the following miniscopes:
 
-..  todo::  replace with image of ONIX 2.0 once that exists
-  
-..
-  ..  grid:: 2
-    ..
-      ..  grid-item-card:: UCLA Miniscope v3 Wireless
-          :link: /ucla-miniscope-v3-wireless/index
-          :link-type: doc
-          :link-alt: UCLA Miniscope v3 Wireless index
-          :img-top: /_static/images/ucla-miniscope-v3-wireless.webp
-          :img-alt: image of UCLA Miniscope v3 Wireless
+*   Wireless UCLA Miniscope v3 kit (`store <https://open-ephys.org/miniscope-v3-wirefree?rq=miniscope>`__)
 
-      ..  grid-item-card:: UCLA Miniscope v4
-          :link: /ucla-miniscope-v4/index
-          :link-type: doc
-          :link-alt: UCLA Miniscope v4 index
-          :img-top: /_static/images/ucla-miniscope-v4.webp
-          :img-alt: image of UCLA Miniscope v4
+*   UCLA Miniscope v4 kit or assembled (`store <https://open-ephys.org/miniscope-v4>`__, :doc:`documentation </overview/data-acq-hardware>`, `github <https://github.com/Aharoni-Lab/Miniscope-v4>`__) 
+
+..  grid:: 2
+
+    ..  grid-item:: **UCLA Miniscope v3 Wireless** (obsoleted)
+        :child-align: center
+
+        ..  image:: /_static/images/uclaminiscopev3-cad.webp
+            :alt:   image of Wireless UCLA Miniscope v3 rendering
+            :align: center
+
+    ..  grid-item:: **UCLA Miniscope v4**
+        :child-align: center
+
+        ..  image:: /_static/images/uclaminiscopev4-cad.webp
+            :alt:   image of UCLA Miniscope v4 redering
+            :align: center
 
 ****************
 Comparison Chart
@@ -32,8 +31,7 @@ Comparison Chart
 
 The specifications of the miniscopes sold by Open Ephys (e.g. resolution, field-of-view, SNR, focusing capability, mode of data transmission, etc.) differ meaningfully. This chart serves to compare those miniscopes.
 
-..  todo::
-    Verify information on this chart. Put checks and x's instead of yes and no. put images of each miniscope
+..  todo:: v3 dimensions? Put checks and x's instead of yes and no
 
 ..  list-table:: Miniscope Comparison Chart
     :header-rows: 1
@@ -42,12 +40,16 @@ The specifications of the miniscopes sold by Open Ephys (e.g. resolution, field-
         -   UCLA Miniscope v3 Wireless
         -   UCLA Miniscope v4
 
+    *   -   Part Status
+        -   Active
+        -   Obsolete
+
     *   -   Mass (g)
         -   4.5
         -   <3
 
     *   -   Dimensions (mm)
-        -   
+        -   --
         -   14.5W 18L 22.5H
 
     *   -   Nominal Working Distance (µm)
@@ -64,7 +66,7 @@ The specifications of the miniscopes sold by Open Ephys (e.g. resolution, field-
 
     *   -   Resolution (pixels)
         -   480 × 752
-        -   608 × 808
+        -   608 × 608
 
     *   -   FPS
         -   60
@@ -72,7 +74,7 @@ The specifications of the miniscopes sold by Open Ephys (e.g. resolution, field-
 
     *   -   Data Acquisition Hardware Compatibility
         -   On-board logger
-        -   ONIX or Miniscope DAQ
+        -   Miniscope-DAQ or MiniCAM
 
     *   -   Wire
         -   None
@@ -93,5 +95,3 @@ The specifications of the miniscopes sold by Open Ephys (e.g. resolution, field-
     *   -   Price as sold by Open Ephys
         -   €540 (wireless conversion kit)
         -   €1,985 (fully assembled + 1x cable + 2x baseplates)
-
-To learn more about the difference between UCLA Miniscope v3 and UCLA Miniscope v4, refer to the relevant parts of the 2021 Miniscope Workshop video `Imaging principles & Miniscope design <https://www.youtube.com/watch?v=bHA08xrshHo&t=1081s>`__.

@@ -1,3 +1,5 @@
+:orphan:
+
 
 #################
 UCLA Miniscope V4
@@ -5,30 +7,73 @@ UCLA Miniscope V4
 
 ..  image:: /_static/images/ucla-miniscope-v4-rotating.webp
     :alt:   image of ucla miniscope rotating and example data
+    :align: center
 
-To understand the full feature set of the UCLA Miniscope v4, refer to the :ref:`overview/miniscopes:Comparison Chart`.
+*****************************
+UCLA Miniscope v4 Description
+*****************************
 
-***********************************
-UCLA Miniscope v4 Working Principle
-***********************************
+To learn about concept of a miniscope, refer to the :ref:`overview/index:Miniscope Description` section.
 
-To understand the miniscope concept broadly, refer to the :ref:`overview/index:What Is a Miniscope?` section.
+To understand how the UCLA Miniscope v4 works, refer to the :doc:`/ucla-miniscope-v4/developer/index` section and its subsections.
 
-The UCLA Miniscope v4 is a miniaturized epiflourescent (1P) microscope. An LED serves as the excitation light source. Excitation light is reflected by the dichroic mirror and refracted by a series of lenses into the specimen of interest. Flouresced (emission) light is collected by the miniscope's objective, transmitted by the dichroice mirror, and refracted by a series of lenses to form an image of the specimen's flouresced light on the miniscope's sensor.
+***************************************
+UCLA Miniscope v4 Features & Properties
+***************************************
 
-.. todo:: does this schematic look blurry?
+To compare the UCLA Miniscope v4 to other miniscopes sold by Open Ephys, refer to the :ref:`overview/miniscopes:Comparison Chart`.
 
-..  image:: /_static/images/miniscope-working-principle-schematic.webp
-    :alt:   image of excitation light and emission light through the UCLA Miniscope v4's optical system
+Mechanical Properties:
 
-Two filters and a dichroic mirror are utilized to ensure that that minimal excitation light contaminates the data. Ideally, the only light present at the sensor is emission light from the sample. The electro-tunable lens ETL (sometimes also referred to as electrowetting lens EWL) is a lens formed by water whose meniscus  changed according to the voltage applied to the water, effectively changing the imaging depth.
+*   **Mass:** <3g
 
-A more in-depth description of the UCLA Miniscope v4's working principle is outside of the scope of this documentation. For more information, please refer to https://github.com/Aharoni-Lab/Miniscope-v4 and the relevant parts of the 2021 Miniscope Workshop video `Imaging principles & Miniscope design <https://www.youtube.com/watch?v=bHA08xrshHo>`__.
+*   **Dimensions:** 14.5 × 18 × 22.5mm
+
+Optical Properties:
+
+*   **FoV:** 1 × 1mm
+
+*   **WD:** 675 ± 250µm
+
+    *   The dimension following the ± symbol refers to the WD's dynamic range from the UCLA Miniscope v4's electrotunable lens
+
+*   The above specifications can be adjusted by reconfiguring the objective module
+
+*   **GRIN Lens Compatiblity:** relay GRIN lenses (i.e. :math:`pitch = 0.5n, n=1, 2, 3...`)
+
+*   **Spectral Compatiblity:** 
+    
+    *   Common green fluorophores such as GCaMP 
+    
+    *   Common red fluorophores such as jRGECO
+
+Sensor (Python480) Features:
+
+*   **Adjustable Frame Rate:** 10, 15, 20, 25, or 30 fps
+
+*   **Adjustable Exposure:** three discrete levels (low, medium, and high) 
+
+*   **Bit Depth:** 10
+
+*   **Sensor Pixel Dimensions:** 608 pixels × 608 pixels
+
+Software Features:
+
+*   **GUI Compatibility:** Bonsai GUI (recommended) or UCLA-Miniscope-DAQ-Software (deprecated)
+
+*   Sensor settings and imaging depth adjustable through software
+
+*   Real-time visualization and logging of orientation and image data
+
+**Additional Features:**
+
+*   On-board orientation sensor (BNO055)
 
 .. toctree::
     :hidden:
 
     quick-start/index
-    user/index
     developer/index
-    faq-troubleshoot/index
+    faq-troubleshoot-resources/index
+
+..    user/index
