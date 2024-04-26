@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Accessories &#8212; Open Ephys Doc Template</title>
+    <title>Accessories &#8212; Open Ephys Documentation</title>
   
   
   
@@ -29,6 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=01d2cfef" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,6 +40,7 @@
     <script src="../_static/documentation_options.js?v=5c79bd3c"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/copyURLToClipboard.js?v=54989998"></script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'overview/accessories';</script>
@@ -122,8 +124,8 @@
     
     
     
-    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
-    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
+    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -154,13 +156,6 @@
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../ucla-miniscope-v4/index.html">
                         UCLA Miniscope V4
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
                       </a>
                     </li>
                 
@@ -205,7 +200,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -298,13 +293,6 @@
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
-                      </a>
-                    </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link nav-external" href="https://open-ephys.org">
                     Open Ephys
@@ -331,7 +319,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -370,7 +358,7 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="miniscopes.html">Miniscopes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="miniscopes.html">Miniscopes Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-acq-hardware.html">Data Acquisition Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-acq-software.html">Data Acquisition Software</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Accessories</a></li>
@@ -433,22 +421,21 @@
                   
   <section id="accessories">
 <h1>Accessories<a class="headerlink" href="#accessories" title="Link to this heading">#</a></h1>
-<p>There are accessories that are frequently used with miniscopes. Those include:</p>
+<p>Accessories frequently used with miniscopes include:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#open-ephys-coaxial-commutator"><span class="std std-ref">Open Ephys Coaxial Commutator</span></a></p></li>
-<li><p><a class="reference internal" href="#ucla-minicam"><span class="std std-ref">UCLA MiniCam</span></a></p></li>
+<li><p><a class="reference internal" href="#minicam"><span class="std std-ref">MiniCAM</span></a></p></li>
 </ul>
 <section id="open-ephys-coaxial-commutator">
 <h2>Open Ephys Coaxial Commutator<a class="headerlink" href="#open-ephys-coaxial-commutator" title="Link to this heading">#</a></h2>
-<p>The Open Ephys Coaxial Commutator (<a class="reference external" href="https://open-ephys.github.io/commutator-docs/coax-commutator/index.html">documentation</a>, <a class="reference external" href="https://open-ephys.org/commutators/coaxial-commutator">store</a>, <a class="reference external" href="https://github.com/open-ephys/onix-commutator">github</a>) enables twist-free connection between a stationary data acquisition device and the UCLA Miniscope v4 mounted onto a freely-moving animal. This promotes natural animal behavior by nearly eliminating mechanical stress during neurophysiology experiments. This also improves signal reliability by maintaining electrical continuity between stationary and moving electronics. It accomplishes this by utilizing the IMU on-board the UCLA Miniscope v4 PCB to sense the orientation of the miniscope and rotate the tether accordingly. For a guide to using the UCLA Miniscope v4 using the commutator, please refer to these guides: <a class="reference external" href="https://open-ephys.github.io/commutator-docs/coax-commutator/user-guide/automatic-control/onix-miniscopev4.html">Automating Commutation with ONIX and UCLA Miniscope v4</a> or <a class="reference external" href="https://open-ephys.github.io/commutator-docs/coax-commutator/user-guide/automatic-control/miniscopedaq-miniscopev4.html">Automating Commutation with Miniscope DAQ and UCLA Miniscope v4</a>.</p>
+<img alt="animated image of the commutator rotating the tether when ophelia is rotated" class="align-center" src="../_images/commutator_ucla-miniscope-v4_ophelia.gif" />
+<p>The Open Ephys Coaxial Commutator (<a class="reference external" href="https://open-ephys.github.io/commutator-docs/coax-commutator/index.html">documentation</a>, <a class="reference external" href="https://open-ephys.org/commutators/coaxial-commutator">store</a>, <a class="reference external" href="https://github.com/open-ephys/onix-commutator">github</a>) enables twist-free connection between a stationary data acquisition device and the UCLA Miniscope v4 mounted onto a freely-moving animal. This promotes natural animal behavior by reducing mechanical stress during neurophysiology experiments. This also improves signal reliability by maintaining electrical continuity between stationary and moving electronics. It accomplishes this by utilizing the IMU on-board the UCLA Miniscope v4 PCB to sense the orientation of the miniscope and rotate the tether accordingly. For a guide on how to use the UCLA Miniscope v4 with the commutator, please refer to these guides: <a class="reference external" href="https://open-ephys.github.io/commutator-docs/coax-commutator/user-guide/automatic-control/onix-miniscopev4.html">Automating Commutation with ONIX and UCLA Miniscope v4</a> or <a class="reference external" href="https://open-ephys.github.io/commutator-docs/coax-commutator/user-guide/automatic-control/miniscopedaq-miniscopev4.html">Automating Commutation with Miniscope-DAQ and UCLA Miniscope v4</a>.</p>
 </section>
-<section id="ucla-minicam">
-<h2>UCLA MiniCam<a class="headerlink" href="#ucla-minicam" title="Link to this heading">#</a></h2>
-<div class="admonition-todo admonition" id="id1">
-<p class="admonition-title">Todo</p>
-<p>fix refs. gitref?</p>
-</div>
-<p>The MiniCAM (<a class="reference external" href="https://open-ephys.github.io/commutator-docs/coax-commutator/index.html">documentation</a>, <a class="reference external" href="https://open-ephys.org/commutators/coaxial-commutator">store</a>, <a class="reference external" href="https://github.com/open-ephys/onix-commutator">github</a>) is a camera that enables data collection about the behavior of a freely-moving animal during an experiment. It is compatible with the Miniscope-DAQ-QT-GUI and Miniscope-DAQ. The MiniCAM ecosystem comprises of the <a class="reference external" href="https://open-ephys.org/minicam/minicam-led-ring?rq=minicam">IR MiniCAM LED Ring</a> and the <a class="reference external" href="https://open-ephys.org/minicam/lens-kit?rq=minicam">MiniCAM Lenses Kit</a>. The <em>IR MiniCAM LED Ring</em> enables easy adjustment of the intensity of the illumination of the behavaioral setup. The <em>MiniCAM Lenses Kit</em> enables lens swapability to adjust the field of view for their behavioral setup.</p>
+<section id="minicam">
+<h2>MiniCAM<a class="headerlink" href="#minicam" title="Link to this heading">#</a></h2>
+<img alt="image of minicam &amp; minicam data" class="align-center" src="../_images/minicam.png" />
+<p>The MiniCAM (<a class="reference external" href="https://open-ephys.org/minicam/minicam">store</a>, <a class="reference external" href="https://github.com/Aharoni-Lab/MiniCAM">github</a>) is a camera that enables data collection about the behavior of a freely-moving animal during an experiment. It requires its own MiniDAQ or Miniscope-DAQ, and it can be used with Miniscope-DAQ-QT-GUI. The MiniCAM ecosystem comprises of the <a class="reference external" href="https://open-ephys.org/minicam/minicam-led-ring?rq=minicam">IR MiniCAM LED Ring</a> and the <a class="reference external" href="https://open-ephys.org/minicam/lens-kit?rq=minicam">MiniCAM Lenses Kit</a>. The <em>IR MiniCAM LED Ring</em> facilitates adjustment of the intensity of the illumination of the behavaioral setup. IR illumination does not contaminate the sensor that would be like light of lower wavelengths i.e. visible light. The <em>MiniCAM Lenses Kit</em> enables lens swapability to adjust the field-of-view according to the behavioral experiments. The lenses included in the <em>MiniCAM Lenses Kit</em> are:</p>
+<img alt="chart of minicam lenses" src="../_images/minicam-lenses.jpg" />
 </section>
 </section>
 
@@ -497,7 +484,7 @@
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open-ephys-coaxial-commutator">Open Ephys Coaxial Commutator</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ucla-minicam">UCLA MiniCam</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minicam">MiniCAM</a></li>
 </ul>
   </nav></div>
 

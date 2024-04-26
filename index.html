@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Open Ephys Miniscope Documentation &#8212; Open Ephys Doc Template</title>
+    <title>Open Ephys Miniscope Documentation &#8212; Open Ephys Documentation</title>
   
   
   
@@ -29,6 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="_static/theme_overrides.css?v=01d2cfef" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,6 +40,7 @@
     <script src="_static/documentation_options.js?v=5c79bd3c"></script>
     <script src="_static/doctools.js?v=888ff710"></script>
     <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/copyURLToClipboard.js?v=54989998"></script>
     <script src="_static/design-tabs.js?v=36754332"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
@@ -121,8 +123,8 @@
     
     
     
-    <img src="_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
-    <script>document.write(`<img src="_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
+    <img src="_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -153,13 +155,6 @@
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="ucla-miniscope-v4/index.html">
                         UCLA Miniscope V4
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="glossary.html">
-                        Glossary
                       </a>
                     </li>
                 
@@ -204,7 +199,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -297,13 +292,6 @@
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="glossary.html">
-                        Glossary
-                      </a>
-                    </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link nav-external" href="https://open-ephys.org">
                     Open Ephys
@@ -330,7 +318,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -408,74 +396,76 @@
                   
   <section id="open-ephys-miniscope-documentation">
 <h1>Open Ephys Miniscope Documentation<a class="headerlink" href="#open-ephys-miniscope-documentation" title="Link to this heading">#</a></h1>
-<p>Welcome to the Open Ephys Miniscope Documentation. The contents of this documentation covers all necessary information for you to:</p>
-<ul class="simple">
-<li><p>familiarize yourself with the miniscope ecosystem</p></li>
-<li><p>DIY your own miniscope</p></li>
-<li><p>acquire data with miniscopes</p></li>
-<li><p>design a custom miniscope solution for your experiment</p></li>
-<li><p>and much more</p></li>
-</ul>
-<p>insofar as it relates to hardware sold or software supported by Open Ephys.</p>
-<p>If you’re new to miniscopes, click the tab(s) of interest in the ribbon above as a starting point for your exploration. If you’re pursuing specific information, try the search bar (<code class="docutils literal notranslate"><span class="pre">ctrl</span></code> + <code class="docutils literal notranslate"><span class="pre">k</span></code>) on the left or browse the table of contents below.</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="overview/index.html">Miniscope Overview</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="overview/miniscopes.html">Miniscopes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview/data-acq-hardware.html">Data Acquisition Hardware</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview/data-acq-software.html">Data Acquisition Software</a></li>
-<li class="toctree-l2"><a class="reference internal" href="overview/accessories.html">Accessories</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="ucla-miniscope-v4/index.html">UCLA Miniscope V4</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ucla-miniscope-v4/quick-start/index.html">Quick Start Guide</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/quick-start/onix-quick.html">ONIX &amp; UCLA Miniscope v4</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/quick-start/miniscope-daq-quick.html">Miniscope-DAQ &amp; UCLA Miniscope v4</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="ucla-miniscope-v4/user/index.html">User Guide</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/user/preparation/index.html">Planning Ahead</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/index.html">Assembly</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/preparation.html">Preparation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/excitation.html">Excitation Module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/objective.html">Objective Module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/emission.html">Emission Module</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/pcb.html">PCB</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/assembly/validate-finish.html">Validate &amp; Finish</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/index.html">Data Acquisition</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/miniscope-daq.html">With Miniscope-DAQ</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/onix.html">With ONIX</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/commutator.html">With Open Ephys Coaxial Commutator</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/user/data-acq/minicam.html">With MiniCAM</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/user/analysis/index.html">Calcium Imaging Analysis</a><ul class="simple">
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="ucla-miniscope-v4/developer/index.html">Developer Guide</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/developer/electrical.html">Electrical Design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/developer/optomechanical.html">Optomechanical Design</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/developer/common-mods/index.html">Common Modifications</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/developer/common-mods/lenses-combo.html">Modify Lenses Configuration</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ucla-miniscope-v4/developer/common-mods/led-filters-dichroic-combo.html">Modify LED/Dichroic/Filters Configuration</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="ucla-miniscope-v4/faq-troubleshoot/index.html">FAQ, Troubleshooting &amp; Additional Resources</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/faq-troubleshoot/faq.html">FAQ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ucla-miniscope-v4/faq-troubleshoot/troubleshoot.html">Troubleshooting</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary</a></li>
-</ul>
+<section id="miniscopes">
+<h2>Miniscopes<a class="headerlink" href="#miniscopes" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<img alt="image of UCLA Miniscope v4" class="sd-card-img-top" src="_images/uclaminiscopev3-cad.webp" />
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+UCLA Miniscope v3 Wireless</div>
 </div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="overview/miniscopes.html"><span class="doc">link to oe miniscope comparison</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<img alt="image of UCLA Miniscope v4" class="sd-card-img-top" src="_images/uclaminiscopev4-cad.webp" />
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+UCLA Miniscope v4</div>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="ucla-miniscope-v4/index.html"><span class="doc">link to UCLA Miniscope v4 page</span></a></div>
+</div>
+</div>
+</div>
+</section>
+<section id="miniscope-overview">
+<h2>Miniscope Overview<a class="headerlink" href="#miniscope-overview" title="Link to this heading">#</a></h2>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-4 sd-row-cols-xs-4 sd-row-cols-sm-4 sd-row-cols-md-4 sd-row-cols-lg-4 docutils">
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<img alt="image of data acquisition hardware compatible with miniscopes" class="sd-card-img-top" src="_images/miniscope-hardware-software-stack.webp" />
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Miniscopes Introduction</div>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="overview/index.html"><span class="doc">link to description of miniscope concept</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<img alt="image of data acquisition hardware compatible with miniscopes" class="sd-card-img-top" src="_images/v3v4-cad.webp" />
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Miniscopes Comparison</div>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="overview/miniscopes.html"><span class="doc">link to comparison of miniscopes</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<img alt="image of data acquisition hardware compatible with miniscopes" class="sd-card-img-top" src="_images/miniscope-daq.webp" />
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Data Acquisition Hardware</div>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="overview/data-acq-hardware.html"><span class="doc">link to description of data acquisition hardware compatible with miniscopes</span></a></div>
+</div>
+<div class="sd-col sd-d-flex-row docutils">
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<img alt="image of data acquisition software compatible with miniscopes" class="sd-card-img-top" src="_images/bonsai-miniscope-logos.webp" />
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Data Acquisition Software</div>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="overview/data-acq-software.html"><span class="doc">link to description of data acquisition software compatible with miniscopes</span></a></div>
+</div>
+</div>
+</div>
+<div class="toctree-wrapper compound">
+</div>
+</section>
 </section>
 
 
@@ -505,6 +495,18 @@
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscopes">Miniscopes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscope-overview">Miniscope Overview</a></li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

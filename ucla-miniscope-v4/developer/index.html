@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Developer Guide &#8212; Open Ephys Doc Template</title>
+    <title>Developer Guide &#8212; Open Ephys Documentation</title>
   
   
   
@@ -29,6 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=01d2cfef" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,14 +40,15 @@
     <script src="../../_static/documentation_options.js?v=5c79bd3c"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/copyURLToClipboard.js?v=54989998"></script>
     <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ucla-miniscope-v4/developer/index';</script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Electrical Design" href="electrical.html" />
-    <link rel="prev" title="Calcium Imaging Analysis" href="../user/analysis/index.html" />
+    <link rel="next" title="Modifications" href="mods.html" />
+    <link rel="prev" title="Miniscope-DAQ" href="../quick-start/miniscope-daq-quick.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,8 +124,8 @@
     
     
     
-    <img src="../../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
-    <script>document.write(`<img src="../../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
+    <img src="../../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="../../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -154,13 +156,6 @@
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="../index.html">
                         UCLA Miniscope V4
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../glossary.html">
-                        Glossary
                       </a>
                     </li>
                 
@@ -205,7 +200,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -298,13 +293,6 @@
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../glossary.html">
-                        Glossary
-                      </a>
-                    </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link nav-external" href="https://open-ephys.org">
                     Open Ephys
@@ -331,7 +319,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -371,46 +359,15 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../quick-start/index.html">Quick Start Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../quick-start/onix-quick.html">ONIX &amp; UCLA Miniscope v4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../quick-start/miniscope-daq-quick.html">Miniscope-DAQ &amp; UCLA Miniscope v4</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quick-start/miniscope-daq-quick.html">Miniscope-DAQ</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../user/index.html">User Guide</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../user/preparation/index.html">Planning Ahead</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../user/assembly/index.html">Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/preparation.html">Preparation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/excitation.html">Excitation Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/objective.html">Objective Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/emission.html">Emission Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/pcb.html">PCB</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/validate-finish.html">Validate &amp; Finish</a></li>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Developer Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="mods.html">Modifications</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../user/data-acq/index.html">Data Acquisition</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/miniscope-daq.html">With Miniscope-DAQ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/onix.html">With ONIX</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/commutator.html">With Open Ephys Coaxial Commutator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/minicam.html">With MiniCAM</a></li>
-</ul>
-</li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../user/analysis/index.html">Calcium Imaging Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Developer Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="electrical.html">Electrical Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="optomechanical.html">Optomechanical Design</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="common-mods/index.html">Common Modifications</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="common-mods/lenses-combo.html">Modify Lenses Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="common-mods/led-filters-dichroic-combo.html">Modify LED/Dichroic/Filters Configuration</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot/index.html">FAQ, Troubleshooting &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot/faq.html">FAQ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot/troubleshoot.html">Troubleshooting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot-resources/faq.html">FAQ</a></li>
 </ul>
 </li>
 </ul>
@@ -472,9 +429,60 @@
                   
   <section id="developer-guide">
 <h1>Developer Guide<a class="headerlink" href="#developer-guide" title="Link to this heading">#</a></h1>
-<p>yo</p>
+<p>The developer guide is intended to acquaint the user with the miniscope’s design and production files.</p>
+<p>All the design and production files for the UCLA Miniscope v4 PCB are available for download in the UCLA Miniscope v4’s official GitHub repository: <a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4">Aharoni-Lab/Miniscope-v4</a>. To find design and production files of the or learn about the optomechanical design, navigate to one of the two following guides:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#optomechanical-design"><span class="std std-ref">Optomechanical Design</span></a></p></li>
+<li><p><a class="reference internal" href="#electrical-design"><span class="std std-ref">Electrical Design</span></a></p></li>
+</ul>
+<p>The developer guide also contains information about common <a class="reference internal" href="mods.html"><span class="doc">Modifications</span></a> to configure the UCLA Minisope v4 for your experiment.</p>
+<section id="optomechanical-design">
+<h2>Optomechanical Design<a class="headerlink" href="#optomechanical-design" title="Link to this heading">#</a></h2>
+<section id="optomechanical-overview">
+<h3>Optomechanical Overview<a class="headerlink" href="#optomechanical-overview" title="Link to this heading">#</a></h3>
+<img alt="image of excitation light and emission light through the UCLA Miniscope v4's optical system" class="align-center" src="../../_images/miniscope-working-principle-schematic.webp" />
+<p>The UCLA Miniscope v4 is a miniaturized epifluorescent/widefield microscope. An LED serves as the excitation light source. The excitation filter filters the excitation light to prevent undesired wavelengths from entering the miniscope. Excitation light is reflected by the dichroic mirror and refracted by a series of lenses such that it illuminates the imaging target sufficiently uniformly. Fluoresced (emission) light is collected by the miniscope’s objective, refracted by the tube lense, and transmitted through the dichroic mirror to form an image of the specimen’s fluoresced light on the miniscope’s sensor. The electro-tunable lens ETL (sometimes also referred to as electrowetting lens, EWL) is a lens formed by fluid in a membrane that changes shape according to the average voltage applied across the membrane, providing dynamic imaging depth adjustment.</p>
+<p>For a more comprehensive description of the UCLA Miniscope v4’s constituent parts and optomechanical design, visit the <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Parts-List">Parts List</a> from the UCLA Miniscope v4 GitHub wiki.</p>
+<p>For more information, please refer to the relevant parts of the 2021 Miniscope Workshop video <a class="reference external" href="https://www.youtube.com/watch?v=bHA08xrshHo">Imaging principles &amp; Miniscope design</a>.</p>
+</section>
+<section id="design-and-production-files">
+<h3>Design and Production Files<a class="headerlink" href="#design-and-production-files" title="Link to this heading">#</a></h3>
+<p>All the design and production files for the UCLA Miniscope v4 PCB are available for download in the UCLA Miniscope v4’s official GitHub repository: <a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4">Aharoni-Lab/Miniscope-v4</a>. For quick-and-easy access, direct links to optomechanical design and production files are below.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Body-Parts/Parts%20v4_2">Body files</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Body-Parts/Parts%20v4_2/Mounting_Variation_2">Baseplate files</a></p></li>
+</ul>
+<p>Some operating systems come with free software that can be used to visualize STEP or STL files. There are also online viewers for these kinds of files. Common MCAD software for editing these kinds of files include Solidworks and Autodesk.</p>
+<p>The UCLA Miniscope v4 body parts can be produced in-house with a Formlabs SLA printer or outsourced to a 3D printing services. In either case, ensure the miniscope is printed with black, non-fluorescent resin. The baseplate parts are milled from aluminum.</p>
+<p>For more information about procuring parts for building your own miniscope, visit the <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Part-Procurement">Parts Procurement page</a> from the UCLA Miniscope v4 GitHub wiki.</p>
+</section>
+</section>
+<section id="electrical-design">
+<h2>Electrical Design<a class="headerlink" href="#electrical-design" title="Link to this heading">#</a></h2>
+<img alt="image of pcb layers" class="align-center" src="../../_images/ucla-miniscope-v4-layers-separate.svg" /><section id="design-production-files">
+<h3>Design &amp; Production Files<a class="headerlink" href="#design-production-files" title="Link to this heading">#</a></h3>
+<p>All the design and production files for the UCLA Miniscope v4 PCB are available for download in the UCLA Miniscope v4’s official GitHub repository: <a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4">Aharoni-Lab/Miniscope-v4</a>. For quick-and-easy access, direct links to electrical design and production files are below.</p>
+<section id="design-files">
+<h4>Design Files<a class="headerlink" href="#design-files" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Schematic files (<a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/PDF/Miniscope-v4-Rigid-Flex_4_41.pdf">pdf</a>, <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Miniscope-v4-Rigid-Flex.sch">sch</a>)</p></li>
+<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Miniscope-v4-Rigid-Flex.kicad_pcb">PCB file</a></p></li>
+</ul>
+<p>The .sch and .kicad_pcb files above can be opened in <a class="reference external" href="https://www.kicad.org/">KiCAD</a>, a user-friendly, free, and open-source eCAD software (<a class="reference external" href="https://www.kicad.org/download/">KiCAD download</a>). A .pdf file is also available for inspecting the schematic without KiCAD.</p>
+</section>
+<section id="production-files">
+<h4>Production files<a class="headerlink" href="#production-files" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Output/BOM/Miniscope-v4-Rigid-Flex_bom_4_41.csv">BoM file</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Rigid-Flex/KiCad/Output/Gerbers_4_41">Gerbers files</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Rigid-Flex/KiCad/Output/PnP/PnP_v_4_41">Pick-and-Place (PnP) files</a></p></li>
+</ul>
+<p>The Bill of Material (BoM) file is a csv file. Any text editor can be used to open a csvs file, but a spreadsheet software is recommended. The Gerber files are inspectable using most eCAD softwares or online Gerber viewers. PCB fabricators typically require Gerber files to produce a custom PCB. The PnP files are also csv files. PCB assemblers typically require PnP files to place and solder all the components onto your PCB. It is also possible to assemble your own UCLA Miniscope v4 PCB, but that is outside of the scope of this guide.</p>
 <div class="toctree-wrapper compound">
 </div>
+</section>
+</section>
+</section>
 </section>
 
 
@@ -488,20 +496,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../user/analysis/index.html"
+       href="../quick-start/miniscope-daq-quick.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Calcium Imaging Analysis</p>
+        <p class="prev-next-title">Miniscope-DAQ</p>
       </div>
     </a>
     <a class="right-next"
-       href="electrical.html"
+       href="mods.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Electrical Design</p>
+        <p class="prev-next-title">Modifications</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -513,6 +521,29 @@
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optomechanical-design">Optomechanical Design</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optomechanical-overview">Optomechanical Overview</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#design-and-production-files">Design and Production Files</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical-design">Electrical Design</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#design-production-files">Design &amp; Production Files</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#design-files">Design Files</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#production-files">Production files</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Data Acquisition Hardware &#8212; Open Ephys Doc Template</title>
+    <title>Data Acquisition Hardware &#8212; Open Ephys Documentation</title>
   
   
   
@@ -29,6 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=01d2cfef" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,6 +40,7 @@
     <script src="../_static/documentation_options.js?v=5c79bd3c"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/copyURLToClipboard.js?v=54989998"></script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'overview/data-acq-hardware';</script>
@@ -46,7 +48,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Data Acquisition Software" href="data-acq-software.html" />
-    <link rel="prev" title="Miniscopes" href="miniscopes.html" />
+    <link rel="prev" title="Miniscopes Comparison" href="miniscopes.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,8 +124,8 @@
     
     
     
-    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
-    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
+    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -154,13 +156,6 @@
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../ucla-miniscope-v4/index.html">
                         UCLA Miniscope V4
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
                       </a>
                     </li>
                 
@@ -205,7 +200,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -298,13 +293,6 @@
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
-                      </a>
-                    </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link nav-external" href="https://open-ephys.org">
                     Open Ephys
@@ -331,7 +319,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -370,7 +358,7 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="miniscopes.html">Miniscopes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="miniscopes.html">Miniscopes Comparison</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Acquisition Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-acq-software.html">Data Acquisition Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="accessories.html">Accessories</a></li>
@@ -433,11 +421,29 @@
                   
   <section id="data-acquisition-hardware">
 <h1>Data Acquisition Hardware<a class="headerlink" href="#data-acquisition-hardware" title="Link to this heading">#</a></h1>
-<p>The hardware that Open Ephys sells for acquiring data with the UCLA Miniscope v4 is:</p>
-<ul class="simple">
-<li><p>ONIX</p></li>
-<li><p>Miniscope-DAQ</p></li>
-</ul>
+<p>The <a class="reference internal" href="#miniscope-daq"><span class="std std-ref">Miniscope-DAQ</span></a> is the most comon hardware for acquiring data from the UCLA Miniscope v4.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Wireless miniscopes with on-board loggers such as the UCLA Miniscope v3 Wireless do not require data-acqusition hardware.</p>
+</div>
+<section id="miniscope-daq">
+<h2>Miniscope-DAQ<a class="headerlink" href="#miniscope-daq" title="Link to this heading">#</a></h2>
+<img alt="image of miniscope-daq" class="align-center" src="../_images/miniscope-daq.webp" />
+<p>The <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware">Miniscope-DAQ</a> is the data acquisition hardware developed by the UCLA Miniscope team for acquiring miniscope data. It accepts an external power supply for more power-intensive applications and plugs into a PC through a USB cable. It supports sync output, input trigger, and data acquisition from a single UCLA Miniscope v4 or a single MiniCAM. The Miniscope-DAQ is compatible with <a class="reference internal" href="data-acq-software.html#bonsai"><span class="std std-ref">Bonsai</span></a> and <a class="reference internal" href="data-acq-software.html#miniscope-daq-qt-software"><span class="std std-ref">Miniscope-DAQ-QT-Software</span></a>. To acquire miniscope or MiniCAM data with the Miniscope-DAQ, refer to the corresponding <a class="reference internal" href="../ucla-miniscope-v4/quick-start/miniscope-daq-quick.html"><span class="doc">Miniscope-DAQ</span></a> and <em>User Guide</em> (coming soon). To learn more about the Miniscope-DAQ, refer to the <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware">UCLA Miniscope v4 Wiki</a>.</p>
+<section id="miniscope-daq-variants">
+<h3>Miniscope-DAQ Variants<a class="headerlink" href="#miniscope-daq-variants" title="Link to this heading">#</a></h3>
+<section id="minidaq">
+<h4>MiniDAQ<a class="headerlink" href="#minidaq" title="Link to this heading">#</a></h4>
+<img alt="image of minidaq" class="align-center" src="../_images/minidaq.webp" />
+<p>The MiniDAQ is a simplified, more compact, and more affordable version of the Miniscope-DAQ. It plugs directly into a PC through its on-board USB cable. It supports data acquisition from a single UCLA Miniscope v4 or a single MiniCAM. Unlike the Miniscope-DAQ, the MiniDAQ does not accept an external supply or support sync output or input trigger functions. The MiniDAQ is compatible with <a class="reference internal" href="data-acq-software.html#bonsai"><span class="std std-ref">Bonsai</span></a> and <a class="reference internal" href="data-acq-software.html#miniscope-daq-qt-software"><span class="std std-ref">Miniscope-DAQ-QT-Software</span></a>. To acquire miniscope or MinicCAM data with the MiniCAM, refer to the corresponding <a class="reference internal" href="../ucla-miniscope-v4/quick-start/miniscope-daq-quick.html"><span class="doc">Miniscope-DAQ</span></a> and <em>User Guide</em> (coming soon).</p>
+</section>
+<section id="ninscope-daq">
+<h4>NINscope-DAQ<a class="headerlink" href="#ninscope-daq" title="Link to this heading">#</a></h4>
+<img alt="image of ninscope-daq" class="align-center" src="../_images/ninscope-daq.webp" />
+<p>The NINscope-DAQ is like the Miniscope-DAQ except the NINscope-DAQ is also compatible with the <a class="reference external" href="https://github.com/ninscope">NINscope</a>. It accepts an external power supply for more power-intensive applications and plugs into a PC through a USB cable. It supports sync output, input trigger, and data acquisition from a single NINscope. The NINscope is compatible with <a class="reference external" href="https://github.com/ninscope/Software/wiki/NINscope-software">custom NINscope software</a> from the NINscope developers. To learn more about the NINscope, refer to the <a class="reference external" href="https://github.com/ninscope/Hardware/">NINscope hardware wiki</a> from the NINscope developers.</p>
+</section>
+</section>
+</section>
 </section>
 
 
@@ -456,7 +462,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Miniscopes</p>
+        <p class="prev-next-title">Miniscopes Comparison</p>
       </div>
     </a>
     <a class="right-next"
@@ -476,6 +482,24 @@
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscope-daq">Miniscope-DAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscope-daq-variants">Miniscope-DAQ Variants</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#minidaq">MiniDAQ</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ninscope-daq">NINscope-DAQ</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
 
   <div class="sidebar-secondary-item">
 

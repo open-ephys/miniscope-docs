@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Miniscope Overview &#8212; Open Ephys Doc Template</title>
+    <title>Miniscope Overview &#8212; Open Ephys Documentation</title>
   
   
   
@@ -29,6 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=01d2cfef" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,13 +40,14 @@
     <script src="../_static/documentation_options.js?v=5c79bd3c"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/copyURLToClipboard.js?v=54989998"></script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'overview/index';</script>
     <link rel="icon" href="../_static/favicon.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Miniscopes" href="miniscopes.html" />
+    <link rel="next" title="Miniscopes Comparison" href="miniscopes.html" />
     <link rel="prev" title="Open Ephys Miniscope Documentation" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -122,8 +124,8 @@
     
     
     
-    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
-    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
+    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -154,13 +156,6 @@
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../ucla-miniscope-v4/index.html">
                         UCLA Miniscope V4
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
                       </a>
                     </li>
                 
@@ -205,7 +200,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -298,13 +293,6 @@
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
-                      </a>
-                    </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link nav-external" href="https://open-ephys.org">
                     Open Ephys
@@ -331,7 +319,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -370,7 +358,7 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="miniscopes.html">Miniscopes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="miniscopes.html">Miniscopes Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-acq-hardware.html">Data Acquisition Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-acq-software.html">Data Acquisition Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="accessories.html">Accessories</a></li>
@@ -430,42 +418,35 @@
                   
   <section id="miniscope-overview">
 <h1>Miniscope Overview<a class="headerlink" href="#miniscope-overview" title="Link to this heading">#</a></h1>
-<section id="what-is-a-miniscope">
-<h2>What Is a Miniscope?<a class="headerlink" href="#what-is-a-miniscope" title="Link to this heading">#</a></h2>
-<blockquote>
-<div><p>Demonstration of a UCLA Miniscope v3 in action. (a) A mouse with a head-mounted miniscope. (b) Cross-sectional rendering of the Miniscope optical path. Blue, excitation path; green, emission optical path; GRIN, gradient-index lens. (c) Maximum projection of a 10-minute motion-corrected Miniscope recording of hippocampal CA1 pyramidal neurons labeled with GCaMP6f. (d) Spatial footprints of identified neurons from the recording in c. Scale bar in (d) applies to (c). <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
-</div></blockquote>
-<p>Miniscopes are compact microscopes that are mounted on the heads of freely-moving animals. For the purpose of imaging neural activity, the animal contains a Calcium-dependent flourescent indicator which are chemicals that only flouresce when bound to Calcium ions. Action potentials involve large influxes of Calcium ions into the cell so flourescence of these indicators can be used a proxy for neural activity.</p>
-<p>Miniscopes confer the benefit of enabling animals to behave more naturally and explore physical space while acquiring neural data. Many kinds of miniscopes have been developed since the original by Mark Schnitzer. They were popularized by Daniel Aharoni and a collaboration of people at UCLA where the UCLA Miniscopes were developed. Though two-photon miniscopes are becoming more viable, miniscopes by and large are epifluorescent.</p>
-<p>To learn more about fluorescent microscopes and miniscopes, refer to the relevant parts of the 2021 Miniscope Workshop video <a class="reference external" href="https://www.youtube.com/watch?v=bHA08xrshHo">Imaging principles &amp; Miniscope design</a>.</p>
+<section id="miniscope-description">
+<h2>Miniscope Description<a class="headerlink" href="#miniscope-description" title="Link to this heading">#</a></h2>
+<p>Miniscopes are compact microscopes that are mounted on the heads of freely-moving animals. For imaging neural activity, the animal contains a Ca<sup>2+</sup>-dependent fluorescent molecule. As the name suggests, it only fluoresces when bound to Ca<sup>2+</sup> ions. Action potentials involve large influxes of Ca<sup>2+</sup> ions into the cell so fluorescence of these indicators can be used a proxy for neural activity.</p>
+<p>Miniscopes confer the benefit of enabling animals to behave more naturally and explore physical space while acquiring neural data. Many miniscopes have been developed since their inception in 2011. <a class="footnote-reference brackets" href="#id3" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
 <figure class="align-left" id="id5">
 <img alt="image of miniscopes" src="../_images/various-miniscopes.webp" />
 <figcaption>
 <p><span class="caption-text">Open-source miniscopes released in the public domain as of 2018. (A) <a class="github reference external" href="https://github.com/gardner-lab/FinchScope">gardner-lab/FinchScope</a>, image credit: W.A. Liberti III. (B) <a class="github reference external" href="https://github.com/giovannibarbera/miniscope_v1.0">giovannibarbera/miniscope_v1.0</a>. (C) <a class="reference external" href="http://www.miniscope.org">http://www.miniscope.org</a>. (D) <a class="github reference external" href="https://github.com/jf-lab/chendoscope">jf-lab/chendoscope</a>, image credit: A. Jacob, Josselyn lab. <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The Open Ephys Miniscope Documentation only contains information that is related to software, hardware, and miniscopes that Open Ephys sells or supports. Although the above brief description of the miniscope landscape mentions various other miniscopes, further information regarding those is outside the scope of this documentation.</p>
-</div>
+<p>The above figure displays some miniscopes developed as of 2018. Since then, many more miniscopes have been developed with better specs all-around (i.e. lower mass, better sensors, larger FoVs, etc.). Two-photon miniscopes have even started becoming more viable, though most miniscopes are still wide-field/epifluorescent due to prohibitevly expensive two-photon lasers and data-acquisition equpiment. To learn more about fluorescent microscopes and miniscopes, refer to the relevant parts of the 2021 Miniscope Workshop video <a class="reference external" href="https://www.youtube.com/watch?v=bHA08xrshHo">Imaging principles &amp; Miniscope design</a>.</p>
 </section>
-<section id="additional-miniscope-hardware-software">
-<h2>Additional Miniscope Hardware &amp; Software<a class="headerlink" href="#additional-miniscope-hardware-software" title="Link to this heading">#</a></h2>
-<p>In addition to the miniscope itself, <a class="reference internal" href="data-acq-hardware.html"><span class="doc">Data Acquisition Hardware</span></a> and <a class="reference internal" href="data-acq-software.html"><span class="doc">Data Acquisition Software</span></a> are both necessary to acquire data. <a class="reference internal" href="accessories.html"><span class="doc">Other hardware commonly used with miniscopes</span></a> include:</p>
+<section id="typical-full-stack-miniscope-solution">
+<h2>Typical Full-Stack Miniscope Solution<a class="headerlink" href="#typical-full-stack-miniscope-solution" title="Link to this heading">#</a></h2>
+<p><a class="reference internal" href="data-acq-hardware.html"><span class="doc">Data Acquisition Hardware</span></a> and <a class="reference internal" href="data-acq-software.html"><span class="doc">Data Acquisition Software</span></a> are required to acquire data in addition to the miniscope itself (not including the Wireless UCLA Miniscope v3). Miniscope <a class="reference internal" href="accessories.html"><span class="doc">Accessories</span></a> include:</p>
 <ul class="simple">
 <li><p>The <a class="reference internal" href="accessories.html#open-ephys-coaxial-commutator"><span class="std std-ref">Open Ephys Coaxial Commutator</span></a> prevents wired connections between a freely-moving animal and a stationary data acquisition system</p></li>
-<li><p>The <a class="reference internal" href="accessories.html#ucla-minicam"><span class="std std-ref">UCLA MiniCam</span></a> is prevents wired connections between</p></li>
+<li><p>The <a class="reference internal" href="accessories.html#minicam"><span class="std std-ref">MiniCAM</span></a> is prevents wired connections between</p></li>
 </ul>
-<p>Below is a diagram of a typical full stack solution for acquiring data with the UCLA Miniscope v4 and a couple of Open Ephys accessories.</p>
-<img alt="image of hardware software stack" src="../_images/miniscope-hardware-software-stack.webp" />
+<p>Below is a diagram of a typical full-stack solution for acquiring data with the UCLA Miniscope v4.</p>
+<img alt="image of hardware software stack" class="align-center" src="../_images/miniscope-hardware-software-stack.webp" />
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id3" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>Aharoni, D., Khakh, B.S., Silva, A.J. et al. All the light that we can see: a new era in miniaturized microscopy. Nat Methods 16, 11–13 (2018). <a class="reference external" href="https://doi.org/10.1038/s41592-018-0266-x">https://doi.org/10.1038/s41592-018-0266-x</a></p>
+<p>Aharoni, D., &amp; Hoogland, T. M. Circuit investigations with open-source miniaturized microscopes: Past, present and future. Frontiers (2019). <a class="reference external" href="https://www.frontiersin.org/articles/10.3389/fncel.2019.00141">https://www.frontiersin.org/articles/10.3389/fncel.2019.00141</a></p>
 </aside>
 <aside class="footnote brackets" id="id4" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
-<p>Aharoni, D., &amp; Hoogland, T. M. Circuit investigations with open-source miniaturized microscopes: Past, present and future. Frontiers (2019). <a class="reference external" href="https://www.frontiersin.org/articles/10.3389/fncel.2019.00141">https://www.frontiersin.org/articles/10.3389/fncel.2019.00141</a></p>
+<p>Aharoni, D., Khakh, B.S., Silva, A.J. et al. All the light that we can see: a new era in miniaturized microscopy. Nat Methods 16, 11–13 (2018). <a class="reference external" href="https://doi.org/10.1038/s41592-018-0266-x">https://doi.org/10.1038/s41592-018-0266-x</a></p>
 </aside>
 </aside>
 <div class="toctree-wrapper compound">
@@ -497,7 +478,7 @@
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Miniscopes</p>
+        <p class="prev-next-title">Miniscopes Comparison</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -517,8 +498,8 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-a-miniscope">What Is a Miniscope?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#additional-miniscope-hardware-software">Additional Miniscope Hardware &amp; Software</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscope-description">Miniscope Description</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#typical-full-stack-miniscope-solution">Typical Full-Stack Miniscope Solution</a></li>
 </ul>
   </nav></div>
 

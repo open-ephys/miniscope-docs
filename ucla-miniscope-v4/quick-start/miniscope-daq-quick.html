@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Miniscope-DAQ &amp; UCLA Miniscope v4 &#8212; Open Ephys Doc Template</title>
+    <title>Miniscope-DAQ &#8212; Open Ephys Documentation</title>
   
   
   
@@ -29,6 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=01d2cfef" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,14 +40,15 @@
     <script src="../../_static/documentation_options.js?v=5c79bd3c"></script>
     <script src="../../_static/doctools.js?v=888ff710"></script>
     <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/copyURLToClipboard.js?v=54989998"></script>
     <script src="../../_static/design-tabs.js?v=36754332"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'ucla-miniscope-v4/quick-start/miniscope-daq-quick';</script>
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="User Guide" href="../user/index.html" />
-    <link rel="prev" title="ONIX &amp; UCLA Miniscope v4" href="onix-quick.html" />
+    <link rel="next" title="Developer Guide" href="../developer/index.html" />
+    <link rel="prev" title="Quick Start Guide" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -122,8 +124,8 @@
     
     
     
-    <img src="../../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
-    <script>document.write(`<img src="../../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
+    <img src="../../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="../../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -154,13 +156,6 @@
                     <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="../index.html">
                         UCLA Miniscope V4
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../glossary.html">
-                        Glossary
                       </a>
                     </li>
                 
@@ -205,7 +200,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -298,13 +293,6 @@
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../../glossary.html">
-                        Glossary
-                      </a>
-                    </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link nav-external" href="https://open-ephys.org">
                     Open Ephys
@@ -331,7 +319,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -371,46 +359,15 @@
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Quick Start Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="onix-quick.html">ONIX &amp; UCLA Miniscope v4</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">Miniscope-DAQ &amp; UCLA Miniscope v4</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Miniscope-DAQ</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../user/index.html">User Guide</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../user/preparation/index.html">Planning Ahead</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../user/assembly/index.html">Assembly</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/preparation.html">Preparation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/excitation.html">Excitation Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/objective.html">Objective Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/emission.html">Emission Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/pcb.html">PCB</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/assembly/validate-finish.html">Validate &amp; Finish</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../developer/index.html">Developer Guide</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../developer/mods.html">Modifications</a></li>
 </ul>
 </li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../user/data-acq/index.html">Data Acquisition</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/miniscope-daq.html">With Miniscope-DAQ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/onix.html">With ONIX</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/commutator.html">With Open Ephys Coaxial Commutator</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../user/data-acq/minicam.html">With MiniCAM</a></li>
-</ul>
-</li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../user/analysis/index.html">Calcium Imaging Analysis</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../developer/index.html">Developer Guide</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../developer/electrical.html">Electrical Design</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../developer/optomechanical.html">Optomechanical Design</a></li>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../developer/common-mods/index.html">Common Modifications</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l3"><a class="reference internal" href="../developer/common-mods/lenses-combo.html">Modify Lenses Configuration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../developer/common-mods/led-filters-dichroic-combo.html">Modify LED/Dichroic/Filters Configuration</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot/index.html">FAQ, Troubleshooting &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot/faq.html">FAQ</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot/troubleshoot.html">Troubleshooting</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot-resources/faq.html">FAQ</a></li>
 </ul>
 </li>
 </ul>
@@ -456,7 +413,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Quick Start Guide</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Miniscope-DA...</li>
+    <li class="breadcrumb-item active" aria-current="page">Miniscope-DAQ</li>
   </ul>
 </nav>
 </div>
@@ -473,84 +430,161 @@
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="miniscope-daq-ucla-miniscope-v4">
-<h1>Miniscope-DAQ &amp; UCLA Miniscope v4<a class="headerlink" href="#miniscope-daq-ucla-miniscope-v4" title="Link to this heading">#</a></h1>
+  <section id="miniscope-daq">
+<h1>Miniscope-DAQ<a class="headerlink" href="#miniscope-daq" title="Link to this heading">#</a></h1>
 <img alt="photograph of ucla miniscope v4 &amp; miniscope-daq" src="../../_images/miniscope-daq_ucla-miniscope-v4.webp" />
-<p>This guide serves as quick hardware-validation and familiarization with the UCLA Miniscope v4 and Miniscope-DAQ hardware.</p>
+<p>This guide serves as quick hardware-validation of and familiarization with the UCLA Miniscope v4 using the Miniscope-DAQ hardware.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>To validate ETL functionality or image a sample requires prior assembly of the UCLA Miniscope v4. If you have an unassembled UCLA Miniscope v4 and desire to validate ETL functionality or image a sample, follow the <a class="reference internal" href="../user/assembly/index.html"><span class="doc">Assembly</span></a> before following this <em>Quick Start Guide</em>.</p>
+<p>To validate ETL functionality or image a sample requires prior assembly of the UCLA Miniscope v4. If you have an unassembled UCLA Miniscope v4 and desire to validate ETL functionality or image a sample, follow the Assembly Guide (coming soon) before following this <em>Quick Start Guide</em>.</p>
 </div>
 <section id="connect-hardware">
 <h2>Connect Hardware<a class="headerlink" href="#connect-hardware" title="Link to this heading">#</a></h2>
-<div class="admonition-todo admonition" id="id1">
-<p class="admonition-title">Todo</p>
-<p>create the below images</p>
-</div>
 <ol class="arabic">
-<li><p>Disconnect any previously connected hardware from Miniscope-DAQ and UCLA Miniscope v4. Connect only the following hardware for this guide:</p>
-<ul>
-<li><p>Connect Miniscope-DAQ to the UCLA Miniscope v4 using the provided coaxial SMA plug ↔ MMCX plug tether:</p>
-<ul class="simple">
-<li><p>Insert the cable’s SMA plug into Miniscope-DAQ’s SMA jack labeled <cite>Miniscope</cite>. Gently hand-tighten the SMA connector with light-force until you are no longer able to turn the connector</p>
+<li><p>Disconnect any previously connected hardware from Miniscope-DAQ and UCLA Miniscope v4.</p></li>
+<li><p>Connect only the following hardware for this guide:</p>
+<ol class="arabic">
+<li><p>Connect Miniscope-DAQ to the UCLA Miniscope v4 using the provided coaxial SMA plug ↔ U.FL plug tether:</p>
+<ol class="arabic">
+<li><p>Insert the cable’s SMA plug into Miniscope-DAQ’s SMA jack labeled <cite>Miniscope</cite>. Gently hand-tighten the SMA connector until the connector no longer turns:</p>
+<a class="reference internal image-reference" href="../../_images/cable-sma-plug_miniscope-daq-sma-jack.webp"><img alt="photograph of SMA plug going into Miniscope-DAQ SMA jack" class="align-center" src="../../_images/cable-sma-plug_miniscope-daq-sma-jack.webp" style="height: 500px;" /></a>
 </li>
-<li><p>Insert the cable’s MMCX plug into UCLA Miniscope’s MMCX jack. Confirm that a click is felt and heard before proceeding from this step.</p>
+<li><p>Insert the cable’s U.FL plug into UCLA Miniscope’s U.FL jack. Confirm that a click is felt and heard before proceeding from this step:</p>
+<a class="reference internal image-reference" href="../../_images/cable-mmcx-plug_ucla-miniscope-v4-ufl-jack.jpg"><img alt="photograph of U.FL plug going into UCLA Miniscope v4 U.FL jack" class="align-center" src="../../_images/cable-mmcx-plug_ucla-miniscope-v4-ufl-jack.jpg" style="height: 500px;" /></a>
 </li>
-</ul>
+</ol>
 </li>
 <li><p>Connect Miniscope-DAQ to your computer using the provided USB3.0 Micro Type B plug ↔ USB3.0 Type A plug cable:</p>
-<ul class="simple">
-<li><p>Insert the cable’s USB3.0 Micro Type B plug into the Miniscope-DAQ’s USB3.0 Micro Type B jack located on the Miniscope DAQ’s back face.</p></li>
-</ul>
-<blockquote>
-<div></div></blockquote>
-<ul class="simple">
-<li><p>Insert the cable’s USB3.0 Type A plug into your computer’s USB3.0 Type A jack.</p>
+<ol class="arabic">
+<li><p>Insert the cable’s USB3.0 Micro Type B plug into the Miniscope-DAQ’s USB3.0 Micro Type B jack located on the Miniscope-DAQ’s back face:</p>
+<a class="reference internal image-reference" href="../../_images/cable-usb3,0-microb-plug_miniscope-daq-usb3,0-microb-jack.webp"><img alt="photograph of usb plug going into miniscope-daq jack" class="align-center" src="../../_images/cable-usb3%2C0-microb-plug_miniscope-daq-usb3%2C0-microb-jack.webp" style="height: 500px;" /></a>
 </li>
-</ul>
+<li><p>Insert the cable’s USB3.0 Type A plug into your computer’s USB3.0 Type A jack:</p>
+<a class="reference internal image-reference" href="../../_images/cable-usb3,0-a-plug_computer-usb3,0-a-jack.webp"><img alt="photograph of usb plug going into computer usb jack" class="align-center" src="../../_images/cable-usb3%2C0-a-plug_computer-usb3%2C0-a-jack.webp" style="height: 500px;" /></a>
 </li>
-</ul>
+</ol>
 </li>
-<li><p>Confirm that all three indicators on the miniscope DAQ are illuminated before proceeding from this step as indicated in the below potos. If not all three indicators are illuminated, refer to <a class="reference internal" href="../faq-troubleshoot/index.html"><span class="doc">FAQ, Troubleshooting &amp; Additional Resources</span></a> section.</p></li>
+</ol>
+</li>
+<li><p>Confirm that all three indicators on the miniscope-DAQ are illuminated before proceeding from this step as indicated in the below potos. If not all three indicators are illuminated, refer to <a class="reference internal" href="../faq-troubleshoot-resources/index.html"><span class="doc">FAQ &amp; Additional Resources</span></a> section.</p></li>
 </ol>
 </section>
 <section id="download-install-and-configure-bonsai">
-<h2>Download, Install and Configure Bonsai<a class="headerlink" href="#download-install-and-configure-bonsai" title="Link to this heading">#</a></h2>
-<ul class="simple">
+<h2>Download, Install, and Configure Bonsai<a class="headerlink" href="#download-install-and-configure-bonsai" title="Link to this heading">#</a></h2>
+<ol class="arabic">
 <li><p>If you have not already done so,</p>
-<ul>
+<ol class="arabic">
 <li><p><a class="reference external" href="https://bonsai-rx.org/docs/articles/installation.html">Download and Install Bonsai</a></p></li>
-<li><p><a class="reference external" href="https://bonsai-rx.org/docs/articles/packages.html">Install the necessary Bonsai Packages:</a></p>
+<li><p><a class="reference external" href="https://bonsai-rx.org/docs/articles/packages.html">Install the necessary Bonsai packages:</a></p>
+<ol class="arabic">
+<li><p>Open Bonsai</p></li>
+<li><p>Open the Bonsai package manager</p>
 <ul>
+<li><p>From Bonsai’s landing window, select <em>Manage Packages</em>:</p>
+<a class="reference internal image-reference" href="../../_images/bonsai-landing-page-package-manager-button.webp"><img alt="screenshot of Bonsai landing window with *Manage Packages* text highlighted" class="align-center" src="../../_images/bonsai-landing-page-package-manager-button.webp" style="height: 300px;" /></a>
+</li>
+</ul>
+<p>or</p>
+<ul>
+<li><p>From Bonsai’s workflow editor, hover over the <em>Tools</em> tab in the top ribbon to reveal a drop-down menu, and single left-click <em>Manage Packages…</em>.</p>
+<a class="reference internal image-reference" href="../../_images/bonsai-workflow-editor-package-manager-button.webp"><img alt="screenshot of Bonsai workflow editor with *Manage Packages...* text highlighted" class="align-center" src="../../_images/bonsai-workflow-editor-package-manager-button.webp" style="height: 300px;" /></a>
+</li>
+</ul>
+</li>
+<li><p>Select the <em>Browse</em> tab in the top ribbon:</p>
+<a class="reference internal image-reference" href="../../_images/bonsai-package-manager-browse-button.webp"><img alt="screenshot of Bonsai package manager with *Browse* tab highlighted" class="align-center" src="../../_images/bonsai-package-manager-browse-button.webp" style="height: 400px;" /></a>
+</li>
+<li><p>Configure the <em>Package Source</em> field to <em>All</em> using the drop-down menu:</p>
+<a class="reference internal image-reference" href="../../_images/bonsai-package-manager-package-source-dropdown.webp"><img alt="screenshot of Bonsai package manager with the Package Source drop-down higlighted" class="align-center" src="../../_images/bonsai-package-manager-package-source-dropdown.webp" style="height: 400px;" /></a>
+</li>
+<li><p>Download and install the required Bonsai packages:</p>
+<ul class="simple">
 <li><p>Bonsai.StarterPack</p></li>
-<li><p>Bonsai.Miniscope</p></li>
+<li><p>OpenEphys.Bonsai.Miniscope</p></li>
 </ul>
+<p>For each one, search its name in the search bar, single left-click its corresponding entry, and single left-click the <em>Install</em> button:</p>
+<a class="reference internal image-reference" href="../../_images/bonsai-starterpack.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/bonsai-starterpack.webp" style="height: 400px;" /></a>
+<p>Click the <em>I Accept</em> button when prompted.</p>
 </li>
-</ul>
+</ol>
 </li>
-<li><p>Download and open the following Bonsai workflow:</p></li>
-</ul>
+</ol>
+</li>
+</ol>
 </section>
 <section id="interact-with-the-ucla-miniscope-v4-through-bonsai">
-<h2>Interact with the UCLA Miniscope v4 through Bonsai<a class="headerlink" href="#interact-with-the-ucla-miniscope-v4-through-bonsai" title="Link to this heading">#</a></h2>
+<h2>Interact with the UCLA Miniscope v4 Through Bonsai<a class="headerlink" href="#interact-with-the-ucla-miniscope-v4-through-bonsai" title="Link to this heading">#</a></h2>
 <ol class="arabic">
-<li><p>Download and open the following .bonsai ile Bonsai workflow:</p></li>
-<li><p>Start the Bonsai workflow and test the various features:</p></li>
-<li><p>Single-left click on the UCLAMiniscopeV4 node. Depending on the cameras connected to your PC, the value in the Index field located in the Properties window may need to change. If there are no additional cameras connected to your PC, the Index value should be 0. If there are additional cameras connected to your PC (including laptop cameras), try incrementing the value of the Index field by 1 until the workflow functions as described in the following instructions. If the workflow does not work as described in the following instructions, return to this step and increment the value of the Index field by 1 until it works.</p>
+<li><p>Download the following workflow (.bonsai file) and open it with Bonsai:</p>
+            <div class="bonsai-workflow-container">
+        <div class="workflow-filler"></div>
+        <div class="workflow-download"><img class="download-copy-img" src="../../_static/images/download.svg" onclick="getFileFromURL('../../_static/downloads/miniscope-daq_quick-start.bonsai')" width=18px /></div>
+        <div class="workflow-copy"><img class="download-copy-img" src="../../_static/images/copy.svg" onclick="getTextFromURL('../../_static/downloads/miniscope-daq_quick-start.bonsai')" width=18px /></div>
+        <div class="workflow-name"><b>miniscope-daq_quick-start.bonsai</b></div>
+        <div class="workflow-image"><img src="../../_static/images/miniscope-daq_quick-start.svg" alt="miniscope-daq_quick-start" /></div>
+</div></li>
+<li><p>Set the <code class="docutils literal notranslate"><span class="pre">UCLAMiniscopeV4</span></code> node’s <code class="docutils literal notranslate"><span class="pre">Index</span></code> property to the value that corresponds to the index of your miniscope.</p>
+<ol class="arabic simple">
+<li><p>Single left-click on the <code class="docutils literal notranslate"><span class="pre">UCLAMiniscopeV4</span></code> node.</p></li>
+<li><p>Set the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value to 0.</p></li>
+<li><p>If there are no additional cameras connected to your PC, skip this step. If there are additional cameras connected to your PC (including laptop webcams), finding the correct index value involves an iterative trial-and-error process.</p>
+<ol class="arabic simple">
+<li><p>Increment the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by 1.</p></li>
+<li><p>Test the selected <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by starting the workflow <a class="footnote-reference brackets" href="#id5" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and double left-clicking the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node. If the displayed video stream corresponds to that of your miniscope, proceed to the next steps. Otherwise, return to the previous step.</p></li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>Start the Bonsai workflow <a class="footnote-reference brackets" href="#id5" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and test various features:</p>
+<p><strong>Real-time Data Visualization</strong></p>
+<dl class="field-list">
+<dt class="field-odd">Image Data<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Double left-click the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node. This displays a real-time visualization of image data from the sensor. Attenuate the sensor’s exposure to ambient light or try imaging a target. Confirm that the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node visualizer comports with expectations:</p>
+<a class="reference internal image-reference" href="../../_images/image-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/image-demo.webp" style="height: 400px;" /></a>
+</dd>
+<dt class="field-even">Orientation Data<span class="colon">:</span></dt>
+<dd class="field-even"><p>Double left-click the <code class="docutils literal notranslate"><span class="pre">Quaternion</span></code> node. This displays a real-time visualization of quarternion data which represents the miniscope’s orientation. Single right-click the visualization, and single left-click the drop-down menu. Set the value in the <code class="docutils literal notranslate"><span class="pre">History</span> <span class="pre">Length</span></code> field to 100. Reorient the UCLA Miniscope v4. Confirm the quarternion visualization responds accordingly:</p>
+<a class="reference internal image-reference" href="../../_images/quarternion-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/quarternion-demo.webp" style="height: 400px;" /></a>
+</dd>
+</dl>
+<p><strong>UCLA Miniscope v4 Settings</strong></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Index refers to __.</p>
+<ul class="simple">
+<li><p>When adjusting the <em>Frame Rate</em> and <em>Sensor Gain</em> settings, avoid under- or over- exposing the sensor.</p></li>
+<li><p>To adjust the <em>Dynamic Imaging Depth</em> setting, the UCLA Miniscope v4 must be fully assembled.</p></li>
+</ul>
 </div>
+<p>Single-left click the <code class="docutils literal notranslate"><span class="pre">UCLAMiniscopeV4</span></code> node.</p>
+<dl class="field-list">
+<dt class="field-odd">Frame Rate<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Change the <code class="docutils literal notranslate"><span class="pre">FramesPerSecond</span></code> value by left-clicking the corresponding field’s drop-down menu located in the <em>Properties</em> pane and selecting a different option. Frame rate and exposure-duration-per-frame are inversely related, so higher frame rates produce darker images (supposing you’re operating the miniscope within its sensor’s dynamic range). Use this information and look at the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node visualizer to confirm that the frame rate adjusts according to the <code class="docutils literal notranslate"><span class="pre">FramesPerSecond</span></code> value.</p>
+<a class="reference internal image-reference" href="../../_images/fps-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/fps-demo.webp" style="height: 400px;" /></a>
+<p>A discerning eye can also notice changes in frame rate, but that’s typically less noticeable than changes in exposure duration.</p>
+</dd>
+<dt class="field-even">Sensor Gain<span class="colon">:</span></dt>
+<dd class="field-even"><p>Change the <code class="docutils literal notranslate"><span class="pre">SensorGain</span></code> value by left-clicking the corresponding field’s drop-down menu located in the <em>Properties</em> paneand selecting a different option. Look at the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node visualizer to confirm the that the gain is adjusted according to the value of <code class="docutils literal notranslate"><span class="pre">SensorGain</span></code> value.</p>
+<a class="reference internal image-reference" href="../../_images/gain-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/gain-demo.webp" style="height: 400px;" /></a>
+</dd>
+<dt class="field-odd">Excitation Light Intensity<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Change the <code class="docutils literal notranslate"><span class="pre">LEDBrightness</span></code> value by left-clicking the corresponding field’s drop-down menu located in the <em>Properties</em> pane and sliding the scrollbar. Confirm that the intensity of the excitation light adjusts according to the <code class="docutils literal notranslate"><span class="pre">LEDBrightness</span></code> value.</p>
+<a class="reference internal image-reference" href="../../_images/led-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/led-demo.webp" style="height: 400px;" /></a>
+</dd>
+<dt class="field-even">Dynamic Focusing<span class="colon">:</span></dt>
+<dd class="field-even"><p>Place the assembled miniscope approximately its working distance away from an imaging target (e.g. a Kimwipe). Change the <code class="docutils literal notranslate"><span class="pre">EWL</span></code> value by left-clicking the corresponding field’s drop-down menu located in the <em>Properties</em> pane and selecting a different option. Look at the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node visualizer moves in-and-out according to the <code class="docutils literal notranslate"><span class="pre">EWL</span></code> value.</p>
+<a class="reference internal image-reference" href="../../_images/focus-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/focus-demo.webp" style="height: 400px;" /></a>
+<p>If the imaging target does not enter the depth of focus, try readjusting the distance of the miniscope from the imaging target and performing the test again. If the working distance does not adjust, try reassembling the EWL module according to the <em>Assembly</em> instructions and repeating this part.</p>
+</dd>
+</dl>
 </li>
-<li><p>Single-left click the start button at top or press F5 to start the workflow</p></li>
-<li><p>Double-left click the Image node. This shows a real-time visualization of the data from the sensor. Expose the sensor to ambient light and obstruct the sensor from ambient light. Confirm that data visualization comports with light exposure.</p></li>
-<li><p>Double-left click the Quaternion node. Single-right click the plot that appears and single-left click the drop-down menu. Set the value in the History Length field to 100. This shows real-time visualization of the orientation data from the sensor. Reorient the UCLA Miniscope v4 to confirm the visualization reflects orientation of the UCLA Miniscope v4</p></li>
-<li><p>Single-left click the UCLAMiniscopeV4 node. Change the value of the FramesPerSecond field located in the Properties window by left clicking the field’s drop-down menu and selecting another option. To maximize SNR, the miniscope firmware always exposes the sensor to light. Therefore, exposure-per-frame is reduced at higher fps, and, as long as sensor data is not over- or under-exposed, the Image node visualizer may appear darker or brighter depending on the fps. Use this information or evaluate the choppiness/smoothness of the Image node visualizer to confirm that the video’s fps is adjusted.</p></li>
-<li><p>Single-left click the UCLAMiniscopeV4 node. Change the value of the LEDBrightness field located in the Properties window by left clicking the field’s drop-down menu and sliding the scrollbar. Visually confirm that the LED brightness is adjusted.</p></li>
-<li><p>For this step, avoid under- or over- exposing the sensor. Single-left click the UCLAMiniscopeV4 node. Change the value of the SensorGain field located in the Properties window by left clicking the field’s drop-down menu and selecting another option. Confirm that the data shown Image node visualizer is adjusted is amplified or attenuated depending respectively on if the sensor gain is increased or decreased.</p></li>
-<li><p>To test the EWL, the UCLA Miniscope v4 must be fully assembled. After following the assembly guide, place the assembled miniscope approximately one millimeter away from a surface to be the subject of a miniscope image. The subject could be a table surface or a Kimwipe for instance. Single-left click the UCLAMiniscopeV4 node. Change the value of the EWL field located in the Properties window by left clicking the field’s drop-down menu and selecting another option. Confirm that the surface shown in the Image node visualizer is moved in and out of focus as the value of the EWL field is adjusted. If the surface is not entering the focus, try readjusting the distance of the miniscope from the surface and performing the test again. If the focus field of the optical system is not adjusted, try reassembling the EWL module and repeating this step.</p></li>
-<li><p>Great! Your UCLA Miniscope v4 is fully functional. Silly hopefully not too cheesy way to end this guide</p></li>
 </ol>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id5" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id3">1</a>,<a role="doc-backlink" href="#id4">2</a>)</span>
+<p>Start a workflow by single left-clicking the <em>Start</em> button at the top of the Bonsai workflow editor or pressing <code class="docutils literal notranslate"><span class="pre">F5</span></code> while the Bonsai workflow editor is the active window.</p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -565,20 +599,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="onix-quick.html"
+       href="index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">ONIX &amp; UCLA Miniscope v4</p>
+        <p class="prev-next-title">Quick Start Guide</p>
       </div>
     </a>
     <a class="right-next"
-       href="../user/index.html"
+       href="../developer/index.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">User Guide</p>
+        <p class="prev-next-title">Developer Guide</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -599,8 +633,8 @@
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connect-hardware">Connect Hardware</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-install-and-configure-bonsai">Download, Install and Configure Bonsai</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interact-with-the-ucla-miniscope-v4-through-bonsai">Interact with the UCLA Miniscope v4 through Bonsai</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#download-install-and-configure-bonsai">Download, Install, and Configure Bonsai</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interact-with-the-ucla-miniscope-v4-through-bonsai">Interact with the UCLA Miniscope v4 Through Bonsai</a></li>
 </ul>
   </nav></div>
 

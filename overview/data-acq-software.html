@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Data Acquisition Software &#8212; Open Ephys Doc Template</title>
+    <title>Data Acquisition Software &#8212; Open Ephys Documentation</title>
   
   
   
@@ -29,6 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=01d2cfef" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,6 +40,7 @@
     <script src="../_static/documentation_options.js?v=5c79bd3c"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/copyURLToClipboard.js?v=54989998"></script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'overview/data-acq-software';</script>
@@ -122,8 +124,8 @@
     
     
     
-    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
-    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
+    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -154,13 +156,6 @@
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../ucla-miniscope-v4/index.html">
                         UCLA Miniscope V4
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
                       </a>
                     </li>
                 
@@ -205,7 +200,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -298,13 +293,6 @@
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
-                      </a>
-                    </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link nav-external" href="https://open-ephys.org">
                     Open Ephys
@@ -331,7 +319,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -370,7 +358,7 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="miniscopes.html">Miniscopes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="miniscopes.html">Miniscopes Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-acq-hardware.html">Data Acquisition Hardware</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Acquisition Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="accessories.html">Accessories</a></li>
@@ -433,17 +421,24 @@
                   
   <section id="data-acquisition-software">
 <h1>Data Acquisition Software<a class="headerlink" href="#data-acquisition-software" title="Link to this heading">#</a></h1>
+<p>Compatible software for acquiring data with the miniscopes sold by Open Ephys includes:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#bonsai"><span class="std std-ref">Bonsai</span></a> - supported by Open Ephys</p></li>
+<li><p><a class="reference internal" href="#miniscope-daq-qt-software"><span class="std std-ref">Miniscope-DAQ-QT-Software</span></a> - formerly supported by the UCLA Miniscope developers</p></li>
+</ul>
 <section id="bonsai">
 <h2>Bonsai<a class="headerlink" href="#bonsai" title="Link to this heading">#</a></h2>
-<p>The software that Open Ephys supports for acquiring data with the UCLA Miniscope v4 is <a class="reference external" href="https://bonsai-rx.org/">Bonsai</a>. Bonsai is an open-source, highly extensible, reactive, visual programming language. Open Ephys provides Bonsai packages and example workflows (Bonsai scripts) for interacting with all of the hardware that it sells.</p>
+<a class="reference internal image-reference" href="../_images/bonsai-logo.png"><img alt="image of bonsai logo" class="align-center" src="../_images/bonsai-logo.png" style="width: 300px;" /></a>
+<p><a class="reference external" href="https://bonsai-rx.org/">Bonsai</a> is an open-source, highly extensible, reactive, visual programming language. Open Ephys provides Bonsai packages and example workflows (Bonsai scripts) for interacting with all of the hardware that it sells, including miniscopes. To acquire data with miniscopes using <em>Bonsai</em>, follow the <em>Quick Start Guide</em> or <em>User Guide</em> for your respective miniscope.</p>
 </section>
-<section id="miniscope-daq-qt-gui">
-<h2>Miniscope-DAQ-QT-GUI<a class="headerlink" href="#miniscope-daq-qt-gui" title="Link to this heading">#</a></h2>
-<p>The software that the UCLA Miniscope team developed for acquiring data with the UCLA Miniscope v4 is the Miniscope DAQ QT GUI. To learn how to use the software <a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-DAQ-QT-Software/wiki">Aharoni-Lab/Miniscope-DAQ-QT-Software</a></p>
+<section id="miniscope-daq-qt-software">
+<h2>Miniscope-DAQ-QT-Software<a class="headerlink" href="#miniscope-daq-qt-software" title="Link to this heading">#</a></h2>
+<a class="reference internal image-reference" href="../_images/miniscope-logo.png"><img alt="image of miniscope logo" class="align-center" src="../_images/miniscope-logo.png" style="width: 500px;" /></a>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The Miniscope DAQ QT GUI is not recommended. Its future is uncertain as the UCLA Miniscope team does not actively maintain it (as of writing this, the latest commit was two years ago), and there does not seem to be an active community maintainer either. Open Ephys has no intention of picking it up, as Bonsai is more easily extensible to customize for your specific experiment and a better user experience.</p>
+<p>Miniscope-DAQ-QT-Software is deprecated and not supported by Open Ephys</p>
 </div>
+<p>Miniscope-DAQ-QT-Software is the software that the UCLA Miniscope team developed for acquiring data with the UCLA Miniscope v4. Refer to <a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-DAQ-QT-Software/wiki">Aharoni-Lab/Miniscope-DAQ-QT-Software</a> to learn about it.</p>
 </section>
 </section>
 
@@ -492,7 +487,7 @@
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bonsai">Bonsai</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscope-daq-qt-gui">Miniscope-DAQ-QT-GUI</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscope-daq-qt-software">Miniscope-DAQ-QT-Software</a></li>
 </ul>
   </nav></div>
 

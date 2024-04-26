@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Miniscopes &#8212; Open Ephys Doc Template</title>
+    <title>Miniscopes Comparison &#8212; Open Ephys Documentation</title>
   
   
   
@@ -29,6 +29,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=01d2cfef" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -39,6 +40,7 @@
     <script src="../_static/documentation_options.js?v=5c79bd3c"></script>
     <script src="../_static/doctools.js?v=888ff710"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/copyURLToClipboard.js?v=54989998"></script>
     <script src="../_static/design-tabs.js?v=36754332"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'overview/miniscopes';</script>
@@ -122,8 +124,8 @@
     
     
     
-    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Doc Template - Home"/>
-    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Doc Template - Home"/>`);</script>
+    <img src="../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -154,13 +156,6 @@
                     <li class="nav-item">
                       <a class="nav-link nav-internal" href="../ucla-miniscope-v4/index.html">
                         UCLA Miniscope V4
-                      </a>
-                    </li>
-                
-
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
                       </a>
                     </li>
                 
@@ -205,7 +200,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -298,13 +293,6 @@
                     </li>
                 
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../glossary.html">
-                        Glossary
-                      </a>
-                    </li>
-                
-
                 <li class="nav-item">
                   <a class="nav-link nav-external" href="https://open-ephys.org">
                     Open Ephys
@@ -331,7 +319,7 @@
           
           
           
-          <a href="https://github.com/open-ephys/doc-template" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -370,7 +358,7 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Miniscopes</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Miniscopes Comparison</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-acq-hardware.html">Data Acquisition Hardware</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-acq-software.html">Data Acquisition Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="accessories.html">Accessories</a></li>
@@ -414,7 +402,7 @@
     
     <li class="breadcrumb-item"><a href="index.html" class="nav-link">Miniscope Overview</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Miniscopes</li>
+    <li class="breadcrumb-item active" aria-current="page">Miniscopes...</li>
   </ul>
 </nav>
 </div>
@@ -431,23 +419,30 @@
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="miniscopes">
-<h1>Miniscopes<a class="headerlink" href="#miniscopes" title="Link to this heading">#</a></h1>
-<p>To understand broadly what a miniscope is, refer to the <a class="reference internal" href="index.html#what-is-a-miniscope"><span class="std std-ref">What Is a Miniscope?</span></a></p>
+  <section id="miniscopes-comparison">
+<h1>Miniscopes Comparison<a class="headerlink" href="#miniscopes-comparison" title="Link to this heading">#</a></h1>
 <p>Open Ephys sells the following miniscopes:</p>
-<div class="admonition-todo admonition" id="id1">
-<p class="admonition-title">Todo</p>
-<p>replace with image of ONIX 2.0 once that exists</p>
+<ul class="simple">
+<li><p>Wireless UCLA Miniscope v3 kit (<a class="reference external" href="https://open-ephys.org/miniscope-v3-wirefree?rq=miniscope">store</a>)</p></li>
+<li><p>UCLA Miniscope v4 kit or assembled (<a class="reference external" href="https://open-ephys.org/miniscope-v4">store</a>, <a class="reference internal" href="data-acq-hardware.html"><span class="doc">documentation</span></a>, <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4">github</a>)</p></li>
+</ul>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-align-major-center docutils">
+<p><strong>UCLA Miniscope v3 Wireless</strong> (obsoleted)</p>
+<img alt="image of Wireless UCLA Miniscope v3 rendering" class="align-center" src="../_images/uclaminiscopev3-cad.webp" />
+</div>
+<div class="sd-col sd-d-flex-column sd-align-major-center docutils">
+<p><strong>UCLA Miniscope v4</strong></p>
+<img alt="image of UCLA Miniscope v4 redering" class="align-center" src="../_images/uclaminiscopev4-cad.webp" />
+</div>
+</div>
 </div>
 <section id="comparison-chart">
 <h2>Comparison Chart<a class="headerlink" href="#comparison-chart" title="Link to this heading">#</a></h2>
 <p>The specifications of the miniscopes sold by Open Ephys (e.g. resolution, field-of-view, SNR, focusing capability, mode of data transmission, etc.) differ meaningfully. This chart serves to compare those miniscopes.</p>
-<div class="admonition-todo admonition" id="id2">
-<p class="admonition-title">Todo</p>
-<p>Verify information on this chart. Put checks and x’s instead of yes and no. put images of each miniscope</p>
-</div>
-<table class="table" id="id3">
-<caption><span class="caption-text">Miniscope Comparison Chart</span><a class="headerlink" href="#id3" title="Link to this table">#</a></caption>
+<table class="table" id="id2">
+<caption><span class="caption-text">Miniscope Comparison Chart</span><a class="headerlink" href="#id2" title="Link to this table">#</a></caption>
 <thead>
 <tr class="row-odd"><th class="head"></th>
 <th class="head"><p>UCLA Miniscope v3 Wireless</p></th>
@@ -455,61 +450,64 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>Mass (g)</p></td>
+<tr class="row-even"><td><p>Part Status</p></td>
+<td><p>Active</p></td>
+<td><p>Obsolete</p></td>
+</tr>
+<tr class="row-odd"><td><p>Mass (g)</p></td>
 <td><p>4.5</p></td>
 <td><p>&lt;3</p></td>
 </tr>
-<tr class="row-odd"><td><p>Dimensions (mm)</p></td>
-<td></td>
+<tr class="row-even"><td><p>Dimensions (mm)</p></td>
+<td><p>–</p></td>
 <td><p>14.5W 18L 22.5H</p></td>
 </tr>
-<tr class="row-even"><td><p>Nominal Working Distance (µm)</p></td>
+<tr class="row-odd"><td><p>Nominal Working Distance (µm)</p></td>
 <td><p>50 - 200</p></td>
 <td><p>675 (this can be adjusted by swapping lenses)</p></td>
 </tr>
-<tr class="row-odd"><td><p>Focusing Capability</p></td>
+<tr class="row-even"><td><p>Focusing Capability</p></td>
 <td><p>Manual mechanical slide</p></td>
 <td><p>±200um ETL/EWL focal adjustment</p></td>
 </tr>
-<tr class="row-even"><td><p>Field-of-View</p></td>
+<tr class="row-odd"><td><p>Field-of-View</p></td>
 <td><p>450µm × 700µm</p></td>
 <td><p>1mm diameter (this can be adjusted by swapping lenses)</p></td>
 </tr>
-<tr class="row-odd"><td><p>Resolution (pixels)</p></td>
+<tr class="row-even"><td><p>Resolution (pixels)</p></td>
 <td><p>480 × 752</p></td>
-<td><p>608 × 808</p></td>
+<td><p>608 × 608</p></td>
 </tr>
-<tr class="row-even"><td><p>FPS</p></td>
+<tr class="row-odd"><td><p>FPS</p></td>
 <td><p>60</p></td>
 <td><p>10, 15, 20, 25, 30</p></td>
 </tr>
-<tr class="row-odd"><td><p>Data Acquisition Hardware Compatibility</p></td>
+<tr class="row-even"><td><p>Data Acquisition Hardware Compatibility</p></td>
 <td><p>On-board logger</p></td>
-<td><p>ONIX or Miniscope DAQ</p></td>
+<td><p>Miniscope-DAQ or MiniCAM</p></td>
 </tr>
-<tr class="row-even"><td><p>Wire</p></td>
+<tr class="row-odd"><td><p>Wire</p></td>
 <td><p>None</p></td>
 <td><p>Compatible with lightweight 0.3mm coaxial cable for power and data</p></td>
 </tr>
-<tr class="row-odd"><td><p>Excitation Efficiency Ranking (lower is better)</p></td>
+<tr class="row-even"><td><p>Excitation Efficiency Ranking (lower is better)</p></td>
 <td><p>2</p></td>
 <td><p>1</p></td>
 </tr>
-<tr class="row-even"><td><p>Orientation Sensing</p></td>
+<tr class="row-odd"><td><p>Orientation Sensing</p></td>
 <td><p>No</p></td>
 <td><p>Yes</p></td>
 </tr>
-<tr class="row-odd"><td><p>Position Sensing</p></td>
+<tr class="row-even"><td><p>Position Sensing</p></td>
 <td><p>No</p></td>
 <td><p>No</p></td>
 </tr>
-<tr class="row-even"><td><p>Price as sold by Open Ephys</p></td>
+<tr class="row-odd"><td><p>Price as sold by Open Ephys</p></td>
 <td><p>€540 (wireless conversion kit)</p></td>
 <td><p>€1,985 (fully assembled + 1x cable + 2x baseplates)</p></td>
 </tr>
 </tbody>
 </table>
-<p>To learn more about the difference between UCLA Miniscope v3 and UCLA Miniscope v4, refer to the relevant parts of the 2021 Miniscope Workshop video <a class="reference external" href="https://www.youtube.com/watch?v=bHA08xrshHo&amp;t=1081s">Imaging principles &amp; Miniscope design</a>.</p>
 </section>
 </section>
 

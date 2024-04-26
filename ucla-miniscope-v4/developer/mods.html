@@ -1,0 +1,866 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" data-theme="light">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Modifications &#8212; Open Ephys Documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=01d2cfef" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="../../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script src="../../_static/documentation_options.js?v=5c79bd3c"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/copyURLToClipboard.js?v=54989998"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'ucla-miniscope-v4/developer/mods';</script>
+    <link rel="icon" href="../../_static/favicon.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="FAQ &amp; Additional Resources" href="../faq-troubleshoot-resources/index.html" />
+    <link rel="prev" title="Developer Guide" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="light">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+    
+    <img src="../../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="../../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../overview/index.html">
+                        Miniscope Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        UCLA Miniscope V4
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://open-ephys.org">
+                    Open Ephys
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item">
+<nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../overview/index.html">
+                        Miniscope Overview
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="../index.html">
+                        UCLA Miniscope V4
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://open-ephys.org">
+                    Open Ephys
+                  </a>
+                </li>
+                
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/open-ephys/miniscope-docs" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/openephys" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Twitter</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://discord.gg/WXAx2URNQU" title="Discord" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fab fa-discord fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">Discord</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../quick-start/index.html">Quick Start Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quick-start/miniscope-daq-quick.html">Miniscope-DAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Developer Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Modifications</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot-resources/faq.html">FAQ</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">UCLA Miniscope V4</a></li>
+    
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Developer Guide</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Modifications</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="modifications">
+<h1>Modifications<a class="headerlink" href="#modifications" title="Link to this heading">#</a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Performing any of these modifications voids any active Open Ephys warranty for this product.</p>
+</div>
+<p>The user can perform the following modifications to adapt the UCLA miniscope v4 to their respective experiment:</p>
+<ul class="simple">
+<li><p>An <a class="reference internal" href="#objective-lens-modification"><span class="std std-ref">Objective Lens Modification</span></a> to adjust magnification/field-of-view, working distance, spatial resolution, and effective NA (emission light collection efficiency).</p></li>
+<li><p>A <a class="reference internal" href="#spectral-modification"><span class="std std-ref">Spectral Modification</span></a> to image a fluorophore that is excited by and/or emits bands of light that are not compatible with the UCLA Miniscope v4’s standard LED/dichroic mirror/filters configuration.</p></li>
+</ul>
+<section id="objective-lens-modification">
+<h2>Objective Lens Modification<a class="headerlink" href="#objective-lens-modification" title="Link to this heading">#</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Performing this modification requires realigning the ETL rings between the objective module and the emission module. This step can be tricky - refer to the assembly guide before attempting.</p>
+</div>
+<p>Credit for all the measurements and images on this page go to the UCLA Miniscope team. <a class="footnote-reference brackets" href="#id7" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
+<p>The UCLA Miniscope v4’s working distance (WD), Field-of-View (FoV), spatial resolution, and numerical aperture (NA) can be adjusted by reconfiguring on the combination of lenses used when assembling the Miniscope.</p>
+<p>An approximate <span class="math notranslate nohighlight">\(NA\)</span> is calculated as <span class="math notranslate nohighlight">\(sin(arctan(D/(2*WD)))\)</span> where <span class="math notranslate nohighlight">\(D=2.7mm\)</span> for all of these lenses (for example, refer to the <em>Clear Aperture</em> field for <a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-089</a>).</p>
+<p>The lens configurations are summarized in the table below:</p>
+<figure class="align-center" id="id8">
+<a class="reference internal image-reference" href="../../_images/tube-lens-objective-lens-schematic.webp"><img alt="image from https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/img/Lens_Cross_Section.PNG" src="../../_images/tube-lens-objective-lens-schematic.webp" style="width: 235.5px; height: 355.5px;" /></a>
+<figcaption>
+<p><span class="caption-text">Cross-sectional schematic of tube lens/objective optical assembly <a class="footnote-reference brackets" href="#id7" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<table class="table" id="id9">
+<caption><span class="caption-text">Optical Properties for Three Optical Configurations</span><a class="headerlink" href="#id9" title="Link to this table">#</a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Lens Configuration</p></th>
+<th class="head"><p>FoV (mm)</p></th>
+<th class="head"><p>WD (µm)</p></th>
+<th class="head"><p>NA</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#lens-configuration-1"><span class="std std-ref">1</span></a></p></td>
+<td><p>1.0 × 1.0</p></td>
+<td><p>675 ± 250</p></td>
+<td><p>0.89</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#lens-configuration-2"><span class="std std-ref">2</span></a></p></td>
+<td><p>1.1 × 1.2</p></td>
+<td><p>975 ± 340</p></td>
+<td><p>0.81</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#lens-configuration-3"><span class="std std-ref">3</span></a></p></td>
+<td><p>1.3 × 1.4</p></td>
+<td><p>2010 ± 400</p></td>
+<td><p>0.56</p></td>
+</tr>
+</tbody>
+</table>
+<section id="lens-configuration-1">
+<h3>Lens Configuration 1<a class="headerlink" href="#lens-configuration-1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>FoV:</strong> 1 × 1mm</p></li>
+<li><p><strong>WD:</strong> 675 ± 250µm</p></li>
+<li><p><strong>NA:</strong> 0.89</p></li>
+</ul>
+<figure class="align-center" id="id10">
+<a class="reference internal image-reference" href="../../_images/usaf-lens-config-1.webp"><img alt="image of USAF target taken with lens config 1" src="../../_images/usaf-lens-config-1.webp" style="width: 304.0px; height: 304.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Image of USAF target taken with lens configuration 1 <a class="footnote-reference brackets" href="#id7" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id10" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>This is the standard UCLA Minsicope v4 lens configuration. It balances spatial resolution, FoV, WD, and NA. It is capable of deep imaging through a relay GRIN lenses and shallow imaging through a thin cranial windows.</p>
+<table class="table" id="id11">
+<caption><span class="caption-text">Lens Configuration 1 Optics</span><a class="headerlink" href="#id11" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 5.0%" />
+<col style="width: 15.0%" />
+<col style="width: 10.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Lens Number</p></th>
+<th class="head"><p>Vendor</p></th>
+<th class="head"><p>Part Number</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Edmund Optics</p></td>
+<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-089</a></p></td>
+<td><p>3mm diameter, 6mm FL achromat used in the objective module</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Edmund Optics</p></td>
+<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-089</a></p></td>
+<td><p>3mm diameter, 6mm FL achromat used in the objective module</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Edmund Optics</p></td>
+<td><p><a class="reference external" href="https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/">63-691</a></p></td>
+<td><p>4mm diameter, 10mm FL achromat used in the emission module</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lens-configuration-2">
+<h3>Lens Configuration 2<a class="headerlink" href="#lens-configuration-2" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>FoV:</strong>  1.1 × 1.2mm</p></li>
+<li><p><strong>WD:</strong> 975 ± 340µm</p></li>
+<li><p><strong>NA:</strong> 0.81</p></li>
+</ul>
+<figure class="align-center" id="id12">
+<a class="reference internal image-reference" href="../../_images/usaf-lens-config-2.webp"><img alt="image of USAF target taken with lens config 2" src="../../_images/usaf-lens-config-2.webp" style="width: 304.0px; height: 304.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Image of USAF target taken with lens configuration 2 <a class="footnote-reference brackets" href="#id7" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id12" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Compared to lens configuration 1, lens configuration 2 extends WD which can facilitate imaging through a thicker cranial window and increases FoV which can potentially image more cells. The trade-off is a reduction in spatial resolution and NA.</p>
+<table class="table" id="id13">
+<caption><span class="caption-text">Lens Configuration 2 Optics</span><a class="headerlink" href="#id13" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 5.0%" />
+<col style="width: 15.0%" />
+<col style="width: 10.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Lens Number</p></th>
+<th class="head"><p>Vendor</p></th>
+<th class="head"><p>Part Number</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Edmund Optics</p></td>
+<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-090</a></p></td>
+<td><p>3mm diameter, 9mm FL achromat used in the objective module</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Edmund Optics</p></td>
+<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-089</a></p></td>
+<td><p>3mm diameter, 6mm FL achromat used in the objective module</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Edmund Optics</p></td>
+<td><p><a class="reference external" href="https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/">63-691</a></p></td>
+<td><p>4mm diameter, 10mm FL achromat used in the emission module</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lens-configuration-3">
+<h3>Lens Configuration 3<a class="headerlink" href="#lens-configuration-3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>FoV:</strong> 1.3 × 1.4mm</p></li>
+<li><p><strong>WD:</strong> 2010 ± 400µm</p></li>
+<li><p><strong>NA:</strong> 0.56</p></li>
+</ul>
+<figure class="align-center" id="id14">
+<a class="reference internal image-reference" href="../../_images/usaf-lens-config-3.webp"><img alt="image of USAF target taken with lens config 3" src="../../_images/usaf-lens-config-3.webp" style="width: 304.0px; height: 304.0px;" /></a>
+<figcaption>
+<p><span class="caption-text">Image of USAF target taken with lens configuration 3 <a class="footnote-reference brackets" href="#id7" id="id6" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></span><a class="headerlink" href="#id14" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Compared to lens configuration 2, lens configuration 3 extends WD which facilitates imaging through a thicker cranial window and increases FoV which can potentially image more cells. The trade-off is a reduction in spatial resolution and NA.</p>
+<table class="table" id="id15">
+<caption><span class="caption-text">Lens Configuration 3 Optics</span><a class="headerlink" href="#id15" title="Link to this table">#</a></caption>
+<colgroup>
+<col style="width: 5.0%" />
+<col style="width: 15.0%" />
+<col style="width: 10.0%" />
+<col style="width: 70.0%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Lens Number</p></th>
+<th class="head"><p>Vendor</p></th>
+<th class="head"><p>Part Number</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Edmund Optics</p></td>
+<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-090</a></p></td>
+<td><p>3mm diameter, 9mm FL achromat used in the objective module</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Edmund Optics</p></td>
+<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-090</a></p></td>
+<td><p>3mm diameter, 9mm FL achromat used in the objective module</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Edmund Optics</p></td>
+<td><p><a class="reference external" href="https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/">63-691</a></p></td>
+<td><p>4mm diameter, 10mm FL achromat used in the emission module</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="how-to-modify-objective-lens">
+<h3>How To Modify Objective Lens<a class="headerlink" href="#how-to-modify-objective-lens" title="Link to this heading">#</a></h3>
+<p>For all three lens configurations, the differences are contained within the objective module. It is easier and recommended having multiple objective modules each with its own lens configuration than trying to remove one set of lenses and reinserting a different set of lenses into the same objective module. The latter option increases the risk of damaging the lenses and ending up with a broken objective module.</p>
+<ol class="arabic simple">
+<li><p>Procure the lenses you desire to use and an empty objective module</p></li>
+<li><p>Follow the steps outlined in the Objective Module section (coming soon) of the <em>Assembly Guide</em> (coming soon) using the lenses you desire instead of the default ones</p></li>
+</ol>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id7" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
+<span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id2">2</a>,<a role="doc-backlink" href="#id4">3</a>,<a role="doc-backlink" href="#id5">4</a>,<a role="doc-backlink" href="#id6">5</a>)</span>
+<p><a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Lens-Configurations">Aharoni-Lab/Miniscope-v4</a></p>
+</aside>
+</aside>
+</section>
+</section>
+<section id="spectral-modification">
+<h2>Spectral Modification<a class="headerlink" href="#spectral-modification" title="Link to this heading">#</a></h2>
+<p>The UCLA Miniscope v4 as sold by Open Ephys is compatible with green indicators e.g. GCaMP6f (<a class="reference internal" href="#standard"><span class="std std-ref">Standard</span></a>) or red indicators e.g. jRGECO1a (<a class="reference internal" href="#lime"><span class="std std-ref">Lime</span></a>), though it can also be modified for <a class="reference internal" href="#other"><span class="std std-ref">other</span></a> fluorophores as well.</p>
+<section id="standard">
+<h3>Standard<a class="headerlink" href="#standard" title="Link to this heading">#</a></h3>
+<p>470nm (blue) LED excitation light source (<a class="reference external" href="https://lumileds.com/wp-content/uploads/files/DS105.pdf">LXZ1-PB01</a>) to image a green indicator e.g. <a class="reference external" href="https://www.fpbase.org/protein/gcamp6f/">GCaMP6f</a>:</p>
+<figure class="align-default">
+<img alt="plot of emission/excitation spectra of GCaMP6f" src="../../_images/gcamp6f.svg" /></figure>
+<ul class="simple">
+<li><p>1 <a class="reference external" href="https://www.chroma.com/products/parts/et470-40x">ET470/40x</a> (4x4x1 mm) excitation filter</p></li>
+<li><p>1 <a class="reference external" href="https://www.chroma.com/products/parts/et525-50m">ET525/50m</a> (4x4x1 mm) emission filter</p></li>
+<li><p>1 <a class="reference external" href="https://www.chroma.com/products/parts/t495lpxr">T495lpxr</a> (4x6x1 mm) dichroic mirror</p></li>
+</ul>
+<figure class="align-default" id="id16">
+<img alt="plot of standard emission/excitation filters and dichroic mirror transmission spectra" src="../../_images/spectraviewer-standard-config.webp" />
+<figcaption>
+<p><span class="caption-text"><a class="reference external" href="https://www.chroma.com/spectra-viewer?parts=25332,26210,25281">All three transmission spectra on a single plot</a>.</span><a class="headerlink" href="#id16" title="Link to this image">#</a></p>
+<div class="legend">
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>Filter</strong></p></td>
+<td><p>ET470/40x</p></td>
+<td><p>ET525/50m</p></td>
+<td><p>T495lpxr</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Color</strong></p></td>
+<td><p>Blue</p></td>
+<td><p>Red</p></td>
+<td><p>Black</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figcaption>
+</figure>
+<p>The standard UCLA Miniscope v4 is sold by Open Ephys in DIY kits and already assembled with LED (already soldered), filters, and dichroic mirror included.</p>
+</section>
+<section id="lime">
+<h3>Lime<a class="headerlink" href="#lime" title="Link to this heading">#</a></h3>
+<p>560nm (yellow-green) LED excitation light source (<a class="reference external" href="https://lumileds.com/wp-content/uploads/files/DS105.pdf">LXZ1-PX01</a>) to image a red indicator e.g. <a class="reference external" href="https://www.fpbase.org/protein/jrgeco1a/">jRGECO1a</a>:</p>
+<figure class="align-default">
+<img alt="plot of emission/excitation spectra of jRGECO1a" src="../../_images/jrgeco1a.svg" /></figure>
+<ul class="simple">
+<li><p>1 <a class="reference external" href="https://www.chroma.com/products/parts/et560-40x">ET560/40x</a> (4x4x1 mm) excitation filter</p></li>
+<li><p>1 <a class="reference external" href="https://www.chroma.com/products/parts/et630-75m">ET630/75m</a> (4x4x1 mm) emission filter</p></li>
+<li><p>1 <a class="reference external" href="https://www.chroma.com/products/parts/t585lpxr">T585lpxr</a> (4x6x1 mm) dichroic mirror</p></li>
+</ul>
+<figure class="align-default" id="id17">
+<img alt="plot of lime emission/excitation filters and dichroic mirror transmission spectra" src="../../_images/spectraviewer-lime-config.webp" />
+<figcaption>
+<p><span class="caption-text"><a class="reference external" href="https://www.chroma.com/spectra-viewer?parts=25291,24194,25292">All three spectra on a single plot</a></span><a class="headerlink" href="#id17" title="Link to this image">#</a></p>
+<div class="legend">
+<table class="table">
+<tbody>
+<tr class="row-odd"><td><p><strong>Filter</strong></p></td>
+<td><p>ET560/40x</p></td>
+<td><p>ET630/75m</p></td>
+<td><p>T585lpxr</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Color</strong></p></td>
+<td><p>Blue</p></td>
+<td><p>Red</p></td>
+<td><p>Black</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</figcaption>
+</figure>
+<p>The lime UCLA Miniscope v4 is sold by Open Ephys in DIY kits with LED (already soldered) included. <strong>Filters and dichroic mirror are excluded and must be acquired separately.</strong></p>
+</section>
+<section id="other">
+<h3>Other<a class="headerlink" href="#other" title="Link to this heading">#</a></h3>
+<p>Is it also possible to adapt the UCLA Miniscope v4 to fluorophores with spectral characteristics that aren’t compatible with standard or lime configurations. Refer to <a class="reference external" href="https://www.chroma.com/">Chroma</a> (a <a class="reference external" href="https://www.chroma.com/company">worker coop</a> from which Open Ephys sources its filters) to look at your options for swapping out the filters and dichroic mirror. They produce and sell a variety of <a class="reference external" href="https://www.chroma.com/products/optical-filters">off-the-shelf filters/dichroic mirrors</a> and also assist in producing <a class="reference external" href="https://www.chroma.com/custom-oem-filter-design/">custom solutions</a> for your experiments. The process of choosing the best set of light source, filters, and dichroic is often an iterative balancing process that attempts to maximize emission light into the sensor, minimize excitation light into the sensor, and maximize excitation light into the sample. This maximizes SNR and minimizes heat dissipation from the LED/LED driver.</p>
+</section>
+<section id="how-to-modify-led-dichroic-filters">
+<h3>How To Modify LED/Dichroic/Filters<a class="headerlink" href="#how-to-modify-led-dichroic-filters" title="Link to this heading">#</a></h3>
+<p>To reconfigure the LED/Dichroic/Filters combination, follow the <em>Assembly Guide</em> (coming soon) instructions while substituting standard excitation/emission filters and dichroic mirror with the ones you’d like to use. It is easier and recommended to perform this modification starting with an unassembled UCLA Miniscope v4 than starting with an already-assembled UCLA Miniscope v4.</p>
+<p>Note that if you desire to use an LED that is not included in the lime or standard configurations, you must solder it yourself which requires additional materials and know-how during the assembly process.</p>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Developer Guide</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../faq-troubleshoot-resources/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">FAQ &amp; Additional Resources</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objective-lens-modification">Objective Lens Modification</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lens-configuration-1">Lens Configuration 1</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lens-configuration-2">Lens Configuration 2</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lens-configuration-3">Lens Configuration 3</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-modify-objective-lens">How To Modify Objective Lens</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#spectral-modification">Spectral Modification</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard">Standard</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lime">Lime</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other">Other</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-modify-led-dichroic-filters">How To Modify LED/Dichroic/Filters</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/open-ephys/miniscope-docs/edit/main/source/ucla-miniscope-v4/developer/mods.rst">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../../_sources/ucla-miniscope-v4/developer/mods.rst.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2010-2024, Open Ephys &amp; Contributors.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.14.4.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
