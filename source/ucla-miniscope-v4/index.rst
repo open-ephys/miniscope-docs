@@ -1,6 +1,5 @@
 :orphan:
 
-
 #################
 UCLA Miniscope V4
 #################
@@ -72,8 +71,7 @@ Software Features:
 .. toctree::
     :hidden:
 
-    quick-start/index
+    quick/index
+    user/index
     developer/index
     faq-troubleshoot-resources/index
-
-..    user/index

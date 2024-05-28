@@ -64,7 +64,7 @@ GREY and FFV1 are recommended for neural recordings.
 
 *   FFV1 performs lossless data compression. 
 
-MJPG or similar is fine for behavioral recordings.
+MJPG or similar is sufficient for behavioral recordings.
 
 ******************************************************
 What Cable Lengths Can Be Used With UCLA Miniscope v4?

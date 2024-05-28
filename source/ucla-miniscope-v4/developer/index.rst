@@ -106,6 +106,8 @@ Electrical Design
 
 ..  todo:: fix styles for drop down:format coming out dum
 
+..  todo::  firmware
+
 ..
     Electrical Overview
     ===================

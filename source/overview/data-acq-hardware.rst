@@ -3,7 +3,7 @@
 Data Acquisition Hardware
 #########################
 
-The :ref:`overview/data-acq-hardware:Miniscope-DAQ` is the most comon hardware for acquiring data from the UCLA Miniscope v4.
+The :ref:`overview/data-acq-hardware:Miniscope-DAQ` is the most common hardware for acquiring data from miniscopes derived from the UCLA Miniscope v4 and the v4 itself.
 
 .. note:: Wireless miniscopes with on-board loggers such as the UCLA Miniscope v3 Wireless do not require data-acqusition hardware.
 ..
@@ -23,7 +23,7 @@ Miniscope-DAQ
     :alt:   image of miniscope-daq
     :align: center
 
-The `Miniscope-DAQ <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__ is the data acquisition hardware developed by the UCLA Miniscope team for acquiring miniscope data. It accepts an external power supply for more power-intensive applications and plugs into a PC through a USB cable. It supports sync output, input trigger, and data acquisition from a single UCLA Miniscope v4 or a single MiniCAM. The Miniscope-DAQ is compatible with :ref:`overview/data-acq-software:Bonsai` and :ref:`overview/data-acq-software:Miniscope-DAQ-QT-Software`. To acquire miniscope or MiniCAM data with the Miniscope-DAQ, refer to the corresponding :doc:`/ucla-miniscope-v4/quick-start/miniscope-daq-quick` and *User Guide* (coming soon). To learn more about the Miniscope-DAQ, refer to the `UCLA Miniscope v4 Wiki <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__. 
+The `Miniscope-DAQ <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__ is the data acquisition hardware developed by the UCLA Miniscope team for acquiring miniscope data. It accepts an external power supply for more power-intensive applications and plugs into a PC through a USB cable. It supports sync output, input trigger, and data acquisition from a UCLA Miniscope v4 or a MiniCAM. The Miniscope-DAQ is compatible with :ref:`overview/data-acq-software:Bonsai` and :ref:`overview/data-acq-software:Miniscope-DAQ-QT-Software`. To acquire miniscope or MiniCAM data with the Miniscope-DAQ, refer to the corresponding :doc:`/ucla-miniscope-v4/quick/index` and *User Guide* (coming soon). To learn more about the Miniscope-DAQ, refer to the `UCLA Miniscope v4 Wiki <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__. 
 
 Miniscope-DAQ Variants
 ======================
@@ -37,7 +37,7 @@ MiniDAQ
 
 ..  todo:: remove background of and color-correct these photos, or take new photos
 
-The MiniDAQ is a simplified, more compact, and more affordable version of the Miniscope-DAQ. It plugs directly into a PC through its on-board USB cable. It supports data acquisition from a single UCLA Miniscope v4 or a single MiniCAM. Unlike the Miniscope-DAQ, the MiniDAQ does not accept an external supply or support sync output or input trigger functions. The MiniDAQ is compatible with :ref:`overview/data-acq-software:Bonsai` and :ref:`overview/data-acq-software:Miniscope-DAQ-QT-Software`. To acquire miniscope or MinicCAM data with the MiniCAM, refer to the corresponding :doc:`/ucla-miniscope-v4/quick-start/miniscope-daq-quick` and *User Guide* (coming soon).
+The MiniDAQ is a simplified, more compact, and more affordable version of the Miniscope-DAQ. It plugs directly into a PC through its on-board USB cable. It supports data acquisition from a single UCLA Miniscope v4 or a single MiniCAM. Unlike the Miniscope-DAQ, the MiniDAQ does not accept an external supply or support sync output or input trigger functions. The MiniDAQ is compatible with :ref:`overview/data-acq-software:Bonsai` and :ref:`overview/data-acq-software:Miniscope-DAQ-QT-Software`. To acquire miniscope or MinicCAM data with the MiniCAM, refer to the corresponding :doc:`/ucla-miniscope-v4/quick/index` and *User Guide* (coming soon).
 
 .. :doc:`/ucla-miniscope-v4/user/data-acq/index`
 

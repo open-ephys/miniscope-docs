@@ -20,7 +20,7 @@ Credit for all the measurements and images on this page go to the UCLA Miniscope
 
 The UCLA Miniscope v4's working distance (WD), Field-of-View (FoV), spatial resolution, and numerical aperture (NA) can be adjusted by reconfiguring on the combination of lenses used when assembling the Miniscope. 
 
-An approximate :math:`NA` is calculated as :math:`sin(arctan(D/(2*WD)))` where :math:`D=2.7mm` for all of these lenses (for example, refer to the *Clear Aperture* field for `45-089 <https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/>`__).
+An approximate :math:`NA` is calculated as :math:`sin(arctan(D/(2*WD)))` where :math:`D=2.7mm` for all of these lenses (for example, refer to the *Clear Aperture* field for 45-089).
 
 The lens configurations are summarized in the table below:
 
@@ -74,6 +74,9 @@ Lens Configuration 1
 
 This is the standard UCLA Minsicope v4 lens configuration. It balances spatial resolution, FoV, WD, and NA. It is capable of deep imaging through a relay GRIN lenses and shallow imaging through a thin cranial windows.
 
+.. edmund links don't work?
+
+
 ..  list-table::    Lens Configuration 1 Optics
     :widths:        5 15 10 70
     :header-rows:   1
@@ -85,17 +88,17 @@ This is the standard UCLA Minsicope v4 lens configuration. It balances spatial r
 
     *   -   1
         -   Edmund Optics
-        -   `45-089 <https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/>`__
+        -   45-089
         -   3mm diameter, 6mm FL achromat used in the objective module
 
     *   -   2
         -   Edmund Optics
-        -   `45-089 <https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/>`__
+        -   45-089
         -   3mm diameter, 6mm FL achromat used in the objective module
 
     *   -   3
         -   Edmund Optics 
-        -   `63-691 <https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/>`__
+        -   63-691
         -   4mm diameter, 10mm FL achromat used in the emission module
 
 Lens Configuration 2
@@ -127,17 +130,17 @@ Compared to lens configuration 1, lens configuration 2 extends WD which can faci
 
     *   -   1
         -   Edmund Optics
-        -   `45-090 <https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/>`__
+        -   45-090
         -   3mm diameter, 9mm FL achromat used in the objective module
 
     *   -   2
         -   Edmund Optics
-        -   `45-089 <https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/>`__
+        -   45-089
         -   3mm diameter, 6mm FL achromat used in the objective module
 
     *   -   3
         -   Edmund Optics 
-        -   `63-691 <https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/>`__
+        -   63-691
         -   4mm diameter, 10mm FL achromat used in the emission module
 
 Lens Configuration 3
@@ -169,17 +172,17 @@ Compared to lens configuration 2, lens configuration 3 extends WD which facilita
 
     *   -   1
         -   Edmund Optics
-        -   `45-090 <https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/>`__
+        -   45-090
         -   3mm diameter, 9mm FL achromat used in the objective module
 
     *   -   2
         -   Edmund Optics
-        -   `45-090 <https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/>`__
+        -   45-090
         -   3mm diameter, 9mm FL achromat used in the objective module
 
     *   -   3
         -   Edmund Optics 
-        -   `63-691 <https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/>`__
+        -   63-691
         -   4mm diameter, 10mm FL achromat used in the emission module
 
 How To Modify Objective Lens
@@ -285,9 +288,9 @@ Is it also possible to adapt the UCLA Miniscope v4 to fluorophores with spectral
 
     *   When selecting a dichroic filter for your particular fluorophore, confirm its cut-off wavelength is between the exictation filter's upper cut-off wavelength and emission filter's lower cut-off wavelength. To comply with the UCLA Miniscope v4's optical layout, choose a high-pass dichroic filter.
 
-How To Modify LED/Dichroic/Filters
-==================================
+How To Modify Spectral Compatibility
+====================================
 
-To reconfigure the LED/Dichroic/Filters combination, follow the *Assembly Guide* (coming soon) instructions while substituting standard excitation/emission filters and dichroic mirror with the ones you'd like to use. It is easier and recommended to perform this modification starting with an unassembled UCLA Miniscope v4 than starting with an already-assembled UCLA Miniscope v4.
+To reconfigure the spectral compatibility (e.g. the LED/Dichroic/Filters combination), follow the *Assembly Guide* (coming soon) instructions while substituting standard excitation/emission filters and dichroic mirror with the ones you'd like to use. It is easier and recommended to perform this modification starting with an unassembled UCLA Miniscope v4 than starting with an already-assembled UCLA Miniscope v4.
 
 Note that if you desire to use an LED that is not included in the lime or standard configurations, you must solder it yourself which requires additional materials and know-how during the assembly process.
