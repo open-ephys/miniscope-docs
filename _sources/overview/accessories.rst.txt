@@ -1,7 +1,7 @@
 
-###########
-Accessories
-###########
+#####################
+Miniscope Accessories
+#####################
 
 Accessories frequently used with miniscopes include:
 

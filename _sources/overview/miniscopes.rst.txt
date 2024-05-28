@@ -1,3 +1,4 @@
+:orphan:
 
 #####################
 Miniscopes Comparison 
@@ -41,8 +42,8 @@ The specifications of the miniscopes sold by Open Ephys (e.g. resolution, field-
         -   UCLA Miniscope v4
 
     *   -   Part Status
+        -   Deprecated
         -   Active
-        -   Obsolete
 
     *   -   Mass (g)
         -   4.5

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="240"
+   height="80"
+   id="SvgGdi_output"
+   version="1.1"
+   sodipodi:docname="uclaminiscopev4-miniscopedaq-trigger_trigger-condition.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview28407"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="5.6198248"
+     inkscape:cx="-4.181625"
+     inkscape:cy="33.275059"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="SvgGdi_output" />
+  <rect
+     id="background"
+     height="100%"
+     style="fill:#ffffff"
+     width="100%"
+     y="0"
+     x="0" />
+  <g
+     style="shape-rendering:auto"
+     id="root_group">
+    <line
+       y1="19"
+       style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+       id="121"
+       x2="160"
+       y2="19"
+       x1="118" />
+    <line
+       y1="19"
+       style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+       id="122"
+       x2="80"
+       y2="19"
+       x1="38" />
+    <path
+       style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+       transform="translate(164,4)"
+       id="123"
+       d="M 10.158,33.2 C 3.4054,31.7591 -1.861,26.4692 -3.271,19.71" />
+    <circle
+       id="124"
+       cy="15"
+       cx="15"
+       transform="translate(164,4)"
+       style="opacity:1;fill:#9b5bb3;stroke:none"
+       r="15" />
+    <circle
+       id="125"
+       cy="9.0600004"
+       cx="15.01"
+       transform="translate(164,4)"
+       style="opacity:1;fill:#ffffff;stroke:none"
+       r="3.5" />
+    <circle
+       id="126"
+       cy="18.49"
+       cx="9.1199999"
+       transform="translate(164,4)"
+       style="opacity:1;fill:#ffffff;stroke:none"
+       r="3.5" />
+    <circle
+       id="127"
+       cy="18.459999"
+       cx="20.879999"
+       transform="translate(164,4)"
+       style="opacity:1;fill:#ffffff;stroke:none"
+       r="3.5" />
+    <text
+       id="128"
+       x="164"
+       y="39"
+       style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
+       clip-path="url(#130_text_clipper)"><tspan
+         dy="8.25pt"
+         id="132">Workflow</tspan></text>
+    <text
+       id="134"
+       x="164"
+       y="51.450001"
+       style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
+       clip-path="url(#136_text_clipper)"><tspan
+         dy="8.25pt"
+         id="138">Output</tspan></text>
+    <circle
+       id="140"
+       cy="15"
+       cx="15"
+       transform="translate(84,4)"
+       style="opacity:1;fill:#449adf;stroke:none"
+       r="15" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:none"
+       transform="translate(84,4)"
+       id="141"
+       d="M 19.156,13.888 V 10.3647 6.841399 l 6.1025,3.523301 -3.0513,1.7617 z" />
+    <path
+       style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:none"
+       transform="translate(84,4)"
+       id="142"
+       d="m 19.156,22.97 v -3.5233 -3.5233 l 6.1025,3.5233 -3.0513,1.7617 z" />
+    <path
+       transform="translate(84,4)"
+       id="143"
+       style="opacity:1;fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+       d="m 5.5001,19.484 h 5.1492 l 5.625,-9.2355 h 3.0985 m -4.6959,6.8996 1.632,2.3347 h 2.9113 M 5.500199,10.2437 H 10.7586 l 1.4066,2.627" />
+    <text
+       id="144"
+       x="84"
+       y="39"
+       style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
+       clip-path="url(#146_text_clipper)"><tspan
+         dy="8.25pt"
+         id="148">Trigger</tspan></text>
+    <path
+       style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+       transform="translate(4,4)"
+       id="150"
+       d="m 31.179,5.2 c 3.8195,5.8918 3.8024,13.482 -0.04348,19.357" />
+    <circle
+       id="151"
+       cy="15"
+       cx="15"
+       transform="translate(4,4)"
+       style="opacity:1;fill:#5bb27e;stroke:none"
+       r="15" />
+    <circle
+       id="152"
+       cy="9.0600004"
+       cx="15.01"
+       transform="translate(4,4)"
+       style="opacity:1;fill:#ffffff;stroke:none"
+       r="3.5" />
+    <circle
+       id="153"
+       cy="18.49"
+       cx="9.1199999"
+       transform="translate(4,4)"
+       style="opacity:1;fill:#ffffff;stroke:none"
+       r="3.5" />
+    <circle
+       id="154"
+       cy="18.459999"
+       cx="20.879999"
+       transform="translate(4,4)"
+       style="opacity:1;fill:#ffffff;stroke:none"
+       r="3.5" />
+    <text
+       id="155"
+       x="4"
+       y="39"
+       style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
+       clip-path="url(#157_text_clipper)"><tspan
+         dy="8.25pt"
+         id="159">Source1</tspan></text>
+  </g>
+  <defs
+     id="clips_hatches_and_gradients">
+    <clipPath
+       id="130_text_clipper">
+      <rect
+         x="164"
+         y="39"
+         width="50.310001"
+         height="27.65"
+         id="131" />
+    </clipPath>
+    <clipPath
+       id="136_text_clipper">
+      <rect
+         x="164"
+         y="51.450001"
+         width="50.310001"
+         height="27.65"
+         id="137" />
+    </clipPath>
+    <clipPath
+       id="146_text_clipper">
+      <rect
+         x="84"
+         y="39"
+         width="39.619999"
+         height="13.83"
+         id="147" />
+    </clipPath>
+    <clipPath
+       id="157_text_clipper">
+      <rect
+         x="4"
+         y="39"
+         width="45.860001"
+         height="13.83"
+         id="158" />
+    </clipPath>
+  </defs>
+  <rect
+     style="fill:none;stroke:#ff0000;stroke-width:1.00157;stroke-miterlimit:10;stroke-dasharray:none"
+     id="rect28483"
+     width="240"
+     height="79"
+     x="0.5"
+     y="0.49999997" />
+</svg>

@@ -29,8 +29,8 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=01d2cfef" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=33cb8a6e" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
@@ -126,8 +126,8 @@
     
     
     
-    <img src="../../_static/oe_logo_name.svg" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
-    <script>document.write(`<img src="../../_static/oe_logo_name.svg" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
+    <img src="../../_static/miniscope-logo.png" class="logo__image only-light" alt="Open Ephys Documentation - Home"/>
+    <script>document.write(`<img src="../../_static/miniscope-logo.png" class="logo__image only-dark" alt="Open Ephys Documentation - Home"/>`);</script>
   
   
 </a></div>
@@ -360,15 +360,45 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../quick-start/index.html">Quick Start Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../quick-start/miniscope-daq-quick.html">Miniscope-DAQ</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../quick/index.html">Quick Start Guide</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../quick/hardware.html">Hardware Connections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quick/software.html">Bonsai Installation and Configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../quick/tutorial.html">Interact with the UCLA Miniscope v4 Through Bonsai</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Developer Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../user/index.html">User Guide</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../user/preparation/index.html">Planning Ahead</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../user/miniscope-daq/index.html">Miniscope-DAQ Data Acquisition</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../user/miniscope-daq/save-data/index.html">Save Data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/save-data/hardware.html">Hardware Connections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/save-data/software.html">Bonsai Installation and Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/save-data/tutorial.html">Workflow Tutorial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/save-data/description.html">Workflow Description</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../user/miniscope-daq/trigger/index.html">Trigger</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/trigger/hardware.html">Hardware Connections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/trigger/software.html">Bonsai Installation and Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/trigger/tutorial.html">Workflow Tutorial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/trigger/description.html">Workflow Descrption</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../user/miniscope-daq/commutate/index.html">Commutate</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/commutate/hardware.html">Hardware Connections</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/commutate/software.html">Bonsai Installation and Configuration</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/commutate/tutorial.html">Workflow Tutorial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../user/miniscope-daq/commutate/description.html">Workflow Description</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Developer Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Modifications</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot-resources/faq.html">FAQ</a></li>
 </ul>
 </li>
@@ -451,7 +481,7 @@
 </div>
 <p>Credit for all the measurements and images on this page go to the UCLA Miniscope team. <a class="footnote-reference brackets" href="#id7" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p>
 <p>The UCLA Miniscope v4’s working distance (WD), Field-of-View (FoV), spatial resolution, and numerical aperture (NA) can be adjusted by reconfiguring on the combination of lenses used when assembling the Miniscope.</p>
-<p>An approximate <span class="math notranslate nohighlight">\(NA\)</span> is calculated as <span class="math notranslate nohighlight">\(sin(arctan(D/(2*WD)))\)</span> where <span class="math notranslate nohighlight">\(D=2.7mm\)</span> for all of these lenses (for example, refer to the <em>Clear Aperture</em> field for <a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-089</a>).</p>
+<p>An approximate <span class="math notranslate nohighlight">\(NA\)</span> is calculated as <span class="math notranslate nohighlight">\(sin(arctan(D/(2*WD)))\)</span> where <span class="math notranslate nohighlight">\(D=2.7mm\)</span> for all of these lenses (for example, refer to the <em>Clear Aperture</em> field for 45-089).</p>
 <p>The lens configurations are summarized in the table below:</p>
 <figure class="align-center" id="id8">
 <a class="reference internal image-reference" href="../../_images/tube-lens-objective-lens-schematic.webp"><img alt="image from https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/img/Lens_Cross_Section.PNG" src="../../_images/tube-lens-objective-lens-schematic.webp" style="width: 235.5px; height: 355.5px;" /></a>
@@ -518,17 +548,17 @@
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>Edmund Optics</p></td>
-<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-089</a></p></td>
+<td><p>45-089</p></td>
 <td><p>3mm diameter, 6mm FL achromat used in the objective module</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
 <td><p>Edmund Optics</p></td>
-<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-089</a></p></td>
+<td><p>45-089</p></td>
 <td><p>3mm diameter, 6mm FL achromat used in the objective module</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
 <td><p>Edmund Optics</p></td>
-<td><p><a class="reference external" href="https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/">63-691</a></p></td>
+<td><p>63-691</p></td>
 <td><p>4mm diameter, 10mm FL achromat used in the emission module</p></td>
 </tr>
 </tbody>
@@ -566,17 +596,17 @@
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>Edmund Optics</p></td>
-<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-090</a></p></td>
+<td><p>45-090</p></td>
 <td><p>3mm diameter, 9mm FL achromat used in the objective module</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
 <td><p>Edmund Optics</p></td>
-<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-089</a></p></td>
+<td><p>45-089</p></td>
 <td><p>3mm diameter, 6mm FL achromat used in the objective module</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
 <td><p>Edmund Optics</p></td>
-<td><p><a class="reference external" href="https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/">63-691</a></p></td>
+<td><p>63-691</p></td>
 <td><p>4mm diameter, 10mm FL achromat used in the emission module</p></td>
 </tr>
 </tbody>
@@ -614,17 +644,17 @@
 <tbody>
 <tr class="row-even"><td><p>1</p></td>
 <td><p>Edmund Optics</p></td>
-<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-090</a></p></td>
+<td><p>45-090</p></td>
 <td><p>3mm diameter, 9mm FL achromat used in the objective module</p></td>
 </tr>
 <tr class="row-odd"><td><p>2</p></td>
 <td><p>Edmund Optics</p></td>
-<td><p><a class="reference external" href="https://www.edmundoptics.com/p/3mm-dia-x-6mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/5580/">45-090</a></p></td>
+<td><p>45-090</p></td>
 <td><p>3mm diameter, 9mm FL achromat used in the objective module</p></td>
 </tr>
 <tr class="row-even"><td><p>3</p></td>
 <td><p>Edmund Optics</p></td>
-<td><p><a class="reference external" href="https://www.edmundoptics.com/p/4mm-dia-x-10mm-fl-mgfsub2sub-coated-achromatic-doublet-lens/18408/">63-691</a></p></td>
+<td><p>63-691</p></td>
 <td><p>4mm diameter, 10mm FL achromat used in the emission module</p></td>
 </tr>
 </tbody>
@@ -721,9 +751,9 @@
 <h3>Other<a class="headerlink" href="#other" title="Link to this heading">#</a></h3>
 <p>Is it also possible to adapt the UCLA Miniscope v4 to fluorophores with spectral characteristics that aren’t compatible with standard or lime configurations. Refer to <a class="reference external" href="https://www.chroma.com/">Chroma</a> (a <a class="reference external" href="https://www.chroma.com/company">worker coop</a> from which Open Ephys sources its filters) to look at your options for swapping out the filters and dichroic mirror. They produce and sell a variety of <a class="reference external" href="https://www.chroma.com/products/optical-filters">off-the-shelf filters/dichroic mirrors</a> and also assist in producing <a class="reference external" href="https://www.chroma.com/custom-oem-filter-design/">custom solutions</a> for your experiments. The process of choosing the best set of light source, filters, and dichroic is often an iterative balancing process that attempts to maximize emission light into the sensor, minimize excitation light into the sensor, and maximize excitation light into the sample. This maximizes SNR and minimizes heat dissipation from the LED/LED driver.</p>
 </section>
-<section id="how-to-modify-led-dichroic-filters">
-<h3>How To Modify LED/Dichroic/Filters<a class="headerlink" href="#how-to-modify-led-dichroic-filters" title="Link to this heading">#</a></h3>
-<p>To reconfigure the LED/Dichroic/Filters combination, follow the <em>Assembly Guide</em> (coming soon) instructions while substituting standard excitation/emission filters and dichroic mirror with the ones you’d like to use. It is easier and recommended to perform this modification starting with an unassembled UCLA Miniscope v4 than starting with an already-assembled UCLA Miniscope v4.</p>
+<section id="how-to-modify-spectral-compatibility">
+<h3>How To Modify Spectral Compatibility<a class="headerlink" href="#how-to-modify-spectral-compatibility" title="Link to this heading">#</a></h3>
+<p>To reconfigure the spectral compatibility (e.g. the LED/Dichroic/Filters combination), follow the <em>Assembly Guide</em> (coming soon) instructions while substituting standard excitation/emission filters and dichroic mirror with the ones you’d like to use. It is easier and recommended to perform this modification starting with an unassembled UCLA Miniscope v4 than starting with an already-assembled UCLA Miniscope v4.</p>
 <p>Note that if you desire to use an LED that is not included in the lime or standard configurations, you must solder it yourself which requires additional materials and know-how during the assembly process.</p>
 </section>
 </section>
@@ -784,7 +814,7 @@
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#standard">Standard</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lime">Lime</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other">Other</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-modify-led-dichroic-filters">How To Modify LED/Dichroic/Filters</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-modify-spectral-compatibility">How To Modify Spectral Compatibility</a></li>
 </ul>
 </li>
 </ul>
