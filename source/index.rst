@@ -15,7 +15,7 @@ Open Ephys Miniscope Documentation
         :columns:   7
         :child-align:   center
 
-        ..  image:: /_static/images/uclaminiscopev4-data.webp
+        ..  image:: /_static/images/uclaminiscopev4-data-clipped.webp
 
 ******************
 Miniscope Overview
