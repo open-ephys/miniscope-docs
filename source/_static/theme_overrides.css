@@ -1,425 +1,425 @@
 /* import fonts */
 @font-face {
-    font-family: "Source Sans";
-    src: url("fonts/SourceSansPro-Regular.ttf");
-  }
-  
-  @font-face {
-    font-family: "Source Sans";
-    font-style: italic;
-    src: url("fonts/SourceSansPro-Italic.ttf");
-  }
-  
-  @font-face {
-    font-family: "Source Sans";
-    font-weight: bold;
-    src: url("fonts/SourceSansPro-Bold.ttf");
-  }
-  
-  @font-face {
-    font-family: "Bitter";
-    src: url("fonts/Bitter-Regular.ttf");
-  }
-  
-  @font-face {
-    font-family: "Bitter";
-    src: url("fonts/Bitter-Italic.ttf");
-    font-style: italic;
-  }
-  
-  @font-face {
-    font-family: "Bitter";
-    src: url("fonts/Bitter-Bold.ttf");
-    font-weight: bold;
-  }
-  
-  /* logo */
-  .navbar-brand {
-    position: relative;
-    height: 70px;
-    width: auto;
-  }
-  
-  
-  /* text fonts and colors */
-  body {
-    background-color: white;
-    margin-bottom: 1.15rem;
-    font-size: 1em;
-    color: #242c16;
-    font-family: "Source Sans", sans-serif;
-  }
-  
-  h1 {
-    margin: 2.75rem 0 1.05rem;
-    font-family: "Bitter", sans-serif;
-    font-weight: 400;
-    line-height: 1.15;
-    margin-top: 0;
-    color: #242c16;
-    font-size: 2.2em;
-  }
-  
-  h2 {
-    margin: 2.75rem 0 1.05rem;
-    font-family: "Bitter", sans-serif;
-    font-weight: 400;
-    line-height: 1.15;
-    color: #242c16;
-    font-size: 1.5em;
-  }
-  
-  h3 {
-    margin: 1.5rem 0 1.05rem;
-    font-family: "Bitter", sans-serif;
-    font-weight: 400;
-    line-height: 1.15;
-    color: #242c16;
-    font-size: 1.3em;
-  }
-  
-  h4 {
-    margin: 2.75rem 0 1.05rem;
-    font-family: "Bitter", sans-serif;
-    font-weight: 400;
-    line-height: 1.15;
-    color: #242c16;
-    font-size: 1.1em;
-  }
-  
-  h5 {
-    margin: 2.75rem 0 1.05rem;
-    font-family: "Source Sans", sans-serif;
-    font-weight: 400;
-    line-height: 1.15;
-    color: #242c16;
-    font-size: 1.1em;
-  }
-  
-  h6 {
-    margin: 2.75rem 0 1.05rem;
-    font-family: "Source Sans", sans-serif;
-    font-weight: 400;
-    line-height: 1.15;
-    color: #242c16;
-    font-size: 1em;
-  }
-  
-  
-  /* navigation bar colors*/
-  .navbar {
-    background: white !important;
-    font-size: 1em;
-  }
-  
-  .navbar-nav>.active>.nav-link {
-    background-color: white !important;
-    color: #344b39 !important;
-    font-weight: normal !important;
-    transition-duration: 0.4s;
-  }
-  
-  .navbar-nav>.active>.nav-link:hover {
-    color: #519141 !important;
-    transition-duration: 0.4s;
-  }
-  
-  .navbar a {
-    color: grey !important;
-    font-family: "Bitter", sans-serif;
-    transition-duration: 0.4s;
-    margin-right: 10px;
-  }
-  
-  .search-button {
-    color: grey !important;
-    margin-right: 30px;
-  }
-  
-  
-  .navbar a:hover {
-    color: grey !important;
-    transition-duration: 0.4s;
-  }
-  
-  /* Remove skip link from top of page */
-  .skip-link {
-      display: none
-  }
-  
-  /* Bonsai workflows & copy button */
-  .copy-img
-  {
-    text-align: right;
-  }
-  
-  .copy-img:active {
-    filter: invert(75%);
-    cursor: pointer;
-  }
-  
-  .copy-img:hover {
-    cursor: pointer;
-  }
-  
-  .bonsai-workflow-container {
-    display: grid;
-    grid-template-columns: 1fr max-content max-content min-content;
-    grid-template-rows: min-content min-content;
-    gap: 0px 0px;
-    grid-template-areas:
-      "workflow-filler workflow-download workflow-copy workflow-name"
-      "workflow-image workflow-image workflow-image workflow-image";
-  }
-  
-  .bonsai-workflow-zip-container {
-    display: grid;
-    grid-template-columns: 1fr max-content max-content min-content;
-    grid-template-rows: min-content min-content;
-    gap: 0px 0px;
-    grid-template-areas:
-      "workflow-filler workflow-download workflow-name"
-      "workflow-image workflow-image workflow-image";
-  }
-  
-  .workflow-filler {
-      grid-area: workflow-filler;
-      margin-top: 10px;
-  }
-  
-  .workflow-download {
-      grid-area: workflow-download;
-      border-style: solid hidden hidden solid;
-      border-width: 1px;
-      padding-right: 0px;
-      padding-left: 5px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      margin-top: 10px;
-      background-color: #f0f0f0;
-      border-radius: 4px 0px 0px 0px;
-  }
-  
-  .workflow-copy {
-      grid-area: workflow-copy;
-      border-style: solid hidden hidden hidden;
-      border-width: 1px;
-      padding-right: 0px;
-      padding-left: 5px;
-      padding-top: 2px;
-      padding-bottom: 2px;
-      margin-top: 10px;
-      background-color: #f0f0f0;
-  }
-  
-  .workflow-name {
-      grid-area: workflow-name;
-      border-style: solid solid hidden hidden;
-      border-width: 1px;
-      padding-right: 5px;
-      padding-left: 5px;
-      padding-top: 2px;
-      padding-bottom:2px;
-      margin-top: 10px;
-      background-color: #f0f0f0;
-      border-radius: 0px 4px 0px 0px;
-      white-space: nowrap;
-  }
-  
-  .workflow-image {
-      grid-area: workflow-image;
-      border-style: solid solid solid solid;
-      border-width: 1px;
-      padding-right: 10px;
-      padding-left: 10px;
-      padding-top: 10px;
-      padding-bottom: 15px;
-      border-radius: 4px 0px 4px 4px;
-  }
-  
-  /* Landing page cards */
-  .card-columns {
-    column-count: 4 !important;
-  }
-  
-  .card-title {
-    margin: 1rem;
-  }
-  
-  .intro-card .card-text {
-    margin:20px 0px;
-    color: var(--onix-txt-color) !important;
-  }
-  
-  .card-img-top {
-    margin-top: 2em;
-  }
-  
-  .card {
-    border: 0;
-  }
-  
-  .intro-card {
-    transition: transform 0.2s ease;
-    border: 0;
-  }
-  
-  .intro-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .col-lg-6 {
-    margin-top: 2em;
-  }
-  
-  
-  
-  /* Gallery cards */
-  
-  .gallery-card .card-header {
-    height: 100%;
-    margin-top: 0rem;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  } /* example of the default height for title */
-  
-  .bd-content {
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  
-  .bd-page-width {
-    max-width: 100rem;
-  }
-  
-  .bd-sidebar-primary {
-   width: 20%;
-  }
-  
-  strong {
-   font-weight: bold;
-  }
-  
-  ul,
-  ol,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    line-height: 1.5;
-    margin-bottom: 0.7em;
-  }
-  
-  /* List items in main area, but not in side bars */
-  body > li,
-  p {
-    line-height: 1.5;
-    margin: 0.7rem 0;
-  }
-  
-  
-  /* ensure images stay within the column bounds*/
-  img {
-    max-width: 100%;
-  }
-  
-  
-  /* define admonition colors */
-  .admonition.attention {
-    border-color: #927a90;
-  }
-  
-  .attention>.admonition-title {
-    background-color: #efe8ef !important;
-  }
-  
-  .attention>.admonition-title:before {
-    color: #927a90 !important;
-  }
-  
-  .admonition.note {
-    border-color: #5fb5dc;
-  }
-  
-  .note>.admonition-title {
-    background-color: #d9e7f3 !important;
-  }
-  
-  .note>.admonition-title:before {
-    color: #5fb5dc !important;
-  }
-  
-  .admonition.error {
-    border-color: #da714a;
-  }
-  
-  .error>.admonition-title {
-    background-color: #f1d7c7 !important;
-  }
-  
-  .error>.admonition-title:before {
-    color: #da714a !important;
-  }
-  
-  .admonition.warning {
-    border-color: #da714a;
-  }
-  
-  .warning>.admonition-title {
-    background-color: #f1d7c7 !important;
-  }
-  
-  .warning>.admonition-title:before {
-    color: #da714a !important;
-  }
-  
-  .admonition.danger {
-    border-color: #da714a;
-  }
-  
-  .danger>.admonition-title {
-    background-color: #f1d7c7 !important;
-  }
-  
-  .danger>.admonition-title:before {
-    color: #da714a !important;
-  }
-  
-  .admonition.caution {
-    border-color: #f4d050;
-  }
-  
-  .caution>.admonition-title {
-    background-color: #f9f2d5 !important;
-  }
-  
-  .caution>.admonition-title:before {
-    color: #f4d050 !important;
-  }
-  
-  .admonition.tip {
-    border-color: #519141;
-  }
-  
-  .tip>.admonition-title {
-    background-color: #d1dac5 !important;
-  }
-  
-  .tip>.admonition-title:before {
-    color: #519141 !important;
-  }
-  
-  .admonition.hint {
-    border-color: #519141;
-  }
-  
-  .hint>.admonition-title {
-    background-color: #d1dac5 !important;
-  }
-  
-  .hint>.admonition-title:before {
-    color: #519141 !important;
-  }
+  font-family: "Source Sans";
+  src: url("fonts/SourceSansPro-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans";
+  font-style: italic;
+  src: url("fonts/SourceSansPro-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Source Sans";
+  font-weight: bold;
+  src: url("fonts/SourceSansPro-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("fonts/Bitter-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("fonts/Bitter-Italic.ttf");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Bitter";
+  src: url("fonts/Bitter-Bold.ttf");
+  font-weight: bold;
+}
+
+/* logo */
+.navbar-brand {
+  position: relative;
+  height: 70px;
+  width: auto;
+}
+
+
+/* text fonts and colors */
+body {
+  background-color: white;
+  margin-bottom: 1.15rem;
+  font-size: 1em;
+  color: #242c16;
+  font-family: "Source Sans", sans-serif;
+}
+
+h1 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-top: 0;
+  color: #242c16;
+  font-size: 2.2em;
+}
+
+h2 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1.5em;
+}
+
+h3 {
+  margin: 1.5rem 0 1.05rem;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1.3em;
+}
+
+h4 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Bitter", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1.1em;
+}
+
+h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Source Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1.1em;
+}
+
+h6 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: "Source Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+  color: #242c16;
+  font-size: 1em;
+}
+
+
+/* navigation bar colors*/
+.navbar {
+  background: white !important;
+  font-size: 1em;
+}
+
+.navbar-nav>.active>.nav-link {
+  background-color: white !important;
+  color: #344b39 !important;
+  font-weight: normal !important;
+  transition-duration: 0.4s;
+}
+
+.navbar-nav>.active>.nav-link:hover {
+  color: #519141 !important;
+  transition-duration: 0.4s;
+}
+
+.navbar a {
+  color: grey !important;
+  font-family: "Bitter", sans-serif;
+  transition-duration: 0.4s;
+  margin-right: 10px;
+}
+
+.search-button {
+  color: grey !important;
+  margin-right: 30px;
+}
+
+
+.navbar a:hover {
+  color: grey !important;
+  transition-duration: 0.4s;
+}
+
+/* Remove skip link from top of page */
+.skip-link {
+    display: none
+}
+
+/* Bonsai workflows & copy button */
+.copy-img
+{
+  text-align: right;
+}
+
+.copy-img:active {
+  filter: invert(75%);
+  cursor: pointer;
+}
+
+.copy-img:hover {
+  cursor: pointer;
+}
+
+.bonsai-workflow-container {
+  display: grid;
+  grid-template-columns: 1fr max-content max-content min-content;
+  grid-template-rows: min-content min-content;
+  gap: 0px 0px;
+  grid-template-areas:
+    "workflow-filler workflow-download workflow-copy workflow-name"
+    "workflow-image workflow-image workflow-image workflow-image";
+}
+
+.bonsai-workflow-zip-container {
+  display: grid;
+  grid-template-columns: 1fr max-content max-content min-content;
+  grid-template-rows: min-content min-content;
+  gap: 0px 0px;
+  grid-template-areas:
+    "workflow-filler workflow-download workflow-name"
+    "workflow-image workflow-image workflow-image";
+}
+
+.workflow-filler {
+    grid-area: workflow-filler;
+    margin-top: 10px;
+}
+
+.workflow-download {
+    grid-area: workflow-download;
+    border-style: solid hidden hidden solid;
+    border-width: 1px;
+    padding-right: 0px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px 0px 0px 0px;
+}
+
+.workflow-copy {
+    grid-area: workflow-copy;
+    border-style: solid hidden hidden hidden;
+    border-width: 1px;
+    padding-right: 0px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+}
+
+.workflow-name {
+    grid-area: workflow-name;
+    border-style: solid solid hidden hidden;
+    border-width: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 2px;
+    padding-bottom:2px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border-radius: 0px 4px 0px 0px;
+    white-space: no-wrap;
+}
+
+.workflow-image {
+    grid-area: workflow-image;
+    border-style: solid solid solid solid;
+    border-width: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-radius: 4px 0px 4px 4px;
+}
+
+/* Landing page cards */
+.card-columns {
+  column-count: 4 !important;
+}
+
+.card-title {
+  margin: 1rem;
+}
+
+.intro-card .card-text {
+  margin:20px 0px;
+  color: var(--onix-txt-color) !important;
+}
+
+.card-img-top {
+  margin-top: 2em;
+}
+
+.card {
+  border: 0;
+}
+
+.intro-card {
+  transition: transform 0.2s ease;
+  border: 0;
+}
+
+.intro-card:hover {
+  transform: scale(1.05);
+}
+
+.col-lg-6 {
+  margin-top: 2em;
+}
+
+
+
+/* Gallery cards */
+
+.gallery-card .card-header {
+  height: 100%;
+  margin-top: 0rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+} /* example of the default height for title */
+
+.bd-content {
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.bd-page-width {
+  max-width: 100rem;
+}
+
+.bd-sidebar-primary {
+ width: 20%;
+}
+
+strong {
+ font-weight: bold;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  margin-bottom: 0.7em;
+}
+
+/* List items in main area, but not in side bars */
+body > li,
+p {
+  line-height: 1.5;
+  margin: 0.7rem 0;
+}
+
+
+/* ensure images stay within the column bounds*/
+img {
+  max-width: 100%;
+}
+
+
+/* define admonition colors */
+.admonition.attention {
+  border-color: #927a90;
+}
+
+.attention>.admonition-title {
+  background-color: #efe8ef !important;
+}
+
+.attention>.admonition-title:before {
+  color: #927a90 !important;
+}
+
+.admonition.note {
+  border-color: #5fb5dc;
+}
+
+.note>.admonition-title {
+  background-color: #d9e7f3 !important;
+}
+
+.note>.admonition-title:before {
+  color: #5fb5dc !important;
+}
+
+.admonition.error {
+  border-color: #da714a;
+}
+
+.error>.admonition-title {
+  background-color: #f1d7c7 !important;
+}
+
+.error>.admonition-title:before {
+  color: #da714a !important;
+}
+
+.admonition.warning {
+  border-color: #da714a;
+}
+
+.warning>.admonition-title {
+  background-color: #f1d7c7 !important;
+}
+
+.warning>.admonition-title:before {
+  color: #da714a !important;
+}
+
+.admonition.danger {
+  border-color: #da714a;
+}
+
+.danger>.admonition-title {
+  background-color: #f1d7c7 !important;
+}
+
+.danger>.admonition-title:before {
+  color: #da714a !important;
+}
+
+.admonition.caution {
+  border-color: #f4d050;
+}
+
+.caution>.admonition-title {
+  background-color: #f9f2d5 !important;
+}
+
+.caution>.admonition-title:before {
+  color: #f4d050 !important;
+}
+
+.admonition.tip {
+  border-color: #519141;
+}
+
+.tip>.admonition-title {
+  background-color: #d1dac5 !important;
+}
+
+.tip>.admonition-title:before {
+  color: #519141 !important;
+}
+
+.admonition.hint {
+  border-color: #519141;
+}
+
+.hint>.admonition-title {
+  background-color: #d1dac5 !important;
+}
+
+.hint>.admonition-title:before {
+  color: #519141 !important;
+}

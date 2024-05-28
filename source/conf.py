@@ -60,7 +60,7 @@ templates_path = ["_templates"]
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
 #
-source_suffix = [".rst", ".md"]
+source_suffix = [".rst"]
 
 # The master toctree document.
 main_doc = "index"
@@ -86,7 +86,7 @@ pygments_style = None
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-html_logo = "_static/images/oe_logo_name.svg"
+html_logo = "_static/images/miniscope-logo.png"
 html_scaled_image_link = True
 html_title = project
 
@@ -94,12 +94,17 @@ html_title = project
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
-html_style = "theme_overrides.css"
 
 html_sidebars = {
     'index': ['search-field.html'],
     "**": ["sidebar-nav-bs.html"]
 }
+
+
+# html_style = "theme_overrides.css"
+html_css_files = [
+    'theme_overrides.css',
+]
 
 # Custom sidebar templates, must be a dictionary that maps document names
 # to template names.
@@ -225,17 +230,12 @@ html_context = {
     "github_repo": "miniscope-docs",
     "github_version": "main",
     "doc_path": "source",
-    # "css_files": ["_static/theme_overrides.css",],
+    # "css_files": ["_static/theme_overrides.css"],
     'default_mode': 'light'
 }
 
 # Option for linkcheck
 linkcheck_anchors = False
-
-suppress_warnings = [
-    'image.not_readable'
-]
-
 
 def rstjinja(app, docname, source):
     '''
@@ -264,3 +264,4 @@ def setup(app):
 
 
 todo_include_todos = False
+
