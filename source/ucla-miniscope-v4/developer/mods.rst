@@ -74,6 +74,9 @@ Lens Configuration 1
 
 This is the standard UCLA Minsicope v4 lens configuration. It balances spatial resolution, FoV, WD, and NA. It is capable of deep imaging through a relay GRIN lenses and shallow imaging through a thin cranial windows.
 
+.. edmund links don't work?
+
+
 ..  list-table::    Lens Configuration 1 Optics
     :widths:        5 15 10 70
     :header-rows:   1
@@ -82,7 +85,6 @@ This is the standard UCLA Minsicope v4 lens configuration. It balances spatial r
         -   Vendor
         -   Part Number
         -   Description
-.. edmund links don't work?
 
     *   -   1
         -   Edmund Optics
