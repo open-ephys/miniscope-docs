@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=33cb8a6e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=7880b508" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
@@ -47,7 +47,7 @@
     <link rel="icon" href="../../_static/favicon.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Modifications" href="mods.html" />
+    <link rel="next" title="Optomechanical Design" href="optomechanical.html" />
     <link rel="prev" title="Workflow Description" href="../user/miniscope-daq/commutate/description.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -393,10 +393,16 @@
 </ul>
 </li>
 <li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Developer Guide</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="mods.html">Modifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="optomechanical.html">Optomechanical Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="electrical.html">Electrical Design</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="mods/index.html">Common Modifications</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="mods/objective.html">Objective Lens Modification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="mods/spectral.html">Spectral Modification</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot-resources/faq.html">FAQ</a></li>
 </ul>
 </li>
@@ -459,60 +465,15 @@
                   
   <section id="developer-guide">
 <h1>Developer Guide<a class="headerlink" href="#developer-guide" title="Link to this heading">#</a></h1>
-<p>The developer guide is intended to acquaint the user with the miniscope’s design and production files.</p>
-<p>All the design and production files for the UCLA Miniscope v4 PCB are available for download in the UCLA Miniscope v4’s official GitHub repository: <a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4">Aharoni-Lab/Miniscope-v4</a>. To find design and production files of the or learn about the optomechanical design, navigate to one of the two following guides:</p>
+<p>The developer guide is intended to acquaint the user with the miniscope’s underpinnings as well as help users find design and production files.</p>
+<p>All the design and production files for the UCLA Miniscope v4 PCB are available for download in the UCLA Miniscope v4’s official GitHub repository: <a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4">Aharoni-Lab/Miniscope-v4</a>. To learn more about the design, navigate to one of the following pages:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#optomechanical-design"><span class="std std-ref">Optomechanical Design</span></a></p></li>
-<li><p><a class="reference internal" href="#electrical-design"><span class="std std-ref">Electrical Design</span></a></p></li>
+<li><p><a class="reference internal" href="optomechanical.html"><span class="doc">Optomechanical Design</span></a></p></li>
+<li><p><a class="reference internal" href="electrical.html"><span class="doc">Electrical Design</span></a></p></li>
 </ul>
-<p>The developer guide also contains information about common <a class="reference internal" href="mods.html"><span class="doc">Modifications</span></a> to configure the UCLA Minisope v4 for your experiment.</p>
-<section id="optomechanical-design">
-<h2>Optomechanical Design<a class="headerlink" href="#optomechanical-design" title="Link to this heading">#</a></h2>
-<section id="optomechanical-overview">
-<h3>Optomechanical Overview<a class="headerlink" href="#optomechanical-overview" title="Link to this heading">#</a></h3>
-<img alt="image of excitation light and emission light through the UCLA Miniscope v4's optical system" class="align-center" src="../../_images/miniscope-working-principle-schematic.webp" />
-<p>The UCLA Miniscope v4 is a miniaturized epifluorescent/widefield microscope. An LED serves as the excitation light source. The excitation filter filters the excitation light to prevent undesired wavelengths from entering the miniscope. Excitation light is reflected by the dichroic mirror and refracted by a series of lenses such that it illuminates the imaging target sufficiently uniformly. Fluoresced (emission) light is collected by the miniscope’s objective, refracted by the tube lense, and transmitted through the dichroic mirror to form an image of the specimen’s fluoresced light on the miniscope’s sensor. The electro-tunable lens ETL (sometimes also referred to as electrowetting lens, EWL) is a lens formed by fluid in a membrane that changes shape according to the average voltage applied across the membrane, providing dynamic imaging depth adjustment.</p>
-<p>For a more comprehensive description of the UCLA Miniscope v4’s constituent parts and optomechanical design, visit the <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Parts-List">Parts List</a> from the UCLA Miniscope v4 GitHub wiki.</p>
-<p>For more information, please refer to the relevant parts of the 2021 Miniscope Workshop video <a class="reference external" href="https://www.youtube.com/watch?v=bHA08xrshHo">Imaging principles &amp; Miniscope design</a>.</p>
-</section>
-<section id="design-and-production-files">
-<h3>Design and Production Files<a class="headerlink" href="#design-and-production-files" title="Link to this heading">#</a></h3>
-<p>All the design and production files for the UCLA Miniscope v4 PCB are available for download in the UCLA Miniscope v4’s official GitHub repository: <a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4">Aharoni-Lab/Miniscope-v4</a>. For quick-and-easy access, direct links to optomechanical design and production files are below.</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Body-Parts/Parts%20v4_2">Body files</a></p></li>
-<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Body-Parts/Parts%20v4_2/Mounting_Variation_2">Baseplate files</a></p></li>
-</ul>
-<p>Some operating systems come with free software that can be used to visualize STEP or STL files. There are also online viewers for these kinds of files. Common MCAD software for editing these kinds of files include Solidworks and Autodesk.</p>
-<p>The UCLA Miniscope v4 body parts can be produced in-house with a Formlabs SLA printer or outsourced to a 3D printing services. In either case, ensure the miniscope is printed with black, non-fluorescent resin. The baseplate parts are milled from aluminum.</p>
-<p>For more information about procuring parts for building your own miniscope, visit the <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Part-Procurement">Parts Procurement page</a> from the UCLA Miniscope v4 GitHub wiki.</p>
-</section>
-</section>
-<section id="electrical-design">
-<h2>Electrical Design<a class="headerlink" href="#electrical-design" title="Link to this heading">#</a></h2>
-<img alt="image of pcb layers" class="align-center" src="../../_images/ucla-miniscope-v4-layers-separate.svg" /><section id="design-production-files">
-<h3>Design &amp; Production Files<a class="headerlink" href="#design-production-files" title="Link to this heading">#</a></h3>
-<p>All the design and production files for the UCLA Miniscope v4 PCB are available for download in the UCLA Miniscope v4’s official GitHub repository: <a class="github reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4">Aharoni-Lab/Miniscope-v4</a>. For quick-and-easy access, direct links to electrical design and production files are below.</p>
-<section id="design-files">
-<h4>Design Files<a class="headerlink" href="#design-files" title="Link to this heading">#</a></h4>
-<ul class="simple">
-<li><p>Schematic files (<a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/PDF/Miniscope-v4-Rigid-Flex_4_41.pdf">pdf</a>, <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Miniscope-v4-Rigid-Flex.sch">sch</a>)</p></li>
-<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Miniscope-v4-Rigid-Flex.kicad_pcb">PCB file</a></p></li>
-</ul>
-<p>The .sch and .kicad_pcb files above can be opened in <a class="reference external" href="https://www.kicad.org/">KiCAD</a>, a user-friendly, free, and open-source eCAD software (<a class="reference external" href="https://www.kicad.org/download/">KiCAD download</a>). A .pdf file is also available for inspecting the schematic without KiCAD.</p>
-</section>
-<section id="production-files">
-<h4>Production files<a class="headerlink" href="#production-files" title="Link to this heading">#</a></h4>
-<ul class="simple">
-<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Output/BOM/Miniscope-v4-Rigid-Flex_bom_4_41.csv">BoM file</a></p></li>
-<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Rigid-Flex/KiCad/Output/Gerbers_4_41">Gerbers files</a></p></li>
-<li><p><a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Rigid-Flex/KiCad/Output/PnP/PnP_v_4_41">Pick-and-Place (PnP) files</a></p></li>
-</ul>
-<p>The Bill of Material (BoM) file is a csv file. Any text editor can be used to open a csvs file, but a spreadsheet software is recommended. The Gerber files are inspectable using most eCAD softwares or online Gerber viewers. PCB fabricators typically require Gerber files to produce a custom PCB. The PnP files are also csv files. PCB assemblers typically require PnP files to place and solder all the components onto your PCB. It is also possible to assemble your own UCLA Miniscope v4 PCB, but that is outside of the scope of this guide.</p>
+<p>The developer guide also contains information about <a class="reference internal" href="mods/index.html"><span class="doc">Common Modifications</span></a> to configure the UCLA Minisope v4 for your experiment.</p>
 <div class="toctree-wrapper compound">
 </div>
-</section>
-</section>
-</section>
 </section>
 
 
@@ -535,11 +496,11 @@
       </div>
     </a>
     <a class="right-next"
-       href="mods.html"
+       href="optomechanical.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Modifications</p>
+        <p class="prev-next-title">Optomechanical Design</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -551,29 +512,6 @@
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#optomechanical-design">Optomechanical Design</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#optomechanical-overview">Optomechanical Overview</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#design-and-production-files">Design and Production Files</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#electrical-design">Electrical Design</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#design-production-files">Design &amp; Production Files</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#design-files">Design Files</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#production-files">Production files</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-  </nav></div>
 
   <div class="sidebar-secondary-item">
 

@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../../../_static/theme_overrides.css?v=33cb8a6e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/theme_overrides.css?v=7880b508" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
@@ -393,10 +393,16 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../developer/index.html">Developer Guide</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../developer/mods.html">Modifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer/optomechanical.html">Optomechanical Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer/electrical.html">Electrical Design</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../developer/mods/index.html">Common Modifications</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/mods/objective.html">Objective Lens Modification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../developer/mods/spectral.html">Spectral Modification</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../faq-troubleshoot-resources/faq.html">FAQ</a></li>
 </ul>
 </li>
@@ -468,6 +474,7 @@
 <p>This is the recommended timeline for a standard UCLA Miniscope v4 surgery in a mouse.</p>
 <img alt="image of visualization of surgery timeline" src="../../../_images/ucla-miniscope-v4_standard-surgery_timeline.webp" />
 <p>Imaging neural activity with the UCLA Miniscope v4 requires that cells in the regions of interest are loaded with fluorescent CA<sup>2+</sup> indicators. This is primarily accomplished through viral injection. GRIN lenses are necessary for experiments studying deeper regions of the brain. If viral injection and GRIN lens implantation are both to be performed, it is easier to inject before implanting. Three weeks of mouse recovery are recommended after GRIN lens implantation. After recovery, the mouse can be baseplated. The baseplate provides a structural mount for the UCLA Miniscope v4 so that the user can reliably register the miniscope into the same position relative to the brain. Two weeks of habituation after baseplating is recommended. The UCLA Miniscope v4 enables several weeks to months of in-vivo imaging and freely-moving behavior after this step.</p>
+<p>For habituation, a UCLA Miniscope v4 Dummy Scope (<a class="reference external" href="https://open-ephys.org/miniscope-v4/miniscope-v4-dummy-scope">store</a>, <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Body-Parts/Parts%20v4_2/Miniscope_v4_Dummy.step">GitHub</a>) is recommended.</p>
 <p>Open Ephys does not currently provide support for surgeries. As a starting point for developing a surgical protocol for your own experiment, refer to the 2021 Miniscope Workshop video <a class="reference external" href="https://www.youtube.com/watch?v=SZPAQps_uVo">Grin Lens &amp; Baseplate Surgery</a> about implanting and baseplating a mouse for imaging its CA1 with the UCLA Miniscope v4 by Susie Feng from the Shuman lab.</p>
 </section>
 <section id="necessary-equipment-for-miniscope-assembly">
@@ -485,9 +492,6 @@
 <p>Below is a visualization of the equipment that can be used to assemble and service the UCLA Miniscope v4:</p>
 <img alt="image of necessary tools" src="../../../_images/necessary-tools.webp" />
 <p>Last, confirm that you have compatible data acquisition hardware. If you don’t, acquire the compatible data acquisition hardware.</p>
-</section>
-<section id="necessary-equipment-for-operating-the-miniscope">
-<h2>Necessary Equipment for Operating the Miniscope<a class="headerlink" href="#necessary-equipment-for-operating-the-miniscope" title="Link to this heading">#</a></h2>
 </section>
 </section>
 
@@ -537,7 +541,6 @@
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-timeline">Surgery Timeline</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#necessary-equipment-for-miniscope-assembly">Necessary Equipment for Miniscope Assembly</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#necessary-equipment-for-operating-the-miniscope">Necessary Equipment for Operating the Miniscope</a></li>
 </ul>
   </nav></div>
 

@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=33cb8a6e" />
+    <link rel="stylesheet" type="text/css" href="../_static/theme_overrides.css?v=7880b508" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
@@ -428,13 +428,82 @@
 <section id="miniscope-daq">
 <h2>Miniscope-DAQ<a class="headerlink" href="#miniscope-daq" title="Link to this heading">#</a></h2>
 <img alt="image of miniscope-daq" class="align-center" src="../_images/miniscope-daq.webp" />
-<p>The <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware">Miniscope-DAQ</a> is the data acquisition hardware developed by the UCLA Miniscope team for acquiring miniscope data. It accepts an external power supply for more power-intensive applications and plugs into a PC through a USB cable. It supports sync output, input trigger, and data acquisition from a UCLA Miniscope v4 or a MiniCAM. The Miniscope-DAQ is compatible with <a class="reference internal" href="data-acq-software.html#bonsai"><span class="std std-ref">Bonsai</span></a> and <a class="reference internal" href="data-acq-software.html#miniscope-daq-qt-software"><span class="std std-ref">Miniscope-DAQ-QT-Software</span></a>. To acquire miniscope or MiniCAM data with the Miniscope-DAQ, refer to the corresponding <a class="reference internal" href="../ucla-miniscope-v4/quick/index.html"><span class="doc">Quick Start Guide</span></a> and <em>User Guide</em> (coming soon). To learn more about the Miniscope-DAQ, refer to the <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware">UCLA Miniscope v4 Wiki</a>.</p>
+<p>The <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware">Miniscope-DAQ</a> is the data acquisition hardware developed by the UCLA Miniscope team for acquiring miniscope data. It accepts an external power supply for more power-intensive applications and plugs into a PC through a USB cable. It supports sync output, input trigger, and data acquisition from a UCLA Miniscope v4, MiniCAM, and other miniscopes derived from the UCLA Miniscope v4. The Miniscope-DAQ is supported by <a class="reference internal" href="data-acq-software.html#bonsai"><span class="std std-ref">Bonsai</span></a> and <a class="reference internal" href="data-acq-software.html#miniscope-daq-qt-software"><span class="std std-ref">Miniscope-DAQ-QT-Software</span></a>. To acquire miniscope or MiniCAM data with the Miniscope-DAQ, refer to the corresponding <a class="reference internal" href="../ucla-miniscope-v4/quick/index.html"><span class="doc">Quick Start Guide</span></a> and <a class="reference internal" href="../ucla-miniscope-v4/user/index.html"><span class="doc">User Guide</span></a>. To learn more about the Miniscope-DAQ, refer to the <a class="reference external" href="https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware">UCLA Miniscope v4 Wiki</a>.</p>
+<section id="miniscope-daq-functionality">
+<h3>Miniscope-DAQ Functionality<a class="headerlink" href="#miniscope-daq-functionality" title="Link to this heading">#</a></h3>
+<section id="i-o">
+<h4>I/O<a class="headerlink" href="#i-o" title="Link to this heading">#</a></h4>
+<p>Miniscope-DAQs from Open Ephys have the following I/O:</p>
+<ul class="simple">
+<li><p><strong>Input trigger:</strong> a digital input to initiate and terminate data acquisition</p>
+<ul>
+<li><p>A rising edge initiates data acquisition</p></li>
+<li><p>A falling edge terminates data acquisition</p></li>
+</ul>
+</li>
+<li><p><strong>Sync output:</strong> a digital output in which every rising or falling edge indicates a new frame</p></li>
+</ul>
+<p>The I/O operate at a 3.3V logic level. The input is 5V tolerant.</p>
+<p>The aux input is not currently supported in software.</p>
+</section>
+<section id="external-power">
+<h4>External Power<a class="headerlink" href="#external-power" title="Link to this heading">#</a></h4>
+<p>The Miniscope-DAQ can accept an external power source and forward it to a connected device for particularly power-intensive applications in which USB3.0 cannot provide sufficient power or voltage. Using an external power source is required for the MiniCAM and recommended for the UCLA Miniscope v4. For more information on symptoms related to insufficient power, refer to the Troubleshooting (coming soon) guide. To use an external power source instead of USB3.0:</p>
+<ol class="arabic">
+<li><p>Unscrew all four fasteners that fasten the Miniscope-DAQ’s enclosure. It might be necessary to apply gentle pressure on the nuts on the bottom of the DAQ to prevent them from turning when unscrewing the screws.</p></li>
+<li><p>Set the jumper according to which power source you would like to use following to the silk screen:</p>
+<img alt="power jumper animation" class="align-center" src="../_images/miniscope-daq-jump.webp" />
+</li>
+<li><p>Replace the four fasteners.</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the Miniscope-DAQ is set to use external power, the barrel jack must be plugged in to use the connected miniscope/minicam.</p>
+</div>
+<p>Recommended specifications for an external power supply are as follows:</p>
+<ul class="simple">
+<li><p>5-6V</p>
+<ul>
+<li><p>To dial in the ideal power supply voltage for your setup (in particular for your tether), use an adjustable power supply (e.g. ) and probe the following pads while adjusting the voltage. The ideal voltage at those pads is about 4V. This voltage is high enough to maximize reliability of the UCLA Miniscope v4 acquisition and low enough to minimize unnecesary heat generation.</p></li>
+</ul>
+</li>
+<li><p>2A, though this value is depedent on your miniscope/camera device. The MiniCAM with an attached IR LED ring requires more current than the UCLA Miniscope v4, for instance.</p></li>
+<li><p>Center-positive polarity</p></li>
+</ul>
+<p>By default, the Miniscope-DAQ is set to use USB power.</p>
+</section>
+<section id="led-indicators">
+<h4>LED Indicators<a class="headerlink" href="#led-indicators" title="Link to this heading">#</a></h4>
+<p>Miniscope-DAQs have the following green LED indicators:</p>
+<ul class="simple">
+<li><p><strong>DAQ Power:</strong> This LED indicates the Miniscope-DAQ is receiving power. Establishing the USB connection between the Miniscope-DAQ and your PC toggles this LED on.</p></li>
+<li><p><strong>Scope Power:</strong> This LED indicates the Miniscope-DAQ is forwarding power to the device that is connected to the Miniscope port.</p>
+<ul>
+<li><p>If the power jumper is set to , the LED turns on after establishing the USB connection</p></li>
+<li><p>If the power jumper is set to , the LED turns on after establishing the USB connection <em>and</em> the external power source connection</p></li>
+</ul>
+</li>
+<li><p><strong>Data Link:</strong> This LED indicates the Miniscope-DAQ communication is established between the Miniscope-DAQ and the connected device.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the Miniscope-DAQ is set to use external power, the barrel jack must be plugged in for the <strong>Scope Power</strong> LED to toggle on.</p>
+</div>
+</section>
+</section>
+<section id="syncing-data">
+<h3>Syncing Data<a class="headerlink" href="#syncing-data" title="Link to this heading">#</a></h3>
+<p>For strict data syncing requirements, best practice involves using a combination of the UCLA Miniscope v4’s sync output and software timestamps.</p>
+<p>Software timestamps are accurate to within a few milliseconds which is insufficient for stricter data syncing requirements. Though the sync output is accurate to within microseconds, it alone is also insufficient because it is possible for frames to drop on the way from the Miniscope-DAQ to the PC. Therefore, it is to corroborate sync output data with software timestamps to ensure that a sync output frame corresponds a frame received by the PC.</p>
+<p>The effect of a dropped frame is a larger inter-frame interval. If you are struggling with dropped frames, try changing USB ports, USB drivers, and removing other devices that are sharing the USB bus. Dropped frames are due to limited USB bandwidth and timing constraints. On a proper setup, expect a dropped frame every few thousand frames.</p>
+<p>The input trigger involves 10-100ms latency so relying on it for syncing data is also not recommended.</p>
+</section>
 <section id="miniscope-daq-variants">
 <h3>Miniscope-DAQ Variants<a class="headerlink" href="#miniscope-daq-variants" title="Link to this heading">#</a></h3>
 <section id="minidaq">
 <h4>MiniDAQ<a class="headerlink" href="#minidaq" title="Link to this heading">#</a></h4>
 <img alt="image of minidaq" class="align-center" src="../_images/minidaq.webp" />
-<p>The MiniDAQ is a simplified, more compact, and more affordable version of the Miniscope-DAQ. It plugs directly into a PC through its on-board USB cable. It supports data acquisition from a single UCLA Miniscope v4 or a single MiniCAM. Unlike the Miniscope-DAQ, the MiniDAQ does not accept an external supply or support sync output or input trigger functions. The MiniDAQ is compatible with <a class="reference internal" href="data-acq-software.html#bonsai"><span class="std std-ref">Bonsai</span></a> and <a class="reference internal" href="data-acq-software.html#miniscope-daq-qt-software"><span class="std std-ref">Miniscope-DAQ-QT-Software</span></a>. To acquire miniscope or MinicCAM data with the MiniCAM, refer to the corresponding <a class="reference internal" href="../ucla-miniscope-v4/quick/index.html"><span class="doc">Quick Start Guide</span></a> and <em>User Guide</em> (coming soon).</p>
+<p>The MiniDAQ is a simplified, more compact, and more affordable version of the Miniscope-DAQ. It plugs directly into a PC through its on-board USB cable. It supports data acquisition from a single UCLA Miniscope v4 with a short tether. Unlike the Miniscope-DAQ, the MiniDAQ does not accept an external supply or support sync output or input trigger functions. The MiniDAQ is compatible with <a class="reference internal" href="data-acq-software.html#bonsai"><span class="std std-ref">Bonsai</span></a> and <a class="reference internal" href="data-acq-software.html#miniscope-daq-qt-software"><span class="std std-ref">Miniscope-DAQ-QT-Software</span></a>. To acquire miniscope, follow the same user guides as the Miniscope-DAQ.</p>
 </section>
 <section id="ninscope-daq">
 <h4>NINscope-DAQ<a class="headerlink" href="#ninscope-daq" title="Link to this heading">#</a></h4>
@@ -490,6 +559,13 @@
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscope-daq">Miniscope-DAQ</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscope-daq-functionality">Miniscope-DAQ Functionality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#i-o">I/O</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#external-power">External Power</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#led-indicators">LED Indicators</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#syncing-data">Syncing Data</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#miniscope-daq-variants">Miniscope-DAQ Variants</a><ul class="nav section-nav flex-column">
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#minidaq">MiniDAQ</a></li>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ninscope-daq">NINscope-DAQ</a></li>

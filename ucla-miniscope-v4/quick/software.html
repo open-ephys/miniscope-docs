@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=33cb8a6e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=7880b508" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
@@ -393,10 +393,16 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../developer/index.html">Developer Guide</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../developer/mods.html">Modifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer/optomechanical.html">Optomechanical Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer/electrical.html">Electrical Design</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../developer/mods/index.html">Common Modifications</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developer/mods/objective.html">Objective Lens Modification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/mods/spectral.html">Spectral Modification</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../faq-troubleshoot-resources/faq.html">FAQ</a></li>
 </ul>
 </li>
@@ -472,7 +478,10 @@
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row docutils">
 <div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 sd-align-major-center docutils">
-<p>From the Bonsai landing window, select <em>Manage Packages</em>.</p>
+<div class="line-block">
+<div class="line">From the Bonsai landing window, select</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">Packages</span></code>.</div>
+</div>
 </div>
 <div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
 <a class="reference internal image-reference" href="../../_images/bonsai-landing-page-package-manager-button.webp"><img alt="screenshot of Bonsai landing window with *Manage Packages* text highlighted" class="align-left" src="../../_images/bonsai-landing-page-package-manager-button.webp" style="height: 300px;" /></a>
@@ -481,7 +490,10 @@
 <p>or</p>
 </div>
 <div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 sd-align-major-center docutils">
-<p>From the Bonsai workflow editor, hover over the <em>Tools</em> tab in the top ribbon to reveal a drop-down menu, and left-click <em>Manage Packages…</em>.</p>
+<div class="line-block">
+<div class="line">From the Bonsai workflow editor, hover over the <em>Tools</em> tab in the top ribbon to reveal a drop-down menu, and left-click</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">Manage</span> <span class="pre">Packages...</span></code>.</div>
+</div>
 </div>
 <div class="sd-col sd-d-flex-column sd-col-9 sd-col-xs-9 sd-col-sm-9 sd-col-md-9 sd-col-lg-9 docutils">
 <a class="reference internal image-reference" href="../../_images/bonsai-workflow-editor-package-manager-button.webp"><img alt="screenshot of Bonsai landing window with *Manage Packages* text highlighted" class="align-left" src="../../_images/bonsai-workflow-editor-package-manager-button.webp" style="height: 300px;" /></a>
@@ -502,7 +514,7 @@
 </ul>
 <p>For each one, search its name in the search bar, left-click its corresponding entry, and left-click the <em>Install</em> button. For example:</p>
 <a class="reference internal image-reference" href="../../_images/bonsai-starterpack.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/bonsai-starterpack.webp" style="height: 400px;" /></a>
-<p>Click the <em>I Accept</em> button when prompted.</p>
+<p>Click the <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">Accept</span></code> button when prompted.</p>
 </li>
 </ol>
 </li>

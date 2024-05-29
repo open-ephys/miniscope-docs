@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=33cb8a6e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/theme_overrides.css?v=7880b508" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
@@ -394,10 +394,16 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../developer/index.html">Developer Guide</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../developer/mods.html">Modifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer/optomechanical.html">Optomechanical Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../developer/electrical.html">Electrical Design</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../developer/mods/index.html">Common Modifications</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../developer/mods/objective.html">Objective Lens Modification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../developer/mods/spectral.html">Spectral Modification</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">FAQ &amp; Additional Resources</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">FAQ &amp; Additional Resources</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">FAQ</a></li>
 </ul>
 </li>
@@ -489,16 +495,11 @@
 </section>
 <section id="what-video-codec-should-i-use-to-save-miniscope-data">
 <h2>What Video CODEC Should I Use to Save Miniscope Data?<a class="headerlink" href="#what-video-codec-should-i-use-to-save-miniscope-data" title="Link to this heading">#</a></h2>
-<p>GREY and FFV1 are recommended for neural recordings.</p>
-<ul class="simple">
-<li><p>GREY does not perform data compression.</p></li>
-<li><p>FFV1 performs lossless data compression.</p></li>
-</ul>
-<p>MJPG or similar is sufficient for behavioral recordings.</p>
+<p>Refer to the <a class="reference internal" href="../user/miniscope-daq/save-data/tutorial.html"><span class="doc">Save Data Workflow Tutorial</span></a>.</p>
 </section>
-<section id="what-cable-lengths-can-be-used-with-ucla-miniscope-v4">
-<h2>What Cable Lengths Can Be Used With UCLA Miniscope v4?<a class="headerlink" href="#what-cable-lengths-can-be-used-with-ucla-miniscope-v4" title="Link to this heading">#</a></h2>
-<p>Cable lengths longer than three meters can be problematic. Significant voltage drop and power losses can occur over such distances with the coaxial cable.</p>
+<section id="what-tether-lengths-can-be-used-with-ucla-miniscope-v4">
+<h2>What Tether Lengths Can Be Used With UCLA Miniscope v4?<a class="headerlink" href="#what-tether-lengths-can-be-used-with-ucla-miniscope-v4" title="Link to this heading">#</a></h2>
+<p>Tether lengths longer than three meters can be problematic. Significant voltage drop and power losses can occur over such distances with the coaxial cable.</p>
 <p>Decreasing the length of cable between the commutator and the data acquisition hardware allows increasing the length of the cable between the animal and the commutator. This reduces the potential of the cable length bottlenecking the maximimum explorable area. The length of the USB cable between the Miniscope-DAQ and the PC is not as critical.</p>
 </section>
 <section id="do-i-need-a-grin-lens-which-one-how-do-i-procure-it">
@@ -513,11 +514,11 @@
 </section>
 <section id="what-flourophores-are-compatible-with-the-ucla-miniscope-v4-from-open-ephys">
 <h2>What Flourophores Are Compatible with the UCLA Miniscope v4 from Open Ephys?<a class="headerlink" href="#what-flourophores-are-compatible-with-the-ucla-miniscope-v4-from-open-ephys" title="Link to this heading">#</a></h2>
-<p>The UCLA Miniscope v4 as sold off-the-shelf by Open Ephys is compatible with green fluorophores (e.g. GCAMP6f) in our <a class="reference internal" href="../developer/mods.html#standard"><span class="std std-ref">standard configuration</span></a> or red fluorophores (e.g. jRGECO1a) in our <a class="reference internal" href="../developer/mods.html#lime"><span class="std std-ref">lime configuration</span></a>. Is it also possible to adapt the UCLA Miniscope v4 to <a class="reference internal" href="../developer/mods.html#other"><span class="std std-ref">other</span></a> fluorophores that don’t share spectral characteristics with the fluorophores listed above. Refer to the <a class="reference internal" href="../developer/mods.html#spectral-modification"><span class="std std-ref">Spectral Modification</span></a> section for more details.</p>
+<p>The UCLA Miniscope v4 as sold off-the-shelf by Open Ephys is compatible with green fluorophores (e.g. GCAMP6f) in our <a class="reference internal" href="../developer/mods/spectral.html#standard"><span class="std std-ref">standard configuration</span></a> or red fluorophores (e.g. jRGECO1a) in our <a class="reference internal" href="../developer/mods/spectral.html#lime"><span class="std std-ref">lime configuration</span></a>. Is it also possible to adapt the UCLA Miniscope v4 to <a class="reference internal" href="../developer/mods/spectral.html#other"><span class="std std-ref">other</span></a> fluorophores that don’t share spectral characteristics with the fluorophores listed above. Refer to the <a class="reference internal" href="../developer/mods/spectral.html"><span class="doc">Spectral Modification</span></a> page for more details.</p>
 </section>
 <section id="how-do-i-adjust-magnification-field-of-view-working-distance-spatial-resolution-or-numerical-aperture">
 <h2>How Do I Adjust Magnification/Field-of-View, Working Distance, Spatial Resolution, or Numerical Aperture?<a class="headerlink" href="#how-do-i-adjust-magnification-field-of-view-working-distance-spatial-resolution-or-numerical-aperture" title="Link to this heading">#</a></h2>
-<p>An alternative objective module can be constructed using a set of lenses that are different from the default ones. Swapping these objective modules allows adjustment of these optical characteristics. Refer to the <a class="reference internal" href="../developer/mods.html#objective-lens-modification"><span class="std std-ref">Objective Lens Modification</span></a> section for more details.</p>
+<p>An alternative objective module can be constructed using a set of lenses that are different from the default ones. Swapping these objective modules allows adjustment of these optical characteristics. Refer to the <a class="reference internal" href="../developer/mods/objective.html"><span class="doc">Objective Lens Modification</span></a> page for more details.</p>
 </section>
 </section>
 
@@ -560,7 +561,7 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#should-i-increase-exposure-led-intensity-or-gain">Should I Increase Exposure, LED Intensity, or Gain?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-can-i-habituate-all-my-animals-to-the-ucla-miniscope-v4-simultaneously">How Can I Habituate All My Animals to the UCLA Miniscope v4 Simultaneously?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-video-codec-should-i-use-to-save-miniscope-data">What Video CODEC Should I Use to Save Miniscope Data?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-cable-lengths-can-be-used-with-ucla-miniscope-v4">What Cable Lengths Can Be Used With UCLA Miniscope v4?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-tether-lengths-can-be-used-with-ucla-miniscope-v4">What Tether Lengths Can Be Used With UCLA Miniscope v4?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#do-i-need-a-grin-lens-which-one-how-do-i-procure-it">Do I need a GRIN Lens? Which One? How Do I Procure It?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-flourophores-are-compatible-with-the-ucla-miniscope-v4-from-open-ephys">What Flourophores Are Compatible with the UCLA Miniscope v4 from Open Ephys?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-do-i-adjust-magnification-field-of-view-working-distance-spatial-resolution-or-numerical-aperture">How Do I Adjust Magnification/Field-of-View, Working Distance, Spatial Resolution, or Numerical Aperture?</a></li>

@@ -30,7 +30,7 @@
 
     <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
-    <link rel="stylesheet" type="text/css" href="../../../../_static/theme_overrides.css?v=33cb8a6e" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/theme_overrides.css?v=7880b508" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../../../../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
@@ -393,10 +393,16 @@
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../developer/index.html">Developer Guide</a><input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-7"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../../../developer/mods.html">Modifications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../developer/optomechanical.html">Optomechanical Design</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../developer/electrical.html">Electrical Design</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../../developer/mods/index.html">Common Modifications</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l3"><a class="reference internal" href="../../../developer/mods/objective.html">Objective Lens Modification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../developer/mods/spectral.html">Spectral Modification</a></li>
 </ul>
 </li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-8"><i class="fa-solid fa-chevron-down"></i></label><ul>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../faq-troubleshoot-resources/index.html">FAQ &amp; Additional Resources</a><input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-9"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../faq-troubleshoot-resources/faq.html">FAQ</a></li>
 </ul>
 </li>
@@ -480,18 +486,24 @@
         <div class="workflow-name"><b>uclaminiscopev4-miniscopedaq-commutate.bonsai</b></div>
         <div class="workflow-image"><img src="../../../../_static/images/uclaminiscopev4-miniscopedaq-commutate.svg" alt="uclaminiscopev4-miniscopedaq-commutate" /></div>
 </div></li>
-</ol>
-<ol class="arabic">
 <li><p>Set the <code class="docutils literal notranslate"><span class="pre">UCLAMiniscopeV4</span></code> operator’s <code class="docutils literal notranslate"><span class="pre">Index</span></code> property to the value that corresponds to the index of your miniscope.</p>
-<ol class="arabic">
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row docutils">
+<div class="sd-col sd-d-flex-column sd-col-3 sd-col-xs-3 sd-col-sm-3 sd-col-md-3 sd-col-lg-3 docutils">
+<img alt="screenshot of ucla miniscope v4 node properties for index" class="align-center" src="../../../../_images/uclaminiscopev4-properties.webp" />
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<ol class="arabic simple">
 <li><p>Set the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value to 0 by editing the <code class="docutils literal notranslate"><span class="pre">Index</span></code> field that appears in the <em>Properties</em> pane after left-clicking the <code class="docutils literal notranslate"><span class="pre">UCLAMiniscopeV4</span></code> node.</p></li>
-<li><p>Test the selected <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by starting the workflow <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and double left-clicking the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node. If the displayed video stream corresponds to that of your miniscope, proceed to the next step. Otherwise, increment the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by 1 and repeat this step.</p>
+<li><p>Test the selected <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by starting the workflow <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and double left-clicking the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node. If the displayed video stream corresponds to that of your miniscope, proceed to the next step. Otherwise, increment the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by 1 and repeat this step.</p></li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>A device index specifies a camera device. If there are additional cameras connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process.</p>
 </div>
-</li>
-</ol>
+</div>
+</div>
+</div>
 </li>
 <li><p>Set the COM port associated with your commutator in the workflow</p>
 <ul class="simple">

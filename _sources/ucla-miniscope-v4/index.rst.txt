@@ -1,24 +1,29 @@
-:orphan:
-
 #################
 UCLA Miniscope V4
 #################
+
+..  todo:: redo this figure - it bothers me how it freezes. also the miniscope's phase isn't monotonically increasing (look close at first 10-20 frames)
 
 ..  image:: /_static/images/ucla-miniscope-v4-rotating.webp
     :alt:   image of ucla miniscope rotating and example data
     :align: center
 
-*****************************
-UCLA Miniscope v4 Description
-*****************************
 
-To learn about concept of a miniscope, refer to the :ref:`overview/index:Miniscope Description` section.
+.. The miniscope....
 
-To understand how the UCLA Miniscope v4 works, refer to the :doc:`/ucla-miniscope-v4/developer/index` section and its subsections.
+To learn about concept of a miniscope, refer to the :doc:`/overview/index`.
+
+To quickly start using the UCLA Miniscope v4, refer to the :doc:`/ucla-miniscope-v4/quick/index`
+
+To start acquiring data with the UCLA Miniscope v4, refer to the :doc:`/ucla-miniscope-v4/user/index`
+
+To learn how the UCLA Miniscope v4 works, refer to the :doc:`/ucla-miniscope-v4/developer/index`.
 
 ***************************************
 UCLA Miniscope v4 Features & Properties
 ***************************************
+
+..  todo::  format this better
 
 To compare the UCLA Miniscope v4 to other miniscopes sold by Open Ephys, refer to the :ref:`overview/miniscopes:Comparison Chart`.
 
