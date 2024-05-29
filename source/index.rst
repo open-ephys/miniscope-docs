@@ -21,7 +21,7 @@ Open Ephys Miniscope Documentation
 Miniscope Overview
 ******************
 
-..  todo::  make the below card look more like the other cards wrt where the title starts (fix aspet ratio of card's image)
+..  todo::  make the below card look more like the other cards wrt where the title starts (fix aspect ratio of card's image)
 
 ..
     ..  grid::  4
@@ -91,20 +91,12 @@ Miniscope Overview
                 <p class="card-text">Learn more in-depth about how to acquire data with miniscope tools.</p>
             </div>
         </div>
-        <a class="reference internal" href="overview/index.html#software"><span class="std std-ref custom-card">
+        <a class="reference internal" href="overview/index.html"><span class="std std-ref custom-card">
         <div class="card text-center intro-card">
-            <img src="_static/images/noun_books.svg" class="card-img-top" alt="onix software guide" height="100">
+            <img src="_static/images/noun_macbook.svg" class="card-img-top" alt="onix software guide" height="100">
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Miniscope Overview</h5>
                 <p class="card-text">Learn about the miniscope concept and the surrounding ecosystem of open-source hardware and software.</p>
-            </div>
-        </div>
-        <a class="reference internal" href="overview/index.html"><span class="std std-ref custom-card">
-        <div class="card text-center intro-card">
-            <img src="_static/images/noun_books.svg" class="card-img-top" alt="onix resources" height="100">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Resources</h5>
-                <p class="card-text">Browse helpful resources. Learn about existing software tools for acquiring miniscope data.</p>
             </div>
         </div>
     </div>

@@ -18,7 +18,8 @@ If you have not already done so,
                 :columns:   3
                 :child-align:   center
 
-                From the Bonsai landing window, select *Manage Packages*.
+                | From the Bonsai landing window, select 
+                | ``Manage Packages``.
 
             ..  grid-item::
                 :columns:  9
@@ -39,7 +40,8 @@ If you have not already done so,
                 :columns:   3
                 :child-align:   center
         
-                From the Bonsai workflow editor, hover over the *Tools* tab in the top ribbon to reveal a drop-down menu, and left-click *Manage Packages...*.
+                | From the Bonsai workflow editor, hover over the *Tools* tab in the top ribbon to reveal a drop-down menu, and left-click 
+                | ``Manage Packages...``.
 
             ..  grid-item::
                 :columns:   9
@@ -76,4 +78,4 @@ If you have not already done so,
             :align: center
             :height: 400px
 
-        Click the *I Accept* button when prompted.
+        Click the ``I Accept`` button when prompted.
