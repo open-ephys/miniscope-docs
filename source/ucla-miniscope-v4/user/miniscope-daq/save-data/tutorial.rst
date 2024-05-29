@@ -10,20 +10,24 @@ Workflow Tutorial
             {% include 'workflow.html' %}
         {% endwith %}
 
-    ..  the following step should be derived from another source because it's reused everywhere
-
 #.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope.
 
-    ..  image:: /_static/images/uclaminiscopev4-miniscopedaq-savedata-index.webp
-        :alt:   screenshot of where the index field is
-        :align: center
-        :height: 400
+    ..  grid::
+        
+        ..  grid-item::
+            :columns:   3
 
-    #.  Set the ``Index`` value to 0 by editing the ``Index`` field that appears in the *Properties* pane after left-clicking the ``UCLAMiniscopeV4`` node. 
+            ..  image:: /_static/images/uclaminiscopev4-properties.webp
+                :align: center
+                :alt:   screenshot of ucla miniscope v4 node properties for index
 
-    #.  Test the selected ``Index`` value by starting the workflow [1]_ and double left-clicking the ``Image`` node. If the displayed video stream corresponds to that of your miniscope, proceed to the next step. Otherwise, increment the ``Index`` value by 1 and repeat this step.
+        ..  grid-item::
+            
+            #.  Set the ``Index`` value to 0 by editing the ``Index`` field that appears in the *Properties* pane after left-clicking the ``UCLAMiniscopeV4`` node. 
 
-        ..  note::  A device index specifies a camera device. If there are additional cameras connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process.
+            #.  Test the selected ``Index`` value by starting the workflow [1]_ and double left-clicking the ``Image`` node. If the displayed video stream corresponds to that of your miniscope, proceed to the next step. Otherwise, increment the ``Index`` value by 1 and repeat this step.
+
+            ..  note::  A device index specifies a camera device. If there are additional cameras connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process.
 
 #.  Save data according to your specifications:
 
@@ -78,7 +82,7 @@ Workflow Tutorial
 #.  Navigate to the directory where data was saved which was specified in step 3. Confirm the data exists and comports with expectations. The image can be easily viewed in any media playback software that supports the ``FourCC`` value specified in step 3. The orientation data can be easily viewed in any spreadsheet software that can supports .csv files.
 
 .. include::    ../../../quick/tutorial.rst
-    :start-line:    84
-    :end-line:      86
+    :start-line:    94
+    :end-line:      95
 
 ..  [2] Stop a workflow by left-clicking the *Stop* button (indicated by dark red square) at the top of the Bonsai workflow editor or pressing ``Shift+F5`` while the Bonsai workflow editor is the active window.

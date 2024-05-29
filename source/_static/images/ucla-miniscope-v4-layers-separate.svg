@@ -2,20 +2,20 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="187.12805mm"
    height="59.395935mm"
    viewBox="0 0 187.12805 59.395935"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="ucla-miniscope-v4-layers-separate.svg">
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="ucla-miniscope-v4-layers-separate.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="114.46654"
-     inkscape:cy="141.91458"
+     inkscape:zoom="2.8"
+     inkscape:cx="221.60714"
+     inkscape:cy="103.57143"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -38,16 +38,19 @@
      inkscape:snap-page="false"
      inkscape:snap-object-midpoints="true"
      inkscape:snap-others="false"
-     inkscape:window-width="958"
-     inkscape:window-height="1000"
-     inkscape:window-x="-7"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      fit-margin-left="1"
      fit-margin-right="1"
      fit-margin-top="1"
      fit-margin-bottom="1"
-     borderlayer="false" />
+     borderlayer="false"
+     inkscape:showpageshadow="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -56,7 +59,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -7151,153 +7154,190 @@
         <path
            id="path54019"
            d="m 17.3283,54.3295 h 6"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54021"
            d="m 14.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54023"
            d="m 15.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54025"
            d="m 14.8283,60.0795 a 0.5,0.5 0 0 0 1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54027"
            d="m 15.8283,59.5795 a 0.5,0.5 0 0 0 -1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54029"
            d="m 38.5783,35.3295 h -0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54031"
            d="m 38.0783,34.3295 h 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54033"
            d="m 38.0783,34.3295 a 0.5,0.5 0 0 0 0,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54035"
            d="m 38.5783,35.3295 a 0.5,0.5 0 0 0 0,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54037"
            d="m 38.5783,35.8295 a 1.25,1.25 0 0 0 0,-2.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54039"
            d="m 38.5783,33.3295 h -6.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54041"
            d="m 32.8283,35.8295 h 5.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54043"
            d="m 32.8283,35.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54045"
            d="m 14.3283,60.3295 a 1,1 0 0 0 2,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54047"
            d="m 14.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54049"
            d="m 16.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54051"
            d="m 17.3283,54.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54053"
            d="m 14.3283,55.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54055"
            d="m 17.3283,21.8295 a 1,1 0 0 0 1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54057"
            d="m 18.3283,24.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54059"
            d="m 12.3283,25.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54061"
            d="m 11.3283,22.8295 a 1,1 0 0 0 1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54063"
            d="m 12.3283,16.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54065"
            d="m 15.8283,15.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle54067"
            r="3.1015999"
            cy="14.8295"
-           cx="21.8283" />
+           cx="21.8283"
+           style="stroke:#000000" />
         <path
            id="path54069"
            d="m 18.828,12.6299 a 3.7202,3.7202 0 1 0 0.8003,-0.8004"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54071"
            d="m 15.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54073"
            d="m 17.1147,10.9055 1.7136,1.724"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54075"
            d="m 17.9083,10.1106 a 3.8328,3.8328 0 1 0 -4.08,1.4189"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54077"
            d="m 13.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54079"
            d="m 15.8283,11.5295 a 3.8328,3.8328 0 0 0 1.2864,-0.624"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54081"
            d="m 17.9063,10.1132 1.722,1.7163"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle54083"
            r="2.5476"
            cy="7.8295002"
-           cx="14.8283" />
+           cx="14.8283"
+           style="stroke:#000000" />
         <path
            id="path54085"
            d="m 12.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54087"
            d="m 11.3283,22.8295 a 1,1 0 0 0 0,2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54089"
            d="m 17.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54091"
            d="m 18.3283,24.8295 a 1,1 0 0 0 0,-2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g54097"
@@ -7305,7 +7345,8 @@
         <path
            id="path54095"
            d="m 10.3283,41.8295 a 0.5,0.5 0 0 0 -0.5,-0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g54101"
@@ -7313,7 +7354,8 @@
         <path
            id="path54099"
            d="m 11.3283,42.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g54105"
@@ -7321,7 +7363,8 @@
         <path
            id="path54103"
            d="m 19.3283,32.3295 a 0.5,0.5 0 0 0 0.5,0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g54401"
@@ -7329,135 +7372,168 @@
         <path
            id="path54107"
            d="m 16.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54109"
            d="m 31.8283,33.3295 h -7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54111"
            d="m 31.8283,41.3295 v -4.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54113"
            d="m 22.8283,34.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54115"
            d="m 13.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54117"
            d="m 24.3283,41.3295 a 1.5,1.5 0 0 0 -1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54119"
            d="m 9.8283,46.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54121"
            d="m 9.8283,49.8295 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54123"
            d="m 19.8283,46.3295 h 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54125"
            d="m 11.3283,44.8295 v -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54127"
            d="m 18.3283,44.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54129"
            d="m 18.3283,43.3295 v 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54131"
            d="m 23.3283,46.3295 v 8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54133"
            d="m 11.3283,54.3295 v -3"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54135"
            d="m 21.3283,34.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54137"
            d="m 9.8283,46.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54139"
            d="m 24.3283,41.3295 h 7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54141"
            d="m 21.3283,39.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54143"
            d="m 13.3283,54.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54145"
            d="m 19.8283,41.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54147"
            d="m 19.3283,32.3295 h -1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54149"
            d="m 19.8283,41.3295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54151"
            d="m 11.8283,32.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54153"
            d="m 16.3283,30.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54155"
            d="m 9.8283,41.3295 v -9"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54157"
            d="m 21.3283,39.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54159"
            d="m 19.8283,32.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54161"
            d="m 11.8283,32.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54163"
            d="m 19.8283,33.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54165"
            d="m 13.3283,27.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54167"
            d="m 17.3283,26.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54169"
            d="m 12.3283,21.8295 v -5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path54171"
            d="m 17.3283,16.8295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <g
            id="g54173" />
         <g
@@ -11955,153 +12031,190 @@
         <path
            id="path62356"
            d="m 17.3283,54.3295 h 6"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62358"
            d="m 14.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62360"
            d="m 15.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62362"
            d="m 14.8283,60.0795 a 0.5,0.5 0 0 0 1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62364"
            d="m 15.8283,59.5795 a 0.5,0.5 0 0 0 -1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62366"
            d="m 38.5783,35.3295 h -0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62368"
            d="m 38.0783,34.3295 h 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62370"
            d="m 38.0783,34.3295 a 0.5,0.5 0 0 0 0,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62372"
            d="m 38.5783,35.3295 a 0.5,0.5 0 0 0 0,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62374"
            d="m 38.5783,35.8295 a 1.25,1.25 0 0 0 0,-2.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62376"
            d="m 38.5783,33.3295 h -6.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62378"
            d="m 32.8283,35.8295 h 5.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62380"
            d="m 32.8283,35.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62382"
            d="m 14.3283,60.3295 a 1,1 0 0 0 2,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62384"
            d="m 14.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62386"
            d="m 16.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62388"
            d="m 17.3283,54.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62390"
            d="m 14.3283,55.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62392"
            d="m 17.3283,21.8295 a 1,1 0 0 0 1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62394"
            d="m 18.3283,24.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62396"
            d="m 12.3283,25.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62398"
            d="m 11.3283,22.8295 a 1,1 0 0 0 1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62400"
            d="m 12.3283,16.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62402"
            d="m 15.8283,15.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle62404"
            r="3.1015999"
            cy="14.8295"
-           cx="21.8283" />
+           cx="21.8283"
+           style="stroke:#000000" />
         <path
            id="path62406"
            d="m 18.828,12.6299 a 3.7202,3.7202 0 1 0 0.8003,-0.8004"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62408"
            d="m 15.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62410"
            d="m 17.1147,10.9055 1.7136,1.724"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62412"
            d="m 17.9083,10.1106 a 3.8328,3.8328 0 1 0 -4.08,1.4189"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62414"
            d="m 13.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62416"
            d="m 15.8283,11.5295 a 3.8328,3.8328 0 0 0 1.2864,-0.624"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62418"
            d="m 17.9063,10.1132 1.722,1.7163"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle62420"
            r="2.5476"
            cy="7.8295002"
-           cx="14.8283" />
+           cx="14.8283"
+           style="stroke:#000000" />
         <path
            id="path62422"
            d="m 12.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62424"
            d="m 11.3283,22.8295 a 1,1 0 0 0 0,2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62426"
            d="m 17.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62428"
            d="m 18.3283,24.8295 a 1,1 0 0 0 0,-2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g62434"
@@ -12109,7 +12222,8 @@
         <path
            id="path62432"
            d="m 10.3283,41.8295 a 0.5,0.5 0 0 0 -0.5,-0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g62438"
@@ -12117,7 +12231,8 @@
         <path
            id="path62436"
            d="m 11.3283,42.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g62442"
@@ -12125,7 +12240,8 @@
         <path
            id="path62440"
            d="m 19.3283,32.3295 a 0.5,0.5 0 0 0 0.5,0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g62738"
@@ -12133,135 +12249,168 @@
         <path
            id="path62444"
            d="m 16.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62446"
            d="m 31.8283,33.3295 h -7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62448"
            d="m 31.8283,41.3295 v -4.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62450"
            d="m 22.8283,34.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62452"
            d="m 13.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62454"
            d="m 24.3283,41.3295 a 1.5,1.5 0 0 0 -1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62456"
            d="m 9.8283,46.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62458"
            d="m 9.8283,49.8295 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62460"
            d="m 19.8283,46.3295 h 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62462"
            d="m 11.3283,44.8295 v -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62464"
            d="m 18.3283,44.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62466"
            d="m 18.3283,43.3295 v 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62468"
            d="m 23.3283,46.3295 v 8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62470"
            d="m 11.3283,54.3295 v -3"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62472"
            d="m 21.3283,34.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62474"
            d="m 9.8283,46.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62476"
            d="m 24.3283,41.3295 h 7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62478"
            d="m 21.3283,39.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62480"
            d="m 13.3283,54.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62482"
            d="m 19.8283,41.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62484"
            d="m 19.3283,32.3295 h -1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62486"
            d="m 19.8283,41.3295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62488"
            d="m 11.8283,32.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62490"
            d="m 16.3283,30.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62492"
            d="m 9.8283,41.3295 v -9"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62494"
            d="m 21.3283,39.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62496"
            d="m 19.8283,32.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62498"
            d="m 11.8283,32.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62500"
            d="m 19.8283,33.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62502"
            d="m 13.3283,27.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62504"
            d="m 17.3283,26.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62506"
            d="m 12.3283,21.8295 v -5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path62508"
            d="m 17.3283,16.8295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <g
            id="g62510" />
         <g
@@ -17833,153 +17982,190 @@
         <path
            id="path66853"
            d="m 17.3283,54.3295 h 6"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66855"
            d="m 14.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66857"
            d="m 15.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66859"
            d="m 14.8283,60.0795 a 0.5,0.5 0 0 0 1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66861"
            d="m 15.8283,59.5795 a 0.5,0.5 0 0 0 -1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66863"
            d="m 38.5783,35.3295 h -0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66865"
            d="m 38.0783,34.3295 h 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66867"
            d="m 38.0783,34.3295 a 0.5,0.5 0 0 0 0,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66869"
            d="m 38.5783,35.3295 a 0.5,0.5 0 0 0 0,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66871"
            d="m 38.5783,35.8295 a 1.25,1.25 0 0 0 0,-2.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66873"
            d="m 38.5783,33.3295 h -6.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66875"
            d="m 32.8283,35.8295 h 5.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66877"
            d="m 32.8283,35.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66879"
            d="m 14.3283,60.3295 a 1,1 0 0 0 2,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66881"
            d="m 14.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66883"
            d="m 16.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66885"
            d="m 17.3283,54.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66887"
            d="m 14.3283,55.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66889"
            d="m 17.3283,21.8295 a 1,1 0 0 0 1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66891"
            d="m 18.3283,24.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66893"
            d="m 12.3283,25.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66895"
            d="m 11.3283,22.8295 a 1,1 0 0 0 1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66897"
            d="m 12.3283,16.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66899"
            d="m 15.8283,15.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle66901"
            r="3.1015999"
            cy="14.8295"
-           cx="21.8283" />
+           cx="21.8283"
+           style="stroke:#000000" />
         <path
            id="path66903"
            d="m 18.828,12.6299 a 3.7202,3.7202 0 1 0 0.8003,-0.8004"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66905"
            d="m 15.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66907"
            d="m 17.1147,10.9055 1.7136,1.724"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66909"
            d="m 17.9083,10.1106 a 3.8328,3.8328 0 1 0 -4.08,1.4189"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66911"
            d="m 13.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66913"
            d="m 15.8283,11.5295 a 3.8328,3.8328 0 0 0 1.2864,-0.624"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66915"
            d="m 17.9063,10.1132 1.722,1.7163"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle66917"
            r="2.5476"
            cy="7.8295002"
-           cx="14.8283" />
+           cx="14.8283"
+           style="stroke:#000000" />
         <path
            id="path66919"
            d="m 12.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66921"
            d="m 11.3283,22.8295 a 1,1 0 0 0 0,2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66923"
            d="m 17.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66925"
            d="m 18.3283,24.8295 a 1,1 0 0 0 0,-2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g66931"
@@ -17987,7 +18173,8 @@
         <path
            id="path66929"
            d="m 10.3283,41.8295 a 0.5,0.5 0 0 0 -0.5,-0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g66935"
@@ -17995,7 +18182,8 @@
         <path
            id="path66933"
            d="m 11.3283,42.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g66939"
@@ -18003,7 +18191,8 @@
         <path
            id="path66937"
            d="m 19.3283,32.3295 a 0.5,0.5 0 0 0 0.5,0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g67235"
@@ -18011,135 +18200,168 @@
         <path
            id="path66941"
            d="m 16.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66943"
            d="m 31.8283,33.3295 h -7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66945"
            d="m 31.8283,41.3295 v -4.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66947"
            d="m 22.8283,34.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66949"
            d="m 13.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66951"
            d="m 24.3283,41.3295 a 1.5,1.5 0 0 0 -1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66953"
            d="m 9.8283,46.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66955"
            d="m 9.8283,49.8295 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66957"
            d="m 19.8283,46.3295 h 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66959"
            d="m 11.3283,44.8295 v -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66961"
            d="m 18.3283,44.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66963"
            d="m 18.3283,43.3295 v 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66965"
            d="m 23.3283,46.3295 v 8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66967"
            d="m 11.3283,54.3295 v -3"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66969"
            d="m 21.3283,34.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66971"
            d="m 9.8283,46.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66973"
            d="m 24.3283,41.3295 h 7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66975"
            d="m 21.3283,39.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66977"
            d="m 13.3283,54.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66979"
            d="m 19.8283,41.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66981"
            d="m 19.3283,32.3295 h -1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66983"
            d="m 19.8283,41.3295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66985"
            d="m 11.8283,32.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66987"
            d="m 16.3283,30.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66989"
            d="m 9.8283,41.3295 v -9"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66991"
            d="m 21.3283,39.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66993"
            d="m 19.8283,32.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66995"
            d="m 11.8283,32.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66997"
            d="m 19.8283,33.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path66999"
            d="m 13.3283,27.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path67001"
            d="m 17.3283,26.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path67003"
            d="m 12.3283,21.8295 v -5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path67005"
            d="m 17.3283,16.8295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <g
            id="g67007" />
         <g
@@ -23430,153 +23652,190 @@
         <path
            id="path71479"
            d="m 17.3283,54.3295 h 6"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71481"
            d="m 14.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71483"
            d="m 15.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71485"
            d="m 14.8283,60.0795 a 0.5,0.5 0 0 0 1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71487"
            d="m 15.8283,59.5795 a 0.5,0.5 0 0 0 -1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71489"
            d="m 38.5783,35.3295 h -0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71491"
            d="m 38.0783,34.3295 h 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71493"
            d="m 38.0783,34.3295 a 0.5,0.5 0 0 0 0,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71495"
            d="m 38.5783,35.3295 a 0.5,0.5 0 0 0 0,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71497"
            d="m 38.5783,35.8295 a 1.25,1.25 0 0 0 0,-2.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71499"
            d="m 38.5783,33.3295 h -6.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71501"
            d="m 32.8283,35.8295 h 5.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71503"
            d="m 32.8283,35.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71505"
            d="m 14.3283,60.3295 a 1,1 0 0 0 2,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71507"
            d="m 14.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71509"
            d="m 16.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71511"
            d="m 17.3283,54.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71513"
            d="m 14.3283,55.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71515"
            d="m 17.3283,21.8295 a 1,1 0 0 0 1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71517"
            d="m 18.3283,24.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71519"
            d="m 12.3283,25.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71521"
            d="m 11.3283,22.8295 a 1,1 0 0 0 1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71523"
            d="m 12.3283,16.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71525"
            d="m 15.8283,15.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle71527"
            r="3.1015999"
            cy="14.8295"
-           cx="21.8283" />
+           cx="21.8283"
+           style="stroke:#000000" />
         <path
            id="path71529"
            d="m 18.828,12.6299 a 3.7202,3.7202 0 1 0 0.8003,-0.8004"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71531"
            d="m 15.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71533"
            d="m 17.1147,10.9055 1.7136,1.724"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71535"
            d="m 17.9083,10.1106 a 3.8328,3.8328 0 1 0 -4.08,1.4189"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71537"
            d="m 13.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71539"
            d="m 15.8283,11.5295 a 3.8328,3.8328 0 0 0 1.2864,-0.624"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71541"
            d="m 17.9063,10.1132 1.722,1.7163"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle71543"
            r="2.5476"
            cy="7.8295002"
-           cx="14.8283" />
+           cx="14.8283"
+           style="stroke:#000000" />
         <path
            id="path71545"
            d="m 12.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71547"
            d="m 11.3283,22.8295 a 1,1 0 0 0 0,2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71549"
            d="m 17.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71551"
            d="m 18.3283,24.8295 a 1,1 0 0 0 0,-2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g71557"
@@ -23584,7 +23843,8 @@
         <path
            id="path71555"
            d="m 10.3283,41.8295 a 0.5,0.5 0 0 0 -0.5,-0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g71561"
@@ -23592,7 +23852,8 @@
         <path
            id="path71559"
            d="m 11.3283,42.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g71565"
@@ -23600,7 +23861,8 @@
         <path
            id="path71563"
            d="m 19.3283,32.3295 a 0.5,0.5 0 0 0 0.5,0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g71861"
@@ -23608,135 +23870,168 @@
         <path
            id="path71567"
            d="m 16.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71569"
            d="m 31.8283,33.3295 h -7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71571"
            d="m 31.8283,41.3295 v -4.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71573"
            d="m 22.8283,34.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71575"
            d="m 13.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71577"
            d="m 24.3283,41.3295 a 1.5,1.5 0 0 0 -1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71579"
            d="m 9.8283,46.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71581"
            d="m 9.8283,49.8295 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71583"
            d="m 19.8283,46.3295 h 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71585"
            d="m 11.3283,44.8295 v -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71587"
            d="m 18.3283,44.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71589"
            d="m 18.3283,43.3295 v 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71591"
            d="m 23.3283,46.3295 v 8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71593"
            d="m 11.3283,54.3295 v -3"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71595"
            d="m 21.3283,34.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71597"
            d="m 9.8283,46.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71599"
            d="m 24.3283,41.3295 h 7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71601"
            d="m 21.3283,39.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71603"
            d="m 13.3283,54.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71605"
            d="m 19.8283,41.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71607"
            d="m 19.3283,32.3295 h -1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71609"
            d="m 19.8283,41.3295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71611"
            d="m 11.8283,32.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71613"
            d="m 16.3283,30.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71615"
            d="m 9.8283,41.3295 v -9"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71617"
            d="m 21.3283,39.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71619"
            d="m 19.8283,32.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71621"
            d="m 11.8283,32.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71623"
            d="m 19.8283,33.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71625"
            d="m 13.3283,27.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71627"
            d="m 17.3283,26.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71629"
            d="m 12.3283,21.8295 v -5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path71631"
            d="m 17.3283,16.8295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <g
            id="g71633" />
         <g
@@ -28288,153 +28583,190 @@
         <path
            id="path75665"
            d="m 17.3283,54.3295 h 6"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75667"
            d="m 14.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75669"
            d="m 15.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75671"
            d="m 14.8283,60.0795 a 0.5,0.5 0 0 0 1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75673"
            d="m 15.8283,59.5795 a 0.5,0.5 0 0 0 -1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75675"
            d="m 38.5783,35.3295 h -0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75677"
            d="m 38.0783,34.3295 h 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75679"
            d="m 38.0783,34.3295 a 0.5,0.5 0 0 0 0,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75681"
            d="m 38.5783,35.3295 a 0.5,0.5 0 0 0 0,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75683"
            d="m 38.5783,35.8295 a 1.25,1.25 0 0 0 0,-2.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75685"
            d="m 38.5783,33.3295 h -6.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75687"
            d="m 32.8283,35.8295 h 5.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75689"
            d="m 32.8283,35.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75691"
            d="m 14.3283,60.3295 a 1,1 0 0 0 2,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75693"
            d="m 14.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75695"
            d="m 16.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75697"
            d="m 17.3283,54.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75699"
            d="m 14.3283,55.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75701"
            d="m 17.3283,21.8295 a 1,1 0 0 0 1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75703"
            d="m 18.3283,24.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75705"
            d="m 12.3283,25.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75707"
            d="m 11.3283,22.8295 a 1,1 0 0 0 1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75709"
            d="m 12.3283,16.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75711"
            d="m 15.8283,15.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle75713"
            r="3.1015999"
            cy="14.8295"
-           cx="21.8283" />
+           cx="21.8283"
+           style="stroke:#000000" />
         <path
            id="path75715"
            d="m 18.828,12.6299 a 3.7202,3.7202 0 1 0 0.8003,-0.8004"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75717"
            d="m 15.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75719"
            d="m 17.1147,10.9055 1.7136,1.724"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75721"
            d="m 17.9083,10.1106 a 3.8328,3.8328 0 1 0 -4.08,1.4189"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75723"
            d="m 13.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75725"
            d="m 15.8283,11.5295 a 3.8328,3.8328 0 0 0 1.2864,-0.624"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75727"
            d="m 17.9063,10.1132 1.722,1.7163"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle75729"
            r="2.5476"
            cy="7.8295002"
-           cx="14.8283" />
+           cx="14.8283"
+           style="stroke:#000000" />
         <path
            id="path75731"
            d="m 12.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75733"
            d="m 11.3283,22.8295 a 1,1 0 0 0 0,2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75735"
            d="m 17.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75737"
            d="m 18.3283,24.8295 a 1,1 0 0 0 0,-2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g75743"
@@ -28442,7 +28774,8 @@
         <path
            id="path75741"
            d="m 10.3283,41.8295 a 0.5,0.5 0 0 0 -0.5,-0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g75747"
@@ -28450,7 +28783,8 @@
         <path
            id="path75745"
            d="m 11.3283,42.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g75751"
@@ -28458,7 +28792,8 @@
         <path
            id="path75749"
            d="m 19.3283,32.3295 a 0.5,0.5 0 0 0 0.5,0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g76047"
@@ -28466,135 +28801,168 @@
         <path
            id="path75753"
            d="m 16.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75755"
            d="m 31.8283,33.3295 h -7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75757"
            d="m 31.8283,41.3295 v -4.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75759"
            d="m 22.8283,34.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75761"
            d="m 13.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75763"
            d="m 24.3283,41.3295 a 1.5,1.5 0 0 0 -1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75765"
            d="m 9.8283,46.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75767"
            d="m 9.8283,49.8295 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75769"
            d="m 19.8283,46.3295 h 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75771"
            d="m 11.3283,44.8295 v -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75773"
            d="m 18.3283,44.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75775"
            d="m 18.3283,43.3295 v 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75777"
            d="m 23.3283,46.3295 v 8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75779"
            d="m 11.3283,54.3295 v -3"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75781"
            d="m 21.3283,34.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75783"
            d="m 9.8283,46.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75785"
            d="m 24.3283,41.3295 h 7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75787"
            d="m 21.3283,39.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75789"
            d="m 13.3283,54.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75791"
            d="m 19.8283,41.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75793"
            d="m 19.3283,32.3295 h -1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75795"
            d="m 19.8283,41.3295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75797"
            d="m 11.8283,32.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75799"
            d="m 16.3283,30.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75801"
            d="m 9.8283,41.3295 v -9"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75803"
            d="m 21.3283,39.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75805"
            d="m 19.8283,32.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75807"
            d="m 11.8283,32.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75809"
            d="m 19.8283,33.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75811"
            d="m 13.3283,27.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75813"
            d="m 17.3283,26.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75815"
            d="m 12.3283,21.8295 v -5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path75817"
            d="m 17.3283,16.8295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <g
            id="g75819" />
         <g
@@ -36261,153 +36629,190 @@
         <path
            id="path81128"
            d="m 17.3283,54.3295 h 6"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81130"
            d="m 14.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81132"
            d="m 15.8283,59.5795 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81134"
            d="m 14.8283,60.0795 a 0.5,0.5 0 0 0 1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81136"
            d="m 15.8283,59.5795 a 0.5,0.5 0 0 0 -1,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81138"
            d="m 38.5783,35.3295 h -0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81140"
            d="m 38.0783,34.3295 h 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81142"
            d="m 38.0783,34.3295 a 0.5,0.5 0 0 0 0,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81144"
            d="m 38.5783,35.3295 a 0.5,0.5 0 0 0 0,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81146"
            d="m 38.5783,35.8295 a 1.25,1.25 0 0 0 0,-2.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81148"
            d="m 38.5783,33.3295 h -6.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81150"
            d="m 32.8283,35.8295 h 5.75"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81152"
            d="m 32.8283,35.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81154"
            d="m 14.3283,60.3295 a 1,1 0 0 0 2,0"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81156"
            d="m 14.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81158"
            d="m 16.3283,55.3295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81160"
            d="m 17.3283,54.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81162"
            d="m 14.3283,55.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81164"
            d="m 17.3283,21.8295 a 1,1 0 0 0 1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81166"
            d="m 18.3283,24.8295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81168"
            d="m 12.3283,25.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81170"
            d="m 11.3283,22.8295 a 1,1 0 0 0 1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81172"
            d="m 12.3283,16.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81174"
            d="m 15.8283,15.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle81176"
            r="3.1015999"
            cy="14.8295"
-           cx="21.8283" />
+           cx="21.8283"
+           style="stroke:#000000" />
         <path
            id="path81178"
            d="m 18.828,12.6299 a 3.7202,3.7202 0 1 0 0.8003,-0.8004"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81180"
            d="m 15.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81182"
            d="m 17.1147,10.9055 1.7136,1.724"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81184"
            d="m 17.9083,10.1106 a 3.8328,3.8328 0 1 0 -4.08,1.4189"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81186"
            d="m 13.8283,15.3295 v -3.8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81188"
            d="m 15.8283,11.5295 a 3.8328,3.8328 0 0 0 1.2864,-0.624"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81190"
            d="m 17.9063,10.1132 1.722,1.7163"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <circle
            id="circle81192"
            r="2.5476"
            cy="7.8295002"
-           cx="14.8283" />
+           cx="14.8283"
+           style="stroke:#000000" />
         <path
            id="path81194"
            d="m 12.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81196"
            d="m 11.3283,22.8295 a 1,1 0 0 0 0,2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81198"
            d="m 17.3283,25.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81200"
            d="m 18.3283,24.8295 a 1,1 0 0 0 0,-2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g81206"
@@ -36415,7 +36820,8 @@
         <path
            id="path81204"
            d="m 10.3283,41.8295 a 0.5,0.5 0 0 0 -0.5,-0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g81210"
@@ -36423,7 +36829,8 @@
         <path
            id="path81208"
            d="m 11.3283,42.8295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g81214"
@@ -36431,7 +36838,8 @@
         <path
            id="path81212"
            d="m 19.3283,32.3295 a 0.5,0.5 0 0 0 0.5,0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
       </g>
       <g
          id="g81510"
@@ -36439,135 +36847,168 @@
         <path
            id="path81216"
            d="m 16.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81218"
            d="m 31.8283,33.3295 h -7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81220"
            d="m 31.8283,41.3295 v -4.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81222"
            d="m 22.8283,34.8295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81224"
            d="m 13.3283,27.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81226"
            d="m 24.3283,41.3295 a 1.5,1.5 0 0 0 -1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81228"
            d="m 9.8283,46.3295 v 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81230"
            d="m 9.8283,49.8295 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81232"
            d="m 19.8283,46.3295 h 3.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81234"
            d="m 11.3283,44.8295 v -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81236"
            d="m 18.3283,44.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81238"
            d="m 18.3283,43.3295 v 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81240"
            d="m 23.3283,46.3295 v 8"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81242"
            d="m 11.3283,54.3295 v -3"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81244"
            d="m 21.3283,34.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81246"
            d="m 9.8283,46.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81248"
            d="m 24.3283,41.3295 h 7.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81250"
            d="m 21.3283,39.8295 h 1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81252"
            d="m 13.3283,54.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81254"
            d="m 19.8283,41.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81256"
            d="m 19.3283,32.3295 h -1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81258"
            d="m 19.8283,41.3295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81260"
            d="m 11.8283,32.3295 a 1.5,1.5 0 0 0 1.5,-1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81262"
            d="m 16.3283,30.8295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81264"
            d="m 9.8283,41.3295 v -9"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81266"
            d="m 21.3283,39.8295 a 1.5,1.5 0 0 0 -1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81268"
            d="m 19.8283,32.8295 v 0.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81270"
            d="m 11.8283,32.3295 h -2"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81272"
            d="m 19.8283,33.3295 a 1.5,1.5 0 0 0 1.5,1.5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81274"
            d="m 13.3283,27.3295 a 1,1 0 0 0 -1,-1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81276"
            d="m 17.3283,26.3295 a 1,1 0 0 0 -1,1"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81278"
            d="m 12.3283,21.8295 v -5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <path
            id="path81280"
            d="m 17.3283,16.8295 v 5"
-           inkscape:connector-curvature="0" />
+           inkscape:connector-curvature="0"
+           style="stroke:#000000" />
         <g
            id="g81282" />
         <g

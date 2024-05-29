@@ -58,19 +58,13 @@ Sometimes the experiment requires habituating more animals that you have UCLA Mi
 What Video CODEC Should I Use to Save Miniscope Data?
 *****************************************************
 
-GREY and FFV1 are recommended for neural recordings. 
+Refer to the :doc:`Save Data Workflow Tutorial </ucla-miniscope-v4/user/miniscope-daq/save-data/tutorial>`.
 
-*   GREY does not perform data compression. 
+*******************************************************
+What Tether Lengths Can Be Used With UCLA Miniscope v4?
+*******************************************************
 
-*   FFV1 performs lossless data compression. 
-
-MJPG or similar is sufficient for behavioral recordings.
-
-******************************************************
-What Cable Lengths Can Be Used With UCLA Miniscope v4?
-******************************************************
-
-Cable lengths longer than three meters can be problematic. Significant voltage drop and power losses can occur over such distances with the coaxial cable. 
+Tether lengths longer than three meters can be problematic. Significant voltage drop and power losses can occur over such distances with the coaxial cable. 
 
 Decreasing the length of cable between the commutator and the data acquisition hardware allows increasing the length of the cable between the animal and the commutator. This reduces the potential of the cable length bottlenecking the maximimum explorable area. The length of the USB cable between the Miniscope-DAQ and the PC is not as critical.
 
@@ -94,13 +88,13 @@ Open Ephys does not sell GRIN lenses. For more information on this subject, ask 
 What Flourophores Are Compatible with the UCLA Miniscope v4 from Open Ephys?
 ****************************************************************************
 
-The UCLA Miniscope v4 as sold off-the-shelf by Open Ephys is compatible with green fluorophores (e.g. GCAMP6f) in our :ref:`standard configuration <ucla-miniscope-v4/developer/mods:Standard>` or red fluorophores (e.g. jRGECO1a) in our :ref:`lime configuration <ucla-miniscope-v4/developer/mods:Lime>`. Is it also possible to adapt the UCLA Miniscope v4 to :ref:`other <ucla-miniscope-v4/developer/mods:Other>` fluorophores that don't share spectral characteristics with the fluorophores listed above. Refer to the :ref:`ucla-miniscope-v4/developer/mods:Spectral Modification` section for more details.
+The UCLA Miniscope v4 as sold off-the-shelf by Open Ephys is compatible with green fluorophores (e.g. GCAMP6f) in our :ref:`standard configuration <ucla-miniscope-v4/developer/mods/spectral:Standard>` or red fluorophores (e.g. jRGECO1a) in our :ref:`lime configuration <ucla-miniscope-v4/developer/mods/spectral:Lime>`. Is it also possible to adapt the UCLA Miniscope v4 to :ref:`other <ucla-miniscope-v4/developer/mods/spectral:Other>` fluorophores that don't share spectral characteristics with the fluorophores listed above. Refer to the :doc:`/ucla-miniscope-v4/developer/mods/spectral` page for more details.
 
 *********************************************************************************************************
 How Do I Adjust Magnification/Field-of-View, Working Distance, Spatial Resolution, or Numerical Aperture?
 *********************************************************************************************************
 
-An alternative objective module can be constructed using a set of lenses that are different from the default ones. Swapping these objective modules allows adjustment of these optical characteristics. Refer to the :ref:`ucla-miniscope-v4/developer/mods:Objective Lens Modification` section for more details.
+An alternative objective module can be constructed using a set of lenses that are different from the default ones. Swapping these objective modules allows adjustment of these optical characteristics. Refer to the :doc:`/ucla-miniscope-v4/developer/mods/objective` page for more details.
 
 ..
     *************************************************************
