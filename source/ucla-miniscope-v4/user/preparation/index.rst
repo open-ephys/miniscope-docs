@@ -3,7 +3,7 @@
 Planning Ahead
 ##############
 
-To faciltate data-acquisition according to your timeline, this section of the documentation outlines the required tools and prepatory steps necessary to assemble/operate the UCLA Miniscope v4 and acquire data with it.
+To facilitate data-acquisition according to your timeline, this section of the documentation outlines the required tools and prepatory steps necessary to assemble/operate the UCLA Miniscope v4 and acquire data with it.
 
 ****************
 Surgery Timeline
