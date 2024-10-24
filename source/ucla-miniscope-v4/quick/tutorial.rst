@@ -92,4 +92,4 @@ Interact with the UCLA Miniscope v4 Through Bonsai
 
                         If the imaging target does not enter the depth of focus, try readjusting the distance of the miniscope from the imaging target and performing the test again. If the working distance does not adjust, try reassembling the EWL module according to the *Assembly* instructions and repeating this part. 
 
-..  [1] Start a workflow by left-clicking the *Start* button (indicated by green triangle) at the top of the Bonsai workflow editor or pressing ``F5`` while the Bonsai workflow editor is the active window.
+..  include::  /includes/start-workflow.rst

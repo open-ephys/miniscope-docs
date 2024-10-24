@@ -81,8 +81,6 @@ Workflow Tutorial
 
 #.  Navigate to the directory where data was saved which was specified in step 3. Confirm the data exists and comports with expectations. The image can be easily viewed in any media playback software that supports the ``FourCC`` value specified in step 3. The orientation data can be easily viewed in any spreadsheet software that can supports .csv files.
 
-.. include::    ../../../quick/tutorial.rst
-    :start-line:    94
-    :end-line:      95
+.. include::    /includes/start-workflow.rst
 
 ..  [2] Stop a workflow by left-clicking the *Stop* button (indicated by dark red square) at the top of the Bonsai workflow editor or pressing ``Shift+F5`` while the Bonsai workflow editor is the active window.

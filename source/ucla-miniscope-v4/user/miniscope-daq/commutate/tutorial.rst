@@ -33,16 +33,20 @@ Workflow Tutorial
 
 #.  Set the COM port associated with your commutator in the workflow
 
-    *   Left-click the ``Commutator`` node and edit the ``PortName`` property under the `Properties` pane to match the port that corresponds to your commutator. 
-    
+    *   Left-click the ``AutoCommutator`` node and set the ``PortName`` property under the `Properties` pane to match the port that corresponds to your commutator. 
+
+    *   Confirm the RotationAxis is search
+
+#.  Set the commutator to rotate around the correct axis
+
+    *   Left-click the ``AutoCommutator`` node and set the ``RotationAxis`` property under the `Properties` pane to "0, 0, 1". 
+
     ..  note::  
         
-        If you are uncertain about which COM port corresponds to your , follow these instructions:
+        If you are uncertain about which COM port corresponds to your commutator, follow these instructions:
 
         #.  Open Window's *Device Manager*.
 
         #.  Unplug the commutator, and plug it back in. Observe which COM port disappears and appears in device manager when doing so - that is the COM port associated with your commutator. If the commutator does not appear in device manager, follow `these instructions <https://www.pjrc.com/teensy/troubleshoot.html>`__
 
-.. include::    ../../../quick/tutorial.rst
-    :start-line:    94
-    :end-line:      95
+.. include::    /includes/start-workflow.rst

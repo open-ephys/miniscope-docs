@@ -29,6 +29,4 @@ Workflow Tutorial
 
             ..  note::  A device index specifies a camera device. If there are additional cameras connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process.
 
-.. include::    ../../../quick/tutorial.rst
-    :start-line:    94
-    :end-line:      95
+.. include::    /includes/start-workflow.rst
