@@ -10,7 +10,7 @@ The UCLA Miniscope v4 as sold by Open Ephys is compatible with green indicators 
 Standard
 ********
 
-470nm (blue) LED excitation light source (`LXZ1-PB01 <https://lumileds.com/wp-content/uploads/files/DS105.pdf>`__) to image a green indicator e.g. `GCaMP6f <https://www.fpbase.org/protein/gcamp6f/>`__: 
+470nm (blue) LED excitation light source (`LXZ1-PB01 <https://octopart.com/datasheet/lxz1-px01-lumileds-31228818>`__) to image a green indicator e.g. `GCaMP6f <https://www.fpbase.org/protein/gcamp6f/>`__: 
 
 .. figure:: /_static/images/gcamp6f.svg
     :alt:   plot of emission/excitation spectra of GCaMP6f
@@ -38,7 +38,7 @@ The standard UCLA Miniscope v4 is sold by Open Ephys in DIY kits and already ass
 Lime
 ****
 
-560nm (yellow-green) LED excitation light source (`LXZ1-PX01 <https://lumileds.com/wp-content/uploads/files/DS105.pdf>`__) to image a red indicator e.g. `jRGECO1a <https://www.fpbase.org/protein/jrgeco1a/>`__:
+560nm (yellow-green) LED excitation light source (`LXZ1-PX01 <https://octopart.com/datasheet/lxz1-px01-lumileds-31228818>`__) to image a red indicator e.g. `jRGECO1a <https://www.fpbase.org/protein/jrgeco1a/>`__:
 
 .. figure:: /_static/images/jrgeco1a.svg
     :alt:   plot of emission/excitation spectra of jRGECO1a

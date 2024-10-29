@@ -1,0 +1,1 @@
+Start a workflow by left-clicking the *Start* button (indicated by green triangle) at the top of the Bonsai workflow editor or pressing ``F5`` while the Bonsai workflow editor is the active window.

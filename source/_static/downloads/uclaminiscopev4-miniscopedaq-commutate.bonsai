@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WorkflowBuilder Version="2.8.1"
+<WorkflowBuilder Version="2.8.5"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                 xmlns:p1="clr-namespace:OpenEphys.Bonsai.Miniscope;assembly=OpenEphys.Bonsai.Miniscope"
+                 xmlns:p1="clr-namespace:OpenEphys.Miniscope;assembly=OpenEphys.Miniscope"
                  xmlns:wie="clr-namespace:Bonsai.Windows.Input;assembly=Bonsai.Windows.Input"
                  xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
                  xmlns:ipy="clr-namespace:Bonsai.Scripting.IronPython;assembly=Bonsai.Scripting.IronPython"
@@ -11,11 +11,11 @@
     <Nodes>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="p1:UclaMiniscopeV4">
-          <p1:Index>1</p1:Index>
+          <p1:Index>0</p1:Index>
           <p1:LedBrightness>0</p1:LedBrightness>
           <p1:Focus>0</p1:Focus>
-          <p1:SensorGain>Medium</p1:SensorGain>
-          <p1:FramesPerSecond>Fps15</p1:FramesPerSecond>
+          <p1:SensorGain>Low</p1:SensorGain>
+          <p1:FramesPerSecond>Fps30</p1:FramesPerSecond>
           <p1:LedRespectsTrigger>false</p1:LedRespectsTrigger>
         </Combinator>
       </Expression>

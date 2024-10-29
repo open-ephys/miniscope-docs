@@ -75,7 +75,7 @@ language = 'en'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = ["includes/*.rst"]
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = None
@@ -198,7 +198,7 @@ html_theme_options = {
     "navbar_end": ["navbar-icon-links"],
     "navbar_align": "content",
     "footer_start": ["copyright"],
-     "external_links": [{"name": "Open Ephys", "url": "https://open-ephys.org"},],
+    "external_links": [{"name": "Open Ephys", "url": "https://open-ephys.org"},],
     'icon_links': [
         dict(name='GitHub',
              url='https://github.com/open-ephys/miniscope-docs',

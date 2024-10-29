@@ -3,23 +3,9 @@
 Open Ephys Miniscope Documentation 
 ##################################
 
-..  grid::  
-
-    ..  grid-item::
-        :columns:   5
-        :child-align:   center
-
-        ..  image:: /_static/images/uclaminiscopev4-miniscopedaq-quick.svg
-
-    ..  grid-item::
-        :columns:   7
-        :child-align:   center
-
-        ..  image:: /_static/images/uclaminiscopev4-data-clipped.webp
-
-******************
-Miniscope Overview
-******************
+..  image:: /_static/images/miniscope-daq_ucla-miniscope-v4.webp
+    :width:     100%   
+    :align:     center 
 
 ..  todo::  make the below card look more like the other cards wrt where the title starts (fix aspect ratio of card's image)
 
@@ -73,7 +59,6 @@ Miniscope Overview
 
 .. raw:: html
 
-    <br>
     <div class="card-columns">
         <a class="reference internal" href="ucla-miniscope-v4/quick/index.html#getting-started"><span class="std std-ref custom-card">
         <div class="card text-center intro-card">
