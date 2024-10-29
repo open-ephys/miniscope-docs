@@ -52,7 +52,7 @@ Bonsai Installation and Configuration
         #.  Configure the *Package Source* field to *All* using the drop-down menu:
 
             ..  image:: /_static/images/bonsai-package-manager-package-source-dropdown.webp
-                :alt:   screenshot of Bonsai package manager with the Package Source drop-down higlighted
+                :alt:   screenshot of Bonsai package manager with the Package Source drop-down highlighted
                 :align: center
                 :height: 400px
 
@@ -60,14 +60,14 @@ Bonsai Installation and Configuration
 
             *   Bonsai.StarterPack
 
-            *   OpenEphys.Miniscope.Bonsai
+            *   OpenEphys.Miniscope
 
-            *   Bonsai.Scripting.IronPython.Design
+            *   OpenEphys.Commutator
 
             For each one, search its name in the search bar, left-click its corresponding entry, and left-click the *Install* button. For example:
 
             ..  image:: /_static/images/bonsai-starterpack.webp
-                :alt:   screenshot of Bonsai package manager with search bar higlighted
+                :alt:   screenshot of Bonsai package manager with search bar highlighted
                 :align: center
                 :height: 400px
 

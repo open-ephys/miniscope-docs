@@ -494,12 +494,13 @@
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <ol class="arabic simple">
-<li><p>Set the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value to 0 by editing the <code class="docutils literal notranslate"><span class="pre">Index</span></code> field that appears in the <em>Properties</em> pane after left-clicking the <code class="docutils literal notranslate"><span class="pre">UCLAMiniscopeV4</span></code> node.</p></li>
-<li><p>Test the selected <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by starting the workflow <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and double left-clicking the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node. If the displayed video stream corresponds to that of your miniscope, proceed to the next step. Otherwise, increment the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by 1 and repeat this step.</p></li>
+<li><p>Set the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by clicking on the <kbd class="kbd docutils literal notranslate">...</kbd> dropdown available at the <code class="docutils literal notranslate"><span class="pre">Index</span></code> field that appears in the <em>Properties</em> pane after left-clicking the <code class="docutils literal notranslate"><span class="pre">UCLAMiniscopeV4</span></code> node.</p></li>
+<li><p>Click <kbd class="kbd docutils literal notranslate">Scan</kbd> and choose from one of the indices that appear. This might take time if many physical or virtual camera devices are connected to your computer.</p></li>
+<li><p>Click <kbd class="kbd docutils literal notranslate">Ok</kbd>.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>A device index specifies a camera device. If there are additional cameras connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process.</p>
+<p>If there are multiple miniscopes connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process. Try starting the workflow now <a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> to confirm the selected index is correct.</p>
 </div>
 </div>
 </div>
@@ -507,11 +508,17 @@
 </li>
 <li><p>Set the COM port associated with your commutator in the workflow</p>
 <ul class="simple">
-<li><p>Left-click the <code class="docutils literal notranslate"><span class="pre">Commutator</span></code> node and edit the <code class="docutils literal notranslate"><span class="pre">PortName</span></code> property under the <cite>Properties</cite> pane to match the port that corresponds to your commutator.</p></li>
+<li><p>Left-click the <code class="docutils literal notranslate"><span class="pre">AutoCommutator</span></code> node and set the <code class="docutils literal notranslate"><span class="pre">PortName</span></code> property under the <cite>Properties</cite> pane to match the port that corresponds to your commutator.</p></li>
+<li><p>Confirm the RotationAxis is search</p></li>
+</ul>
+</li>
+<li><p>Set the commutator to rotate around the correct axis</p>
+<ul class="simple">
+<li><p>Left-click the <code class="docutils literal notranslate"><span class="pre">AutoCommutator</span></code> node and set the <code class="docutils literal notranslate"><span class="pre">RotationAxis</span></code> property under the <cite>Properties</cite> pane to “0, 0, 1”.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are uncertain about which COM port corresponds to your , follow these instructions:</p>
+<p>If you are uncertain about which COM port corresponds to your commutator, follow these instructions:</p>
 <ol class="arabic simple">
 <li><p>Open Window’s <em>Device Manager</em>.</p></li>
 <li><p>Unplug the commutator, and plug it back in. Observe which COM port disappears and appears in device manager when doing so - that is the COM port associated with your commutator. If the commutator does not appear in device manager, follow <a class="reference external" href="https://www.pjrc.com/teensy/troubleshoot.html">these instructions</a></p></li>

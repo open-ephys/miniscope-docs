@@ -485,12 +485,13 @@
 </div>
 <div class="sd-col sd-d-flex-column docutils">
 <ol class="arabic simple">
-<li><p>Set the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value to 0 by editing the <code class="docutils literal notranslate"><span class="pre">Index</span></code> field that appears in the <em>Properties</em> pane after left-clicking the <code class="docutils literal notranslate"><span class="pre">UCLAMiniscopeV4</span></code> node.</p></li>
-<li><p>Test the selected <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by starting the workflow <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> and double left-clicking the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node. If the displayed video stream corresponds to that of your miniscope, proceed to the next step. Otherwise, increment the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by 1 and repeat this step.</p></li>
+<li><p>Set the <code class="docutils literal notranslate"><span class="pre">Index</span></code> value by clicking on the <kbd class="kbd docutils literal notranslate">...</kbd> dropdown available at the <code class="docutils literal notranslate"><span class="pre">Index</span></code> field that appears in the <em>Properties</em> pane after left-clicking the <code class="docutils literal notranslate"><span class="pre">UCLAMiniscopeV4</span></code> node.</p></li>
+<li><p>Click <kbd class="kbd docutils literal notranslate">Scan</kbd> and choose from one of the indices that appear. This might take time if many physical or virtual camera devices are connected to your computer.</p></li>
+<li><p>Click <kbd class="kbd docutils literal notranslate">Ok</kbd>.</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>A device index specifies a camera device. If there are additional cameras connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process.</p>
+<p>If there are multiple miniscopes connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process. Try starting the workflow now <a class="footnote-reference brackets" href="#id4" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> to confirm the selected index is correct.</p>
 </div>
 </div>
 </div>
@@ -501,11 +502,11 @@
 <dl class="field-list">
 <dt class="field-odd">Image Data<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Double left-click the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node. This displays a real-time visualization of image data from the sensor. Attenuate the sensor’s exposure to ambient light or try imaging a target. Confirm that the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node visualizer comports with expectations:</p>
-<a class="reference internal image-reference" href="../../_images/image-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/image-demo.webp" style="height: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/image-demo.webp"><img alt="animation of demonstrating miniscope data" class="align-center" src="../../_images/image-demo.webp" style="height: 400px;" /></a>
 </dd>
 <dt class="field-even">Orientation Data<span class="colon">:</span></dt>
 <dd class="field-even"><p>Double left-click the <code class="docutils literal notranslate"><span class="pre">Quaternion</span></code> node. This displays a real-time visualization of quarternion data which represents the miniscope’s orientation. Right-click the visualization, and left-click the drop-down menu. Set the value in the <code class="docutils literal notranslate"><span class="pre">History</span> <span class="pre">Length</span></code> field to 100. Reorient the UCLA Miniscope v4. Confirm the quarternion visualization responds accordingly:</p>
-<a class="reference internal image-reference" href="../../_images/quarternion-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/quarternion-demo.webp" style="height: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/quarternion-demo.webp"><img alt="animation of demonstrating quaternion data" class="align-center" src="../../_images/quarternion-demo.webp" style="height: 400px;" /></a>
 </dd>
 </dl>
 <p><strong>UCLA Miniscope v4 Settings</strong></p>
@@ -520,20 +521,20 @@
 <dl class="field-list">
 <dt class="field-odd">Frame Rate<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Change the <code class="docutils literal notranslate"><span class="pre">FramesPerSecond</span></code> value by left-clicking the corresponding field’s drop-down menu located in the <em>Properties</em> pane and selecting a different option. Frame rate and exposure-duration-per-frame are inversely related, so higher frame rates produce darker images. Use this information and look at the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node visualizer to confirm that the frame rate adjusts according to the <code class="docutils literal notranslate"><span class="pre">FramesPerSecond</span></code> value.</p>
-<a class="reference internal image-reference" href="../../_images/fps-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/fps-demo.webp" style="height: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/fps-demo.webp"><img alt="animation of changing miniscope fps" class="align-center" src="../../_images/fps-demo.webp" style="height: 400px;" /></a>
 <p>A discerning eye can also notice changes in frame rate, but that requires a moving image.</p>
 </dd>
 <dt class="field-even">Sensor Gain<span class="colon">:</span></dt>
 <dd class="field-even"><p>Change the <code class="docutils literal notranslate"><span class="pre">SensorGain</span></code> value by left-clicking the corresponding field’s drop-down menu located in the <em>Properties</em> pane and selecting a different option. Look at the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node visualizer to confirm that the sensor’s gain is adjusted according to the value of <code class="docutils literal notranslate"><span class="pre">SensorGain</span></code> value.</p>
-<a class="reference internal image-reference" href="../../_images/gain-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/gain-demo.webp" style="height: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/gain-demo.webp"><img alt="animation of changing miniscope gain" class="align-center" src="../../_images/gain-demo.webp" style="height: 400px;" /></a>
 </dd>
 <dt class="field-odd">Excitation Light Intensity<span class="colon">:</span></dt>
 <dd class="field-odd"><p>Change the <code class="docutils literal notranslate"><span class="pre">LEDBrightness</span></code> value by left-clicking the corresponding field’s drop-down menu located in the <em>Properties</em> pane and sliding the scrollbar. Confirm that the intensity of the excitation light adjusts according to the <code class="docutils literal notranslate"><span class="pre">LEDBrightness</span></code> value.</p>
-<a class="reference internal image-reference" href="../../_images/led-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/led-demo.webp" style="height: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/led-demo.webp"><img alt="animation of changing miniscope excitation light intensity" class="align-center" src="../../_images/led-demo.webp" style="height: 400px;" /></a>
 </dd>
 <dt class="field-even">Dynamic Focusing<span class="colon">:</span></dt>
 <dd class="field-even"><p>Place the assembled miniscope approximately its working distance away from an imaging target (e.g. a Kimwipe). Change the <code class="docutils literal notranslate"><span class="pre">EWL</span></code> value by left-clicking the corresponding field’s drop-down menu located in the <em>Properties</em> pane and selecting a different option. Look at the <code class="docutils literal notranslate"><span class="pre">Image</span></code> node visualizer moves in-and-out according to the <code class="docutils literal notranslate"><span class="pre">EWL</span></code> value.</p>
-<a class="reference internal image-reference" href="../../_images/focus-demo.webp"><img alt="screenshot of Bonsai package manager with search bar higlighted" class="align-center" src="../../_images/focus-demo.webp" style="height: 400px;" /></a>
+<a class="reference internal image-reference" href="../../_images/focus-demo.webp"><img alt="animation of changing miniscope focus" class="align-center" src="../../_images/focus-demo.webp" style="height: 400px;" /></a>
 <p>If the imaging target does not enter the depth of focus, try readjusting the distance of the miniscope from the imaging target and performing the test again. If the working distance does not adjust, try reassembling the EWL module according to the <em>Assembly</em> instructions and repeating this part.</p>
 </dd>
 </dl>

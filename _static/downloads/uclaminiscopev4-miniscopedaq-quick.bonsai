@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<WorkflowBuilder Version="2.8.5"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xmlns:p1="clr-namespace:OpenEphys.Miniscope;assembly=OpenEphys.Miniscope"
+                 xmlns="https://bonsai-rx.org/2018/workflow">
+  <Workflow>
+    <Nodes>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="p1:UclaMiniscopeV4">
+          <p1:Index>3</p1:Index>
+          <p1:LedBrightness>0</p1:LedBrightness>
+          <p1:Focus>0</p1:Focus>
+          <p1:SensorGain>Low</p1:SensorGain>
+          <p1:FramesPerSecond>Fps30</p1:FramesPerSecond>
+          <p1:LedRespectsTrigger>false</p1:LedRespectsTrigger>
+        </Combinator>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>Image</Selector>
+      </Expression>
+      <Expression xsi:type="MemberSelector">
+        <Selector>Quaternion</Selector>
+      </Expression>
+    </Nodes>
+    <Edges>
+      <Edge From="0" To="1" Label="Source1" />
+      <Edge From="0" To="2" Label="Source1" />
+    </Edges>
+  </Workflow>
+</WorkflowBuilder>

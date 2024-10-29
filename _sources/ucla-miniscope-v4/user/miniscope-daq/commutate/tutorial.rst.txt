@@ -25,24 +25,25 @@ Workflow Tutorial
 
         ..  grid-item::
             
-            #.  Set the ``Index`` value to 0 by editing the ``Index`` field that appears in the *Properties* pane after left-clicking the ``UCLAMiniscopeV4`` node. 
-
-            #.  Test the selected ``Index`` value by starting the workflow [1]_ and double left-clicking the ``Image`` node. If the displayed video stream corresponds to that of your miniscope, proceed to the next step. Otherwise, increment the ``Index`` value by 1 and repeat this step.
-
-            ..  note::  A device index specifies a camera device. If there are additional cameras connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process.
+            ..  include::  /includes/set-index.rst
 
 #.  Set the COM port associated with your commutator in the workflow
 
-    *   Left-click the ``Commutator`` node and edit the ``PortName`` property under the `Properties` pane to match the port that corresponds to your commutator. 
-    
+    *   Left-click the ``AutoCommutator`` node and set the ``PortName`` property under the `Properties` pane to match the port that corresponds to your commutator. 
+
+    *   Confirm the RotationAxis is search
+
+#.  Set the commutator to rotate around the correct axis
+
+    *   Left-click the ``AutoCommutator`` node and set the ``RotationAxis`` property under the `Properties` pane to "0, 0, 1". 
+
     ..  note::  
         
-        If you are uncertain about which COM port corresponds to your , follow these instructions:
+        If you are uncertain about which COM port corresponds to your commutator, follow these instructions:
 
         #.  Open Window's *Device Manager*.
 
         #.  Unplug the commutator, and plug it back in. Observe which COM port disappears and appears in device manager when doing so - that is the COM port associated with your commutator. If the commutator does not appear in device manager, follow `these instructions <https://www.pjrc.com/teensy/troubleshoot.html>`__
 
-.. include::    ../../../quick/tutorial.rst
-    :start-line:    94
-    :end-line:      95
+..  [1]
+    .. include::    /includes/start-workflow.rst
