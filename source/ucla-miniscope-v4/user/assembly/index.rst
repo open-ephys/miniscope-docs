@@ -5,8 +5,12 @@ Assembling the UCLA Miniscope V4
 
 .. image:: /_static/images/v4_assembly/outline.jpg
   :scale: 30%
+  :align: center
 
-This assembly guide is specific to the UCLA Miniscope V4.4 supplied by the Open Ephys Store and is provided on an "as-is" basis, you are always responsible for your own decisions regarding experiments.
+
+This assembly guide is specific to the UCLA Miniscope V4.4 supplied by the Open Ephys Store and is
+provided on an "as-is" basis, you are always responsible for your own decisions regarding assembly
+and experiments.
 
 ******************************************
 Necessary Equipment for Miniscope Assembly
@@ -34,160 +38,165 @@ Below is a visualization of the equipment that can be used to assemble and servi
 
 ..  image:: /_static/images/v4_assembly/necessary-tools.webp
     :alt:  image of necessary tools
+    :align: center
 
 ******************************************
 Assembly Steps
 ******************************************
 
 .. image:: /_static/images/v4_assembly/mscope_fig-1.png
+  :align: center
 
 1. Prepare
 ===============================
-a). Check all parts for any Delrin burrs sticking out. Scrape them off with a biopsy punch or tweezers.
+a) Check all parts for any Delrin burrs sticking out. Scrape them off with a biopsy punch or tweezers.
 
 .. image:: /_static/images/v4_assembly/mscope_fig-2.png
+  :align: center
+
 
 2. Objective Module
 ===============================
 
-a). Stand one of the 3x6 mm lenses on a flat surface. Make sure the lens is standing on its flat side - it should not wobble.
+a) Stand one of the 3mm ⌀ 6mm FL lenses on a flat surface. Make sure the lens is standing on its flat side - it should not wobble.
 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/testobjectivelens.mp4" type="video/mp4">
+  <source src="../../../_static/videos/testobjectivelens.mp4" type="video/mp4">
   </video></center>
 
-b). Place the objective module directly over the lens and push down. Make sure that you are pushing in a straight line onto the lens, as any angle can cause chipping. You may have to use some force to do this, if the objective module is a bit tight (you can hear in the video that it makes a sound). Downward force is ok *as long as the lens and objective module are completely aligned*. If you see the lens stick out at an angle, remove it and reposition it.
+b) Place the objective module directly over the lens and push down. Make sure that you are pushing in a straight line onto the lens, as any angle can cause chipping. You may have to use some force to do this, if the objective module is a bit tight (you can hear in the video that it makes a sound). Downward force is ok *as long as the lens and objective module are completely aligned*. If you see the lens stick out at an angle, remove it and reposition it.
 
 Make sure the lens is completely flush with the body and does not stick out.
 
 .. image:: /_static/images/v4_assembly/mscope_fig-9.png
+  :align: center
 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/objlens01.mp4" type="video/mp4">
+  <source src="../../../_static/videos/objlens01.mp4" type="video/mp4">
   </video></center>
 
-c). Once the lens is flush with the edge of the objective module, clean the edge of the lens with a soft cloth.
+c) Once the lens is flush with the edge of the objective module, clean the edge of the lens with a soft cloth.
 
-.. warning::
-  Important: sometimes extra burrs come off due to the first lens. If they are not removed before inserting the second lens, they can become trapped between the two, which interferes with your image and is difficult to remove. To prevent this problem, inspect the module for small Delrin burrs once more. If they are already loose, you can tap the module gently to allow them to fall out. Otherwise, you can scrape them off using forceps. Be careful not to scratch the lens.
+.. important::
+  Sometimes extra burrs come off due to the first lens. If they are not removed before inserting the second lens, they can become trapped between the two, which interferes with your image and is difficult to remove. To prevent this problem, inspect the module for small Delrin burrs once more. If they are already loose, you can tap the module gently to allow them to fall out. Otherwise, you can scrape them off using forceps. Be careful not to scratch the lens.
 
 .. image:: /_static/images/v4_assembly/mscope_fig-3.png
   :align: center
 
-
-d). Then, repeat this with the second 3x6 mm lens, again making sure that the lens is standing on its flat edge. Push the objective module down until the second lens is flush with the edge of the objective module.
-
+d) Then, repeat this with the second 3mm ⌀ 6 mm FL lens, again making sure that the lens is standing on its flat edge. Push the objective module down until the second lens is flush with the edge of the objective module.
 
 3. Excitation Module
 ===============================
 
-.. warning::
-  Take great care not to scratch the filter, this will damage the coat that actually performs the filtering and will allow aberrant wavelengths to pass through the filter.
+.. caution::
+  Take great care not to scratch the filter, this will damage the coat that actually performs the filtering and will allow unwanted wavelengths to pass through the filter.
 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/exfilter.mp4" type="video/mp4">
+  <source src="../../../_static/videos/exfilter.mp4" type="video/mp4">
   </video></center>
 
-a). Locate the arrow on your 470nm excitation filter. This arrow must point towards the light source, in this case towards the LED on the Miniscope PCB.
+a) Locate the arrow on your 470nm excitation filter. This arrow must point towards the light source, in this case towards the LED on the Miniscope PCB.
 
-b). Press the filter, arrow pointing down, into the excitation module. If it does not fit easily, use a scalpel or biopsy punch to scrape out a small layer of the inner edges of the Delrin on the excitation module to allow the filter to click in.
+b) Press the filter, arrow pointing down, into the excitation module. If it does not fit easily, use a scalpel or biopsy punch to scrape out a small layer of the inner edges of the Delrin on the excitation module to allow the filter to click in.
 
 4. Emission Module
 ===============================
 
-a). First, screw a self-threading screw into the hole on the side of the body, then remove the screw again. This is so that you can remove any small burrs that are generated by the self-threading screw, while the body is still unassembled and therefore easier to clean. Hold the emission module up-side down and tap to get these burrs out of the body. You can spray compressed air through the module to make sure it is clean.
+a) First, screw a self-threading screw into the hole on the side of the body, then remove the screw again. This is so that you can remove any small burrs that are generated by the self-threading screw, while the body is still disassembled and therefore easier to clean. Hold the emission module up-side down and tap to get these burrs out of the body. You can spray compressed air through the module to make sure it is clean.
 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/screwinout.mp4" type="video/mp4">
+  <source src="../../../_static/videos/screwinout.mp4" type="video/mp4">
   </video></center>
 
-b). Find your 4mm, 10mm lens. This one has only a very slight curve at one edge, and should be placed with the curved edge down (in contrast to the objective module lenses). Stand the lens on a flat surface, with the curved edge down. If you press it, it should wobble.
+b) Find your 4mm ⌀ 10mm FL lens. This one has only a very slight curve at one edge, and should be placed with the curved edge down (in contrast to the objective module lenses). Stand the lens on a flat surface, with the curved edge down. If you press it, it should wobble.
 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/4mmlens_orientation.mp4" type="video/mp4">
+  <source src="../../../_static/videos/4mmlens_orientation.mp4" type="video/mp4">
   </video></center>
 
-c). Press the emission module down on top of this lens.
+c) Press the emission module down on top of this lens.
 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/lensinemission.mp4" type="video/mp4">
-  </video></center>
-
-
-d). Once it is secure, you can turn the module upside down and, using a cloth on top of the lens, press to ensure the lens is as flush with the module as possible.
-
-e). Next, place the dichroic filter in the slot on the side of the emission module. The arrow must be facing downwards, towards the 4mm lens.
-
-.. raw:: html
-
-  <center><video width="560" height="340" controls>
-  <source src="/_static/videos/dichroic.mp4" type="video/mp4">
+  <source src="../../../_static/videos/lensinemission.mp4" type="video/mp4">
   </video></center>
 
 
-f). Look through the top of the module to check that there are no burrs or pieces of visible dust in the scope so far.
+d) Once it is secure, you can turn the module upside down and, using a cloth on top of the lens, press to ensure the lens is as flush with the module as possible.
 
-g). If it looks clean, place the half-ball lens in the round pocket on the side of the body. Secure it in place by attaching the excitation module using two screws.
+e) Next, place the dichroic filter in the slot on the side of the emission module. The arrow must be facing downwards, towards the 4mm ⌀ lens.
 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/halfball.mp4" type="video/mp4">
+  <source src="../../../_static/videos/dichroic.mp4" type="video/mp4">
+  </video></center>
+
+
+f) Look through the top of the module to check that there are no burrs or pieces of visible dust in the scope so far.
+
+g) If it looks clean, place the half-ball lens in the round pocket on the side of the body. Secure it in place by attaching the excitation module using two screws.
+
+.. raw:: html
+
+  <center><video width="560" height="340" controls>
+  <source src="../../../_static/videos/halfball.mp4" type="video/mp4">
   </video></center>
 
 5. Assembly
 ===============================
 
-a). Cut the extra tabs from the electrowetting lens PCB.
+a) Cut the extra tabs from the electrowetting lens PCB.
 
 .. image:: /_static/images/v4_assembly/mscope_fig-5.png
+  :align: center
 
-b). Screw the PCB to the excitation module using the two holes.
+b) Screw the PCB to the excitation module using the two holes.
 
 .. image:: /_static/images/v4_assembly/mscope_fig-6.png
+  :align: center
 
-c). Carefully pre-bend the two circles in the PCB (do not press too hard, just gently shape them).
+c) Carefully pre-bend the two circles in the PCB (do not press too hard, just gently shape them).
 
-d). You can now put an EWL in between these circles and attach the objective module to the emission module. Check that the EWL is in the correct orientation.
-
-.. raw:: html
-
-  <center><video width="560" height="340" controls>
-  <source src="/_static/videos/ewllens.mp4" type="video/mp4">
-  </video></center>
-
-
-e). Finally, use compressed air to clean out the sides of the pocket at the top of the scope. Make sure it is very clean, as any pieces that come loose here later on, will fall directly on your sensor and interfere with your imaging. Place the 525 nm filter in the pocket, with the arrow pointing down.
-
-f). Remove the protective film from the PCB and close the sensor over the top of the scope. You will probably have to hold the PCB in place while you do a first test of the scope.
+d) You can now put an EWL in between these circles and attach the objective module to the emission module. Check that the EWL is in the correct orientation.
 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/peel.mp4" type="video/mp4">
+  <source src="../../../_static/videos/ewllens.mp4" type="video/mp4">
+  </video></center>
+
+
+e) Finally, use compressed air to clean out the sides of the pocket at the top of the scope. Make sure it is very clean, as any pieces that come loose here later on, will fall directly on your sensor and interfere with your imaging. Place the 525 nm filter in the pocket, with the arrow pointing down.
+
+f) Remove the protective film from the PCB and close the sensor over the top of the scope. You will probably have to hold the PCB in place while you do a first test of the scope.
+
+.. raw:: html
+
+  <center><video width="560" height="340" controls>
+  <source src="../../../_static/videos/peel.mp4" type="video/mp4">
   </video></center>
 
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/closescope.mp4" type="video/mp4">
+  <source src="../../../_static/videos/closescope.mp4" type="video/mp4">
   </video></center>
 
 6. Test before securing
 ===============================
 
-a). Connect your Miniscope to a computer using a DAQ and a coaxial cable. Check that:
+a) Connect your Miniscope to a computer using a DAQ and a coaxial cable. Check that:
 
 - The EWL allows you to focus electronically.
 
@@ -195,18 +204,17 @@ a). Connect your Miniscope to a computer using a DAQ and a coaxial cable. Check 
 
 - There are no visible specks on the image. It is worth moving the scope around a little to make sure there are no debris in the corners of the 525 pocket that can fall into view.
 
-b). If the scope passes these tests, you can glue the PCB to the emission module. With the scope held in a vice, apply 5-min epoxy using a toothpick and leave to dry.
+b) If the scope passes these tests, you can glue the PCB to the emission module. With the scope held in a vice, apply 5-min epoxy using a toothpick and leave to dry.
 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="/_static/videos/glue.mp4" type="video/mp4">
+  <source src="../../../_static/videos/glue.mp4" type="video/mp4">
   </video></center>
 
-c). Once the epoxy is fully dry, screw in the PCB flaps.
+c) Once the epoxy is fully dry, screw in the PCB flaps.
 
 Test the scope one final time, and you are ready to image!
-
 
 ******************************************
 Troubleshooting Assembly
