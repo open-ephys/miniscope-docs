@@ -8,7 +8,8 @@ This guide is intended to facilitate data-acquisition using the UCLA Miniscope v
     :hidden:
 
     preparation/index
+    assembly/index
     miniscope-daq/index
+..  usage/index
 ..  custom-workflows
-..  assembly/index
 ..  analysis/index
