@@ -86,7 +86,7 @@ pygments_style = None
 # a list of builtin themes.
 #
 html_theme = "pydata_sphinx_theme"
-html_logo = "_static/images/miniscope-logo.png"
+html_logo = "_static/images/oe_logo_name.svg"
 html_scaled_image_link = True
 html_title = project
 
