@@ -511,14 +511,13 @@
 <img alt="screenshot of videowriter properties" class="align-center" src="../../../../_images/videowriter-properties.webp" />
 </div>
 <div class="sd-col sd-d-flex-column docutils">
-<ul>
-<li><p>Left-click the <code class="docutils literal notranslate"><span class="pre">VideoWriter</span></code> node and edit fields under the properties pane. Confirm frame rate matches that of the UCLA Miniscope v4.</p></li>
-<li><p>For <code class="docutils literal notranslate"><span class="pre">FourCC</span></code> value recommendations, GREY and FFV1 are recommended for neural recordings.</p>
 <ul class="simple">
-<li><p>GREY does not perform data compression.</p></li>
-<li><p>FFV1 performs lossless data compression.</p></li>
+<li><p>Left-click the <code class="docutils literal notranslate"><span class="pre">VideoWriter</span></code> node and edit fields under the properties pane. Confirm frame rate matches that of the UCLA Miniscope v4.</p></li>
+<li><p>For <code class="docutils literal notranslate"><span class="pre">FourCC</span></code>, “DIB “ and “FMP4” are recommended for neural recordings.</p>
+<ul>
+<li><p>“DIB “ is compatible with 8-bit and 10-bit data.</p></li>
+<li><p>“FMP4” performs data compression for smaller file sizes and is compatible only with 8-bit data.</p></li>
 </ul>
-<p>MJPG or similar is sufficient for behavioral recordings.</p>
 </li>
 </ul>
 </div>

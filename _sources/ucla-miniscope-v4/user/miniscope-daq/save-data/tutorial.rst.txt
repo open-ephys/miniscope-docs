@@ -41,13 +41,11 @@ Workflow Tutorial
 
             *   Left-click the ``VideoWriter`` node and edit fields under the properties pane. Confirm frame rate matches that of the UCLA Miniscope v4. 
 
-            *   For ``FourCC`` value recommendations, GREY and FFV1 are recommended for neural recordings. 
+            *   For ``FourCC``, "DIB " and "FMP4" are recommended for neural recordings. 
 
-                *   GREY does not perform data compression. 
+                *   "DIB " is compatible with 8-bit and 10-bit data. 
 
-                *   FFV1 performs lossless data compression. 
-
-                MJPG or similar is sufficient for behavioral recordings.
+                *   "FMP4" performs data compression for smaller file sizes and is compatible only with 8-bit data.
 
     **Orientation quarternion data:** 
 
