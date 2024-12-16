@@ -27,7 +27,7 @@
           <cv:Suffix>Timestamp</cv:Suffix>
           <cv:Buffered>true</cv:Buffered>
           <cv:Overwrite>false</cv:Overwrite>
-          <cv:FourCC>GREY</cv:FourCC>
+          <cv:FourCC>DIB </cv:FourCC>
           <cv:FrameRate>30</cv:FrameRate>
           <cv:FrameSize>
             <cv:Width>0</cv:Width>
