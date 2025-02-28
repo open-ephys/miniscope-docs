@@ -162,6 +162,8 @@ a) Cut the extra tabs from the electrowetting lens PCB.
 .. image:: /_static/images/v4_assembly/mscope_fig-5.png
   :align: center
 
+.. _step_5b:
+
 b) Screw the PCB to the excitation module using the two holes.
 
 .. image:: /_static/images/v4_assembly/mscope_fig-6.png
@@ -177,6 +179,7 @@ d) You can now put an EWL in between these circles and attach the objective modu
   <source src="../../../_static/videos/ewllens.mp4" type="video/mp4">
   </video></center>
 
+.. _step_5e:
 
 e) Finally, use compressed air to clean out the sides of the pocket at the top of the scope. Make sure it is very clean, as any pieces that come loose here later on, will fall directly on your sensor and interfere with your imaging. Place the 525 nm filter in the pocket, with the arrow pointing down.
 
@@ -268,9 +271,11 @@ Again, keep the screws secure for later assembly.
 
 a) Carefully snap the epoxy bridges connecting the PCB to the scope body using your fingers. Apply controlled, localized force to lever the PCB and break the epoxy bridges. Be cautious as the epoxy snaps to prevent components from flying out of the scope.
 
-If the 525 nm emission filter comes out when removing the PCB from the scope, you should place it back into the emission module, as per step 5.e. on the Assembly Guide.
+If the 525 nm emission filter comes out when removing the PCB from the scope, you should place it
+back into the emission module according to :ref:`step 5.e <step_5e>` in the Assembly Guide.
 
 4. Replace the PCB
 ==============================================
 
-To finish the PCB replacement, place the new replacement PCB, the EWL lens and the objective module as per the Assembly Guide steps 5.b. to 6.c..
+To finish the PCB replacement, place the new replacement PCB, the EWL lens and the objective module
+according to the Assembly Guide :ref:`steps 5.b to 6.c <step_5b>`.
