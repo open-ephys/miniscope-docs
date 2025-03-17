@@ -11,3 +11,6 @@ sphinxcontrib-email = "*"
 pydata-sphinx-theme = "*"
 make = "*"
 ipython = "==8.10.0" # this version is required to avoid the "WARNING: Pygments lexer name 'ipython3' is not known" that occurs when trying to use notebooks in sphinx - maybe this will be updated
+tomli = "*"
+
+[dev-packages]
