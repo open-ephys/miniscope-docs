@@ -25,8 +25,6 @@ UCLA Miniscope v4 Features & Properties
 
 ..  todo::  format this better
 
-To compare the UCLA Miniscope v4 to other miniscopes sold by Open Ephys, refer to the :ref:`overview/miniscopes:Comparison Chart`.
-
 Mechanical Properties:
 
 *   **Mass:** <3g
