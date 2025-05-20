@@ -4,13 +4,13 @@
    height="80"
    id="SvgGdi_output"
    version="1.1"
-   sodipodi:docname="uclaminiscopev4-miniscopedaq-commutate_groupworkflow-node.svg"
-   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="uclaminiscopev4-miniscopedaq-commutate_quart-commutator.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xml:space="preserve"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
      id="namedview21084"
      pagecolor="#ffffff"
      bordercolor="#999999"
@@ -20,219 +20,211 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="6.1864819"
-     inkscape:cx="115.49375"
-     inkscape:cy="33.460051"
+     inkscape:zoom="3.093241"
+     inkscape:cx="135.45663"
+     inkscape:cy="53.180468"
      inkscape:window-width="1920"
-     inkscape:window-height="1057"
-     inkscape:window-x="-8"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="SvgGdi_output" />
-  <rect
+     inkscape:current-layer="SvgGdi_output" /><rect
      id="background"
      height="100%"
      style="fill:#ffffff"
      width="100%"
      y="0"
-     x="0" />
-  <g
-     style="shape-rendering:auto"
-     id="root_group">
-    <line
-       y1="19"
-       style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
-       id="100"
-       x2="160"
-       y2="19"
-       x1="118" />
-    <line
-       y1="19"
-       style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
-       id="101"
-       x2="80"
-       y2="19"
-       x1="38" />
-    <circle
-       id="102"
-       cy="15"
-       cx="15"
-       transform="translate(164,4)"
-       style="opacity:1;fill:#eec04b;stroke:none"
-       r="15" />
-    <path
-       style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
-       transform="translate(164,4)"
-       id="103"
-       d="M 1.5363,7.8 C 1.99103,6.9385 2.52798,6.1205 3.1403,5.3587 3.7527,4.5967 4.4403,3.8909 5.1968,3.254 5.95315,2.617 6.7782,2.049 7.665299,1.5627 m -7.2114998,17.937 c -0.31025,-1.0041 -0.51093997,-2.0162 -0.6102499,-3.0228 -0.098748,-1.0068 -0.095194,-2.0085 0.003869,-2.9925 0.09923995,-0.9837 0.29401,-1.9497 0.57773,-2.8851 m 7.4671996,17.8 c -0.86139,-0.4546 -1.6795,-0.9916 -2.4414,-1.6039 -0.76194,-0.6123 -1.4677,-1.3 -2.1046,-2.0564 -0.63679,-0.7564 -1.2048,-1.5815 -1.6912,-2.4686 M 19.49415,29.4993 c -1.0042,0.3103 -2.0163,0.511 -3.0229,0.6103 -1.0068,0.0988 -2.0084,0.0953 -2.9923,-0.0078 -0.98388,-0.099 -1.9498,-0.2939 -2.8853,-0.5776 m 17.87,-7.4249 c -0.45473,0.8613 -0.99165,1.6795 -1.604,2.4414 -0.61227,0.7619 -1.3002,1.4677 -2.0565,2.1046 -0.75635,0.6369 -1.5814,1.2049 -2.4685,1.6912 m 7.211,-17.837 c 0.31029,1.0042 0.51094,2.0162 0.61029,3.0229 0.09887,1.0068 0.0952,2.0086 -0.0039,2.9923 -0.0992,0.9839 -0.29397,1.9499 -0.57769,2.8853 M 22.10769,1.499998 c 0.86139,0.4547 1.67951,0.9917 2.44141,1.6039 0.76194,0.6124 1.4677,1.3002 2.10459,2.0565 0.63683,0.7565 1.2049,1.5815 1.6913,2.4687 m -17.84,-7.2291003 c 1.0042,-0.31029998 2.0161,-0.5109 3.0228,-0.6103 1.0069,-0.0987 2.0084,-0.0952 2.9923,0 0.98392,0.0992 1.9499,0.29400001 2.8854,0.5777" />
-    <circle
-       id="104"
-       cy="9.0600004"
-       cx="15.01"
-       transform="translate(164,4)"
-       style="opacity:1;fill:#ffffff;stroke:none"
-       r="3.5" />
-    <circle
-       id="105"
-       cy="18.49"
-       cx="9.1199999"
-       transform="translate(164,4)"
-       style="opacity:1;fill:#ffffff;stroke:none"
-       r="3.5" />
-    <circle
-       id="106"
-       cy="18.459999"
-       cx="20.879999"
-       transform="translate(164,4)"
-       style="opacity:1;fill:#ffffff;stroke:none"
-       r="3.5" />
-    <text
-       id="107"
-       x="164"
-       y="39"
-       style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
-       clip-path="url(#109_text_clipper)"><tspan
-         dy="8.25pt"
-         id="111">Commutator</tspan></text>
-    <circle
-       id="113"
-       cy="15"
-       cx="15"
-       transform="translate(84,4)"
-       style="opacity:1;fill:#449adf;stroke:none"
-       r="15" />
-    <path
-       style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="translate(84,4)"
-       id="114"
-       d="M 19.156,13.888 V 10.3647 6.841399 l 6.1025,3.523301 -3.0513,1.7617 z" />
-    <path
-       style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:none"
-       transform="translate(84,4)"
-       id="115"
-       d="m 19.156,22.97 v -3.5233 -3.5233 l 6.1025,3.5233 -3.0513,1.7617 z" />
-    <path
-       transform="translate(84,4)"
-       id="116"
-       style="opacity:1;fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
-       d="m 5.5001,19.484 h 5.1492 l 5.625,-9.2355 h 3.0985 m -4.6959,6.8996 1.632,2.3347 h 2.9113 M 5.500199,10.2437 H 10.7586 l 1.4066,2.627" />
-    <text
-       id="117"
-       x="84"
-       y="39"
-       style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
-       clip-path="url(#119_text_clipper)"><tspan
-         dy="8.25pt"
-         id="121">Quaternion</tspan></text>
-    <path
-       style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
-       transform="translate(4,4)"
-       id="123"
-       d="m 31.179,5.2 c 3.8195,5.8918 3.8024,13.482 -0.04348,19.357" />
-    <circle
-       id="124"
-       cy="15"
-       cx="15"
-       transform="translate(4,4)"
-       style="opacity:1;fill:#5bb27e;stroke:none"
-       r="15" />
-    <rect
-       id="125"
-       height="13.14"
-       style="opacity:1;fill:#ffffff;stroke:none"
-       transform="translate(4,4)"
-       width="10.75"
-       y="4.5700002"
-       x="9.6599998" />
-    <rect
-       id="126"
-       height="3.6400001"
-       style="opacity:1;fill:#ffffff;stroke:none"
-       transform="translate(4,4)"
-       width="6.6199999"
-       y="16.68"
-       x="11.72" />
-    <path
-       style="opacity:1;fill:none;stroke:#ffffff;stroke-width:0.878745;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
-       transform="translate(4,4)"
-       id="127"
-       d="m 12.54858,21.20126 -2.35129,4.6459" />
-    <path
-       style="opacity:1;fill:none;stroke:#ffffff;stroke-width:0.866585;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
-       transform="translate(4,4)"
-       id="128"
-       d="m 14.15625,21.12463 -1.01647,4.79916" />
-    <path
-       style="opacity:1;fill:none;stroke:#ffffff;stroke-width:0.878745;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
-       transform="translate(4,4)"
-       id="129"
-       d="m 17.40598,21.20126 2.35129,4.6459" />
-    <path
-       style="opacity:1;fill:none;stroke:#ffffff;stroke-width:0.866585;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
-       transform="translate(4,4)"
-       id="130"
-       d="m 15.79831,21.07344 0.68501,4.90154" />
-    <text
-       id="131"
-       x="4"
-       y="39"
-       style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
-       clip-path="url(#133_text_clipper)"><tspan
-         dy="8.25pt"
-         id="135">Ucla</tspan></text>
-    <text
-       id="137"
-       x="4"
-       y="51.450001"
-       style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
-       clip-path="url(#139_text_clipper)"><tspan
-         dy="8.25pt"
-         id="141">MiniscopeV4</tspan></text>
-  </g>
-  <defs
-     id="clips_hatches_and_gradients">
-    <clipPath
-       id="109_text_clipper">
-      <rect
+     x="0" /><defs
+     id="clips_hatches_and_gradients"><clipPath
+       id="109_text_clipper"><rect
          x="164"
          y="39"
          width="65.989998"
          height="13.83"
-         id="110" />
-    </clipPath>
-    <clipPath
-       id="119_text_clipper">
-      <rect
+         id="110" /></clipPath><clipPath
+       id="119_text_clipper"><rect
          x="84"
          y="39"
          width="59.779999"
          height="13.83"
-         id="120" />
-    </clipPath>
-    <clipPath
-       id="133_text_clipper">
-      <rect
+         id="120" /></clipPath><clipPath
+       id="133_text_clipper"><rect
          x="4"
          y="39"
          width="68.660004"
          height="27.65"
-         id="134" />
-    </clipPath>
-    <clipPath
-       id="139_text_clipper">
-      <rect
+         id="134" /></clipPath><clipPath
+       id="139_text_clipper"><rect
          x="4"
          y="51.450001"
          width="68.660004"
          height="27.65"
-         id="140" />
-    </clipPath>
-  </defs>
-  <rect
+         id="140" /></clipPath><clipPath
+       id="123_text_clipper"><rect
+         x="164.00"
+         y="39.00"
+         width="65.99"
+         height="27.65"
+         id="124-4" /></clipPath><clipPath
+       id="129_text_clipper"><rect
+         x="164.00"
+         y="51.45"
+         width="65.99"
+         height="27.65"
+         id="130-2" /></clipPath><clipPath
+       id="139_text_clipper-4"><rect
+         x="84.00"
+         y="39.00"
+         width="59.78"
+         height="13.83"
+         id="140-2" /></clipPath><clipPath
+       id="153_text_clipper"><rect
+         x="4.00"
+         y="39.00"
+         width="68.66"
+         height="27.65"
+         id="154" /></clipPath><clipPath
+       id="159_text_clipper"><rect
+         x="4.00"
+         y="51.45"
+         width="68.66"
+         height="27.65"
+         id="160" /></clipPath></defs><g
+     id="g1"><rect
+       id="background-3"
+       height="100%"
+       style="fill:#ffffff"
+       width="100%"
+       y="0"
+       x="0" /><g
+       style="shape-rendering:auto"
+       id="root_group-1"><line
+         y1="19"
+         style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+         id="115-4"
+         x2="160"
+         y2="19"
+         x1="118" /><line
+         y1="19"
+         style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+         id="116-2"
+         x2="80"
+         y2="19"
+         x1="38" /><circle
+         id="117-9"
+         cy="15"
+         cx="15"
+         transform="translate(164,4)"
+         style="opacity:1;fill:#eec04b;stroke:none"
+         r="15" /><path
+         style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+         transform="translate(164,4)"
+         id="118"
+         d="M 1.5363,7.8 C 1.99103,6.9385 2.52798,6.1205 3.1403,5.3587 3.7527,4.5967 4.4403,3.8909 5.1968,3.254 5.95315,2.617 6.7782,2.049 7.665299,1.5627 m -7.2114998,17.937 c -0.31025,-1.0041 -0.51093997,-2.0162 -0.6102499,-3.0228 -0.098748,-1.0068 -0.095194,-2.0085 0.003869,-2.9925 0.09923995,-0.9837 0.29401,-1.9497 0.57773,-2.8851 m 7.4671996,17.8 c -0.86139,-0.4546 -1.6795,-0.9916 -2.4414,-1.6039 -0.76194,-0.6123 -1.4677,-1.3 -2.1046,-2.0564 -0.63679,-0.7564 -1.2048,-1.5815 -1.6912,-2.4686 M 19.49415,29.4993 c -1.0042,0.3103 -2.0163,0.511 -3.0229,0.6103 -1.0068,0.0988 -2.0084,0.0953 -2.9923,-0.0078 -0.98388,-0.099 -1.9498,-0.2939 -2.8853,-0.5776 m 17.87,-7.4249 c -0.45473,0.8613 -0.99165,1.6795 -1.604,2.4414 -0.61227,0.7619 -1.3002,1.4677 -2.0565,2.1046 -0.75635,0.6369 -1.5814,1.2049 -2.4685,1.6912 m 7.211,-17.837 c 0.31029,1.0042 0.51094,2.0162 0.61029,3.0229 0.09887,1.0068 0.0952,2.0086 -0.0039,2.9923 -0.0992,0.9839 -0.29397,1.9499 -0.57769,2.8853 M 22.10769,1.499998 c 0.86139,0.4547 1.67951,0.9917 2.44141,1.6039 0.76194,0.6124 1.4677,1.3002 2.10459,2.0565 0.63683,0.7565 1.2049,1.5815 1.6913,2.4687 m -17.84,-7.2291003 c 1.0042,-0.31029998 2.0161,-0.5109 3.0228,-0.6103 1.0069,-0.0987 2.0084,-0.0952 2.9923,0 0.98392,0.0992 1.9499,0.29400001 2.8854,0.5777" /><path
+         style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:none"
+         transform="translate(164,4)"
+         id="119"
+         d="m 17.123,5.8594 v 4.3242 c 0,0.51768 0.38271,0.89844 0.90039,0.89844 h 4.1055 z" /><path
+         style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:none"
+         transform="translate(164,4)"
+         id="120-0"
+         d="m 12.084,18.254 c 1.1014,0 1.998,0.89472 1.998,1.9961 0,1.1014 -0.89667,1.998 -1.998,1.998 -1.1014,0 -1.998,-0.89667 -1.998,-1.998 0,-1.1014 0.89667,-1.9961 1.998,-1.9961 z m 5.6992,-0.01563 c 1.1014,0 1.998,0.89667 1.998,1.998 0,1.10133 -0.89667,1.998 -1.998,1.998 -1.10133,0 -1.998,-0.89667 -1.998,-1.998 0,-1.10133 0.89667,-1.998 1.998,-1.998 z m -2.8418,-4.55859 c 1.1014,0 1.998,0.89667 1.998,1.998 0,1.10139 -0.89667,1.998 -1.998,1.998 -1.10133,0 -1.998,-0.89667 -1.998,-1.998 0,-1.1014 0.89667,-1.998 1.998,-1.998 z M 10.8828,5.205175 c -1.707301,0 -3.117201,1.4099 -3.117201,3.1172 V 20.56638 c 0,1.7073 1.4099,3.1152 3.117201,3.1152 h 8.7656 c 1.7073,0 3.1172,-1.40801 3.1172,-3.1152 v -7.2676 h -4.7422 c -1.7073,0 -3.1172,-1.408 -3.1172,-3.1152 V 5.205076 Z" /><text
+         id="121-6"
+         x="164"
+         y="39"
+         style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
+         clip-path="url(#123_text_clipper)"><tspan
+           dy="8.25pt"
+           id="125-3">Auto</tspan></text><text
+         id="127-1"
+         x="164"
+         y="51.450001"
+         style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
+         clip-path="url(#129_text_clipper)"><tspan
+           dy="8.25pt"
+           id="131-8">Commutator</tspan></text><circle
+         id="133"
+         cy="15"
+         cx="15"
+         transform="translate(84,4)"
+         style="opacity:1;fill:#449adf;stroke:none"
+         r="15" /><path
+         style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:none"
+         transform="translate(84,4)"
+         id="134-1"
+         d="M 19.156,13.888 V 10.3647 6.841399 l 6.1025,3.523301 -3.0513,1.7617 z" /><path
+         style="opacity:1;fill:#ffffff;fill-rule:evenodd;stroke:none"
+         transform="translate(84,4)"
+         id="135-2"
+         d="m 19.156,22.97 v -3.5233 -3.5233 l 6.1025,3.5233 -3.0513,1.7617 z" /><path
+         transform="translate(84,4)"
+         id="136"
+         style="opacity:1;fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+         d="m 5.5001,19.484 h 5.1492 l 5.625,-9.2355 h 3.0985 m -4.6959,6.8996 1.632,2.3347 h 2.9113 M 5.500199,10.2437 H 10.7586 l 1.4066,2.627" /><text
+         id="137-2"
+         x="84"
+         y="39"
+         style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
+         clip-path="url(#139_text_clipper)"><tspan
+           dy="8.25pt"
+           id="141-9">Quaternion</tspan></text><path
+         style="opacity:1;fill:none;stroke:#a9a9a9;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+         transform="translate(4,4)"
+         id="143"
+         d="m 31.179,5.2 c 3.8195,5.8918 3.8024,13.482 -0.04348,19.357" /><circle
+         id="144"
+         cy="15"
+         cx="15"
+         transform="translate(4,4)"
+         style="opacity:1;fill:#5bb27e;stroke:none"
+         r="15" /><rect
+         id="145"
+         height="13.14"
+         style="opacity:1;fill:#ffffff;stroke:none"
+         transform="translate(4,4)"
+         width="10.75"
+         y="4.5700002"
+         x="9.6599998" /><rect
+         id="146"
+         height="3.6400001"
+         style="opacity:1;fill:#ffffff;stroke:none"
+         transform="translate(4,4)"
+         width="6.6199999"
+         y="16.68"
+         x="11.72" /><path
+         style="opacity:1;fill:none;stroke:#ffffff;stroke-width:0.878745;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+         transform="translate(4,4)"
+         id="147"
+         d="m 12.54858,21.20126 -2.35129,4.6459" /><path
+         style="opacity:1;fill:none;stroke:#ffffff;stroke-width:0.866585;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+         transform="translate(4,4)"
+         id="148"
+         d="m 14.15625,21.12463 -1.01647,4.79916" /><path
+         style="opacity:1;fill:none;stroke:#ffffff;stroke-width:0.878745;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+         transform="translate(4,4)"
+         id="149"
+         d="m 17.40598,21.20126 2.35129,4.6459" /><path
+         style="opacity:1;fill:none;stroke:#ffffff;stroke-width:0.866585;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:9"
+         transform="translate(4,4)"
+         id="150"
+         d="m 15.79831,21.07344 0.68501,4.90154" /><text
+         id="151"
+         x="4"
+         y="39"
+         style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
+         clip-path="url(#153_text_clipper)"><tspan
+           dy="8.25pt"
+           id="155">Ucla</tspan></text><text
+         id="157"
+         x="4"
+         y="51.450001"
+         style="font-size:11px;font-family:'Microsoft Sans Serif';opacity:1;fill:#000000;stroke:none"
+         clip-path="url(#159_text_clipper)"><tspan
+           dy="8.25pt"
+           id="161">MiniscopeV4</tspan></text></g></g><rect
      style="fill:none;stroke:#ff0000;stroke-width:1;stroke-miterlimit:10"
      id="rect21166"
      width="159"
      height="79"
      x="80.5"
-     y="0.49999997" />
-</svg>
+     y="0.49999997" /></svg>

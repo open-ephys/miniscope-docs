@@ -33,12 +33,6 @@ Workflow Tutorial
 
         ..  grid-item::
 
-            ..  image:: /_static/images/videowriter-properties.webp
-                :alt:   screenshot of videowriter properties
-                :align: center
-
-        ..  grid-item::
-
             *   Left-click the ``VideoWriter`` node and edit fields under the properties pane. Confirm frame rate matches that of the UCLA Miniscope v4. 
 
             *   For ``FourCC``, "DIB " and "FMP4" are recommended for neural recordings. 
@@ -46,6 +40,12 @@ Workflow Tutorial
                 *   "DIB " is compatible with 8-bit and 10-bit data. 
 
                 *   "FMP4" performs data compression for smaller file sizes and is compatible only with 8-bit data.
+
+        ..  grid-item::
+
+            ..  image:: /_static/images/videowriter-properties.webp
+                :alt:   screenshot of videowriter properties
+                :align: center
 
     **Orientation quarternion data:** 
 

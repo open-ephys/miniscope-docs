@@ -13,6 +13,10 @@ Workflow Tutorial
 #.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope.
 
     ..  grid::
+
+        ..  grid-item::
+            
+            ..  include::  /includes/set-index.rst
         
         ..  grid-item::
             :columns:   3
@@ -20,10 +24,3 @@ Workflow Tutorial
             ..  image:: /_static/images/uclaminiscopev4-properties.webp
                 :align: center
                 :alt:   screenshot of ucla miniscope v4 node properties for index
-
-        ..  grid-item::
-            
-            ..  include::  /includes/set-index.rst
-
-..  [1]
-    .. include::    /includes/start-workflow.rst
