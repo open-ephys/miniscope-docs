@@ -17,7 +17,7 @@ Workflow Tutorial
         ..  grid-item::
             
             ..  include::  /includes/set-index.rst
-        
+
         ..  grid-item::
             :columns:   3
 
