@@ -2,8 +2,6 @@
 Workflow Tutorial
 #################
 
-..  note:: An Open Ephys Coaxial Commutator is necessary for this workflow 
-
 #.  Download the following workflow (.bonsai file) and open it with Bonsai:
 
     ..  raw:: html
@@ -33,13 +31,6 @@ Workflow Tutorial
     *   Left-click the ``AutoCommutator`` node and set the ``PortName`` property under the
         `Properties` pane to match the port that corresponds to your commutator. 
 
-    *   Confirm the RotationAxis is search
-
-#.  Set the commutator to rotate around the correct axis
-
-    *   Left-click the ``AutoCommutator`` node and set the ``RotationAxis`` property under the
-        `Properties` pane to "0, 0, 1". 
-
     ..  note::  
         
         If you are uncertain about which COM port corresponds to your commutator, follow these instructions:
@@ -49,9 +40,20 @@ Workflow Tutorial
         #.  Unplug the commutator, and plug it back in. Observe which COM port disappears and
             appears in device manager when doing so - that is the COM port associated with your
             commutator. If the commutator does not appear in device manager, follow `these
-            instructions <https://www.pjrc.com/teensy/troubleshoot.html>`__
+            instructions <https://www.pjrc.com/teensy/troubleshoot.html>`_
 
-#.  Run the workflow and double-click the ``Miniscope GUI`` node.
+#.  If you do not have a commutator connected, select the following chain of nodes and disable them
+    by either pressing ``Ctrl+D`` or right-clicking the selected nodes and clicking the "Disable"
+    option in the context menu that pops up.
+
+    ..  figure:: /_static/images/uclaminiscopev4-miniscopedaq-gui_commutate-disable.svg
+        :align: center
+        :alt:   screenshot of nodes to be disabled if no commutator is connected
+
+        Disable this row that performs commutation if no commutator is connected.
+
+#.  Run the workflow. Double-click the ``Miniscope GUI`` node and expand the visualizer that pops
+    up.
 
 #.  From here, you can:
 
