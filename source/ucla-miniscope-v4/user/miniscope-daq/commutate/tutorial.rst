@@ -15,7 +15,11 @@ Workflow Tutorial
 #.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope.
 
     ..  grid::
-        
+
+        ..  grid-item::
+            
+            ..  include::  /includes/set-index.rst      
+
         ..  grid-item::
             :columns:   3
 
@@ -23,19 +27,11 @@ Workflow Tutorial
                 :align: center
                 :alt:   screenshot of ucla miniscope v4 node properties for index
 
-        ..  grid-item::
-            
-            ..  include::  /includes/set-index.rst
+
 
 #.  Set the COM port associated with your commutator in the workflow
 
     *   Left-click the ``AutoCommutator`` node and set the ``PortName`` property under the `Properties` pane to match the port that corresponds to your commutator. 
-
-    *   Confirm the RotationAxis is search
-
-#.  Set the commutator to rotate around the correct axis
-
-    *   Left-click the ``AutoCommutator`` node and set the ``RotationAxis`` property under the `Properties` pane to "0, 0, 1". 
 
     ..  note::  
         
@@ -44,6 +40,3 @@ Workflow Tutorial
         #.  Open Window's *Device Manager*.
 
         #.  Unplug the commutator, and plug it back in. Observe which COM port disappears and appears in device manager when doing so - that is the COM port associated with your commutator. If the commutator does not appear in device manager, follow `these instructions <https://www.pjrc.com/teensy/troubleshoot.html>`__
-
-..  [1]
-    .. include::    /includes/start-workflow.rst
