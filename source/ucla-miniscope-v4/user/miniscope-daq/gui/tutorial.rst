@@ -52,6 +52,9 @@ Workflow Tutorial
 
         Disable this row that performs commutation if no commutator is connected.
 
+#.  If you want to change the FourCC, click the "SaveData" ``GroupWorkflow`` and edit it from the
+    properties panel.
+
 #.  Run the workflow. Double-click the ``Miniscope GUI`` node and expand the visualizer that pops
     up.
 
