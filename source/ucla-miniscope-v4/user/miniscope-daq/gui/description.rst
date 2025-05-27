@@ -12,9 +12,9 @@ GUI Description
     :alt:   exported svg of main workflow with bounding box over nodes responsible for automatic commutation
     :align: center
 
-This workflow is quite extensive and therefore instead of node-by-node instructive description, it
-gets an overview of how it works. There are several ``GroupWorkflow`` operators that have been named
-after the GUI elements that they contain or the function they serve. 
+This example workflow is quite extensive and meant to be extensible. Therefore, we have provided an overview of how it works, instead of a node-by-node instructive description.
+
+There are several ``GroupWorkflow`` operators that have been named after the GUI elements that they contain or the function they serve. 
 
 -   The "SaveData" ``GroupWorkflow`` contains a pattern that allows the ``VideoWriter`` operator to
     subscribe (a `Reactive <https://reactivex.io/documentation/observable.html>`__ way to say

@@ -55,15 +55,15 @@ Workflow Tutorial
 #.  Run the workflow. Double-click the ``Miniscope GUI`` node and expand the visualizer that pops
     up.
 
-#.  From here, you can:
+#.  Using the GUI, you can:
 
-    -   toggle between one of three data-processing pipelines for viewing
-    -   control various properties related to the miniscope hardware, saving data,
+    -   toggle between one of three online data-processing pipelines for viewing (raw, saturation, ΔF/F)
+    -   control various properties related to the Miniscope hardware, saving data,
         and the ΔF/F signal-processing pipeline
-    -   toggle recording manually or with a trigger
-    -   view real-time histogram data
-    -   view real-time IO data
-    -   commutate the UCLA Miniscope V4 tether automatically
+    -   toggle recording manually or with a hardware input trigger
+    -   view real-time pixel brightness histogram
+    -   view real-time digital input data
+    -   commutate the UCLA Miniscope V4 tether automatically with the Open Ephys torque-free commutator
 
 ..  [1]
     .. include::    /includes/start-workflow.rst
