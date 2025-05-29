@@ -148,17 +148,17 @@ h6 {
 }
 
 /* Bonsai workflows & copy button */
-.copy-img
+.download-copy-img
 {
   text-align: right;
 }
 
-.copy-img:active {
+.download-copy-img:active {
   filter: invert(75%);
   cursor: pointer;
 }
 
-.copy-img:hover {
+.download-copy-img:hover {
   cursor: pointer;
 }
 
