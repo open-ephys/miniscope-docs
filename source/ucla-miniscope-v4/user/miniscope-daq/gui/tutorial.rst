@@ -67,6 +67,3 @@ Workflow Tutorial
     -   view real-time pixel brightness histogram
     -   view real-time digital input data
     -   commutate the UCLA Miniscope V4 tether automatically with the Open Ephys torque-free commutator
-
-..  [1]
-    .. include::    /includes/start-workflow.rst
