@@ -2,7 +2,7 @@
 GUI
 ###
 
-..  image:: /_static/images/uclaminiscopev4-miniscopedaq-commutate.svg
+..  image:: /_static/images/uclaminiscopev4-miniscopedaq-gui.svg
     :alt:   image of workflow
     :width: 50%
     :align: center
