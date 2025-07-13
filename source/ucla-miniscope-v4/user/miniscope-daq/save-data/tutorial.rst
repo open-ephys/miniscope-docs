@@ -13,6 +13,10 @@ Workflow Tutorial
 #.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope.
 
     ..  grid::
+
+        ..  grid-item::
+            
+            ..  include::  /includes/set-index.rst
         
         ..  grid-item::
             :columns:   3
@@ -21,21 +25,11 @@ Workflow Tutorial
                 :align: center
                 :alt:   screenshot of ucla miniscope v4 node properties for index
 
-        ..  grid-item::
-            
-            ..  include::  /includes/set-index.rst
-
 #.  Save data according to your specifications:
 
     **Image video data:**
 
     ..  grid::
-
-        ..  grid-item::
-
-            ..  image:: /_static/images/videowriter-properties.webp
-                :alt:   screenshot of videowriter properties
-                :align: center
 
         ..  grid-item::
 
@@ -47,19 +41,25 @@ Workflow Tutorial
 
                 *   "FMP4" performs data compression for smaller file sizes and is compatible only with 8-bit data.
 
+        ..  grid-item::
+
+            ..  image:: /_static/images/videowriter-properties.webp
+                :alt:   screenshot of videowriter properties
+                :align: center
+
     **Orientation quarternion data:** 
 
     ..  grid::
 
         ..  grid-item::
 
-            ..  image:: /_static/images/csvwriter-properties.webp
-                :alt:   screenshot of csvwriter properties
-                :align: center
+            *   Left-click the ``CsvWriter`` node and edit fields under the properties pane
 
         ..  grid-item::
 
-            *   Left-click the ``CsvWriter`` node and edit fields under the properties pane
+            ..  image:: /_static/images/csvwriter-properties.webp
+                :alt:   screenshot of csvwriter properties
+                :align: center
 
     ..  note::  
         

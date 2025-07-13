@@ -4,4 +4,4 @@
 
 #. Click :kbd:`Ok`.
 
-..  note::  If there are multiple miniscopes connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process. Try starting the workflow now [1]_ to confirm the selected index is correct.
+..  note::  If there are multiple miniscopes connected to your PC (including laptop webcams), finding the correct index value might involve an iterative trial-and-error process. 
