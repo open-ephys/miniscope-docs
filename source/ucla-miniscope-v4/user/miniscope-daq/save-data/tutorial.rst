@@ -33,7 +33,7 @@ Workflow Tutorial
 
         ..  grid-item::
 
-            *   Left-click the ``VideoWriter`` node and edit fields under the properties pane. Confirm frame rate matches that of the UCLA Miniscope v4. 
+            *   Left-click the ``VideoWriter`` node and edit fields under the properties pane. Confirm frame rate matches that of the UCLA Miniscope v4. Make sure the file name has a valid extension (".avi").
 
             *   For ``FourCC``, "DIB " and "FMP4" are recommended for neural recordings. 
 
@@ -53,7 +53,7 @@ Workflow Tutorial
 
         ..  grid-item::
 
-            *   Left-click the ``CsvWriter`` node and edit fields under the properties pane
+            *   Left-click the ``CsvWriter`` node and edit fields under the properties pane. Make sure the file name has a valid extension (".csv").
 
         ..  grid-item::
 
