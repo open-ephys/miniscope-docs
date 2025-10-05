@@ -15,7 +15,7 @@ After following this tutorial, the user will be able to:
     -   maybe we should use galleries here?
     -   the plus: integrated within Bonsai, easy to use
     -   the minus: idk how it work with regards to workflows that require external files - maybe this ends up being more work. people still have to download external files?
-    -   tie VideoWriter framerate to UCLAMiniscopeV4 programatically instead of manual
+    -   tie VideoWriter framerate to UCLAMiniscopeV4 programmatically instead of manual
 
 ..  toctree::
     :hidden:

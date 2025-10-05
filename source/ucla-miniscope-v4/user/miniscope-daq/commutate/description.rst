@@ -8,7 +8,7 @@ Workflow Description
 Commutator IncludeWorkflow
 **************************
 
-..  image:: /_static/images/uclaminiscopev4-miniscopedaq-commutate_quart-commutator.svg
+..  image:: /_static/images/uclaminiscopev4-miniscopedaq-commutate_quat-commutator.svg
     :alt:   exported svg of main workflow with bounding box over nodes responsible for automatic commutation
     :align: center
 

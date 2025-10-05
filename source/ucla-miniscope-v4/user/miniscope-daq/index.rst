@@ -8,7 +8,7 @@ Miniscope-DAQ Tutorials
 
 The User Guide contains following tutorials:
 
-*   :doc:`View and save image and orientation/quarternion data in real-time </ucla-miniscope-v4/user/miniscope-daq/save-data/index>`
+*   :doc:`View and save image and orientation/quaternion data in real-time </ucla-miniscope-v4/user/miniscope-daq/save-data/index>`
 
 *   :doc:`Trigger data acquisition with a trigger signal </ucla-miniscope-v4/user/miniscope-daq/trigger/index>`
 
