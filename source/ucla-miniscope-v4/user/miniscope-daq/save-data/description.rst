@@ -85,6 +85,6 @@ Save Timestamped Quaternion Data
     the *Properties* pane that appears after left-clicking the ``CsvWriter``
     node. 
 
-To continue learning using the UCLA Miniscope v4 and Miniscope-DAQ in Bonsai,
+To continue learning about using the UCLA Miniscope v4 and Miniscope-DAQ in Bonsai,
 refer to the :doc:`Trigger Workflow Description
 </ucla-miniscope-v4/user/miniscope-daq/trigger/description>`

@@ -24,4 +24,4 @@ Trigger Logic
 
 *   ``Trigger`` emits ``UCLAMiniscopeV4Frame`` if the ``Trigger`` member of ``UCLAMiniscopeV4Frame`` is ``True``. 
 
-To continue learning using the UCLA Miniscope v4 and Miniscope-DAQ in Bonsai, refer to the :doc:`Commutate Workflow Explainer </ucla-miniscope-v4/user/miniscope-daq/commutate/description>`
+To continue learning about using the UCLA Miniscope v4 and Miniscope-DAQ in Bonsai, refer to the :doc:`Commutate Workflow Explainer </ucla-miniscope-v4/user/miniscope-daq/commutate/description>`
