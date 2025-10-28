@@ -78,7 +78,7 @@ It is helpful to understand the working principle of the UCLA Miniscope v4's PCB
                 :alt:   image of pcb schematic (imu)
                 :align: center
 
-            *   The BNO055 with its peripheral circuitry sense orientation and send quaternion data to the serializer over i2c 
+            *   The BNO055 with its peripheral circuitry senses orientation and sends quaternion data to the serializer over i2c 
 
 *************************
 Design & Production Files
