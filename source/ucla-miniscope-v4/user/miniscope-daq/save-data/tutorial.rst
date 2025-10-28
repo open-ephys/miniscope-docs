@@ -35,14 +35,13 @@ Workflow Tutorial
         ..  grid-item::
 
             Left-click the enabled ``VideoWriter`` node and edit fields under
-            the properties pane. Confirm frame rate matches that of the UCLA
-            Miniscope v4. Make sure the file name has a valid extension
-            (".avi"). "Y800", an uncompressed grey-scale codec, is specified as
+            the properties pane. Confirm the frame rate matches that of the ``UCLAMiniscopeV4`` operator. Make sure the file name has a valid extension
+            (".avi"). "Y800", an uncompressed greyscale codec, is specified as
             the ``FourCC``.
                 
         ..  grid-item::
 
-            ..  image:: /_static/images/bonsai.vision.videowriter-properties.webp
+            ..  image:: /_static/images/bonsai.vision.videowriter-properties.png
                 :alt:   screenshot of bonsai.vision.videowriter properties
                 :align: center
 
@@ -54,12 +53,12 @@ Workflow Tutorial
 
         ..  grid-item::
 
-            Disable the first ``VideoWriter`` node Left-click the enabled
+            Disable the first ``VideoWriter`` node and enable the second one. The description of the node in the properties pane can help you distinguish between them. Left-click the enabled
             ``VideoWriter`` node and edit fields under the properties pane.
             Confirm frame rate matches that of the UCLA Miniscope v4. Make sure
             the file name has a valid extension (".avi"). The parameters in
             ``OutputArguments`` specify an 8-bit video with "FFV1", a lossless
-            compression codec, as the FourCC. 
+            compression codec, as the FourCC. Here are FFmpeg settings that output a compressed grayscale 8-bit video: "-c: ffv1 -pix_fmt gray -bits_per_raw_sample 8".
                 
         ..  grid-item::
 
@@ -69,7 +68,7 @@ Workflow Tutorial
 
     ..  tip::
         The FFV1 codec produces smaller files (~30% reduction can be expected), 
-        but it requires a software that supports loading/playing back this kind 
+        but it requires software that supports loading/playing back this kind 
         of video.
 
     **Orientation quaternion data:** 
