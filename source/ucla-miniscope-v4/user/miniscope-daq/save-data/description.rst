@@ -49,7 +49,7 @@ Save Image Data
     *Properties* pane that appears after left-clicking the ``VideoWriter`` node. 
 
 *   There are two ``VideoWriter`` operators. The first one is from the
-    ``Bonsai.Vision`` package, and the second one is from the ``Bonsai.Ffmpeg``
+    ``Bonsai.Vision`` package, and the second one is from the ``Bonsai.FFmpeg``
     package. They are both *sink* operators as indicated by the nodes' purple
     color and the orientation of its grey arc. A sink operator saves data or
     triggers external events. 
@@ -64,7 +64,7 @@ Save Image Data
 
 *   The ``Annotation`` nodes (which contain a "#" symbol) are simply there to
     indicate the difference between the ``Bonsai.Vision.VideoWriter`` operator
-    and the ``Bonsai.Ffmpeg.VideoWriter`` operator. They don't provide any
+    and the ``Bonsai.FFmpeg.VideoWriter`` operator. They don't provide any
     functional difference in the workflow. You can think of them like comments
     in code.
 
