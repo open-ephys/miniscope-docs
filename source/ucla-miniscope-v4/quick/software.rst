@@ -65,7 +65,8 @@ If you have not already done so,
             :align: center
             :height: 400px
 
-    #.  Download and install the required Bonsai packages:
+    #.  Download and install the required Bonsai packages or update to the latest versions using
+        the Bonsai Package Manager:
 
         *   Bonsai.StarterPack
 

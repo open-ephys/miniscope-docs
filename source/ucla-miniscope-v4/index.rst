@@ -23,8 +23,6 @@ To learn how the UCLA Miniscope v4 works, refer to the :doc:`/ucla-miniscope-v4/
 UCLA Miniscope v4 Features & Properties
 ***************************************
 
-..  todo::  format this better
-
 Mechanical Properties:
 
 *   **Mass:** <3g
