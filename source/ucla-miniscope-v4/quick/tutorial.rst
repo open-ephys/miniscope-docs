@@ -41,7 +41,7 @@ Interact with the UCLA Miniscope v4 Through Bonsai
 
     :Orientation Data:   Double left-click the ``Quaternion`` node. This displays a real-time visualization of quaternion data which represents the miniscope's orientation. Right-click the visualization, and left-click the drop-down menu. Set the value in the ``History Length`` field to 100. Reorient the UCLA Miniscope v4. Confirm the quaternion visualization responds accordingly:
 
-                        ..  image:: /_static/images/quarternion-demo.webp
+                        ..  image:: /_static/images/quaternion-demo.webp
                             :alt:   animation of demonstrating quaternion data
                             :align: center
                             :height: 400px

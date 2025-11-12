@@ -79,3 +79,9 @@ If you have not already done so,
             :height: 400px
 
         Click the ``I Accept`` button when prompted.
+    
+    #.  Download and install the optional Bonsai packages:
+
+        *   Bonsai.FFmpeg (for compressed video output)
+        
+        Install the package in Bonsai as above. The Bonsai.FFmpeg package requires installing FFmpeg separately in order to work. Follow the FFmpeg installation guide available in the `Bonsai.FFmpeg package's documentation <https://bonsai-rx.org/ffmpeg/>`__.
