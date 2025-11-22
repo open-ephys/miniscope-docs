@@ -15,7 +15,7 @@ The User Guide contains following tutorials:
 *   :doc:`Commutate the UCLA Miniscope's tether using the on-board IMU </ucla-miniscope-v4/user/miniscope-daq/commutate/index>`
 
 For an extensive overview of the Miniscope-DAQ, refer to :ref:`its section <overview/data-acq-hardware:Miniscope-DAQ>` of the :doc:`/overview/data-acq-hardware` page.
- 
+
 
 .. toctree::
     :hidden:
@@ -23,3 +23,4 @@ For an extensive overview of the Miniscope-DAQ, refer to :ref:`its section <over
     save-data/index
     trigger/index
     commutate/index
+    gui/index
