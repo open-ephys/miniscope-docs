@@ -1,3 +1,4 @@
+.. _quickstartguide:
 
 #################
 Quick Start Guide
@@ -39,5 +40,3 @@ The `Quick Start Guide` serves to familiarize yourself with and validate the fun
     hardware
     software
     tutorial
-..  onix1-quick
-..  onix2-quick

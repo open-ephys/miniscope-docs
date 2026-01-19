@@ -1,0 +1,22 @@
+
+###########################################
+Additional Resources
+###########################################
+
+These resources are from the developers of the UCLA Miniscope v4:
+
+*   `The UCLA Miniscope v4 Wiki <https://github.com/Aharoni-Lab/Miniscope-v4/wiki>`__
+
+*   `The 2021 Virtual Miniscope Workshop <https://sites.google.com/metacell.us/miniscope-workshop-2021>`__
+
+These resources are for users of UCLA Miniscope v4 (and more broadly: users/developers of open source neuroscience equipment) to interact with the broader community:
+
+*   `The official miniscope forum <https://groups.google.com/g/miniscope>`__
+
+*   `The Open Ephys forum <https://groups.google.com/g/open-ephys>`__
+
+*   `The Open Ephys Discord <https://discord.gg/WXAx2URNQU>`__
+
+
+..  toctree::
+    :hidden:

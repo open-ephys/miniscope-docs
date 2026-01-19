@@ -90,8 +90,8 @@ Open Ephys Miniscope Documentation
     :hidden:
     :titlesonly:
 
-    overview/index
-    ucla-miniscope-v4/index
-
-
-..  todo::  "coming soon"
+    Getting-Started/index
+    Hardware-Guide/index
+    Software-Guide/index
+    User-Guide/index
+    Developer-Guide/index

@@ -152,7 +152,7 @@ Troubleshooting
 
             *   :ref:`Connect ONIX 1.0 to acquire UCLA Miniscope v4 data <ucla-miniscope-v4/quick-start/miniscope-daq-quick:Connect Hardware>`
 
-        #.  Open a :doc:`data acquisition software </overview/data-acq-hardware>` that is compatible with your data acquisition hardware. If there are multiple, choose the one that is most familiar and easy-to-use for you.
+        #.  Open a :doc:`data acquisition software <../data-acq-hardware>` that is compatible with your data acquisition hardware. If there are multiple, choose the one that is most familiar and easy-to-use for you.
 
         #.  Remove the "witch's hat" from the oscilloscope probe.
 

@@ -1,23 +1,12 @@
-#################
-UCLA Miniscope V4
-#################
+####################
+Miniscope v4.5
+####################
 
 ..  todo:: redo this figure - it bothers me how it freezes. also the miniscope's phase isn't monotonically increasing (look close at first 10-20 frames)
 
 ..  image:: /_static/images/ucla-miniscope-v4-rotating.webp
     :alt:   image of ucla miniscope rotating and example data
     :align: center
-
-
-.. The miniscope....
-
-To learn about concept of a miniscope, refer to the :doc:`/overview/index`.
-
-To quickly start using the UCLA Miniscope v4, refer to the :doc:`/ucla-miniscope-v4/quick/index`
-
-To start acquiring data with the UCLA Miniscope v4, refer to the :doc:`/ucla-miniscope-v4/user/index`
-
-To learn how the UCLA Miniscope v4 works, refer to the :doc:`/ucla-miniscope-v4/developer/index`.
 
 ***************************************
 UCLA Miniscope v4 Features & Properties
@@ -73,8 +62,7 @@ Software Features:
 
 .. toctree::
     :hidden:
+    :maxdepth: 1
+    :titlesonly:
 
-    quick/index
-    user/index
-    developer/index
-    faq-troubleshoot-resources/index
+    miniscope-assembly-guide

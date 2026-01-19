@@ -1,3 +1,4 @@
+.. _miniscope_assembly_guide:
 
 ######################################################################
 Assembling the UCLA Miniscope V4
