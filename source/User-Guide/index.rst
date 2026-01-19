@@ -12,6 +12,7 @@ User Guide
     :titlesonly:
 
     protocol
-    data-analysis
     faq
     troubleshoot
+
+.. data-analysis
