@@ -7,84 +7,88 @@ Open Ephys Miniscope Documentation
     :width:     100%   
     :align:     center 
 
-..  todo::  make the below card look more like the other cards wrt where the title starts (fix aspect ratio of card's image)
+Welcome to the documentation for the Miniscope System by Open Ephys! This site is designed to help you get the most out of your Miniscope System, whether you're a new user or an experienced developer.
 
-..
-    ..  grid::  4
+The Miniscope V4 is a lightweight, open-source miniature microscope designed for high-resolution fluorescent imaging in freely behaving animals.
+The Miniscope ecosystem was originally designed by the Miniscope Team at UCLA, and here you can find details about the versions we produce.
 
-        ..  grid-item-card::    Miniscopes Introduction
-            :link:          overview/index
-            :link-type:     doc
-            :link-alt:      link to description of miniscope concept 
-            :img-top:       /_static/images/miniscope-hardware-software-stack.webp
-            :img-alt:       image of data acquisition hardware compatible with miniscopes
-            :shadow:        none
-            :class-card:    card intro-card sd-border-0 text-center
-            :class-title:   card-title sd-font-weight-normal
-            :class-body:    card-body flex-fill
-            :class-img-top:  card-img-top
+.. grid:: 5
+    :class-container: gap-4
 
-            This is card content
+    .. grid-item-card:: Getting Started
+        :link:          Getting-Started/index
+        :link-type:     doc
+        :link-alt:      link to getting started guide
+        :img-top:       /_static/images/running.svg
+        :img-alt:       Getting Started
+        :shadow:        none
+        :class-item:    hover-zoom
+        :class-card:    card intro-card sd-border-0 text-center
+        :class-title:   card-title sd-font-weight-normal
+        :class-body:    card-body flex-fill
+        :class-img-top: card-img-top
 
-        ..  grid-item-card::    Data Acquisition Hardware
-            :link:          overview/data-acq-hardware
-            :link-type:     doc
-            :link-alt:      link to description of data acquisition hardware compatible with miniscopes 
-            :img-top:       /_static/images/miniscope-daq.webp
-            :img-alt:       image of data acquisition hardware compatible with miniscopes
-            :shadow:        none
-            :class-item:    hover-zoom
-            :class-card:    card intro-card sd-border-0 hover-zoom text-center
-            :class-title:   card-title sd-font-weight-normal
-            :class-body:    card-body flex-fill
-            :class-img-top:  card-img-top
+        Read this if you're just starting out.
 
-            wht what
+    .. grid-item-card:: Hardware Guide
+        :link:          Hardware-Guide/index
+        :link-type:     doc
+        :link-alt:      link to hardware guide
+        :img-top:       /_static/images/noun_pcb.svg
+        :img-alt:       Hardware Guide
+        :shadow:        none
+        :class-item:    hover-zoom
+        :class-card:    card intro-card sd-border-0 text-center
+        :class-title:   card-title sd-font-weight-normal
+        :class-body:    card-body flex-fill
+        :class-img-top: card-img-top
 
-        ..  grid-item-card::    Data Acquisition Software  
-            :link:          overview/data-acq-software
-            :link-type:     doc
-            :link-alt:      link to description of data acquisition software compatible with miniscopes
-            :img-top:       /_static/images/bonsai-miniscope-logos.webp
-            :img-alt:       image of data acquisition software compatible with miniscopes
-            :shadow:        none
-            :class-card:    card intro-card sd-border-0
-..
-    ..  grid-item-card::    Accessories
-        :link:      overview/accessories
-        :link-type: doc
-        :link-alt:  link to description of accessories compatible with miniscopes
-        :img-top:   /_static/images/commutator-minicam.webp
-        :img-alt:   image of accessories compatible with miniscopes
+        Explore the details of the Miniscope System hardware.
 
-.. raw:: html
+    .. grid-item-card:: Software Guide
+        :link:          Software-Guide/index
+        :link-type:     doc
+        :link-alt:      link to software guide
+        :img-top:       /_static/images/noun_macbook.svg
+        :img-alt:       Software Guide
+        :shadow:        none
+        :class-item:    hover-zoom
+        :class-card:    card intro-card sd-border-0 text-center
+        :class-title:   card-title sd-font-weight-normal
+        :class-body:    card-body flex-fill
+        :class-img-top: card-img-top
 
-    <div class="card-columns">
-        <a class="reference internal" href="Getting-Started/quickstart-guide/index.html"><span class="std std-ref custom-card">
-        <div class="card text-center intro-card">
-            <img src="_static/images/running.svg" class="card-img-top" alt="hardware user guide" height="100">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Quick Start Guide</h5>
-                <p class="card-text">Learn the basic ins & outs on how to operate a miniscope.</p>
-            </div>
-        </div>
-        <a class="reference internal" href="User-Guide/index.html"><span class="std std-ref custom-card">
-        <div class="card text-center intro-card">
-            <img src="_static/images/noun_books.svg" class="card-img-top" alt="user guide" height="100">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">User Guide</h5>
-                <p class="card-text">Learn more in-depth about how to acquire data with miniscope tools.</p>
-            </div>
-        </div>
-        <a class="reference internal" href="overview/index.html"><span class="std std-ref custom-card">
-        <div class="card text-center intro-card">
-            <img src="_static/images/noun_macbook.svg" class="card-img-top" alt="onix software guide" height="100">
-            <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Miniscope Overview</h5>
-                <p class="card-text">Learn about the miniscope concept and the surrounding ecosystem of open-source hardware and software.</p>
-            </div>
-        </div>
-    </div>
+        Learn about software to run miniscope acquisition.
+
+    .. grid-item-card:: User Guide
+        :link:          User-Guide/index
+        :link-type:     doc
+        :link-alt:      link to user guide
+        :img-top:       /_static/images/noun_books.svg
+        :img-alt:       User Guide
+        :shadow:        none
+        :class-item:    hover-zoom
+        :class-card:    card intro-card sd-border-0 text-center
+        :class-title:   card-title sd-font-weight-normal
+        :class-body:    card-body flex-fill
+        :class-img-top: card-img-top
+
+        Guidelines for using the Miniscope System for experiments.
+
+    .. grid-item-card:: Developer Guide
+        :link:          Developer-Guide/index
+        :link-type:     doc
+        :link-alt:      link to developer guide
+        :img-top:       /_static/images/noun_screwdriver.svg
+        :img-alt:       Developer Guide
+        :shadow:        none
+        :class-item:    hover-zoom
+        :class-card:    card intro-card sd-border-0 text-center
+        :class-title:   card-title sd-font-weight-normal
+        :class-body:    card-body flex-fill
+        :class-img-top: card-img-top
+
+        Details to help you hack your system.
     
 .. toctree::
     :hidden:
