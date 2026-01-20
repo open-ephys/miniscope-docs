@@ -38,7 +38,7 @@ Troubleshooting
     ..  image:: lens-flare.webp
         :alt:   image of lens flate
 
-    This artifact in your image usually indicates excessive excitation light. For more information, refer to :ref:`ucla-miniscope-v4/faq-troubleshoot-resources/faq:What Led Intensity Should I Use?`. 
+    This artifact in your image usually indicates excessive excitation light. For more information, refer to :ref:`User-Guide/faq:What Led Intensity Should I Use?`. 
 
     Much of this leaked excitation light makes its way to the image sensor by reflecting off the side surfaces of the dichroic filter. If you take this filter out and paint all its sides with black enamel paint or black optical paint it should drastically reduce the light leakage you see.
     https://groups.google.com/g/miniscope/c/giLyul7dAl0/m/7Ek3pdViAQAJ
@@ -144,13 +144,9 @@ Troubleshooting
             ..  image:: ewl-rings-exposed-copper.webp
                 :alt:   image of exposed copper EWL rings
 
-        #.  Follow the *Connect Hardware* section of the :doc:`/ucla-miniscope-v4/quick-start/index` corresponding to the data acquisition hardware you're using: 
+        #.  Follow the *Connect Hardware* section of the :doc:`/Getting-Started/quickstart-guide/index` corresponding to the data acquisition hardware you're using: 
 
-    ..        *   :ref:`Connect ONIX 2.0 to acquire UCLA Miniscope v4 data <ucla-miniscope-v4/quick-start/onix-2-quick:Connect Hardware>`
-
-            *   :ref:`Connect Miniscope-DAQ or MiniDAQ to acquire UCLA Miniscope v4 data <ucla-miniscope-v4/quick-start/onix-1-quick:Connect Hardware>`
-
-            *   :ref:`Connect ONIX 1.0 to acquire UCLA Miniscope v4 data <ucla-miniscope-v4/quick-start/miniscope-daq-quick:Connect Hardware>`
+            *   :ref:`Connect Miniscope-DAQ or MiniDAQ to acquire UCLA Miniscope v4 data </Getting-Started/quickstart-guide/hardware>`
 
         #.  Open a :doc:`data acquisition software <../data-acq-hardware>` that is compatible with your data acquisition hardware. If there are multiple, choose the one that is most familiar and easy-to-use for you.
 
@@ -178,7 +174,7 @@ Troubleshooting
         ..  image:: 7khz-70v-pwm.webp
             :alt:   image of 7kHz 70V/ :sub:`pk-pk` from oscilloscope output
 
-            *   If this step yields the 7kHz 70V/ :sub:`pk-pk` PWM signal, do not proceed further through this guide. The problem is proper placement or clamping of the flexible PCB EWL rings. Return to :ref:`ucla-miniscope-v4/faq-troubleshoot-resources/troubleshooot:Imaging Depth Does Not Change After Adjusting *EWL* in Software`.
+            *   If this step yields the 7kHz 70V/ :sub:`pk-pk` PWM signal, do not proceed further through this guide. The problem is proper placement or clamping of the flexible PCB EWL rings. Return to :ref:`User-Guide/troubleshoot:Imaging Depth Does Not Change After Adjusting *EWL* in Software`.
 
         ..  important:: Try resetting the software and adjusting the probes if this oscilloscope output does not show the 7kHz 70V/ :sub:`pk-pk` PWM signal after the first time.
 

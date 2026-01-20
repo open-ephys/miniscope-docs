@@ -13,8 +13,6 @@ The :ref:`Hardware-Guide/data-acq-hardware:Miniscope-DAQ` is the most common har
 
     ONIX is the data acquisition hardware designed by Open Ephys. It is compatible with a large array of Open Ephys hardware including electrophysiology headstages and miniscopes for Ca/ :sup:`2+` imaging. It supports several digital/analog GPIO, simultaneous data acquisition from up to two headstages/miniscopes, and many more features. To learn more about ONIX, refer to the `ONIX documentation <https://open-ephys.github.io/onix-docs/Hardware%20Guide/index.html>`__ and `ONIX store webpage <https://open-ephys.org/onix>`__. To learn how to acquire miniscope data with ONIX, refer to the ONIX *Quick Start Guide* for your respective miniscope:
 
-    *   :doc:`UCLA Miniscope v4 </ucla-miniscope-v4/quick-start/onix1-quick>`
-
 *************
 Miniscope-DAQ
 *************

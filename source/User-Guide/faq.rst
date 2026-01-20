@@ -23,7 +23,7 @@ On the other hand, the optimal LED intensity is low enough to:
 
 .. This manifests as ___.
 
-.. :ref:`lens flare <ucla-miniscope-v4/faq-troubleshoot-resources/troubleshoot:Lens Flare>`.
+.. :ref:`lens flare <User-Guide/troubleshoot:Lens Flare>`.
 
 The exact value of *LEDBrightness* value that satisifies the above conditions depends on the UCLA Miniscope version and other parameters of the experimental setup (e.g. type of fluorescent CA\ :sup:`2+` indicator, the amount of fluorescent Ca\ :sup:`2+` indicator, imaging depth, etc.). Measuring the power output of your miniscope is a helpful metric for determining if the user is in the correct ballpark. It is recommended to start ~200 µW and work your way up keeping the above factors in mind.
 
@@ -50,7 +50,7 @@ Sometimes the experiment requires habituating more animals that you have UCLA Mi
 
     .. ; stereotaxic holder products are `available for purchasing <https://open-ephys.org/miniscope-v4/>`__. 
 
-    Beyond this and the information included in the :ref:`ucla-miniscope-v4/user/preparation/index:Surgery Timeline`, Open Ephys does not provide support for surgeries.
+    Beyond this and the information included in the :ref:`User-Guide/protocol:Surgery Timeline`, Open Ephys does not provide support for surgeries.
 
     ..  todo:: add link to sterteotaxic UCLA Miniscope v4 store link or tell them how they can buy it from us if they can
 

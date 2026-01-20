@@ -60,7 +60,7 @@ Open Ephys Miniscope Documentation
 .. raw:: html
 
     <div class="card-columns">
-        <a class="reference internal" href="ucla-miniscope-v4/quick/index.html#getting-started"><span class="std std-ref custom-card">
+        <a class="reference internal" href="Getting-Started/quickstart-guide/index.html"><span class="std std-ref custom-card">
         <div class="card text-center intro-card">
             <img src="_static/images/running.svg" class="card-img-top" alt="hardware user guide" height="100">
             <div class="card-body d-flex flex-column">
@@ -68,7 +68,7 @@ Open Ephys Miniscope Documentation
                 <p class="card-text">Learn the basic ins & outs on how to operate a miniscope.</p>
             </div>
         </div>
-        <a class="reference internal" href="ucla-miniscope-v4/user/index.html"><span class="std std-ref custom-card">
+        <a class="reference internal" href="User-Guide/index.html"><span class="std std-ref custom-card">
         <div class="card text-center intro-card">
             <img src="_static/images/noun_books.svg" class="card-img-top" alt="user guide" height="100">
             <div class="card-body d-flex flex-column">
