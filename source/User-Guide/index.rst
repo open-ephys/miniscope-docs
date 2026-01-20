@@ -13,6 +13,6 @@ User Guide
 
     protocol
     faq
-    troubleshoot
 
+.. troubleshoot
 .. data-analysis

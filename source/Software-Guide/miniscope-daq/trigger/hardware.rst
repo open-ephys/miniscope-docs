@@ -1,1 +1,1 @@
-..  include::   ../../../quick/hardware.rst
+..  include::   ../../../Getting-Started/quickstart-guide/hardware.rst

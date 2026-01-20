@@ -86,5 +86,4 @@ Save Timestamped Quaternion Data
     node. 
 
 To continue learning about using the UCLA Miniscope v4 and Miniscope-DAQ in Bonsai,
-refer to the :doc:`Trigger Workflow Description
-</ucla-miniscope-v4/user/miniscope-daq/trigger/description>`
+refer to the :doc:`Trigger Workflow Description </Software-Guide/miniscope-daq/trigger/description>`

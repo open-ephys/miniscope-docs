@@ -8,9 +8,9 @@ Software Guide
 
 Compatible software for acquiring data with the miniscopes sold by Open Ephys includes:
 
-*   :ref:`Software-Guide/data-acq-software:Bonsai` - supported by Open Ephys
+*   :ref:`Software-Guide/index:Bonsai` - supported by Open Ephys
 
-*   :ref:`Software-Guide/data-acq-software:Miniscope-DAQ-QT-Software` - formerly supported by the UCLA Miniscope developers
+*   :ref:`Software-Guide/index:Miniscope-DAQ-QT-Software` - formerly supported by the UCLA Miniscope developers
 
 ******
 Bonsai

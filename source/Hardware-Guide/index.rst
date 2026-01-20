@@ -14,6 +14,7 @@ Follow the table of contents on the side to read about each of the components th
     :titlesonly:
 
     miniscope-v4/index
+    data-acq-hardware
 
 .. implant-gear
 .. tethers

@@ -1,1 +1,1 @@
-..  include::   ../../../quick/software.rst
+..  include::   ../../../Getting-Started/quickstart-guide/software.rst
