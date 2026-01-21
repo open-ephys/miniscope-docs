@@ -199,7 +199,7 @@ html_theme_options = {
     "navbar_end": ["navbar-icon-links"],
     "navbar_align": "left",
     "footer_start": ["copyright"],
-    "external_links": [{"name": "Store", "url": "https://open-ephys.org/store"},],
+    "external_links": [{"name": "Store", "url": "https://open-ephys.org/store"}],
     'icon_links': [
         dict(name='Open Ephys',
              url='https://open-ephys.org/',
