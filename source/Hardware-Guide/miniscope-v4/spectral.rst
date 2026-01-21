@@ -4,7 +4,7 @@ Spectral Modification
 
 ..  warning::   Performing this modification voids any active Open Ephys warranty for this product.
 
-The UCLA Miniscope v4 as sold by Open Ephys is compatible with green indicators e.g. GCaMP6f (:ref:`Developer-Guide/mods/spectral:Standard`) or red indicators e.g. jRGECO1a (:ref:`Developer-Guide/mods/spectral:Lime`), though it can also be modified for :ref:`other <Developer-Guide/mods/spectral:Other>` fluorophores as well.
+The UCLA Miniscope v4 as sold by Open Ephys is compatible with green indicators e.g. GCaMP6f (:ref:`Hardware-Guide/miniscope-v4/spectral:Standard`) or red indicators e.g. jRGECO1a (:ref:`Hardware-Guide/miniscope-v4/spectral:Lime`), though it can also be modified for :ref:`other <Hardware-Guide/miniscope-v4/spectral:Other>` fluorophores as well.
 
 ********
 Standard

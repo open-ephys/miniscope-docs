@@ -29,17 +29,17 @@ The lens configurations are summarized in the table below:
         -   WD (µm)
         -   NA
 
-    *   -   :ref:`1 <Developer-Guide/mods/objective:Lens Configuration 1>`
+    *   -   :ref:`1 <Hardware-Guide/miniscope-v4/objective:Lens Configuration 1>`
         -   1.0 × 1.0
         -   675 ± 250
         -   0.89
 
-    *   -   :ref:`2 <Developer-Guide/mods/objective:Lens Configuration 2>`
+    *   -   :ref:`2 <Hardware-Guide/miniscope-v4/objective:Lens Configuration 2>`
         -   1.1 × 1.2
         -   975 ± 340
         -   0.81
 
-    *   -   :ref:`3 <Developer-Guide/mods/objective:Lens Configuration 3>`
+    *   -   :ref:`3 <Hardware-Guide/miniscope-v4/objective:Lens Configuration 3>`
         -   1.3 × 1.4
         -   2010 ± 400
         -   0.56

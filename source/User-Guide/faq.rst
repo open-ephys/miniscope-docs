@@ -88,18 +88,18 @@ Open Ephys does not sell GRIN lenses. For more information on this subject, ask 
 What Flourophores Are Compatible with the UCLA Miniscope v4 from Open Ephys?
 ****************************************************************************
 
-The UCLA Miniscope v4 as sold off-the-shelf by Open Ephys is compatible with green fluorophores (e.g. GCAMP6f) in our :ref:`standard configuration <Developer-Guide/mods/spectral:Standard>` or red fluorophores (e.g. jRGECO1a) in our :ref:`lime configuration <Developer-Guide/mods/spectral:Lime>`. Is it also possible to adapt the UCLA Miniscope v4 to :ref:`other <Developer-Guide/mods/spectral:Other>` fluorophores that don't share spectral characteristics with the fluorophores listed above. Refer to the :doc:`/Developer-Guide/mods/spectral` page for more details.
+The UCLA Miniscope v4 as sold off-the-shelf by Open Ephys is compatible with green fluorophores (e.g. GCAMP6f) in our :ref:`standard configuration <Hardware-Guide/miniscope-v4/spectral:Standard>` or red fluorophores (e.g. jRGECO1a) in our :ref:`lime configuration <Hardware-Guide/miniscope-v4/spectral:Lime>`. Is it also possible to adapt the UCLA Miniscope v4 to :ref:`other <Hardware-Guide/miniscope-v4/spectral:Other>` fluorophores that don't share spectral characteristics with the fluorophores listed above. Refer to the :doc:`/Hardware-Guide/miniscope-v4/spectral` page for more details.
 
 *********************************************************************************************************
 How Do I Adjust Magnification/Field-of-View, Working Distance, Spatial Resolution, or Numerical Aperture?
 *********************************************************************************************************
 
-An alternative objective module can be constructed using a set of lenses that are different from the default ones. Swapping these objective modules allows adjustment of these optical characteristics. Refer to the :doc:`/Developer-Guide/mods/objective` page for more details.
+An alternative objective module can be constructed using a set of lenses that are different from the default ones. Swapping these objective modules allows adjustment of these optical characteristics. Refer to the :doc:`/Hardware-Guide/miniscope-v4/objective` page for more details.
 
 ..
     *************************************************************
     How Do I Adjust Dynamic Range of LED Excitation Light Source?
     *************************************************************
 
-    Refer to :doc:`/Developer-Guide/mods/led-resistor` page of this documentation.
+    Refer to :doc:`/Hardware-Guide/miniscope-v4/led-resistor` page of this documentation.
 

@@ -75,12 +75,12 @@ The Miniscope ecosystem was originally designed by the Miniscope Team at UCLA, a
 
         Guidelines for using the Miniscope System for experiments.
 
-    .. grid-item-card:: Developer Guide
-        :link:          Developer-Guide/index
+    .. grid-item-card:: Assembly Guide
+        :link:          Hardware-Guide/miniscope-v4/miniscope-assembly-guide
         :link-type:     doc
-        :link-alt:      link to developer guide
+        :link-alt:      link to assembly guide
         :img-top:       /_static/images/noun_screwdriver.svg
-        :img-alt:       Developer Guide
+        :img-alt:       Assembly Guide
         :shadow:        none
         :class-item:    hover-zoom
         :class-card:    card intro-card sd-border-0 text-center
@@ -88,7 +88,7 @@ The Miniscope ecosystem was originally designed by the Miniscope Team at UCLA, a
         :class-body:    card-body flex-fill
         :class-img-top: card-img-top
 
-        Details to help you hack your system.
+        Help to build and hack a miniscope.
     
 .. toctree::
     :hidden:
@@ -98,4 +98,3 @@ The Miniscope ecosystem was originally designed by the Miniscope Team at UCLA, a
     Hardware-Guide/index
     Software-Guide/index
     User-Guide/index
-    Developer-Guide/index

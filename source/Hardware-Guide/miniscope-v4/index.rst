@@ -65,4 +65,8 @@ Software Features:
     :maxdepth: 1
     :titlesonly:
 
+    optomechanical
+    electrical    
     miniscope-assembly-guide
+    objective
+    spectral
