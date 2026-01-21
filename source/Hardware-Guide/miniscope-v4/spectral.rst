@@ -24,7 +24,7 @@ Standard
 ..  figure:: /_static/images/spectraviewer-standard-config.webp
     :alt:   plot of standard emission/excitation filters and dichroic mirror transmission spectra
 
-    `All three transmission spectra on a single plot <https://www.chroma.com/spectra-viewer?parts=25332,26210,25281>`__.
+    `All three transmission spectra on a single plot <https://www.chroma.com/spectra-viewer?share=d87e4046-7d64-4c7e-b7fb-6750a4c5e367>`__.
 
     +-------------+-----------+-----------+-----------+
     | **Filter**  | ET470/40x | ET525/50m | T495lpxr  |
@@ -52,7 +52,7 @@ Lime
 ..  figure:: /_static/images/spectraviewer-lime-config.webp
     :alt:   plot of lime emission/excitation filters and dichroic mirror transmission spectra
 
-    `All three spectra on a single plot <https://www.chroma.com/spectra-viewer?parts=25291,24194,25292>`__
+    `All three transmission spectra on a single plot <https://www.chroma.com/spectra-viewer?share=4f6b0160-5d26-4be4-9bf6-8ef88657755e>`__
 
     +---------------+-----------+-----------+-----------+
     | **Filter**    | ET560/40x | ET630/75m | T585lpxr  |
@@ -66,7 +66,7 @@ The lime UCLA Miniscope v4 is sold by Open Ephys in DIY kits with LED (already s
 Other
 *****
 
-Is it also possible to adapt the UCLA Miniscope v4 to fluorophores with spectral characteristics that aren't compatible with standard or lime configurations. Refer to `Chroma <https://www.chroma.com/>`__ (a `worker coop <https://www.chroma.com/company>`__ from which Open Ephys sources its filters) to look at your options for swapping out the filters and dichroic mirror. They produce and sell a variety of `off-the-shelf filters/dichroic mirrors <https://www.chroma.com/products/optical-filters>`__ and also assist in producing `custom solutions <https://www.chroma.com/custom-oem-filter-design/>`__ for your experiments. The process of choosing the best set of light source, filters, and dichroic is often an iterative balancing process that attempts to maximize emission light into the sensor, minimize excitation light into the sensor, and maximize excitation light into the sample. This maximizes SNR and minimizes heat dissipation from the LED/LED driver. 
+Is it also possible to adapt the UCLA Miniscope v4 to fluorophores with spectral characteristics that aren't compatible with standard or lime configurations. Refer to `Chroma <https://www.chroma.com/>`__ (a `worker coop <https://www.chroma.com/company>`__ from which Open Ephys sources its filters) to look at your options for swapping out the filters and dichroic mirror. They produce and sell a variety of `off-the-shelf filters/dichroic mirrors <https://www.chroma.com/products/filter-types>`__ and also assist in producing `custom solutions <https://www.chroma.com/capabilities/custom-solutions>`__ for your experiments. The process of choosing the best set of light source, filters, and dichroic is often an iterative balancing process that attempts to maximize emission light into the sensor, minimize excitation light into the sensor, and maximize excitation light into the sample. This maximizes SNR and minimizes heat dissipation from the LED/LED driver. 
 
 .. all this commented-out text below is too much text, but could be useful at some point.
 

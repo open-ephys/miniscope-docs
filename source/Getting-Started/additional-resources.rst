@@ -15,7 +15,7 @@ These resources are for users of UCLA Miniscope v4 (and more broadly: users/deve
 
 *   `The Open Ephys forum <https://groups.google.com/g/open-ephys>`__
 
-*   `The Open Ephys Discord <https://discord.gg/WXAx2URNQU>`__
+*   `The Open Ephys Discord <https://discord.com/invite/WXAx2URNQU>`__
 
 
 ..  toctree::
