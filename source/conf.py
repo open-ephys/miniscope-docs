@@ -196,7 +196,7 @@ html_theme_options = {
     'use_edit_page_button': True,
     "navigation_with_keys": True,
     "navbar_end": ["navbar-icon-links"],
-    "navbar_align": "content",
+    "navbar_align": "left",
     "footer_start": ["copyright"],
     "external_links": [{"name": "Open Ephys", "url": "https://open-ephys.org"},],
     'icon_links': [
