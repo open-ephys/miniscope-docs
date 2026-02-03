@@ -1,27 +1,12 @@
 
 #########################
-Data Acquisition Hardware
-#########################
-
-The :ref:`Hardware-Guide/data-acq-hardware:Miniscope-DAQ` is the most common hardware for acquiring data from miniscopes derived from the UCLA Miniscope v4 and the v4 itself.
-
-.. note:: Wireless miniscopes with on-board loggers such as the UCLA Miniscope v3 Wireless do not require data-acqusition hardware.
-..
-    ****
-    ONIX
-    ****
-
-    ONIX is the data acquisition hardware designed by Open Ephys. It is compatible with a large array of Open Ephys hardware including electrophysiology headstages and miniscopes for Ca/ :sup:`2+` imaging. It supports several digital/analog GPIO, simultaneous data acquisition from up to two headstages/miniscopes, and many more features. To learn more about ONIX, refer to the `ONIX documentation <https://open-ephys.github.io/onix-docs/Hardware%20Guide/index.html>`__ and `ONIX store webpage <https://open-ephys.org/onix>`__. To learn how to acquire miniscope data with ONIX, refer to the ONIX *Quick Start Guide* for your respective miniscope:
-
-*************
 Miniscope-DAQ
-*************
-
+#########################
 ..  image:: /_static/images/miniscope-daq.webp
     :alt:   image of miniscope-daq
     :align: center
 
-The `Miniscope-DAQ <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__ is the data acquisition hardware developed by the UCLA Miniscope team for acquiring miniscope data. It accepts an external power supply for more power-intensive applications and plugs into a PC through a USB cable. It supports sync output, input trigger, and data acquisition from a UCLA Miniscope v4, MiniCAM, and other miniscopes derived from the UCLA Miniscope v4. The Miniscope-DAQ is supported by :ref:`Software-Guide/index:Bonsai` and :ref:`Software-Guide/index:Miniscope-DAQ-QT-Software`. To acquire miniscope or MiniCAM data with the Miniscope-DAQ, refer to the :doc:`/Getting-Started/quickstart-guide/index` and :doc:`/User-Guide/index`. To learn more about the Miniscope-DAQ, refer to the `UCLA Miniscope v4 Wiki <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__. 
+The `Miniscope-DAQ <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__ is the data acquisition hardware developed by the UCLA Miniscope team for acquiring miniscope data. It connectos to the PC through USB 3.0. It supports sync output, input trigger, and data acquisition from a single Miniscope v4 or MiniCAM. It optionally accepts an external power supply for more power-intensive applications. The Miniscope-DAQ is supported by :ref:`Software-Guide/index:Bonsai` and :ref:`Software-Guide/index:Miniscope-DAQ-QT-Software`. To acquire miniscope or MiniCAM data with the Miniscope-DAQ, refer to the :doc:`/Getting-Started/quickstart-guide/index` and :doc:`/User-Guide/index`. To learn more about the Miniscope-DAQ, refer to the `UCLA Miniscope v4 Wiki <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__. 
 
 Miniscope-DAQ Functionality
 ===========================
@@ -46,7 +31,7 @@ The aux input is not currently supported in software.
 External Power
 --------------
 
-The Miniscope-DAQ can accept an external power source and forward it to a connected device for particularly power-intensive applications in which USB3.0 cannot provide sufficient power or voltage. Using an external power source is required for the MiniCAM and recommended for the UCLA Miniscope v4. For more information on symptoms related to insufficient power, refer to the Troubleshooting (coming soon) guide. To use an external power source instead of USB3.0:
+The Miniscope-DAQ can accept an external power source and forward it to a connected device for particularly power-intensive applications in which USB3.0 cannot provide sufficient power or voltage. Using an external power source is required for the MiniCAM and recommended for the Miniscope v4. For more information on symptoms related to insufficient power, refer to the Troubleshooting (coming soon) guide. To use an external power source instead of USB3.0:
 
 #.  Unscrew all four fasteners that fasten the Miniscope-DAQ's enclosure. It might be necessary to apply gentle pressure on the nuts on the bottom of the DAQ to prevent them from turning when unscrewing the screws.
 
@@ -101,11 +86,8 @@ The effect of a dropped frame is a larger inter-frame interval. If you are strug
 The input trigger involves 10-100ms latency so relying on it for syncing data is also not recommended.
 
 
-Miniscope-DAQ Variants
-======================
-
 MiniDAQ
--------
+======================
 
 ..  image:: /_static/images/minidaq.webp
     :alt:   image of minidaq
@@ -113,15 +95,4 @@ MiniDAQ
 
 ..  todo:: remove background of and color-correct these photos, or take new photos
 
-The MiniDAQ is a simplified, more compact, and more affordable version of the Miniscope-DAQ. It plugs directly into a PC through its on-board USB cable. It supports data acquisition from a single UCLA Miniscope v4 with a short tether. Unlike the Miniscope-DAQ, the MiniDAQ does not accept an external supply or support sync output or input trigger functions. The MiniDAQ is compatible with :ref:`Software-Guide/index:Bonsai` and :ref:`Software-Guide/index:Miniscope-DAQ-QT-Software`. To acquire miniscope, follow the same user guides as the Miniscope-DAQ.
-
-NINscope-DAQ
-------------
-
-..  image:: /_static/images/ninscope-daq.webp
-    :alt:   image of ninscope-daq
-    :align: center
-
-..  todo:: color-correct this photo so it matches miniscope-daq photo
-
-The NINscope-DAQ is like the Miniscope-DAQ except the NINscope-DAQ is also compatible with the `NINscope <https://github.com/ninscope>`__. It accepts an external power supply for more power-intensive applications and plugs into a PC through a USB cable. It supports sync output, input trigger, and data acquisition from a single NINscope. The NINscope is compatible with `custom NINscope software <https://github.com/ninscope/Software/wiki/NINscope-software>`__ from the NINscope developers. To learn more about the NINscope, refer to the `NINscope hardware wiki <https://github.com/ninscope/Hardware/>`__ from the NINscope developers.
+The MiniDAQ is a simplified, more compact, and more affordable version of the Miniscope-DAQ. It plugs directly into a PC through its on-board USB cable. It supports data acquisition from a single Miniscope v4 or MiniCAM. Unlike the Miniscope-DAQ, the MiniDAQ does not support sync output or input trigger functions, nor accept an external supply. The MiniDAQ is compatible with :ref:`Software-Guide/index:Bonsai` and :ref:`Software-Guide/index:Miniscope-DAQ-QT-Software`. To acquire Miniscope v4 or MiniCAM data with the MiniDAQ, follow the same user guides as the Miniscope-DAQ.
