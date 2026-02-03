@@ -15,10 +15,10 @@ Follow the table of contents on the side to read about each of the components th
 
     miniscope-v4/index
     data-acq-hardware
+    tethers
     commutators
     minicam
 
 .. implant-gear
-.. tethers
 .. miniscope-daq
 .. compatible-devices

@@ -28,6 +28,8 @@ The I/O operate at a 3.3V logic level. The input is 5V tolerant.
 
 The aux input is not currently supported in software.
 
+.. _externalpower:
+
 External Power
 --------------
 

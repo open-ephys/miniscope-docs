@@ -19,7 +19,7 @@ A complete data acquisition system for the UCLA Miniscope design consists of the
 
 * A Miniscope V4, which you can order from the Open Ephys store either as a pre-assembled device or as an assembly kit to build yourself following the :ref:`miniscope_assembly_guide`. 
 
-* One :ref:`coaxial tether <cables>` to connect the Miniscope to the Miniscope DAQ, which you can order from the Open Ephys store assembled (custom lengths available) or as an assembly kit to build yourself.
+* One :ref:`coaxial tether <tethers>` to connect the Miniscope to the Miniscope DAQ, which you can order from the Open Ephys store assembled (custom lengths available) or as an assembly kit to build yourself.
 
 * A Miniscope DAQ for acquisition. One Miniscope DAQ per Miniscope is required for operation. Connection accessories are available for the Miniscope DAQ to use the DAQ I/O ports.
 
