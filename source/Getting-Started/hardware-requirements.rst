@@ -42,9 +42,25 @@ The :doc:`/Hardware-Guide/index` goes into each system component in detail. To i
 Animal Interface and Protocol Accessories
 **************************************************
 
+* A baseplate is required to secure the miniscope to the animal's skull. A stereotaxic miniscope holder that allows attachment and detachment of the baseplate can be helpful to visually guide baseplate implantation.
+
+* When imaging in depth, relay GRIN lenses must be implanted in the brain. A GRIN lens holder is required to position the lens during GRIN lens implantation.
+
+* Dummy scopes of the same size and mass distribution as the miniscope can be used for habituation after baseplate implantation.
+
 
 .. _computerhardware:
 
 *****************************
 Acquisition Computer
 *****************************
+
+Any modern computer should be able to run the miniscope system. Performance will depend on your specific settings, especially the amount of data processing you are doing online (e.g. for behavior). Here are some considerations:
+
+* **Operating system** - the Miniscope DAQ is only supported on Windows.
+
+* **Data storage** - a solid state drive is *strongly* recommended, with enough storage space to save data. For reference, the typical size for 1000 frames at 30 frames per second using the GREY codec is ~350 Mb.
+
+* **Graphics card** - a good graphics card is not critical for data acquisition. However, consider upgrading your graphics card to speed up offline analysis steps.
+
+* **Connections** - At least one free USB 3.0 port to connect the Miniscope DAQ directly to the the computer.
