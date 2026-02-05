@@ -47,10 +47,13 @@ extensions = [
     'sphinx_design',
     'sphinxcontrib.email',
     'nbsphinx',
+    'sphinx_new_tab_link'
     # 'sphinx_jinja'
 ]
 
 autosectionlabel_prefix_document = True
+
+new_tab_link_show_external_link_icon = True
 
 # mybuilder = "sphinx_autobuild"
 
@@ -196,10 +199,10 @@ html_theme_options = {
     'use_edit_page_button': True,
     "navigation_with_keys": True,
     "navbar_start": ["start_icon.html","navbar-logo"],
+    "navbar_center": ["navbar-nav", "purchase_link.html"],
     "navbar_end": ["navbar-icon-links"],
     "navbar_align": "left",
     "footer_start": ["copyright"],
-    "external_links": [{"name": "Store", "url": "https://open-ephys.org/store"}],
     'icon_links': [
         dict(name='GitHub',
              url='https://github.com/open-ephys/miniscope-docs',
