@@ -33,11 +33,11 @@ The aux input is not currently supported in software.
 External Power
 --------------
 
-The Miniscope-DAQ can accept an external power source and forward it to a connected device for particularly power-intensive applications in which USB3.0 cannot provide sufficient power or voltage. Using an external power source is required for the MiniCAM and recommended for the Miniscope v4. For more information on symptoms related to insufficient power, refer to the Troubleshooting (coming soon) guide. To use an external power source instead of USB3.0:
+By default, the Miniscope-DAQ is set to use USB power. However, it can be configured to use an external power source for particularly power-intensive applications in which USB3.0 cannot provide sufficient power. To use an external power source instead of USB3.0:
 
 #.  Unscrew all four fasteners that fasten the Miniscope-DAQ's enclosure. It might be necessary to apply gentle pressure on the nuts on the bottom of the DAQ to prevent them from turning when unscrewing the screws.
 
-#.  Set the jumper according to which power source you would like to use following to the silk screen:
+#.  Set the jumper according to which power source you would like to use, either Jack or USB following to the silk screen:
 
     ..  image:: /_static/images/miniscope-daq-jump.webp
         :alt:   power jumper animation
@@ -45,19 +45,24 @@ The Miniscope-DAQ can accept an external power source and forward it to a connec
 
 #.  Replace the four fasteners. 
 
-..  note::  If the Miniscope-DAQ is set to use external power, the barrel jack must be plugged in to use the connected miniscope/minicam.
+..  note::  If the Miniscope DAQ is set to use external power, the barrel jack must be plugged in to use the device. Conversely, when the Miniscope DAQ is set to USB power, the barrel jack has no effect.
 
 Recommended specifications for an external power supply are as follows:
 
-*   5-6V
+*   Output voltage
 
-    *   To dial in the ideal power supply voltage for your setup (in particular for your tether), use an adjustable power supply (e.g. ) and probe the following pads while adjusting the voltage. The ideal voltage at those pads is about 4V. This voltage is high enough to maximize reliability of the UCLA Miniscope v4 acquisition and low enough to minimize unnecesary heat generation.
+    .. warning:: Do not exceed 9.0 VDC at the external power jack to the Miniscope DAQ. Exceeding this voltage can damage the device.
 
-*   2A, though this value is depedent on your miniscope/camera device. The MiniCAM with an attached IR LED ring requires more current than the UCLA Miniscope v4, for instance.
+    To dial in the ideal power supply voltage for your application, you can use an adjustable power supply to power the DAQ and monitor the voltage at the miniscope as described in :ref:`measure_voltage`. Make sure to stay within the :ref:`operating voltage range <voltage_requirements>` of the miniscope and the DAQ. If you don't have a variable power supply, in most cases a `6V power adapter <https://open-ephys.org/power-supplies/oeps-5906>`__ is sufficient to account for the voltage drop. 
+    
+*   Output current
+
+    Power adapters up to 1A are used even though the current draw by the devices is less.
 
 *   Center-positive polarity
 
-By default, the Miniscope-DAQ is set to use USB power. 
+*   Round barrel plug of 2.5 mm ID and 5.5 mm OD
+
 
 LED Indicators
 --------------
