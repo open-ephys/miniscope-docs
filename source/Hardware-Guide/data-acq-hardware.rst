@@ -33,7 +33,7 @@ The aux input is not currently supported in software.
 External Power
 --------------
 
-By default, the Miniscope-DAQ is set to use USB power. However, it can be configured to use an external power source for particularly power-intensive applications in which USB3.0 cannot provide sufficient power. To use an external power source instead of USB3.0:
+By default, the Miniscope-DAQ is set to use USB power. However, it can be set to use an external power source for particularly power-intensive applications in which USB3.0 cannot provide sufficient power. To use an external power source instead of USB3.0:
 
 #.  Unscrew all four fasteners that fasten the Miniscope-DAQ's enclosure. It might be necessary to apply gentle pressure on the nuts on the bottom of the DAQ to prevent them from turning when unscrewing the screws.
 
@@ -73,9 +73,9 @@ Miniscope-DAQs have the following green LED indicators:
 
 *   **Scope Power:** This LED indicates the Miniscope-DAQ is forwarding power to the device that is connected to the Miniscope port.
 
-    *   If the power jumper is set to , the LED turns on after establishing the USB connection
+    *   If the power jumper is set to USB, the LED turns on after establishing the USB connection
 
-    *   If the power jumper is set to , the LED turns on after establishing the USB connection *and* the external power source connection
+    *   If the power jumper is set to Jack, the LED turns on after establishing the USB connection *and* the external power source connection
 
 *   **Data Link:** This LED indicates the Miniscope-DAQ communication is established between the Miniscope-DAQ and the connected device.
 
