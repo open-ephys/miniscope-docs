@@ -27,7 +27,7 @@ The supply voltage required at the Miniscope DAQ to maintain the miniscope withi
 
 .. _measure_voltage:
 
-To determine the supply voltage reaching the miniscope, power the miniscope and use a multimeter to probe the two points of either set of ground and voltage supply pads marked below. The first set of pads around the connector are larger but can be hard to access once the tether is attached to the miniscope, so the second set of pads on the side are a good alternative. These side pads sit at approximately 0.2 V lower than the pads around the connector. 
+To determine the supply voltage reaching the miniscope, power the miniscope and use a multimeter to probe the two points marked below: the ground pad and the voltage supply pad. 
 
 ..  image:: /_static/images/measure_voltage_miniscopev4.png
     :alt:   image identifying voltage measuring points
