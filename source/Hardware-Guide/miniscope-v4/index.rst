@@ -68,5 +68,6 @@ Software Features:
     optomechanical
     electrical    
     miniscope-assembly-guide
+    measuring-voltage
     objective
     spectral
