@@ -198,8 +198,7 @@ epub_exclude_files = ["search.html"]
 html_theme_options = {
     'use_edit_page_button': True,
     "navigation_with_keys": True,
-    "navbar_start": ["start_icon.html","navbar-logo"],
-    "navbar_center": ["navbar-nav", "purchase_link.html"],
+    "navbar_center": ["navbar-nav", "nav_divider.html", "moredocs_link.html", "purchase_link.html"],
     "navbar_end": ["navbar-icon-links"],
     "navbar_align": "left",
     "footer_start": ["copyright"],
@@ -212,11 +211,7 @@ html_theme_options = {
              icon='fab fa-discord'),
         dict(name='Bluesky',
              url='https://bsky.app/profile/open-ephys.org',
-             icon='fa-brands fa-bluesky'),
-        dict(name='Open Ephys',
-             url='https://open-ephys.org/',
-             icon='_static/images/oe-logo-a_mono_no-text_white.png',
-             type='local')
+             icon='fa-brands fa-bluesky')
     ],
     #'canonical_url': '',
     #'analytics_id': '',

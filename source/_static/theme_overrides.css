@@ -112,6 +112,10 @@ h6 {
   font-size: 1em;
 }
 
+:root {
+  --navbar-accent: #b377aa;
+}
+
 .navbar-nav>.active>.nav-link {
   background-color: #e6eddf !important;
   color: #2f401f !important;
