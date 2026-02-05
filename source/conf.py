@@ -201,10 +201,6 @@ html_theme_options = {
     "footer_start": ["copyright"],
     "external_links": [{"name": "Store", "url": "https://open-ephys.org/store"}],
     'icon_links': [
-        dict(name='Open Ephys',
-             url='https://open-ephys.org/',
-             icon='_static/images/oe-logo-a_mono_no-text_white.png',
-             type='local'),
         dict(name='GitHub',
              url='https://github.com/open-ephys/miniscope-docs',
              icon='fab fa-github'),
@@ -214,9 +210,10 @@ html_theme_options = {
         dict(name='Bluesky',
              url='https://bsky.app/profile/open-ephys.org',
              icon='fa-brands fa-bluesky'),
-        dict(name='LinkedIn',
-             url='https://linkedin.com/company/open-ephys-inc/',
-             icon='fa-brands fa-linkedin')
+        dict(name='Open Ephys',
+             url='https://open-ephys.org/',
+             icon='_static/images/oe-logo-a_mono_no-text_white.png',
+             type='local')
     ],
     #'canonical_url': '',
     #'analytics_id': '',
