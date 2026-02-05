@@ -10,7 +10,7 @@ Open Ephys Miniscope Documentation
 Welcome to the documentation for the Miniscope System by Open Ephys! This site is designed to help you get the most out of your Miniscope System, whether you're a new user or an experienced developer.
 
 The Miniscope V4 is a lightweight, open-source miniature microscope designed for high-resolution fluorescent imaging in freely behaving animals.
-The Miniscope ecosystem was originally designed by the Miniscope Team at UCLA, and here you can find details about the versions we produce.
+The Miniscope ecosystem was originally designed by the Miniscope Team at UCLA. Here you can find details about the versions we produce.
 
 .. grid:: 5
     :class-container: gap-4

@@ -23,11 +23,11 @@ A complete data acquisition system for the UCLA Miniscope design consists of the
 
 * A Miniscope DAQ for acquisition. One Miniscope DAQ per Miniscope is required for operation. Connection accessories are available for the Miniscope DAQ to use the DAQ I/O ports.
 
-* USB 3.0 cable for the Miniscope DAQ communication to the PC.
+* USB 3.0 cable (USB Micro-B SuperSpeed to USB A SuperSpeed) for the Miniscope DAQ communication to the PC.
 
-* (Optional) External power supply (5V) for the Miniscope DAQ in specific applications
+* (Recommended) External power supply (5V) for the Miniscope DAQ in specific applications
 
-* (Optional) A :ref:`coaxial commutator <commutators>` to prevent tether twisting, such as our torque-free Coaxial Commutator, which you can order from the Open Ephys store. If you use a commutator, you need an additional SMA-SMA cable.
+* (Optional) A :ref:`coaxial commutator <commutators>` to prevent tether twisting during freely-moving behavior experiments, such as our torque-free Coaxial Commutator, which you can order from the Open Ephys store. If you use a commutator, you need an additional SMA-SMA cable.
 
 * A computer to run the software and interface with the rest of the system. We list a :ref:`recommended configuration <computerhardware>` below.
 

@@ -10,8 +10,6 @@ Quick Start Guide
 The `Quick Start Guide` serves to familiarize yourself with and validate the functionaliy of the UCLA Miniscope v4 and associated hardware. For acquiring and analyzing data, refer to the User Guide (coming soon).
 
 ..  include::   includes.rst
-    :start-line:    2
-    :end-line:      4
 
 ..
     ..  grid:: 2

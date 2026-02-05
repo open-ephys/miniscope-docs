@@ -4,7 +4,7 @@
 Hardware Guide
 #################
 
-You can follow the :ref:`quickstartguide` to learn how to start collecting data right away. However, we recommend reading this section carefully if you're going to use our hardware, and especially if you're going to make any modifications to it.
+Follow the :ref:`quickstartguide` to start collecting data right away. Read this section to learn the ins and outs of the miniscope which is critical to ensuring you are using the miniscope correctly during your experiment and facilitates troubleshooting.
 
 Follow the table of contents on the side to read about each of the components that make up the system and how they function.
 
