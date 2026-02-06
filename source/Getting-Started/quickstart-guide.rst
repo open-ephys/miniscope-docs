@@ -6,13 +6,11 @@ Quick Start Guide
 
 This Quick Start Guide uses Bonsai to connect to a Miniscope v4 via a Miniscope DAQ and validate its functionality. You can learn more about the software's functionality and other software options to acquire from the Miniscope v4 in the :doc:`/Software-Guide/index`. For additional information on using miniscopes for experiments, please refer to the :doc:`/User-Guide/index`.
 
-..  todo::  include pic of the actual connections used in the guide to avoid being misleading
-
-.. figure:: /_static/images/miniscope-system.png
-   :width: 70%
+.. figure:: /_static/images/Miniscope_and_DAQ.jpg
+   :width: 50%
    :align: center
 
-   An example Miniscope acquisition system using the Miniscope DAQ v3.3, a Miniscope v4 and an Open Ephys Commutator. The system is being run through Bonsai.
+   Starting with the basics: a system made up of the Miniscope DAQ v3.3 and a Miniscope v4.
 
 Connecting the Hardware
 -------------------------------------------
