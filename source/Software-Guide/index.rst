@@ -21,7 +21,7 @@ Bonsai
     :align: center
     :width:  300px
 
-`Bonsai <https://bonsai-rx.org/>`__ is an open-source, highly extensible, reactive, visual programming language. Open Ephys provides Bonsai packages and example workflows (Bonsai scripts) for interacting with all of the hardware that it sells, including miniscopes. To quickly start with your miniscope using *Bonsai*, follow the :doc:`/Getting-Started/quickstart-guide/index`. To start acquiring data, refer to the :doc:`/Software-Guide/miniscope-daq/index`. Although not necessary, it is highly recommended to study the `Bonsai Language Guide <https://bonsai-rx.org/docs/articles/observables.html>`__ before starting.
+`Bonsai <https://bonsai-rx.org/>`__ is an open-source, highly extensible, reactive, visual programming language. Open Ephys provides Bonsai packages and example workflows (Bonsai scripts) for interacting with all of the hardware that it sells, including miniscopes. To quickly start with your miniscope using *Bonsai*, follow the :doc:`/Getting-Started/quickstart-guide`. To start acquiring data, refer to the :doc:`/Software-Guide/miniscope-daq/index`. Although not necessary, it is highly recommended to study the `Bonsai Language Guide <https://bonsai-rx.org/docs/articles/observables.html>`__ before starting.
 
 *************************
 Miniscope-DAQ-QT-Software

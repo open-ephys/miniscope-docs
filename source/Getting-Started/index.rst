@@ -11,7 +11,7 @@ Follow the :ref:`quickstartguide` to start collecting data right away. Read the 
     :maxdepth: 1
     :titlesonly:
 
-    quickstart-guide/index  
+    quickstart-guide 
     hardware-requirements
     additional-resources
 

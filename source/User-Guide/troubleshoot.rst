@@ -144,7 +144,7 @@ Troubleshooting
             ..  image:: ewl-rings-exposed-copper.webp
                 :alt:   image of exposed copper EWL rings
 
-        #.  Follow the *Connect Hardware* section of the :doc:`/Getting-Started/quickstart-guide/index` corresponding to the data acquisition hardware you're using: 
+        #.  Follow the *Connect Hardware* section of the :doc:`/Getting-Started/quickstart-guide` corresponding to the data acquisition hardware you're using: 
 
             *   :ref:`Connect Miniscope-DAQ or MiniDAQ to acquire UCLA Miniscope v4 data </Getting-Started/quickstart-guide/hardware>`
 

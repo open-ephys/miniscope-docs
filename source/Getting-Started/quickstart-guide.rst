@@ -74,7 +74,7 @@ Testing the Miniscope's Functionality
 
     ..  raw:: html
 
-        {% with static_path = '../../_static', name = 'uclaminiscopev4-miniscopedaq-quick' %}
+        {% with static_path = '../_static', name = 'uclaminiscopev4-miniscopedaq-quick' %}
             {% include 'workflow.html' %}
         {% endwith %}
 
