@@ -26,14 +26,19 @@ Connecting the Hardware
             :alt:   photograph of SMA plug going into Miniscope DAQ SMA jack
             :height: 250px
 
-    * Click the tether's U.FL connector into the miniscope's U.FL socket. Make sure you align both parts and feel them click together to ensure the connector is correctly seated:
+    * Click the tether's U.FL connector into the miniscope's U.FL socket. Take extra care to stabilize the PCB where the connector is attached during connection and disconnection of the tether. Make sure you feel both parts click together to ensure the connector is correctly seated. 
 
-    ..  image:: /_static/images/cable-ufl-plug_ucla-miniscope-v4-ufl-jack.webp
-            :align: center
-            :alt:   photograph of U.FL plug going into Miniscope v4 U.FL jack
-            :height: 250px
+        - Hold the connector PCB firmly from the sides to fix in place so it does not bounce. Otherwise, components can get damaged by scraping PCBs against each other or the body.
+        - Avoid inadvertently bending the flex-cables that join the PCBs. Otherwise, the electrical connections inside the flex-cables may break.
+        - Align the connector to the socket and press it in without excessive force. If it does not go in easily, realign and try again. Otherwise, the connector can get damaged.
 
-#.  Connect the Miniscope DAQ to a USB 3.0-compatible port on your computer using the high-speed USB cable provided. USB 3.0-compatible port are usually indicated by a blue color and are often at the back of PCs.
+    .. raw:: html
+
+        <center><video width="560" height="340" controls>
+        <source src="../../../_static/videos/Miniscope_tether_connection.mp4" type="video/mp4">
+        </video></center>
+
+#.  Connect the Miniscope DAQ to a USB 3.0-compatible port on your computer using the high-speed USB cable provided. USB 3.0-compatible ports are usually indicated by a blue color and/or the SuperSpeed mark and are often at the back of PCs.
 
     .. important:: Ensure you establish a reliable USB connection by using a high-speed USB cable and connecting directly to the port instead of through a hub or extension. USB cables longer than 2 meters are not recommended.
 
