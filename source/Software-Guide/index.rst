@@ -8,7 +8,7 @@ Software Guide
     :hidden:
     
     commutate
-    miniscope-daq/save-data/index
+    save-data
     miniscope-daq/trigger/index
 
 There are two compatible software programs to acquire miniscope data. Both platforms are free, open-source, and widely adopted in the neuroscience
@@ -56,7 +56,7 @@ The tutorials available in this section for the OpenEphys.Miniscope Bonsai packa
 
 #. :doc:`Commutate the Miniscope's tether using orientation data </Software-Guide/commutate>`
 
-#. :doc:`Save image and orientation data to file </Software-Guide/miniscope-daq/save-data/index>`
+#. :doc:`Save image and orientation data to file </Software-Guide/save-data>`
 
 #. :doc:`Trigger data acquisition with a trigger signal </Software-Guide/miniscope-daq/trigger/index>`
 

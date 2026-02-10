@@ -1,30 +1,89 @@
 #################
-Workflow Tutorial
+Save Data
 #################
 
-#.  Download the following workflow (.bonsai file) and open it with Bonsai:
+..  note::  This tutorial builds on the :ref:`quickstartguide` and previous tutorials.
 
-    ..  raw:: html
+After following this tutorial, the user will be able to save image data and timestamped orientation data from the UCLA Miniscope v4.
 
-        {% with static_path = '../../../../_static', name = 'uclaminiscopev4-miniscopedaq-savedata' %}
-            {% include 'workflow.html' %}
-        {% endwith %}
+..  raw:: html
 
-#.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that
-    corresponds to the index of your miniscope.
+    {% with static_path = '../_static', name = 'uclaminiscopev4-miniscopedaq-savedata' %}
+        {% include 'workflow.html' %}
+    {% endwith %}
 
-    ..  grid::
+***********************
+Workflow Description
+***********************
 
-        ..  grid-item::
-            
-            ..  include::  /includes/set-index.rst
-        
-        ..  grid-item::
-            :columns:   3
+|   **Save Image Data**
+|  
+..  image:: /_static/images/uclaminiscopev4-miniscopedaq-savedata_video-data.svg
+    :alt:   screenshot of uclaminiscopev4 node boxed
+    :align: center
 
-            ..  image:: /_static/images/uclaminiscopev4-properties.webp
-                :align: center
-                :alt:   screenshot of ucla miniscope v4 node properties for index
+*   The ``Image`` node connects to a ``VideoWriter`` node. The ``VideoWriter``
+    operator writes data to a video file according to settings in the
+    *Properties* pane that appears after left-clicking the ``VideoWriter`` node. 
+
+*   There are two ``VideoWriter`` operators. The first one is from the
+    ``Bonsai.Vision`` package, and the second one is from the ``Bonsai.FFmpeg``
+    package. They are both *sink* operators as indicated by the nodes' purple
+    color and the orientation of its grey arc. A sink operator saves data or
+    triggers external events. 
+
+*   The first ``VideoWriter`` operator is enabled. It can be disabled by
+    clicking it and pressing :kbd:`Ctrl+D`. It is configured to save video
+    using a Y800 (no compression) codec.
+
+*   The second ``VideoWriter`` operator is disabled. It can be enabled by
+    clicking it and pressing :kbd:`Ctrl+Shift+D`. It is configured to save
+    video using an 8-bit FFV1 (lossless compression) codec.
+
+*   The ``Annotation`` nodes (which contain a "#" symbol) are simply there to
+    indicate the difference between the ``Bonsai.Vision.VideoWriter`` operator
+    and the ``Bonsai.FFmpeg.VideoWriter`` operator. They don't provide any
+    functional difference in the workflow. You can think of them like comments
+    in code.
+
+|   **Save Timestamped Orientation (Quaternion) Data**
+|  
+..  image:: /_static/images/uclaminiscopev4-miniscopedaq-savedata_quat-data.svg
+    :alt:   screenshot of uclaminiscopev4 node boxed
+    :align: center
+
+*   The ``FrameNumber, Quaternion`` node connects to the ``Timestamp`` node. The
+    ``Timestamp`` operator appends timestamps to items that are emitted by the
+    upstream operator.
+
+*   The ``Timestamp`` node connects to the  ``CsvWriter`` node. The
+    ``CsvWriter`` operator writes data to a csv file according to settings in
+    the *Properties* pane that appears after left-clicking the ``CsvWriter``
+    node. 
+
+***********************
+Configure the Hardware
+***********************
+
+Configure the hardware as in the :ref:`quickstartguide` or as in the :doc:`commutate` tutorial if you are using an Open Ephys Commutator.
+
+**********************
+Get Started in Bonsai
+**********************
+
+In addition to the setup steps outlined in previous tutorials, install the following package:
+
+* *Bonsai.FFmpeg*: controls video output encoding.
+
+This package requires installing `FFmpeg <https://ffmpeg.org/>`_ separately in order to work. Follow the FFmpeg installation guide available in `documentation for the Bonsai.FFmpeg package <https://bonsai-rx.org/ffmpeg/>`_.
+
+***********************
+Operate the Workflow
+***********************
+
+#.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope.
+
+#.  If using a commutator, set the COM port associated with your commutator in the workflow. If not using a commutator, delete the nodes corresponding to the commutation.
 
 #.  Save data according to your specifications:
 
@@ -47,7 +106,7 @@ Workflow Tutorial
 
     Alternatively, you can also use ``VideoWriter`` from the Bonsai.FFmpeg
     library to save video. This provides more flexibility to save video files
-    using `FFmpeg <https://ffmpeg.org/>`_ as the backend.
+    using FFMpeg as the backend.
 
     ..  grid::
 
@@ -105,13 +164,7 @@ Workflow Tutorial
             that appears after right-clicking a disabled node (or left-clicking
             the node and using the ``Ctrl+Shift+D`` hotkey). 
 
-#.  Start the workflow by left-clicking the *Start* button (indicated by green
-    triangle) at the top of the Bonsai workflow editor or pressing ``F5`` while
-    the Bonsai workflow editor is the active window.
-
-#.  Stop the workflow by left-clicking the *Stop* button (indicated by dark red
-    square) at the top of the Bonsai workflow editor or pressing ``Shift+F5``
-    while the Bonsai workflow editor is the active window.
+#.  Run the workflow for some time to collect data.
 
 #.  Navigate to the directory where data was saved which was specified in step
     3. Confirm the data exists and comports with expectations. The image can be

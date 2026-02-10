@@ -2,7 +2,7 @@
 Commutate
 #################
 
-..  note::  This tutorial builds on the :ref:`quick-start-guide`.
+..  note::  This tutorial builds on the :ref:`quickstartguide`.
 
 After following this tutorial, the user will be able to automatically rotate the coaxial tether when the UCLA Miniscope v4 rotates.
 
@@ -12,6 +12,10 @@ After following this tutorial, the user will be able to automatically rotate the
         {% include 'workflow.html' %}
     {% endwith %}
 
+***********************
+Workflow Description
+***********************
+
 The ``Quaternion`` node connects to the ``AutoCommutator`` node. The ``AutoCommutator`` node represents a ``IncludeWorkflow`` operator named *AutoCommutator*. An ``IncludeWorkflow`` operator includes a workflow from another file into a parent workflow. To inspect the included workflow, press F12 while the ``AutoCommutator`` node is selected. This workflow comes from the OpenEphys.Commutator Bonsai package. 
 
 ***********************
@@ -20,7 +24,7 @@ Configure the Hardware
 
 *Additional required components: Open Ephys torque-free coaxial commutator, coaxial cable (SMA ↔ SMA), commutator USB connection cable*
 
-Instead of connecting the Miniscope to Miniscope DAQ as in the :ref:`quick-start-guide`, follow the `Coax Commutator Connections section <https://open-ephys.github.io/commutator-docs/user-guide/mount-connect.html?commutator=coax#connecting>`__ of the commutator hardware docs to:
+Instead of connecting the Miniscope to Miniscope DAQ as in the :ref:`quickstartguide`, follow the `Coax Commutator Connections section <https://open-ephys.github.io/commutator-docs/user-guide/mount-connect.html?commutator=coax#connecting>`__ of the commutator hardware docs to:
 
 -   connect the commutator's stator/s (top SMA connector) to the Miniscope DAQ using the SMA-SMA cable.
 
@@ -34,7 +38,7 @@ Make sure you follow the sections in the commutator docs on how to `mount the co
 Get Started in Bonsai
 **********************
 
-In addition to the setup steps outlined in the :ref:`quick-start-guide`, install the following package:
+In addition to the setup steps outlined in the :ref:`quickstartguide`, install the following package:
 
 * *OpenEphys.Commutator*: controls Open Ephys commutators.
 

@@ -85,13 +85,34 @@ Installation
 Testing the Miniscope's Functionality
 -------------------------------------------
 
-#.  Download the following workflow (.bonsai file) and open it with Bonsai:
+#.  Copy or download the following workflow using the corresponding icons and paste the contents or open the .bonsai file in Bonsai:
 
     ..  raw:: html
 
         {% with static_path = '../_static', name = 'uclaminiscopev4-miniscopedaq-quick' %}
             {% include 'workflow.html' %}
         {% endwith %}
+
+    *   The ``UCLAMiniscopeV4`` node represents a ``UCLAMiniscopeV4`` *source* operator as indicated by its
+        node's green color and the orientation of its grey arc. Source operators
+        produce data. 
+
+    *   The ``UCLAMiniscopeV4`` operator's output (``Bonsai.Miniscope.V4Frame``) has
+        four members. They can be accessed by right-clicking the ``UCLAMiniscopeV4``
+        node and hovering the cursor over the *Output* option in the pop-up menu.
+        Left-clicking on one of these members automatically places a new
+        ``MemberSelector`` nodes. These nodes can also be placed by searching
+        modules in the search bar in the *Toolbox* pane or the using the ``Ctrl+E``
+        hotkey. 
+
+    *   The ``MemberSelector`` operators are *transform* operators as indicated by
+        the nodes' blue color and lack of grey bar. Transform operators transform
+        data. The ``MemberSelector`` operator transforms data by selecting one or
+        multiple members of its input to output.  
+
+    *   In this workflow, the ``Image`` and ``Quaternion`` members are
+        selected from ``Bonsai.Miniscope.V4Frame`` to be visualized.
+
 
 #.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope.
 
