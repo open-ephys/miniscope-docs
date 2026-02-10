@@ -18,7 +18,7 @@ community.
 
     ..  grid-item-card:: Bonsai Package OpenEphys.Miniscope
         :link-type: ref
-        :link: bonsai_intro
+        :link: tutorial_intro
         :class-card: intro-card
         :img-top: /_static/images/bonsai-logo.png
         :img-alt: bonsai logo
@@ -44,7 +44,7 @@ community.
         
         *Click to navigate to its documentation site.*
 
-.. _bonsai_intro:
+.. _tutorial_intro:
 
 *********************************************
 About the Tutorials
