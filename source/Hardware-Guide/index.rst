@@ -65,7 +65,11 @@ The :doc:`/Hardware-Guide/index` goes into each system component in detail. To i
 Animal Interface and Protocol Accessories
 -------------------------------------------
 
-* A baseplate is required to secure the miniscope to the animal's skull. A stereotaxic miniscope holder that allows attachment and detachment of the baseplate can be helpful to visually guide baseplate implantation.
+* A baseplate is required to secure the miniscope to the animal's skull.
+
+* A Torx T2 screwdriver is required for securely attaching the miniscope in the baseplate and to assemble a miniscope kit.
+
+* A stereotaxic miniscope holder that allows attachment and detachment of the baseplate can be helpful to visually guide baseplate implantation.
 
 * When imaging in depth, relay GRIN lenses must be implanted in the brain. A GRIN lens holder is required to position the lens during GRIN lens implantation.
 
