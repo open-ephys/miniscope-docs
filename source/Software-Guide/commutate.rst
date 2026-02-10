@@ -8,7 +8,7 @@ After following this tutorial, the user will be able to automatically rotate the
 
 ..  raw:: html
 
-    {% with static_path = '../../_static', name = 'uclaminiscopev4-miniscopedaq-commutate' %}
+    {% with static_path = '../_static', name = 'uclaminiscopev4-miniscopedaq-commutate' %}
         {% include 'workflow.html' %}
     {% endwith %}
 
