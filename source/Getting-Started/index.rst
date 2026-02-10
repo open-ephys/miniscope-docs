@@ -7,7 +7,6 @@ Getting Started
     :maxdepth: 1
     :titlesonly:
 
-    hardware-requirements
     additional-resources
 
 Follow the Quick Start Guide below to get started with the Miniscope System right away. It uses Bonsai to connect to a Miniscope v4 via a Miniscope DAQ and validate its functionality. To learn more about the software's functionality and other software options to acquire from the Miniscope v4, read the :doc:`/Software-Guide/index`. For information on using miniscopes for experiments, please refer to the :doc:`/User-Guide/index`. You can find more information about the system at large among the :doc:`additional-resources`.
