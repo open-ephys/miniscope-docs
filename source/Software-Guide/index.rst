@@ -4,39 +4,51 @@
 Software Guide
 #########################
 
-..  todo::  there should be a banner photo of both logos on top. Then there should be some gifs of each software in action below
+There are two compatible software programs to acquire miniscope data. Both platforms are free, open-source, and widely adopted in the neuroscience
+community.
 
-Compatible software for acquiring data with the miniscopes sold by Open Ephys includes:
+..  grid::
 
-*   :ref:`Software-Guide/index:Bonsai` - supported by Open Ephys
+    ..  grid-item-card:: Bonsai Package OpenEphys.Miniscope
+        :link-type: ref
+        :link: bonsai_intro
+        :class-card: intro-card
+        :img-top: /_static/images/bonsai-logo.png
+        :img-alt: bonsai logo
+        :class-img-top: software-card-img
+        :columns: 5
 
-*   :ref:`Software-Guide/index:Miniscope-DAQ-QT-Software` - formerly supported by the UCLA Miniscope developers
+        Acquire data from the Miniscope DAQ in Bonsai, a highly extensible visual programming language that enables collected data to interface with other hardware in real-time, and perform online software processing and experimental control with supported tools. This package was developed by Open Ephys.
+        
+        *Click to start browsing this Software Guide.*
 
-******
-Bonsai
-******
+    ..  grid-item-card:: Miniscope-DAQ-QT-Software
+        :link-type: url
+        :link: https://github.com/Aharoni-Lab/Miniscope-DAQ-QT-Software/wiki
+        :class-card: intro-card
+        :img-top: /_static/images/miniscope-logo.png
+        :img-alt: Miniscope-DAQ-QT-Software logo
+        :class-img-top: software-card-img
+        :columns: 5
 
-..  image:: /_static/images/bonsai-logo.png
-    :alt:   image of bonsai logo
-    :align: center
-    :width:  300px
+        The original software developed by the UCLA Miniscope Team that enables data acquisition from the Miniscope v4 and the MiniCAM via the Miniscope DAQ, as well as webcams.
+        
+        It software is deprecated and not supported by Open Ephys.
+        
+        *Click to navigate to its documentation site.*
 
-`Bonsai <https://bonsai-rx.org/>`__ is an open-source, highly extensible, reactive, visual programming language. Open Ephys provides Bonsai packages and example workflows (Bonsai scripts) for interacting with all of the hardware that it sells, including miniscopes. To quickly start with your miniscope using *Bonsai*, follow the :ref:`quickstartguide`. To start acquiring data, refer to the :doc:`/Software-Guide/miniscope-daq/index`. Although not necessary, it is highly recommended to study the `Bonsai Language Guide <https://bonsai-rx.org/docs/articles/observables.html>`__ before starting.
+.. _bonsai_intro:
 
-*************************
-Miniscope-DAQ-QT-Software
-*************************
+*********************************************
+About the Tutorials
+*********************************************
 
-..  image:: /_static/images/miniscope-logo.png
-    :alt:   image of miniscope logo
-    :align: center
-    :width: 500px
+The tutorials in this section build on the :ref:`quickstartguide`, and progressively add more functionality, so it is recommended to follow them in order.
 
-..  warning:: Miniscope-DAQ-QT-Software is deprecated and not supported by Open Ephys
-
-Miniscope-DAQ-QT-Software is the software that the UCLA Miniscope team developed for acquiring data with the UCLA Miniscope v4. Refer to https://github.com/Aharoni-Lab/Miniscope-DAQ-QT-Software/wiki to learn about it.
+While not strictly required, it is highly recommended to study the `Bonsai Language Guide <https://bonsai-rx.org/docs/articles/observables.html>`__ before starting. 
 
 .. toctree::
-    :hidden:
 
-    miniscope-daq/index
+    miniscope-daq/commutate/index
+    miniscope-daq/save-data/index
+    miniscope-daq/trigger/index
