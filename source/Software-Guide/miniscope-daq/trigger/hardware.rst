@@ -1,1 +1,0 @@
-..  include::   ../../../Getting-Started/quickstart-guide/hardware.rst

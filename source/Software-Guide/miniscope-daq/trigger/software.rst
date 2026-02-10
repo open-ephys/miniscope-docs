@@ -1,1 +1,0 @@
-..  include::   ../../../Getting-Started/quickstart-guide/software.rst
