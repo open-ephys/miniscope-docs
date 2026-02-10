@@ -4,6 +4,13 @@
 Software Guide
 #########################
 
+.. toctree::
+    :hidden:
+    
+    commutate
+    miniscope-daq/save-data/index
+    miniscope-daq/trigger/index
+
 There are two compatible software programs to acquire miniscope data. Both platforms are free, open-source, and widely adopted in the neuroscience
 community.
 
@@ -43,12 +50,19 @@ community.
 About the Tutorials
 *********************************************
 
-The tutorials in this section build on the :ref:`quickstartguide`, and progressively add more functionality, so it is recommended to follow them in order.
+While not strictly required, it is highly recommended to study the `Bonsai Language Guide <https://bonsai-rx.org/docs/articles/observables.html>`__ before reading this Software Guide. 
 
-While not strictly required, it is highly recommended to study the `Bonsai Language Guide <https://bonsai-rx.org/docs/articles/observables.html>`__ before starting. 
+The tutorials available in this section for the OpenEphys.Miniscope Bonsai package build on the :ref:`quickstartguide`, and progressively add more functionality, so it is recommended to follow them in order.
 
-.. toctree::
+#. :doc:`Commutate the Miniscope's tether using orientation data </Software-Guide/commutate>`
 
-    miniscope-daq/commutate/index
-    miniscope-daq/save-data/index
-    miniscope-daq/trigger/index
+#. :doc:`Save image and orientation data to file </Software-Guide/miniscope-daq/save-data/index>`
+
+#. :doc:`Trigger data acquisition with a trigger signal </Software-Guide/miniscope-daq/trigger/index>`
+
+.. #. :doc:`View and process image and orientation data in real-time <>`
+
+.. #. :doc:`Use a purpose-built GUI to operate the miniscope <>`
+
+.. #. :doc:`Sync miniscope and behavioral camera frames via hardware <>`
+

@@ -1,5 +1,0 @@
-####################
-Hardware Connections
-####################
-
-Coming soon
