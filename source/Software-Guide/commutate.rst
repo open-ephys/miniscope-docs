@@ -1,10 +1,16 @@
-#################
-Commutate
-#################
+####################################################################
+Automate tether commutation using 3D orientation data
+####################################################################
 
 ..  note::  This tutorial builds on the :ref:`quickstartguide`.
 
-After following this tutorial, the user will be able to automatically rotate the coaxial tether when the UCLA Miniscope v4 rotates.
+After following this tutorial, the user will be able to automatically rotate the coaxial tether when the UCLA Miniscope v4 rotates, as well as control the commutator turns manually using keyboard keypresses.
+
+.. raw:: html
+
+  <center><video width="560" height="340" controls>
+  <source src="../_static/videos/Miniscope_Coax commutator.mp4" type="video/mp4">
+  </video></center>
 
 ..  raw:: html
 
@@ -16,7 +22,7 @@ After following this tutorial, the user will be able to automatically rotate the
 Workflow Description
 ***********************
 
-The ``Quaternion`` node connects to the ``AutoCommutator`` node. The ``AutoCommutator`` node represents a ``IncludeWorkflow`` operator named *AutoCommutator*. An ``IncludeWorkflow`` operator includes a workflow from another file into a parent workflow. To inspect the included workflow, press F12 while the ``AutoCommutator`` node is selected. This workflow comes from the OpenEphys.Commutator Bonsai package. 
+The ``Quaternion`` node connects to the ``Commutator`` node, which represents a ``GroupWorkflow`` named *Commutator*. A ``GroupWorkflow`` operator has a workflow nested inside, and its configurable properties can be exposed. To inspect the grouped workflow, double-click the ``Commutator`` node. You will see nodes from the OpenEphys.Commutator Bonsai package that transform quaternion measurements into twists, as well as nodes to capture keyboard keypresses to drive the commutator automatically or manually, respectively.
 
 ***********************
 Configure the Hardware
@@ -50,7 +56,7 @@ Operate the Workflow
 
 #.  Set the COM port associated with your commutator in the workflow
 
-    *   Left-click the ``AutoCommutator`` node and set the ``PortName`` property under the `Properties` pane to match the port that corresponds to your commutator. 
+    *   Left-click the ``AutoCommutator`` node and set the ``PortName`` property under the `Properties` pane to match the port that corresponds to your commutator. Set the ``LeftTurnKey`` and ``RightTurnKey`` properties to the keyboard keys that you would like to use to manually control the commutator.
 
     ..  note::  
         
@@ -60,4 +66,4 @@ Operate the Workflow
 
         #.  Unplug the commutator, and plug it back in. Observe which COM port disappears and appears in drop-down list when doing so - that is the COM port associated with your commutator.
 
-#.  Run the workflow and verify that the commutator turns when the miniscope rotates.
+#.  Run the workflow and verify that the commutator turns when the miniscope rotates, and when the defined keys are pressed (left and right arrow keys in the example).

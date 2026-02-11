@@ -27,7 +27,7 @@ community.
 
         Acquire data from the Miniscope DAQ in Bonsai, a highly extensible visual programming language that enables collected data to interface with other hardware in real-time, and perform online software processing and experimental control with supported tools. This package was developed by Open Ephys.
         
-        *Click to start browsing this Software Guide.*
+        *Click to start browsing the tutorials.*
 
     ..  grid-item-card:: Miniscope-DAQ-QT-Software
         :link-type: url
@@ -54,7 +54,7 @@ While not strictly required, it is highly recommended to study the `Bonsai Langu
 
 The tutorials available in this section for the OpenEphys.Miniscope Bonsai package build on the :ref:`quickstartguide`, and progressively add more functionality, so it is recommended to follow them in order.
 
-#. :doc:`Commutate the Miniscope's tether using orientation data </Software-Guide/commutate>`
+#. :doc:`/Software-Guide/commutate`
 
 #. :doc:`Save image and orientation data to file </Software-Guide/save-data>`
 
