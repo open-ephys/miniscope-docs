@@ -58,7 +58,7 @@ Sometimes the experiment requires habituating more animals that you have UCLA Mi
 What Video CODEC Should I Use to Save Miniscope Data?
 *****************************************************
 
-Refer to the :doc:`Save Data Workflow Tutorial </Software-Guide/miniscope-daq/save-data/tutorial>`.
+Refer to the :doc:`Save Data Workflow Tutorial </Software-Guide/save-data>`.
 
 *******************************************************
 What Tether Lengths Can Be Used With UCLA Miniscope v4?

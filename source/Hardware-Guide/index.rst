@@ -67,7 +67,7 @@ Animal Interface and Protocol Accessories
 
 * A baseplate is required to secure the miniscope to the animal's skull.
 
-* A Torx T2 screwdriver is required for securely attaching the miniscope in the baseplate and to assemble a miniscope kit.
+* A Torx T2 screwdriver is required for securely attaching the miniscope in the baseplate and fits the screws on the miniscope.
 
 * A stereotaxic miniscope holder that allows attachment and detachment of the baseplate can be helpful to visually guide baseplate implantation.
 

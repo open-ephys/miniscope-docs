@@ -16,17 +16,17 @@ After following this tutorial, the user will be able to trigger data acquisition
 Workflow Description
 ***********************
 
-|   **Trigger Image Data**
-|  
+**Trigger Image Data**
+
 ..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger_trigger-image.svg
     :alt:   exported svg of workflow with bounding box over trigger and image nodes
     :align: center
 
-*   The ``UclaMiniscopeV4`` node connects to the ``Trigger`` node. The ``Trigger`` node represents a ``Condition`` operator named *Trigger*. A ``Condition`` operator emits the item it receives under specific conditions. To inspect the its conditional statement, double left-click the ``Trigger`` node. The ``Trigger`` node connects to the ``Image`` node. ``Trigger`` only emits items if its conditional statement (described in the next section) is ``TRUE``. 
+*   The ``UclaMiniscopeV4`` node connects to the ``Trigger`` node. The ``Trigger`` node represents a ``Condition`` operator named *Trigger*. A ``Condition`` operator emits the item it receives under specific conditions. To inspect the its conditional statement, double left-click the ``Trigger`` node. The ``Trigger`` node connects to the ``Image`` node. ``Trigger`` only emits items if its conditional statement (described in the next section) is ``TRUE``.
 
 
-|   **Trigger Logic**
-|  
+**Trigger Logic**
+
 ..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger_trigger-condition.svg
     :alt:   exported svg of subworkflow with bounding box over entire thing
     :align: center

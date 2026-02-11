@@ -16,21 +16,21 @@ After following this tutorial, the user will be able to save image data and time
 Workflow Description
 ***********************
 
-|   **Save Image Data**
-|  
+**Save Image Data**
+
 ..  image:: /_static/images/uclaminiscopev4-miniscopedaq-savedata_video-data.svg
     :alt:   screenshot of uclaminiscopev4 node boxed
     :align: center
 
 *   The ``Image`` node connects to a ``VideoWriter`` node. The ``VideoWriter``
     operator writes data to a video file according to settings in the
-    *Properties* pane that appears after left-clicking the ``VideoWriter`` node. 
+    *Properties* pane that appears after left-clicking the ``VideoWriter`` node.
 
 *   There are two ``VideoWriter`` operators. The first one is from the
     ``Bonsai.Vision`` package, and the second one is from the ``Bonsai.FFmpeg``
     package. They are both *sink* operators as indicated by the nodes' purple
     color and the orientation of its grey arc. A sink operator saves data or
-    triggers external events. 
+    triggers external events.
 
 *   The first ``VideoWriter`` operator is enabled. It can be disabled by
     clicking it and pressing :kbd:`Ctrl+D`. It is configured to save video
@@ -46,8 +46,8 @@ Workflow Description
     functional difference in the workflow. You can think of them like comments
     in code.
 
-|   **Save Timestamped Orientation (Quaternion) Data**
-|  
+**Save Timestamped Orientation (Quaternion) Data**
+
 ..  image:: /_static/images/uclaminiscopev4-miniscopedaq-savedata_quat-data.svg
     :alt:   screenshot of uclaminiscopev4 node boxed
     :align: center
