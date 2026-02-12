@@ -58,11 +58,5 @@ The tutorials available in this section for the OpenEphys.Miniscope Bonsai packa
 
 #. :doc:`/Software-Guide/save-data`
 
-#. :doc:`Trigger data acquisition with a trigger signal </Software-Guide/trigger>`
-
-.. #. :doc:`View and process image and orientation data in real-time <>`
-
-.. #. :doc:`Use a purpose-built GUI to operate the miniscope <>`
-
-.. #. :doc:`Sync miniscope and behavioral camera frames via hardware <>`
+#. :doc:`/Software-Guide/trigger`
 

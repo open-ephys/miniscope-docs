@@ -1,10 +1,11 @@
-####################
-Trigger
-####################
+#########################################################################
+Trigger data recording with an external hardware digital signal 
+##########################################################################
 
 ..  note::  This tutorial builds on the :ref:`quickstartguide` and previous tutorials.
 
-After following this tutorial, the user will be able to trigger data acquisition following a hardware trigger signal
+The Miniscope DAQ Input Trigger port receives 0-5V digital inputs. That signal can be used to gate recording to file.
+After following this tutorial, the user will be able to record both image and orientation data to file following a hardware trigger signal. In this workflow, recording to file is initiated at the each rising edge and terminated at each falling edge.
 
 ..  raw:: html
 
