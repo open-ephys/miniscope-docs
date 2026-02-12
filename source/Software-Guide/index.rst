@@ -56,7 +56,7 @@ The tutorials available in this section for the OpenEphys.Miniscope Bonsai packa
 
 #. :doc:`/Software-Guide/commutate`
 
-#. :doc:`Save image and orientation data to file </Software-Guide/save-data>`
+#. :doc:`/Software-Guide/save-data`
 
 #. :doc:`Trigger data acquisition with a trigger signal </Software-Guide/trigger>`
 

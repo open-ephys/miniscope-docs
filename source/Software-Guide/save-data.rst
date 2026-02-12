@@ -1,6 +1,6 @@
-#################
-Save Data
-#################
+###################################################
+Record image and orientation data to file 
+###################################################
 
 ..  note::  This tutorial builds on the :ref:`quickstartguide` and previous tutorials.
 
