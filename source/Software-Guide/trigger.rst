@@ -4,7 +4,7 @@ Trigger data recording with a hardware digital signal
 
 ..  note::  This tutorial builds on the :ref:`quickstartguide` and previous tutorials.
 
-The Miniscope DAQ Input Trigger port receives 3.3 or 5V level digital inputs. That signal can be used to gate recording to file.
+The Miniscope DAQ Input Trigger port receives 3.3V or 5V level digital inputs. That signal can be used to gate recording to file.
 After following this tutorial, the user will be able to record both image and orientation data to file following a hardware trigger signal. In this workflow, recording to file is initiated at the each rising edge and terminated at each falling edge, as depicted below. The LED on/off state can optionally follow the trigger.
 
 ..  image:: /_static/images/Trigger_tutorial_diagram.png
@@ -48,7 +48,7 @@ Configure the Hardware
 
 Configure the hardware as in the :ref:`quickstartguide` or as in the :doc:`commutate` tutorial if you are using an Open Ephys Commutator.
 
-Additionally, connect a 0-5V trigger source to the Trigger In port using the SMA cable or a suitable adapter such as a BNC-SMA adapter.
+Additionally, connect a 0-3.3V or 0-5V trigger source to the Trigger In port using the SMA cable or a suitable adapter such as a BNC-SMA adapter.
 
 **********************
 Get Started in Bonsai
