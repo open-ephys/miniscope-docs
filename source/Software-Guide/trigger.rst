@@ -1,11 +1,16 @@
-#########################################################################
-Trigger data recording with an external hardware digital signal 
-##########################################################################
+##########################################################
+Trigger data recording with a hardware digital signal 
+##########################################################
 
 ..  note::  This tutorial builds on the :ref:`quickstartguide` and previous tutorials.
 
-The Miniscope DAQ Input Trigger port receives 0-5V digital inputs. That signal can be used to gate recording to file.
-After following this tutorial, the user will be able to record both image and orientation data to file following a hardware trigger signal. In this workflow, recording to file is initiated at the each rising edge and terminated at each falling edge.
+The Miniscope DAQ Input Trigger port receives 3.3 or 5V level digital inputs. That signal can be used to gate recording to file.
+After following this tutorial, the user will be able to record both image and orientation data to file following a hardware trigger signal. In this workflow, recording to file is initiated at the each rising edge and terminated at each falling edge, as depicted below. The LED on/off state can optionally follow the trigger.
+
+..  image:: /_static/images/Trigger_tutorial_diagram.png
+    :alt:   diagram explaining how the trigger gates acquired frames
+    :align: center
+    :width: 500px
 
 ..  raw:: html
 
@@ -59,6 +64,6 @@ Operate the Workflow
 
 #. If using a commutator, set the COM port associated with your commutator in the workflow. If not using a commutator, delete the nodes corresponding to the commutation.
 
-#. Set the ``UCLAMiniscopeV4`` operator's ``LEDRespectsTrigger`` property to True if you intend to use the LED only during image acquisition.
+#. Set the ``UCLAMiniscopeV4`` operator's ``LEDRespectsTrigger`` property to True if you intend to use the LED only during recording.
 
 #. Run the workflow and verify that images are emitted only when the Trigger is set to HIGH, and that the LED behaves accordingly. 

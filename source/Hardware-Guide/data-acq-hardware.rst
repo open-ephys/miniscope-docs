@@ -16,17 +16,13 @@ I/O
 
 Miniscope-DAQs from Open Ephys have the following I/O:
 
-*   **Input trigger:** a digital input to initiate and terminate data acquisition
-
-    *   A rising edge initiates data acquisition
-
-    *   A falling edge terminates data acquisition
-
-*   **Sync output:** a digital output in which every rising or falling edge indicates a new frame
+*   **Input trigger:** a digital input channel that can be used to gate data acquisition, recording to file, LED on/off state, etc.
 
 The I/O operate at a 3.3V logic level. The input is 5V tolerant.
 
-The aux input is not currently supported in software.
+The Sync output implementation is under revision.
+
+The Aux input is not currently supported in software.
 
 .. _externalpower:
 
