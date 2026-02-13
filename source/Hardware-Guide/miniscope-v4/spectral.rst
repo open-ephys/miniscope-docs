@@ -24,7 +24,7 @@ Standard
 ..  figure:: /_static/images/spectraviewer-standard-config.webp
     :alt:   plot of standard emission/excitation filters and dichroic mirror transmission spectra
 
-    `All three transmission spectra on a single plot <https://www.chroma.com/spectra-viewer?share=d87e4046-7d64-4c7e-b7fb-6750a4c5e367>`__.
+    `All three transmission spectra on a single plot <https://www.chroma.com/spectra-viewer/?share=d87e4046-7d64-4c7e-b7fb-6750a4c5e367>`__.
 
     +-------------+-----------+-----------+-----------+
     | **Filter**  | ET470/40x | ET525/50m | T495lpxr  |
@@ -52,7 +52,7 @@ Lime
 ..  figure:: /_static/images/spectraviewer-lime-config.webp
     :alt:   plot of lime emission/excitation filters and dichroic mirror transmission spectra
 
-    `All three transmission spectra on a single plot <https://www.chroma.com/spectra-viewer?share=4f6b0160-5d26-4be4-9bf6-8ef88657755e>`__
+    `All three transmission spectra on a single plot <https://www.chroma.com/spectra-viewer/?share=4f6b0160-5d26-4be4-9bf6-8ef88657755e>`__
 
     +---------------+-----------+-----------+-----------+
     | **Filter**    | ET560/40x | ET630/75m | T585lpxr  |
