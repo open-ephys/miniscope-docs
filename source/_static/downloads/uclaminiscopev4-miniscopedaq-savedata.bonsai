@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<WorkflowBuilder Version="2.9.0"
+<WorkflowBuilder Version="2.8.5"
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:p1="clr-namespace:OpenEphys.Miniscope;assembly=OpenEphys.Miniscope"
                  xmlns:cv="clr-namespace:Bonsai.Vision;assembly=Bonsai.Vision"
@@ -16,6 +16,7 @@
           <p1:Focus>0</p1:Focus>
           <p1:SensorGain>Low</p1:SensorGain>
           <p1:FramesPerSecond>Fps30</p1:FramesPerSecond>
+          <p1:LimitOrientationUpdates>false</p1:LimitOrientationUpdates>
           <p1:LedRespectsTrigger>false</p1:LedRespectsTrigger>
         </Combinator>
       </Expression>
@@ -63,7 +64,7 @@
         <Combinator xsi:type="rx:Timestamp" />
       </Expression>
       <Expression xsi:type="io:CsvWriter">
-        <io:FileName>uclaminiscopev4-quat_.avi</io:FileName>
+        <io:FileName>uclaminiscopev4-quat_.csv</io:FileName>
         <io:Delimiter>,</io:Delimiter>
         <io:Append>false</io:Append>
         <io:Overwrite>false</io:Overwrite>
