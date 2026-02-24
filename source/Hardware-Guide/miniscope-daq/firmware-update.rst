@@ -27,11 +27,11 @@ The state of the Miniscope DAQ is apparent by checking the Device Manager, and c
                A("Firmware update required")
                A -->C
                C{"How is the Miniscope DAQ listed in the Windows Device Manager?"}
-               C -->|"MINISCOPE"| D["`Configure the hardware
-               for bootloader mode`"]
+               C -->|"MINISCOPE"| D["`Configure the Hardware
+               for Bootloader Mode`"]
                D --> C
-               C -->|"Westbridge"| E["Install bootloader driver"]
-               C -->|"Cypress FX3 USB BootLoader Device"| F["Use Cypress Control Center to upload firmware"]
+               C -->|"Westbridge"| E["Install the Miniscope DAQ Bootloader Driver"]
+               C -->|"Cypress FX3 USB BootLoader Device"| F["Firmware Upload using Cypress Control Center"]
                E --> C
                F --> H["_If required_, re-configure the hardware for normal use"]
                H --> I["Power cycle"]
