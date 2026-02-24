@@ -13,10 +13,10 @@ The Miniscope v4 has a required operating voltage as specified in the following 
     | Parameter              | Value              | Min      | Max      | Unit/    |
     |                        |                    |          |          | Type     |
     +========================+====================+==========+==========+==========+
-    | Supply Voltage         | 4.2                | 4.2      | 6.0*     | Volts    |
+    | Supply Voltage         | 4.2                | 3.8      | 5.5*     | Volts    |
     +------------------------+--------------------+----------+----------+----------+
 
-.. warning:: \*Do not exceed 6.0 VDC at the coaxial input to the miniscope. Make
+.. warning:: \*Do not exceed 5.5 VDC at the coaxial input to the miniscope. Make
     sure you make this measurement at the miniscope as explained below to
     account for a potential voltage drop in the tether. Exceeding this voltage can
     permanently damage the miniscope.
