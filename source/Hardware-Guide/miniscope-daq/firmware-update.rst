@@ -41,6 +41,7 @@ The state of the Miniscope DAQ is apparent by checking the Device Manager, and c
 The instructions to perform all operations are detailed below, including physically configuring the hardware and installing the bootloader driver even though they might not always be necessary.
 
 *Required components: Miniscope DAQ, USB3.0 cable (Micro Type B ↔ Type A)*
+
 *Tools that can be required: 2.5 mm hex key for opening the screws on the Miniscope DAQ's enclosure*
 
 Check the Windows Device Manager
@@ -88,7 +89,9 @@ Install the Miniscope DAQ Bootloader Driver
 
 To proceed with the firmware update, the Miniscope DAQ should be listed as `Cypress FX3 USB BootLoader Device` under `Universal Serial Bus controllers`. If, instead, it is listed as `WestBridge` under `Other devices`, the bootloader driver needs to be installed:
 
-#. Download the driver from here xxx.
+#. Download the :download:`Miniscope DAQ Bootloader Driver </_static/downloads/CyUSB3_1.3.0.3_Win11_Win10_Logo_Certified.zip>`.
+
+.. apparently they are downloaded with the EZ-USB suite, in C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\driver\bin\Win10\x64
 
 #. Unzip the folder and examine its contents.
 
@@ -111,7 +114,16 @@ Download the Firmware Uploader Application
 Firmware Upload
 -------------------------------------------
 
-#. Download the firmware image from here xxx.
+#. Download the firmware image:
+
+.. list-table::
+   :widths: 15 60
+   :header-rows: 1
+
+   * - Firmware Image
+     - Release Date
+   * - `Original version <https://github.com/Aharoni-Lab/Miniscope-DAQ-Cypress-firmware/raw/refs/heads/master/Built_Firmware/Miniscope_DAQ_256K_EEPROM.img>`__
+     - 2023.08.16
 
 #. Access the *Cypress USB Control Center*.
 
