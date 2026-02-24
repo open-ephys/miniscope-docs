@@ -12,7 +12,7 @@ This section describes each hardware component of the Miniscope System. Read abo
     :titlesonly:
 
     miniscope-v4/index
-    data-acq-hardware
+    miniscope-daq/data-acq-hardware
     tethers
     commutators
     minicam

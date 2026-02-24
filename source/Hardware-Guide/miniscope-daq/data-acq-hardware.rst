@@ -1,6 +1,6 @@
 
 #########################
-Miniscope-DAQ
+Miniscope DAQ
 #########################
 ..  image:: /_static/images/miniscope-daq.webp
     :alt:   image of miniscope-daq
@@ -88,14 +88,9 @@ The effect of a dropped frame is a larger inter-frame interval. If you are strug
 
 The input trigger involves 10-100ms latency so relying on it for syncing data is also not recommended.
 
+.. toctree::
+    :hidden:
+    :maxdepth: 1
+    :titlesonly:
 
-MiniDAQ
-======================
-
-..  image:: /_static/images/minidaq.webp
-    :alt:   image of minidaq
-    :align: center
-
-..  todo:: remove background of and color-correct these photos, or take new photos
-
-The MiniDAQ is a simplified, more compact, and more affordable version of the Miniscope-DAQ. It plugs directly into a PC through its on-board USB cable. It supports data acquisition from a single Miniscope v4 or MiniCAM. Unlike the Miniscope-DAQ, the MiniDAQ does not support sync output or input trigger functions, nor accept an external supply. The MiniDAQ is supported by Bonsai and the Miniscope-DAQ-QT-Software (deprecated), as detailed in the :doc:`/Software-Guide/index`. To acquire Miniscope v4 or MiniCAM data with the MiniDAQ, follow the same user guides as the Miniscope-DAQ.
+    firmware-update
