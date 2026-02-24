@@ -46,6 +46,7 @@ extensions = [
     'sphinx.ext.autosectionlabel',
     'sphinx_design',
     'sphinxcontrib.email',
+    'sphinxcontrib.mermaid',
     'nbsphinx',
     'sphinx_new_tab_link',
     'sphinx_reredirects'
