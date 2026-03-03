@@ -66,6 +66,15 @@ Check the Windows Device Manager
 
    - If the Miniscope DAQ is not listed in the Device Manager, check the hardware connections.
 
+Download the Firmware Uploader Application
+-------------------------------------------
+
+#. Download the `EZ-USB™ FX3 Software Development Kit (SDK) <https://www.infineon.com/design-resources/development-tools/sdk/usb-controllers-sdk/ez-usb-fx3-software-development-kit>`__ which contains the Cypress Control Center application we will use to upload the firmware, and the bootloader driver required to talk to the USB Controller.
+
+#. Follow the download instructions. The webpage requires you to create a login.
+
+#. Double-click on the executable to install the application.
+
 Configure the Hardware for Bootloader Mode
 --------------------------------------------
 
@@ -89,11 +98,7 @@ Install the Miniscope DAQ Bootloader Driver
 
 To proceed with the firmware update, the Miniscope DAQ should be listed as `Cypress FX3 USB BootLoader Device` under `Universal Serial Bus controllers`. If, instead, it is listed as `WestBridge` under `Other devices`, the bootloader driver needs to be installed:
 
-#. Download the :download:`Miniscope DAQ Bootloader Driver </_static/downloads/CyUSB3_1.3.0.3_Win11_Win10_Logo_Certified.zip>`.
-
-.. apparently they are downloaded with the EZ-USB suite, in C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\driver\bin\Win10\x64
-
-#. Unzip the folder and examine its contents.
+#. Find the Miniscope DAQ Bootloader Driver in the installation folder of the EZ-USB SDK you downloaded previously. Versions for different Windows versions are available in the installation path, such as `C:\Program Files (x86)\Cypress\EZ-USB FX3 SDK\1.3\driver\bin\Win10\x64`.
 
 #. Right-click the `.inf` file and select Install.
 
@@ -101,15 +106,6 @@ To proceed with the firmware update, the Miniscope DAQ should be listed as `Cypr
          :align: center
 
 #. Follow the instructions to install the driver. You should see a success message once the process is finished.
-
-Download the Firmware Uploader Application
--------------------------------------------
-
-#. Download the `EZ USB Suite <https://www.infineon.com/design-resources/development-tools/sdk/usb-controllers-sdk/ez-usb-fx3-software-development-kit>`__ which contains the Cypress Control Center we will use to upload the firmware.
-
-#. Follow the download instructions. The webpage requires you to create a login.
-
-#. Double-click on the executable to install the application.
 
 Firmware Upload
 -------------------------------------------
