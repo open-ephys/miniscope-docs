@@ -71,7 +71,7 @@ Download the Firmware Uploader Application
 
 #. Download the `EZ-USB™ FX3 Software Development Kit (SDK) <https://www.infineon.com/design-resources/development-tools/sdk/usb-controllers-sdk/ez-usb-fx3-software-development-kit>`__ which contains the Cypress Control Center application we will use to upload the firmware, and the bootloader driver required to talk to the USB Controller.
 
-#. Follow the download instructions. The webpage requires you to create a login.
+#. Follow the download instructions. The webpage requires you to create a login. Install any required dependencies.
 
 #. Double-click on the executable to install the application.
 
