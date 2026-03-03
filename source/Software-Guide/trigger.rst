@@ -22,23 +22,33 @@ After following this tutorial, the user will be able to record both image and or
 Workflow Description
 ***********************
 
-**Trigger Image Data**
+**Miniscope Data Publishing**
 
-..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger_trigger-image.svg
-    :alt:   exported svg of workflow with bounding box over trigger and image nodes
+..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger-data-publishing.svg
+    :alt:   exported svg of workflow first branch
     :align: center
 
-*   The ``UclaMiniscopeV4`` node connects to the ``Trigger`` node. The ``Trigger`` node represents a ``Condition`` operator named *Trigger*. A ``Condition`` operator emits the item it receives under specific conditions. To inspect the its conditional statement, double left-click the ``Trigger`` node. The ``Trigger`` node connects to the ``Image`` node. ``Trigger`` only emits items if its conditional statement (described in the next section) is ``TRUE``.
-
+*   The ``UclaMiniscopeV4`` node output is connected to a ``BehaviorSubject`` named ``MiniscopeDataFrame`` which publishes the stream so it can be reused in multiple parts of the workflow. This branch is used to visualize the ``Image`` and ``Quaternion`` members and to provide orientation data to the ``Commutator`` group workflow.
 
 **Trigger Logic**
 
-..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger_trigger-condition.svg
-    :alt:   exported svg of subworkflow with bounding box over entire thing
+..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger-trigger-logic.svg
+    :alt:   exported svg of workflow second branch
     :align: center
 
-*   ``Trigger`` emits ``UCLAMiniscopeV4Frame`` if the ``Trigger`` member of ``UCLAMiniscopeV4Frame`` is ``True``.
+*   On a second branch, the same ``MiniscopeDataFrame`` is saved to file based on the state of the ``Trigger`` member, which corresponds to the hardware input. A ``Condition`` node named ``TriggerAsserted`` monitors the ``Trigger`` member to detect a rising edge (LOW → HIGH transition). The condition fires once per trigger onset as per the logic in the subworkflow:
 
+..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger-trigger-asserted.svg
+    :alt:   exported svg of TriggerAsserted node
+    :align: center
+
+*   When a rising edge is detected in the external trigger, a ``SelectMany`` operator named ``ChunkData`` subscribes to the ``MiniscopeDataFrame`` data stream to begin recording. The ``TakeWhile`` operator ensures that frames are passed downstream only while the trigger line remains HIGH. When the trigger goes LOW, the recording chunk ends:
+
+..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger-chunk-data.svg
+    :alt:   exported svg of ChunkData node
+    :align: center
+
+*   This mechanism creates one recording session per hardware trigger pulse. After each pulse, the workflow resets using the ``Repeat`` operator so it is ready for the next trigger event. Within each trigger-defined recording session, the Image, FrameNumber and Quaternion data are written to file as explained in previous tutorials: only one video and one csv file are generated per trigger pulse.
 
 ***********************
 Configure the Hardware
