@@ -56,13 +56,13 @@ Operate the Workflow
 
 #.  Set the COM port associated with your commutator in the workflow
 
-    *   Left-click the ``AutoCommutator`` node and set the ``PortName`` property under the `Properties` pane to match the port that corresponds to your commutator. Set the ``LeftTurnKey`` and ``RightTurnKey`` properties to the keyboard keys that you would like to use to manually control the commutator.
+    *   Left-click the ``Commutator`` node and set the ``PortName`` property under the `Properties` pane to match the port that corresponds to your commutator. Set the ``LeftTurnKey`` and ``RightTurnKey`` properties to the keyboard keys that you would like to use to manually control the commutator.
 
     ..  note::  
         
         If you are uncertain about which COM port corresponds to your commutator, follow these instructions:
 
-        #.  Click on ``AutoCommutator`` node and look at the options available in the ``PortName`` property drop-down menu.
+        #.  Click on ``Commutator`` node and look at the options available in the ``PortName`` property drop-down menu.
 
         #.  Unplug the commutator, and plug it back in. Observe which COM port disappears and appears in drop-down list when doing so - that is the COM port associated with your commutator.
 
