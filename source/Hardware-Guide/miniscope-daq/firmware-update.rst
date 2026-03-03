@@ -118,7 +118,7 @@ Firmware Upload
 
    * - Firmware Image
      - Release Date
-   * - `Original version <https://github.com/Aharoni-Lab/Miniscope-DAQ-Cypress-firmware/raw/refs/heads/master/Built_Firmware/Miniscope_DAQ_256K_EEPROM.img>`__
+   * - :download:`Original version </_static/downloads/Miniscope_DAQ_256K_EEPROM.img>`
      - 2023.08.16
 
 #. Access the *Cypress USB Control Center*.
