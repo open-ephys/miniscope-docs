@@ -86,6 +86,10 @@ Any modern computer should be able to run the miniscope system. Performance will
 
 * **Operating system** - the Miniscope DAQ is only supported on Windows.
 
+*  **Processor** - there is no strict minimum requirement for basic acquisition: any contemporary mid-range processor is sufficient for streaming and saving data. For real-time processing or to minimize potential frame loss, a higher-performance multi-core processor is recommended.
+
+*  **Memory** - there is no strict minimum requirement for basic acquisition. ≥16 GB RAM is recommended and provides comfortable headroom for typical Miniscope workflows and real-time processing tasks.
+
 * **Data storage** - a solid state drive is *strongly* recommended, with enough storage space to save data. For reference, the typical size for 1000 frames at 30 frames per second using the GREY codec is ~350 Mb.
 
 * **Graphics card** - a good graphics card is not critical for data acquisition. However, consider upgrading your graphics card to speed up offline analysis steps.
