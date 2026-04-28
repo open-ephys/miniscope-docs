@@ -2,24 +2,21 @@
 DAQ Firmware Upload
 #########################
 
-Follow this guide to upload firmware onto your Miniscope DAQ.
+Use this guide to upload firmware to your Miniscope DAQ. This should only be necessary in specific situations:
 
-Uploading firmware to the device is required only occasionally, in two different situations:
+- when a new firmware version is released, as a routine update. This should not happen often as we do not expect to release new firmware versions frequently, but it is recommended to check for updates every once in a while to make sure you are using the latest version.
+- when troubleshooting, if the flash memory (EEPROM) on the DAQ has corrupted and the system no longer recognizes the device as MINISCOPE. In this case, uploading firmware to the device can fix the issue and restore normal operation.
 
-- when a new firmware version is released, to update a device that is working properly.
-- when the flash memory (EEPROM) on the DAQ has corrupted and the system no longer recognizes the device as MINISCOPE, to fix the issue.
+Understanding the device’s boot modes helps clarify the firmware upload procedure. The Miniscope DAQ has two boot modes:
 
-It is helpful to understand how the device works to understand the firmware upload procedure.
+- boot from EEPROM, the flash memory that holds the firmware for normaloperation
+- boot from USB controller, which uses the bootloader to upload new firmware to the device
 
-The Miniscope DAQ has two boot modes: boot from EEPROM (for normal operation) and boot from USB controller (to upload firmware to the device).
+To upload firmware, you typically have to force the device to enter bootloader mode by physically moving jumpers on the PCB inside the DAQ. However, if the device malfunctioned and the flash memory is corrupted, the device will boot from the USB controller regardless of the jumper position, so the firmware upload procedure can sometimes be carried out without opening the device (for v3.3 and earlier DAQs).
 
-To force a working device to boot from the USB controller in order to upload new firmware, one must physically move a jumper on the PCB inside the DAQ.
+When using bootloader mode, the Miniscope DAQ Bootloader drivers (Cypress USB) must be installed for Windows to recognize the device. These drivers are not required during normal operation and so are not installed by default. They must be installed separately on each PC used for firmware updates.
 
-Devices with a corrupt flash memory boot from the USB controller regardless of the jumper position, so the firmware update procedure can sometimes be carried out without opening the device to configure the hardware to load in bootloader mode.
-
-In all cases in which communication with the USB controller is required, the corresponding drivers for the Miniscope DAQ Bootloader (Cypress USB) have to be installed on the PC for Windows to recognize the bootloader device. These drivers are not required during normal operation, and therefore must be installed separately on each PC that will be used for the firmware update procedure.
-
-The state of the Miniscope DAQ is apparent by checking the Device Manager, and corresponding courses of action are summarized in the following diagram:
+The state of the Miniscope DAQ can be determined by checking the Device Manager, and corresponding courses of action are summarized in the following diagram:
 
 .. mermaid::
 
@@ -42,7 +39,7 @@ The instructions to perform all operations are detailed below, including physica
 
 *Required components: Miniscope DAQ, USB3.0 cable (Micro Type B ↔ Type A)*
 
-*Tools that can be required: 2.5 mm hex key for opening the screws on the Miniscope DAQ's enclosure*
+*Tools that might be required: 2.5 mm hex key for opening the screws on the Miniscope DAQ's enclosure*
 
 Check the Windows Device Manager
 ----------------------------------------------
@@ -66,23 +63,26 @@ Check the Windows Device Manager
 
    - If the Miniscope DAQ is not listed in the Device Manager, check the USB connection.
 
+#. Disconnect the Miniscope DAQ from the PC.
 
 Configure the Hardware for Bootloader Mode
 --------------------------------------------
 
 To proceed with the firmware update, the Miniscope DAQ must be in bootloader mode. If not already in that mode, configure the hardware to force the DAQ to load from the bootloader as follows:
 
-#. Open the Miniscope-DAQ's enclosure by using the 2.5 mm hex key to unscrew all four fasteners. It might be necessary to apply gentle pressure on the nuts on the bottom of the DAQ to prevent them from turning when unscrewing the screws.
+#. With the device disconnected from the PC, Open the Miniscope DAQ's enclosure by using the 2.5 mm hex key to unscrew all four fasteners. It might be necessary to apply gentle pressure on the nuts on the bottom of the DAQ to prevent them from turning when unscrewing the screws.
 
 #. With the PCB exposed, move the jumper on header J9 to close the header labeled K1 as shown in the picture below. The J9 header remains empty. This changes the board to "Boot from USB controller" mode. If you are using a v3.4 DAQ, you additionally need to move the jumper on the bottom left of the PCB to the right-most position to disable the EEPROM write protect.
 
    ..  image:: /_static/images/firmware/DAQ_usb_power_to_bootloader.png
        :align: center
+       :width: 600px
 
 #. Check that the jumpers are in the correct position as shown in the picture below.
 
    ..  image:: /_static/images/firmware/DAQ_bootloader_mode_labelled.png
        :align: center
+       :width: 600px
 
 #. Connect the DAQ to the PC using a USB3.0 connection. Only the DAQ Power indicator LED will be on. It should be listed in the Device Manager as `Cypress FX3 USB BootLoader Device` under `Universal Serial Bus controllers`:
 
@@ -160,20 +160,22 @@ Firmware Upload
        :align: center
        :width: 400px
 
+#. Disconnect the Miniscope DAQ from the PC.
    
 Configure the Hardware for Normal Use
 -------------------------------------------
 
-#. With the PCB still exposed, move the jumper on header K1 back to its original position on the J9 header, likely USB and not Jack as most users do not use external power. Most users use USB power. The K1 header remains empty. This changes the board to "Boot from EEPROM" mode. If you are using a v3.4 DAQ, you additionally need to move the jumper on the bottom left of the PCB to the left-most position to enable the EEPROM write protect.
+#.  With the device disconnected from the PC and the PCB still exposed, move the jumper on header K1 back to its original position on the J9 header, likely USB and not Jack as most users do not use external power. Most users use USB power. The K1 header remains empty. This changes the board to "Boot from EEPROM" mode. If you are using a v3.4 DAQ, you additionally need to move the jumper on the bottom left of the PCB to the left-most position to enable the EEPROM write protect.
 
    ..  image:: /_static/images/firmware/DAQ_usb_power_labelled.png
        :align: center
+       :width: 600px
 
-#. Disconnect and re-connect the Miniscope DAQ to USB to boot the device. Both the DAQ Power and the Scope Power indicator LEDs will be on.
+#. Re-connect the Miniscope DAQ to USB to boot the device. Both the DAQ Power and the Scope Power indicator LEDs will be on.
 
 #. Check the Device Manager. The Miniscope DAQ should be listed as `UCLA/Open Ephys Miniscope DAQ v3`, under `Cameras`.
 
    ..  image:: /_static/images/firmware/driver-update-1a-listed-miniscope.png
        :align: center
 
-#.  Replace the four fasteners to close the Miniscope DAQ. 
+#.  Replace the four fasteners to close the Miniscope DAQ. The device is ready for normal operation.
