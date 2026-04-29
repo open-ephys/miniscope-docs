@@ -114,20 +114,13 @@ Testing the Miniscope's Functionality
         selected from ``Bonsai.Miniscope.V4Frame`` to be visualized.
 
 
-#.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope.
+#.  Using the drop-down list, set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope. 
 
-    ..  grid::
-        
-        ..  grid-item::
-            :columns:   3
+    ..  image:: /_static/images/uclaminiscopev4-properties.webp
+        :align: center
+        :alt:   screenshot of UCLAMiniscopeV4 node properties for index
 
-            ..  image:: /_static/images/uclaminiscopev4-properties.webp
-                :align: center
-                :alt:   screenshot of UCLAMiniscopeV4 node properties for index
-
-        ..  grid-item::
-            
-            ..  include::  /includes/set-index.rst
+..  note::  If there is no value populated in the drop-down, check the hardware connections. If there are multiple Miniscope DAQs connected to your PC, iterate through the index values while testing the node's functionality to verify what index corresponds to each miniscope. 
 
 #.  Start the Bonsai workflow by left-clicking the green *Start* button at the top of the Bonsai workflow editor or by pressing ``F5``. Once the workflow is running, you can test various features:
 
