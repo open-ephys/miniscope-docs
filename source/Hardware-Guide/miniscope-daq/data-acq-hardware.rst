@@ -14,15 +14,13 @@ Miniscope-DAQ Functionality
 I/O
 ---
 
-Miniscope-DAQs from Open Ephys have the following I/O:
+The I/O on the Miniscope DAQ operate at a 3.3V logic level and the inputs are 5V tolerant. Miniscope DAQs with the :doc:`latest firmware </Hardware-Guide//miniscope-daq/firmware-update>`. from Open Ephys have the following input and output ports:
 
-*   **Input trigger:** a digital input channel that can be used to gate data acquisition, recording to file, LED on/off state, etc.
+*   **Input Trigger:** a digital input channel that can be used to log events, gate data acquisition, recording to file, LED on/off state, etc. The functionality is defined by the software configuration. This trigger does not serve as a frame trigger for individual frames and is not recommended for syncing data.
+   
+*   **Sync Output:** a digital output channel in which every rising and falling edge indicates a new frame captured by the connected device. This output is recommended for synchronization of multiple hardware with an external acquisition device with a hardware clock.
 
-The I/O operate at a 3.3V logic level. The input is 5V tolerant.
-
-The Sync output implementation is under revision.
-
-The Aux input is not currently supported in software.
+*   **Aux Input:** an additional digital input channel that can be used to log events, gate data acquisition, recording to file, LED on/off state, etc. The functionality is defined by the software configuration.
 
 .. _externalpower:
 
