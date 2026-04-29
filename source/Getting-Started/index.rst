@@ -68,7 +68,13 @@ Connecting the Hardware
             :alt:   photograph of usb plug going into miniscope-daq jack
             :height:    500px
 
-Once all connections have been properly established, you should see all three indicators LEDs on the Miniscope DAQ turn on as in the image above. 
+    Once all connections have been properly established, you should see all three indicators LEDs on the Miniscope DAQ turn on as in the image above. 
+
+#.  Go to :code:`Start Menu > Settings > Devices > Bluetooth & other devices` and check that the board is listed as *Connected to USB3.0*, with no additional warnings:
+
+    .. image:: /_static/images/device-connected.webp
+            :align: center
+            :alt:   screenshot of connected devices menu showing the Miniscope DAQ connected to USB3.0
 
 Installation
 -------------------------------------------
