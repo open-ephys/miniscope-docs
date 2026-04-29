@@ -49,7 +49,7 @@ extensions = [
     'sphinxcontrib.mermaid',
     'nbsphinx',
     'sphinx_new_tab_link',
-    'sphinx_rediraffe'
+    'sphinxext.rediraffe'
 ]
 
 autosectionlabel_prefix_document = True
@@ -57,7 +57,7 @@ autosectionlabel_prefix_document = True
 new_tab_link_show_external_link_icon = True
 
 rediraffe_redirects = {
-    '/ucla-miniscope-v4/user/assembly/index': '/Hardware-Guide/miniscope-v4/miniscope-assembly-guide'
+    'ucla-miniscope-v4/user/assembly/index': 'Hardware-Guide/miniscope-v4/miniscope-assembly-guide'
 }
 
 # mybuilder = "sphinx_autobuild"
