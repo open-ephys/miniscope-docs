@@ -89,7 +89,7 @@ All the design and production files for the UCLA Miniscope v4 PCB are available 
 Design Files
 ============
 
-*   Schematic files (`pdf <https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/PDF/Miniscope-v4-Rigid-Flex_4_41.pdf>`__, `sch <https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Miniscope-v4-Rigid-Flex.sch>`__)
+*   Schematic files (`pdf <https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/PDF/Miniscope-v4-Rigid-Flex_4_41.pdf>`__, `sch <https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Miniscope-v4-Rigid-Flex.kicad_sch>`__)
 
 *   `PCB file <https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Miniscope-v4-Rigid-Flex.kicad_pcb>`__
 
