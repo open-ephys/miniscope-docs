@@ -245,6 +245,12 @@ html_context = {
 # Option for linkcheck
 linkcheck_anchors = False
 linkcheck_timeout = 40
+linkcheck_request_headers = {
+    "https://www.chroma.com/": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,*/*",
+    },
+}
 
 def rstjinja(app, docname, source):
     '''
