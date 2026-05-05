@@ -47,7 +47,7 @@ Connecting the Hardware
     .. raw:: html
 
         <center><video width="560" height="340" controls>
-        <source src="../../../_static/videos/Miniscope_tether_connection.mp4" type="video/mp4">
+        <source src="../_static/videos/Miniscope_tether_connection.mp4" type="video/mp4">
         </video></center>
 
 #.  Connect the Miniscope DAQ to a USB 3.0-compatible port on your computer using the high-speed USB cable provided. USB 3.0-compatible ports are usually indicated by a blue color and/or the SuperSpeed mark and are often at the back of PCs.

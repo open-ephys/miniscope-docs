@@ -165,7 +165,7 @@ Firmware Upload
 Configure the Hardware for Normal Use
 -------------------------------------------
 
-#. With the device disconnected from the PC and the PCB still exposed, move the jumper on header K1 back to its original position on the J9 header, likely USB and not Jack as most users do not use external power but rather use USB power. The K1 header remains empty. This changes the board to "Boot from EEPROM" mode. If you are using a v3.4 DAQ, you additionally need to move the jumper on the bottom left of the PCB to the left-most position to enable the EEPROM write protect.
+#. With the device disconnected from the PC and the PCB still exposed, move the jumper on header K1 back to its original position on the J9 header (likely USB and not Jack as most users use USB power rather than external power). The K1 header remains empty. This changes the board to "Boot from EEPROM" mode. If you are using a v3.4 DAQ, you additionally need to move the jumper on the bottom left of the PCB to the left-most position to enable the EEPROM write protect.
 
    ..  image:: /_static/images/firmware/DAQ_usb_power_labelled.png
        :align: center
@@ -178,4 +178,4 @@ Configure the Hardware for Normal Use
    ..  image:: /_static/images/firmware/driver-update-1a-listed-miniscope.png
        :align: center
 
-#.  Replace the four fasteners to close the Miniscope DAQ. The device is ready for normal operation.
+#. Replace the four fasteners to close the Miniscope DAQ. The device is ready for normal operation.

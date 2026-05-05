@@ -64,7 +64,7 @@ a) Stand one of the 3mm ⌀ 6mm FL lenses on a flat surface. Make sure the lens 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/testobjectivelens.mp4" type="video/mp4">
+  <source src="../../_static/videos/testobjectivelens.mp4" type="video/mp4">
   </video></center>
 
 b) Place the objective module directly over the lens and push down. Make sure that you are pushing in a straight line onto the lens, as any angle can cause chipping. You may have to use some force to do this, if the objective module is a bit tight (you can hear in the video that it makes a sound). Downward force is ok *as long as the lens and objective module are completely aligned*. If you see the lens stick out at an angle, remove it and reposition it.
@@ -77,7 +77,7 @@ Make sure the lens is completely flush with the body and does not stick out.
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/objlens01.mp4" type="video/mp4">
+  <source src="../../_static/videos/objlens01.mp4" type="video/mp4">
   </video></center>
 
 c) Once the lens is flush with the edge of the objective module, clean the edge of the lens with a soft cloth.
@@ -99,7 +99,7 @@ d) Then, repeat this with the second 3mm ⌀ 6 mm FL lens, again making sure tha
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/exfilter.mp4" type="video/mp4">
+  <source src="../../_static/videos/exfilter.mp4" type="video/mp4">
   </video></center>
 
 a) Locate the arrow on your 470nm excitation filter. This arrow must point towards the light source, in this case towards the LED on the Miniscope PCB.
@@ -114,7 +114,7 @@ a) First, screw a self-threading screw into the hole on the side of the body, th
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/screwinout.mp4" type="video/mp4">
+  <source src="../../_static/videos/screwinout.mp4" type="video/mp4">
   </video></center>
 
 b) Find your 4mm ⌀ 10mm FL lens. This one has only a very slight curve at one edge, and should be placed with the curved edge down (in contrast to the objective module lenses). Stand the lens on a flat surface, with the curved edge down. If you press it, it should wobble.
@@ -122,7 +122,7 @@ b) Find your 4mm ⌀ 10mm FL lens. This one has only a very slight curve at one 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/4mmlens_orientation.mp4" type="video/mp4">
+  <source src="../../_static/videos/4mmlens_orientation.mp4" type="video/mp4">
   </video></center>
 
 c) Press the emission module down on top of this lens.
@@ -130,7 +130,7 @@ c) Press the emission module down on top of this lens.
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/lensinemission.mp4" type="video/mp4">
+  <source src="../../_static/videos/lensinemission.mp4" type="video/mp4">
   </video></center>
 
 
@@ -141,7 +141,7 @@ e) Next, place the dichroic filter in the slot on the side of the emission modul
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/dichroic.mp4" type="video/mp4">
+  <source src="../../_static/videos/dichroic.mp4" type="video/mp4">
   </video></center>
 
 
@@ -152,7 +152,7 @@ g) If it looks clean, place the half-ball lens in the round pocket on the side o
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/halfball.mp4" type="video/mp4">
+  <source src="../../_static/videos/halfball.mp4" type="video/mp4">
   </video></center>
 
 5. Assembly
@@ -177,7 +177,7 @@ d) You can now put an EWL in between these circles and attach the objective modu
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/ewllens.mp4" type="video/mp4">
+  <source src="../../_static/videos/ewllens.mp4" type="video/mp4">
   </video></center>
 
 .. _step_5e:
@@ -189,12 +189,12 @@ f) Remove the protective film from the PCB and close the sensor over the top of 
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/peel.mp4" type="video/mp4">
+  <source src="../../_static/videos/peel.mp4" type="video/mp4">
   </video></center>
 
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/closescope.mp4" type="video/mp4">
+  <source src="../../_static/videos/closescope.mp4" type="video/mp4">
   </video></center>
 
 6. Test before securing
@@ -213,7 +213,7 @@ b) If the scope passes these tests, you can glue the PCB to the emission module.
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/glue.mp4" type="video/mp4">
+  <source src="../../_static/videos/glue.mp4" type="video/mp4">
   </video></center>
 
 c) Once the epoxy is fully dry, screw in the PCB flaps.
@@ -248,7 +248,7 @@ Disassembly for PCB Replacement
 .. raw:: html
 
   <center><video width="560" height="340" controls>
-  <source src="../../../_static/videos/pcb-disassembly.mp4" type="video/mp4">
+  <source src="../../_static/videos/pcb-disassembly.mp4" type="video/mp4">
   </video></center>
 
 1. Remove the objective module
