@@ -29,7 +29,7 @@ Workflow Description
 *   There are two ``VideoWriter`` operators. The first one is from the
     ``Bonsai.Vision`` package, and the second one is from the ``Bonsai.FFmpeg``
     package. They are both *sink* operators as indicated by the nodes' purple
-    color and the orientation of its grey arc. A sink operator saves data or
+    color and the orientation of their grey arcs. A sink operator saves data or
     triggers external events.
 
 *   The first ``VideoWriter`` operator is enabled. It can be disabled by
@@ -170,4 +170,4 @@ Operate the Workflow
     3. Confirm the data exists and comports with expectations. The image can be
     easily viewed in any media playback software that supports the ``FourCC``
     value specified in step 3. The orientation data can be easily viewed in any
-    spreadsheet software that can supports .csv files.
+    spreadsheet software that supports .csv files.

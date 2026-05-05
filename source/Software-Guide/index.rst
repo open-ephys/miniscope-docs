@@ -40,7 +40,7 @@ community.
 
         The original software developed by the UCLA Miniscope Team that enables data acquisition from the Miniscope v4 and the MiniCAM via the Miniscope DAQ, as well as webcams.
         
-        It software is deprecated and not supported by Open Ephys.
+        This software is deprecated and not supported by Open Ephys.
         
         *Click to navigate to its documentation site.*
 

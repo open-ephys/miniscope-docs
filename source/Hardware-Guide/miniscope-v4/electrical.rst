@@ -46,7 +46,7 @@ It is helpful to understand the working principle of the UCLA Miniscope v4's PCB
 
             *   The Python480 with its peripheral circuitry (some passives and a voltage reference) collects light from the sample.
 
-            *   The status LED and is toggled by the microcontroller via the Q1 transistor.
+            *   The status LED is toggled by the microcontroller via the Q1 transistor.
 
         ..  tab-item::  Microcontroller Module
 
@@ -54,7 +54,7 @@ It is helpful to understand the working principle of the UCLA Miniscope v4's PCB
                 :alt:   image of pcb schematic (microcontroller)
                 :align: center
 
-            *   The microcontroller with its peripheral circuitry (some passives) process commands from Bonsai or Miniscope-DAQ-QT-GUI which are forwarded to the serializer through the data acquisition hardware. Such commands are forwarded on the i2c bus and includes:
+            *   The microcontroller with its peripheral circuitry (some passives) processes commands from Bonsai or Miniscope-DAQ-QT-GUI which are forwarded to the serializer through the data acquisition hardware. Such commands are forwarded on the i2c bus and include:
 
                 *   setting the Python480's registers to control exposure, frame rate, gain, and LED timing by operating as an SPI master.
 
@@ -104,4 +104,4 @@ Production Files
 
 *   `Pick-and-Place (PnP) files <https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Rigid-Flex/KiCad/Output/PnP/PnP_v_4_41>`__
 
-The Bill of Material (BoM) file is a csv file. Any text editor can be used to open a csvs file, but a spreadsheet software is recommended. The Gerber files are inspectable using most eCAD softwares or online Gerber viewers. PCB fabricators typically require Gerber files to produce a custom PCB. The PnP files are also csv files. PCB assemblers typically require PnP files to place and solder all the components onto your PCB. It is also possible to assemble your own UCLA Miniscope v4 PCB, but that is outside of the scope of this guide.
+The Bill of Material (BoM) file is a csv file. Any text editor can be used to open a csv file, but a spreadsheet software is recommended. The Gerber files are inspectable using most eCAD software or online Gerber viewers. PCB fabricators typically require Gerber files to produce a custom PCB. The PnP files are also csv files. PCB assemblers typically require PnP files to place and solder all the components onto your PCB. It is also possible to assemble your own UCLA Miniscope v4 PCB, but that is outside of the scope of this guide.

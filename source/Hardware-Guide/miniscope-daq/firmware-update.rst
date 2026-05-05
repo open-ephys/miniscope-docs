@@ -70,7 +70,7 @@ Configure the Hardware for Bootloader Mode
 
 To proceed with the firmware update, the Miniscope DAQ must be in bootloader mode. If not already in that mode, configure the hardware to force the DAQ to load from the bootloader as follows:
 
-#. With the device disconnected from the PC, Open the Miniscope DAQ's enclosure by using the 2.5 mm hex key to unscrew all four fasteners. It might be necessary to apply gentle pressure on the nuts on the bottom of the DAQ to prevent them from turning when unscrewing the screws.
+#. With the device disconnected from the PC, open the Miniscope DAQ's enclosure by using the 2.5 mm hex key to unscrew all four fasteners. It might be necessary to apply gentle pressure on the nuts on the bottom of the DAQ to prevent them from turning when unscrewing the screws.
 
 #. With the PCB exposed, move the jumper on header J9 to close the header labeled K1 as shown in the picture below. The J9 header remains empty. This changes the board to "Boot from USB controller" mode. If you are using a v3.4 DAQ, you additionally need to move the jumper on the bottom left of the PCB to the right-most position to disable the EEPROM write protect.
 

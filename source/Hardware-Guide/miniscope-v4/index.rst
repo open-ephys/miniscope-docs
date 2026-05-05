@@ -30,9 +30,9 @@ Optical Properties:
 
 *   The above specifications can be adjusted by reconfiguring the objective module
 
-*   **GRIN Lens Compatiblity:** relay GRIN lenses (i.e. :math:`pitch = 0.5n, n=1, 2, 3...`)
+*   **GRIN Lens Compatibility:** relay GRIN lenses (i.e. :math:`pitch = 0.5n, n=1, 2, 3...`)
 
-*   **Spectral Compatiblity:** 
+*   **Spectral Compatibility:**
     
     *   Common green fluorophores such as GCaMP 
     

@@ -96,4 +96,4 @@ Any modern computer should be able to run the miniscope system. Performance will
 
 * **Graphics card** - a good graphics card is not critical for data acquisition. However, consider upgrading your graphics card to speed up offline analysis steps.
 
-* **Connections** - At least one free USB 3.0 port to connect the Miniscope DAQ directly to the the computer.
+* **Connections** - At least one free USB 3.0 port to connect the Miniscope DAQ directly to the computer.
