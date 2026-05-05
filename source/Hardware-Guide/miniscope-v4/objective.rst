@@ -8,7 +8,7 @@ Objective Lens Modification
 
 Credit for all the measurements and images on this page go to the UCLA Miniscope team. [1]_
 
-The UCLA Miniscope v4's working distance (WD), Field-of-View (FoV), spatial resolution, and numerical aperture (NA) can be adjusted by reconfiguring on the combination of lenses used when assembling the Miniscope. 
+The UCLA Miniscope v4's working distance (WD), Field-of-View (FoV), spatial resolution, and numerical aperture (NA) can be adjusted by reconfiguring the combination of lenses used when assembling the Miniscope. 
 
 An approximate :math:`NA` is calculated as :math:`sin(arctan(D/(2*WD)))` where :math:`D=2.7mm` for all of these lenses (for example, refer to the *Clear Aperture* field for 45-089).
 
@@ -63,7 +63,7 @@ Lens Configuration 1
 
     Image of USAF target taken with lens configuration 1 [1]_
 
-This is the standard UCLA Minsicope v4 lens configuration. It balances spatial resolution, FoV, WD, and NA. It is capable of deep imaging through a relay GRIN lenses and shallow imaging through a thin cranial windows.
+This is the standard UCLA Miniscope v4 lens configuration. It balances spatial resolution, FoV, WD, and NA. It is capable of deep imaging through a relay GRIN lens and shallow imaging through a thin cranial window.
 
 .. edmund links don't work?
 

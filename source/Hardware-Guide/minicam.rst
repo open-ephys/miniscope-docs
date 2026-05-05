@@ -12,7 +12,7 @@ MiniCAM
 The MiniCAM (`store <https://open-ephys.org/minicam/minicam>`__, `github
 <https://github.com/Aharoni-Lab/MiniCAM>`__) is a camera that enables data collection about the
 behavior of a freely-moving animal during an experiment. It requires its own MiniDAQ or
-Miniscope-DAQ, and it can be used with both the Miniscope-DAQ-QT-GUI or the OpenEphys.Miniscope Bonsai library. The MiniCAM ecosystem comprises of the
+Miniscope-DAQ, and it can be used with both the Miniscope-DAQ-QT-GUI or the OpenEphys.Miniscope Bonsai library. The MiniCAM ecosystem is comprised of the
 `IR MiniCAM LED Ring <https://open-ephys.org/minicam/minicam-led-ring?rq=minicam>`__ and the
 `MiniCAM Lenses Kit <https://open-ephys.org/minicam/lens-kit?rq=minicam>`__. The *IR MiniCAM LED
 Ring* facilitates adjustment of the intensity of the illumination of the behavioral setup. IR
