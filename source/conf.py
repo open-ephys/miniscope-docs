@@ -244,7 +244,7 @@ html_context = {
 
 # Option for linkcheck
 linkcheck_anchors = False
-linkcheck_timeout = 20
+linkcheck_timeout = 40
 
 def rstjinja(app, docname, source):
     '''
