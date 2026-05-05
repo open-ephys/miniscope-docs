@@ -201,7 +201,7 @@ epub_exclude_files = ["search.html"]
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    'use_edit_page_button': True,
+    "use_edit_page_button": True,
     "navigation_with_keys": True,
     "navbar_center": ["navbar-nav", "nav_divider.html", "moredocs_link.html", "purchase_link.html"],
     "navbar_end": ["navbar-icon-links"],

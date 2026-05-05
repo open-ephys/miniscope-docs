@@ -1,0 +1,9 @@
+{% extends "!layout.html" %}
+
+{% block docs_navbar %}
+  {{ super() }}
+
+  <div class="custom-announcement">
+    This documentation supports the latest <a href="firmware-update.html">Miniscope DAQ firmware</a>, the latest <a href="https://github.com/open-ephys/bonsai-miniscope/releases">OpenEphys.Miniscope Bonsai package</a>, and Bonsai 2.9+.
+  </div>
+{% endblock %}
