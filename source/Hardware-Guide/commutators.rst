@@ -1,7 +1,7 @@
 .. _commutators:
 
 #####################
-Coaxial Commutators
+Coaxial Commutator
 #####################
 
 .. raw:: html

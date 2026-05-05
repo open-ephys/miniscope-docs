@@ -85,8 +85,9 @@ Installation
 
 #. Install the following packages from the `Bonsai Package Manager <https://bonsai-rx.org/docs/articles/packages.html>`__, making sure the Package source set to "All":
 
-* *OpenEphys.Miniscope.Design*: An extension of the *OpenEphys.Miniscope* library that includes graphical user interfaces (GUIs). Installing *OpenEphys.Miniscope.Design* automatically installs *OpenEphys.Miniscope* as a dependency.
-* *Bonsai.StarterPack*: the "standard library" for Bonsai that contains tools that are used in almost every workflow.
+   * *OpenEphys.Miniscope.Design*: An extension of the *OpenEphys.Miniscope* library that includes graphical user interfaces (GUIs). Installing *OpenEphys.Miniscope.Design* automatically installs *OpenEphys.Miniscope* as a dependency.
+    
+   * *Bonsai.StarterPack*: the "standard library" for Bonsai that contains tools that are used in almost every workflow.
 
 Testing the Miniscope's Functionality
 -------------------------------------------
@@ -126,42 +127,41 @@ Testing the Miniscope's Functionality
         :align: center
         :alt:   screenshot of UCLAMiniscopeV4 node properties for index
 
-..  note::  If there is no value populated in the drop-down, check the hardware connections. If there are multiple Miniscope DAQs connected to your PC, iterate through the index values while testing the node's functionality to verify what index corresponds to each miniscope. 
+    ..  note::  If there is no value populated in the drop-down, check the hardware connections. If there are multiple Miniscope DAQs connected to your PC, iterate through the index values while testing the node's functionality to verify what index corresponds to each miniscope. 
 
 #.  Start the Bonsai workflow by left-clicking the green *Start* button at the top of the Bonsai workflow editor or by pressing ``F5``. Once the workflow is running, you can test various features:
 
     **Real-time Data Visualization**
 
-    :Image Data:    Double left-click the ``Image`` node. This displays a real-time visualization of image data from the sensor. Try imaging a sample such as a tissue paper. Confirm that the magnified image of the sample appears in the ``Image`` node visualizer:
+    :Image Data:    Double left-click the ``Image`` node. This displays a real-time visualization of image data from the sensor. Try imaging a sample such as a tissue paper. Confirm that the magnified image of the sample appears in the ``Image`` node visualizer.
 
                     ..  image:: /_static/images/image-demo.webp
                         :alt:   animation of demonstrating miniscope data
                         :align: center
                         :height: 400px
 
-    :Orientation Data:   Double left-click the ``Quaternion`` node. This displays a real-time visualization of quaternion data which represents the miniscope's orientation. Right-click the visualization, and left-click the drop-down menu. Set the value in the ``History Length`` field to 100. Reorient the UCLA Miniscope v4. Confirm the quaternion visualization responds accordingly:
+\
+    :Orientation Data:   Double left-click the ``Quaternion`` node. This displays a real-time visualization of quaternion data which represents the miniscope's orientation. Right-click the visualization, and left-click the drop-down menu. Set the value in the ``History Length`` field to 100. Reorient the UCLA Miniscope v4. Confirm the quaternion visualization responds accordingly. To learn more about how to interpret quaternion data, visit the `IMU Data article <https://github.com/open-ephys/wiki/wiki/IMU-Data>`_ in the Open Ephys Wiki.
 
                         ..  image:: /_static/images/quaternion-demo.webp
                             :alt:   animation of demonstrating quaternion data
                             :align: center
                             :height: 400px
-
-                        To learn more about how to interpret quaternion data, visit the `IMU Data
-                        article <https://github.com/open-ephys/wiki/wiki/IMU-Data>`_ in the Open Ephys Wiki.
+                                                    
 
     **Miniscope Settings Configuration**
 
     Left-click the ``UCLAMiniscopeV4`` node to access the Properties pane on the right.
 
-    :Frame Rate:    Change the ``FramesPerSecond`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* pane and selecting a different option. Frame rate and exposure-duration-per-frame are inversely related, so higher frame rates produce darker images. Use this information and look at the ``Image`` node visualizer to confirm that the frame rate adjusts according to the ``FramesPerSecond`` value. 
+    :Frame Rate:    Change the ``FramesPerSecond`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* pane and selecting a different option. Frame rate and exposure-duration-per-frame are inversely related, so higher frame rates produce darker images. Use this information and look at the ``Image`` node visualizer to confirm that the frame rate adjusts according to the ``FramesPerSecond`` value. A discerning eye can also notice changes in frame rate, but that requires a moving image.
 
                     ..  image:: /_static/images/fps-demo.webp
                         :alt:   animation of changing miniscope fps
                         :align: center
                         :height: 400px
 
-                    A discerning eye can also notice changes in frame rate, but that requires a moving image.
-
+                    
+\
     :Sensor Gain:   Change the ``SensorGain`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* pane and selecting a different option. Look at the ``Image`` node visualizer to confirm that the sensor's gain is adjusted according to the value of ``SensorGain`` value.
 
                     ..  image:: /_static/images/gain-demo.webp
@@ -169,6 +169,7 @@ Testing the Miniscope's Functionality
                         :align: center
                         :height: 400px
 
+\
     :Excitation Light Intensity:    Change the ``LEDBrightness`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* pane and sliding the scrollbar. Confirm that the intensity of the excitation light adjusts according to the ``LEDBrightness`` value.
 
                                     ..  image:: /_static/images/led-demo.webp
@@ -176,6 +177,7 @@ Testing the Miniscope's Functionality
                                         :align: center
                                         :height: 400px
 
+\
     :Dynamic Focusing:  Place the miniscope approximately its working distance away from the sample. Change the ``EWL`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* pane and selecting a different option. Look at the ``Image`` node visualizer shifting in and out of focus according to the ``EWL`` value. 
 
                         ..  image:: /_static/images/focus-demo.webp

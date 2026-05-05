@@ -32,9 +32,9 @@ Configure the Hardware
 
 Instead of connecting the Miniscope to Miniscope DAQ as in the :ref:`quickstartguide`, follow the `Coax Commutator Connections section <https://open-ephys.github.io/commutator-docs/user-guide/mount-connect.html?commutator=coax#connecting>`__ of the commutator hardware docs to:
 
--   connect the commutator's stator/s (top SMA connector) to the Miniscope DAQ using the SMA-SMA cable.
+-   connect the commutator's stator (top SMA connector/s) to the Miniscope DAQ using the SMA-SMA cable.
 
--   connect the commutator's rotor/s (bottom SMA connector) to the Miniscope using the coaxial tether.
+-   connect the commutator's rotor (bottom SMA connector) to the Miniscope using the coaxial tether.
     
 -   connect the commutator to the PC using the USB cable.  
 

@@ -1,7 +1,7 @@
 .. _tethers:
 
 #####################
-Coaxial Tethers
+Coaxial Tether
 #####################
 
 ..  image:: /_static/images/minicoax_tether.webp

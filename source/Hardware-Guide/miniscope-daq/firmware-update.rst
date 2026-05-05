@@ -9,10 +9,10 @@ Use this guide to upload firmware to your Miniscope DAQ. This should only be nec
 
 Understanding the device’s boot modes helps clarify the firmware upload procedure. The Miniscope DAQ has two boot modes:
 
-- boot from EEPROM, the flash memory that holds the firmware for normaloperation
+- boot from EEPROM, the flash memory that holds the firmware for normal operation
 - boot from USB controller, which uses the bootloader to upload new firmware to the device
 
-To upload firmware, you typically have to force the device to enter bootloader mode by physically moving jumpers on the PCB inside the DAQ. However, if the device malfunctioned and the flash memory is corrupted, the device will boot from the USB controller regardless of the jumper position, so the firmware upload procedure can sometimes be carried out without opening the device (for v3.3 and earlier DAQs).
+To upload firmware, you typically have to force the device to enter bootloader mode by physically moving jumpers on the PCB inside the DAQ. However, if the device malfunctioned and the flash memory is corrupted, the device will boot from the USB controller regardless of the jumper position, so the firmware upload procedure can sometimes be carried out without opening the device.
 
 When using bootloader mode, the Miniscope DAQ Bootloader drivers (Cypress USB) must be installed for Windows to recognize the device. These drivers are not required during normal operation and so are not installed by default. They must be installed separately on each PC used for firmware updates.
 
@@ -94,7 +94,7 @@ Install the Miniscope DAQ Bootloader Driver
 
 To proceed with the firmware update, the Miniscope DAQ should be listed as `Cypress FX3 USB BootLoader Device` under `Universal Serial Bus controllers`. If, instead, it is listed as `WestBridge` under `Other devices`, the bootloader driver needs to be installed:
 
-#. Download the Infeon (Cypress) drivers:
+#. Download the Infineon (Cypress) drivers:
 
    .. list-table::
       :widths: 45 15 15
@@ -165,7 +165,7 @@ Firmware Upload
 Configure the Hardware for Normal Use
 -------------------------------------------
 
-#. With the device disconnected from the PC and the PCB still exposed, move the jumper on header K1 back to its original position on the J9 header, likely USB and not Jack as most users do not use external power. Most users use USB power. The K1 header remains empty. This changes the board to "Boot from EEPROM" mode. If you are using a v3.4 DAQ, you additionally need to move the jumper on the bottom left of the PCB to the left-most position to enable the EEPROM write protect.
+#. With the device disconnected from the PC and the PCB still exposed, move the jumper on header K1 back to its original position on the J9 header, likely USB and not Jack as most users do not use external power but rather use USB power. The K1 header remains empty. This changes the board to "Boot from EEPROM" mode. If you are using a v3.4 DAQ, you additionally need to move the jumper on the bottom left of the PCB to the left-most position to enable the EEPROM write protect.
 
    ..  image:: /_static/images/firmware/DAQ_usb_power_labelled.png
        :align: center

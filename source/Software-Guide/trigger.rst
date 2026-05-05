@@ -74,6 +74,6 @@ Operate the Workflow
 
 #. If using a commutator, set the COM port associated with your commutator in the workflow. If not using a commutator, delete the nodes corresponding to the commutation.
 
-#. Set the ``UCLAMiniscopeV4`` operator's ``LEDRespectsTrigger`` property to True if you intend to use the LED only during recording.
+#. Set the ``UCLAMiniscopeV4`` operator's ``LEDRespectsTrigger`` property to True if you intend to use the LED only during the triggered recording. This can help reduce photobleaching during long experimental sessions with multiple triggered recordings, but means the LED will be off during acquisition periods that are not being recorded to file. To be able to monitor the brain activity during acquisition, toggle this property to False.
 
 #. Run the workflow and verify that images are emitted only when the Trigger is set to HIGH, and that the LED behaves accordingly. 

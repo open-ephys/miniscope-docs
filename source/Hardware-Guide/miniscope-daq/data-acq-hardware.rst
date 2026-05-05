@@ -78,13 +78,15 @@ Miniscope-DAQs have the following green LED indicators:
 Syncing Data
 ============
 
-For strict data syncing requirements, best practice involves using a combination of the UCLA Miniscope v4's sync output and software timestamps. 
+..  important::  The Sync Output functionality has been corrected in firmware version 1.1 and above so that each toggle is precisely timed to the capture of individual frames. Use the latest :doc:`Miniscope DAQ firmware <firmware-update>` and the latest `OpenEphys.Miniscope Bonsai package <https://github.com/open-ephys/bonsai-miniscope/releases>`__ from Open Ephys to ensure hardware synchronization.
 
-Software timestamps are accurate to within a few milliseconds which is insufficient for stricter data syncing requirements. Though the sync output is accurate to within microseconds, it alone is also insufficient because it is possible for frames to drop on the way from the Miniscope-DAQ to the PC. Therefore, it is to corroborate sync output data with software timestamps to ensure that a sync output frame corresponds a frame received by the PC.
+The Miniscope DAQ does not have an integrated hardware clock for timestamping data. The data is transmitted via USB from the Miniscope DAQ to the PC, where it is timestamped by software. Software timestamps are accurate to within a few milliseconds and can be sufficient for standard applications in which synchronization between different hardware at fast timescales is not required.
+
+For strict data syncing requirements, best practice involves using a combination of the UCLA Miniscope v4's Sync Output and software timestamps. The Sync Output toggles a digital signal each time a frame is captured by the Miniscope, and is accurate to within microseconds. However, the Sync Output is insufficient to guarantee synchronization because it is possible for frames to drop on the way from the Miniscope-DAQ to the PC. It is necessary to corroborate Sync Output data with software timestamps to ensure that a Sync Output toggle corresponds to a frame received by the PC.
 
 The effect of a dropped frame is a larger inter-frame interval. If you are struggling with dropped frames, try changing USB ports, USB drivers, and removing other devices that are sharing the USB bus. Dropped frames are due to limited USB bandwidth and timing constraints. On a proper setup, expect a dropped frame every few thousand frames.
 
-The input trigger involves 10-100ms latency so relying on it for syncing data is also not recommended.
+The Input Trigger involves 10-100ms latency so relying on it for syncing data is also not recommended.
 
 .. toctree::
     :hidden:

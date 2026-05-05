@@ -29,7 +29,7 @@ community.
         
         *Click to start browsing the tutorials.*
 
-    ..  grid-item-card:: Miniscope-DAQ-QT-Software
+    ..  grid-item-card:: Miniscope-DAQ-QT-Software (deprecated)
         :link-type: url
         :link: https://github.com/Aharoni-Lab/Miniscope-DAQ-QT-Software/wiki
         :class-card: intro-card

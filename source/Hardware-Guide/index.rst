@@ -30,7 +30,7 @@ Hardware Requirements
    :width: 70%
    :align: center
 
-   An example Miniscope acquisition system using the Miniscope DAQ v3.3, a Miniscope v4 and an Open Ephys Commutator. The system is being run through Bonsai.
+   An example Miniscope acquisition system using the Miniscope DAQ v3, a Miniscope v4 and an Open Ephys Commutator. The system is being run in Bonsai.
 
 .. _systemparts:
 
@@ -38,7 +38,7 @@ Hardware Requirements
 Miniscope System Components
 -------------------------------------------
 
-A complete data acquisition system for the UCLA Miniscope design consists of the following hardware, most of which you can order from the `Open Ephys store <https://open-ephys.org/store>`_:
+A complete UCLA Miniscope data acquisition system consists of the following hardware, most of which you can order from the `Open Ephys store <https://open-ephys.org/store>`_:
 
 * A Miniscope V4, which you can order from the Open Ephys store either as a pre-assembled device or as an assembly kit to build yourself following the :ref:`miniscope_assembly_guide`. 
 
@@ -58,6 +58,8 @@ Additional external hardware that you might consider to complete an experimental
 
 If you already have these components, follow the :ref:`quickstartguide` to learn how to start collecting data right away.
 The :doc:`/Hardware-Guide/index` goes into each system component in detail. To interface with an animal, you will need :ref:`additional components <interfacecomponents>` listed below. The :doc:`/User-Guide/index` can help you understand everything you need to carry out a complete experimental protocol.
+
+..  note::  The Miniscope V4 is also compatible with the ONIX Acquisition System. ONIX has two ports that can be used for data acquisition simultaneously. Read about ONIX hardware in the `ONIX documentation <https://open-ephys.github.io/onix-docs/index.html>`_. To use the Miniscope with ONIX you will still need the additional interface components and accessories listed below.
 
 .. _interfacecomponents:
 
@@ -90,7 +92,7 @@ Any modern computer should be able to run the miniscope system. Performance will
 
 *  **Memory** - there is no strict minimum requirement for basic acquisition. ≥16 GB RAM is recommended and provides comfortable headroom for typical Miniscope workflows and real-time processing tasks.
 
-* **Data storage** - a solid state drive is *strongly* recommended, with enough storage space to save data. For reference, the typical size for 1000 frames at 30 frames per second using the GREY codec is ~350 Mb.
+* **Data storage** - a solid state drive is *strongly* recommended, with enough storage space to save data. For reference, the typical size of a video file of 1000 frames using the GREY codec is ~350 Mb.
 
 * **Graphics card** - a good graphics card is not critical for data acquisition. However, consider upgrading your graphics card to speed up offline analysis steps.
 
