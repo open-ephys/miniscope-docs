@@ -32,4 +32,13 @@ MiniDAQ
 
 ..  todo:: remove background of and color-correct these photos, or take new photos
 
-The MiniDAQ is a simplified, more compact, and more affordable version of the Miniscope-DAQ, designed as a companion data acquisition device for the MiniCAM. It plugs directly into a PC through its on-board USB cable. It supports data acquisition from a single MiniCAM. Unlike the Miniscope-DAQ, the MiniDAQ does not support sync output or input trigger functions, nor accept an external supply. The MiniDAQ is supported by Bonsai and the Miniscope-DAQ-QT-Software. To acquire MiniCAM data with the MiniDAQ, follow the same user guides as the Miniscope-DAQ. While recording data from the Miniscope v4 with the MiniDAQ is possible, it is not recommended. The Miniscope DAQ has more extensive functionality and power management specific to integrate Miniscopes into an experimental setup.
+The MiniDAQ is a simplified, more compact, and more affordable version of the
+Miniscope-DAQ, designed as a companion data acquisition device for the MiniCAM.
+It plugs directly into a PC through its on-board USB cable. It supports data
+acquisition from a single MiniCAM. Unlike the Miniscope-DAQ, the MiniDAQ does
+not support additional I/O functions, nor accept an external supply. The MiniDAQ is
+supported by Bonsai and the Miniscope-DAQ-QT-Software. To acquire MiniCAM data
+with the MiniDAQ, follow the same user guides as the Miniscope-DAQ. While
+recording data from the Miniscope v4 with the MiniDAQ is possible, it is not
+recommended. The Miniscope DAQ has more extensive functionality and power
+management specific to integrate Miniscopes into an experimental setup.

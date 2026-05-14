@@ -15,7 +15,7 @@
           <p1:Focus>0</p1:Focus>
           <p1:SensorGain>Low</p1:SensorGain>
           <p1:FramesPerSecond>Fps30</p1:FramesPerSecond>
-          <p1:LedRespectsTrigger>false</p1:LedRespectsTrigger>
+          <p1:LedRespectsDigitalIn>None</p1:LedRespectsDigitalIn>
         </Combinator>
       </Expression>
       <Expression xsi:type="MemberSelector">
@@ -66,11 +66,18 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="commutator:QuaternionToTwist">
-                <commutator:RotationAxis>
+                <commutator:HeadstageAxis>
                   <commutator:X>0</commutator:X>
                   <commutator:Y>0</commutator:Y>
                   <commutator:Z>1</commutator:Z>
-                </commutator:RotationAxis>
+                </commutator:HeadstageAxis>
+                <commutator:CommutatorAxis>
+                  <commutator:X>0</commutator:X>
+                  <commutator:Y>0</commutator:Y>
+                  <commutator:Z>1</commutator:Z>
+                </commutator:CommutatorAxis>
+                <commutator:FallbackThreshold>-0.9</commutator:FallbackThreshold>
+                <commutator:FallbackRotation>Global</commutator:FallbackRotation>
               </Combinator>
             </Expression>
             <Expression xsi:type="Combinator">
@@ -81,12 +88,14 @@
               <Property Name="Enable" />
               <Property Name="EnableLed" />
             </Expression>
-            <Expression xsi:type="Combinator">
-              <Combinator xsi:type="commutator:SerialCommutator">
-                <commutator:PortName>COM3</commutator:PortName>
-                <commutator:Enable>true</commutator:Enable>
-                <commutator:EnableLed>true</commutator:EnableLed>
-              </Combinator>
+            <Expression xsi:type="Disable">
+              <Builder xsi:type="Combinator">
+                <Combinator xsi:type="commutator:SerialCommutator">
+                  <commutator:PortName>COM3</commutator:PortName>
+                  <commutator:Enable>true</commutator:Enable>
+                  <commutator:EnableLed>true</commutator:EnableLed>
+                </Combinator>
+              </Builder>
             </Expression>
             <Expression xsi:type="WorkflowOutput" />
           </Nodes>

@@ -6,7 +6,18 @@ Miniscope DAQ
     :alt:   image of miniscope-daq
     :align: center
 
-The `Miniscope-DAQ <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__ is the data acquisition hardware developed by the UCLA Miniscope team for acquiring miniscope data. It connects to the PC through USB 3.0. It supports sync output, input trigger, and data acquisition from a single Miniscope v4 or MiniCAM. It optionally accepts an external power supply for more power-intensive applications. The Miniscope-DAQ is supported by Bonsai and the Miniscope-DAQ-QT-Software (deprecated), as detailed in the :doc:`/Software-Guide/index`. To acquire miniscope or MiniCAM data with the Miniscope-DAQ, refer to the :ref:`quickstartguide` and :doc:`/User-Guide/index`. To learn more about the Miniscope-DAQ, refer to the `UCLA Miniscope v4 Wiki <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__. 
+The `Miniscope-DAQ
+<https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__ is the data
+acquisition hardware developed by the UCLA Miniscope team for acquiring
+miniscope data. It connects to the PC through USB 3.0. It supports two digital
+inputs and a sync output, and data acquisition from a single Miniscope v4 or
+MiniCAM. It optionally accepts an external power supply for more power-intensive
+applications. The Miniscope-DAQ is supported by Bonsai and the
+Miniscope-DAQ-QT-Software (deprecated), as detailed in the
+:doc:`/Software-Guide/index`. To acquire miniscope or MiniCAM data with the
+Miniscope-DAQ, refer to the :ref:`quickstartguide` and :doc:`/User-Guide/index`.
+To learn more about the Miniscope-DAQ, refer to the `UCLA Miniscope v4 Wiki
+<https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__. 
 
 Miniscope-DAQ Functionality
 ===========================
@@ -14,13 +25,20 @@ Miniscope-DAQ Functionality
 I/O
 ---
 
+..  note::
+    Older Miniscope DAQs are labelled "Aux Input" and "Input Trigger". These are relabelled in new Miniscope DAQs as "Dig. In 0" and "Dig. In 1" respectively to be consistent with v1.1.4+ versions of the firmware.
+
 The I/O on the Miniscope DAQ operate at a 3.3V logic level and the inputs are 5V tolerant. Miniscope DAQs with the :doc:`latest firmware </Hardware-Guide/miniscope-daq/firmware-update>` from Open Ephys have the following input and output ports:
 
-*   **Input Trigger:** a digital input channel that can be used to log events, gate data acquisition, recording to file, LED on/off state, etc. The functionality is defined by the software configuration. This trigger does not serve as a frame trigger for individual frames and is not recommended for syncing data.
+*   **Digital Inputs:** two digital input channels that can be used to log
+    events, gate data acquisition, recording to file, LED on/off state, toggle
+    the excitation light, etc. The functionality is defined by the bonsai
+    workflow. 
    
-*   **Sync Output:** a digital output channel in which every rising and falling edge indicates a new frame captured by the connected device. This output is recommended for synchronization of multiple hardware with an external acquisition device with a hardware clock.
-
-*   **Aux Input:** an additional digital input channel that can be used to log events, gate data acquisition, recording to file, LED on/off state, etc. The functionality is defined by the software configuration.
+*   **Sync Output:** a digital output channel in which every rising and falling
+    edge indicates a new frame captured by the connected device. This output is
+    recommended for synchronization of multiple hardware with an external
+    acquisition device with a hardware clock.
 
 .. _externalpower:
 

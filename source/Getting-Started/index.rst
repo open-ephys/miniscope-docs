@@ -185,7 +185,7 @@ Testing the Miniscope's Functionality
                             :align: center
                             :height: 400px
 
-Find out how to record image and orientation data, how to perform automatic commutation to avoid the tether from twisting, how to gate data acquisition with a hardware trigger and more in the :doc:`/Software-Guide/index`.
+Find out how to record image and orientation data, how to perform automatic commutation to avoid the tether from twisting, how to gate data acquisition with a hardware trigger, and more in the :doc:`/Software-Guide/index`.
 
 Powering off the system
 -------------------------------------------
