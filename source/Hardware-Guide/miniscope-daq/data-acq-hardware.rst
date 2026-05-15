@@ -112,3 +112,4 @@ If you are struggling with dropped frames, try changing USB ports, USB drivers, 
     :titlesonly:
 
     firmware-update
+    firmware-update-details
