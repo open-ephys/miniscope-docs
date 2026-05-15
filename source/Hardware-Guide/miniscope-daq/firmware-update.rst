@@ -7,10 +7,10 @@ Firmware Update
 Follow these steps to update the firmware on your Miniscope DAQ. 
 
 ..  important:: 
-    These instructions assume the device is currently working normally (listed
-    as ``MINISCOPE`` in Windows Device Manager). If this is not the case, please
-    refer to the :ref:`firmware manual <daq_firmware_details>` for instructions
-    on how to proceed based on the current state of the device.
+    These instructions assume the device is currently working normally (e.g. 
+    listed as ``MINISCOPE`` in Windows Device Manager). If this is not the case 
+    or you would like more in-depth instructions, please refer to the 
+    :ref:`firmware manual <daq_firmware_details>`.
 
 **Required Materials**
 

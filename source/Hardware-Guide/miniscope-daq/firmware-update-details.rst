@@ -11,21 +11,23 @@ Use this guide to upload firmware to your Miniscope DAQ. This should only be nec
   but it is recommended to check for updates every once in a while to make sure
   you are using the latest version.
 - When troubleshooting, if the flash memory (EEPROM) on the DAQ has corrupted
-  and the system no longer recognizes the device as MINISCOPE. In this case,
-  uploading firmware to the device can fix the issue and restore normal
-  operation.
+  and the system no longer recognizes the device as "MINISCOPE" or "UCLA/Open
+  Ephys Miniscope DAQ v3". In this case, uploading firmware to the device can
+  fix the issue and restore normal operation.
 
-Understanding the device’s boot modes helps clarify the firmware upload
+Understanding the device's boot modes helps clarify the firmware upload
 procedure. The Miniscope DAQ has two boot modes:
 
 - Boot from EEPROM, the flash memory that holds the firmware for normal operation
-- Boot from USB controller, which uses the bootloader to upload new firmware to the device
+- Boot from USB controller, which can be used to load the bootloader onto the
+  DAQ's microcontroller which can in-turn upload new firmware to the EEPROM
 
-To upload firmware, you typically have to force the device to enter bootloader
-mode by physically moving jumpers on the PCB inside the DAQ. However, if the
-device malfunctioned and the flash memory is corrupted, the device will boot
-from the USB controller regardless of the jumper position, so the firmware
-upload procedure can sometimes be carried out without opening the device.
+To upload firmware to the EEPROM, you typically have to force the device to
+enter bootloader mode by physically moving jumpers on the PCB inside the DAQ.
+However, if the device malfunctioned and the flash memory is corrupted, the
+device will try to boot from USB regardless of the jumper position. In this
+case, the firmware upload procedure can be carried out without opening the
+device.
 
 When using bootloader mode, the Miniscope DAQ Bootloader drivers (Cypress USB)
 must be installed for Windows to recognize the device. These drivers are not
@@ -35,21 +37,22 @@ be installed separately on each PC used for firmware updates.
 The state of the Miniscope DAQ can be determined by checking the Device Manager,
 and corresponding courses of action are summarized in the following diagram:
 
-.. mermaid::
+..  mermaid::
+    :caption: Click on the icon at the top-right corner of the flow chart to zoom-in
 
-   flowchart
-               A("Firmware upload required")
-               A -->C
-               C{"How is the Miniscope DAQ listed in the Windows Device Manager?"}
-               C -->|"MINISCOPE"| D["`Configure the Hardware
-               for Bootloader Mode`"]
-               D --> C
-               C -->|"Westbridge"| E["Install the Miniscope DAQ Bootloader Driver"]
-               C -->|"Cypress FX3 USB BootLoader Device"| F["Firmware Upload using Cypress Control Center"]
-               E --> C
-               F --> H["_If required_, re-configure the hardware for normal use"]
-               H --> I["Power cycle"]
-               I --> J("Firmware updated. Device ready to use listed as MINISCOPE in Windows Device Manager")
+    flowchart
+                A("Firmware upload required")
+                A -->C
+                C{"How is the Miniscope DAQ listed in the Windows Device Manager?"}
+                C -->|"MINISCOPE"| D["`Configure the Hardware
+                for Bootloader Mode`"]
+                D --> C
+                C -->|"Westbridge"| E["Install the Miniscope DAQ Bootloader Driver"]
+                C -->|"Cypress FX3 USB BootLoader Device"| F["Firmware Upload using Cypress Control Center"]
+                E --> C
+                F --> H["_If required_, re-configure the hardware for normal use"]
+                H --> I["Power cycle"]
+                I --> J("Firmware updated. Device ready to use listed as MINISCOPE in Windows Device Manager")
 
 
 The instructions to perform all operations are detailed below, including physically configuring the hardware and installing the bootloader driver even though they might not always be necessary.
