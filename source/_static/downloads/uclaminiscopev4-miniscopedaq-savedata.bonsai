@@ -3,7 +3,7 @@
                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
                  xmlns:p1="clr-namespace:OpenEphys.Miniscope;assembly=OpenEphys.Miniscope"
                  xmlns:cv="clr-namespace:Bonsai.Vision;assembly=Bonsai.Vision"
-                 xmlns:ffmpeg="clr-namespace:Bonsai.FFmpeg;assembly=Bonsai.FFmpeg"
+                 xmlns:p2="clr-namespace:Bonsai.FFmpeg;assembly=Bonsai.FFmpeg"
                  xmlns:rx="clr-namespace:Bonsai.Reactive;assembly=Bonsai.Core"
                  xmlns:io="clr-namespace:Bonsai.IO;assembly=Bonsai.System"
                  xmlns="https://bonsai-rx.org/2018/workflow">
@@ -16,7 +16,7 @@
           <p1:Focus>0</p1:Focus>
           <p1:SensorGain>Low</p1:SensorGain>
           <p1:FramesPerSecond>Fps30</p1:FramesPerSecond>
-          <p1:LedRespectsTrigger>false</p1:LedRespectsTrigger>
+          <p1:LedRespectsDigitalIn>None</p1:LedRespectsDigitalIn>
         </Combinator>
       </Expression>
       <Expression xsi:type="MemberSelector">
@@ -47,12 +47,12 @@
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
-          <Combinator xsi:type="ffmpeg:VideoWriter">
-            <ffmpeg:FileName>uclaminiscopev4-image_.avi</ffmpeg:FileName>
-            <ffmpeg:Suffix>None</ffmpeg:Suffix>
-            <ffmpeg:Overwrite>false</ffmpeg:Overwrite>
-            <ffmpeg:FrameRate>0</ffmpeg:FrameRate>
-            <ffmpeg:OutputArguments>-c: ffv1 -pix_fmt gray -bits_per_raw_sample 8</ffmpeg:OutputArguments>
+          <Combinator xsi:type="p2:VideoWriter">
+            <p2:FileName>uclaminiscopev4-image_.avi</p2:FileName>
+            <p2:Suffix>None</p2:Suffix>
+            <p2:Overwrite>false</p2:Overwrite>
+            <p2:FrameRate>0</p2:FrameRate>
+            <p2:OutputArguments>-c: ffv1 -pix_fmt gray -bits_per_raw_sample 8</p2:OutputArguments>
           </Combinator>
         </Builder>
       </Expression>
@@ -63,7 +63,7 @@
         <Combinator xsi:type="rx:Timestamp" />
       </Expression>
       <Expression xsi:type="io:CsvWriter">
-        <io:FileName>uclaminiscopev4-quat_.avi</io:FileName>
+        <io:FileName>uclaminiscopev4-quat_.csv</io:FileName>
         <io:Delimiter>,</io:Delimiter>
         <io:Append>false</io:Append>
         <io:Overwrite>false</io:Overwrite>

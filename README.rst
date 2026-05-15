@@ -1,7 +1,7 @@
 *************************************************
 Template for Open Ephys Documentation
 *************************************************
-This repo serves as the template is for Open Ephys documentation sites.
+This repo serves as the template for Open Ephys documentation sites.
 
 The documentation files are written in reStructuredText and saved in the 'source' folder. Sphinx is a documentation generator that converts these .rst files to HTML, so that browsers can display them. This Sphinx 'build' step can be performed locally so that you can preview pages in a browser. Once your local changes are pushed to the :code:`main` branch on GitHub, they will be built automatically and pushed to :code:`open-ephys.github.io/<name-of-site>`
 
@@ -20,13 +20,13 @@ How to use this template
 
 - Any changes to the :code:`main` branch will trigger a remote build, which will create the :code:`gh-pages` branch.
 
-- Once the :code:`gh-pages`` branch exists, navigate to Settings/Pages. Select Source: Deploy from a branch and select the branch gh=pages / root. Save!
+- Once the :code:`gh-pages` branch exists, navigate to Settings/Pages. Select Source: Deploy from a branch and select the branch gh-pages / root. Save!
 
 - Your page should start building; once it's done check that it looks as expected by browsing to the appropriate URL.
 
 What to customize
 ####################################
-Each documentation page is saved as an individual .rst file in the :code:`source`` folder. Docs are written primarily in reStructuredText, and HTML can be used within the .rst file. Images are saved under :code:`_static`. Assuming you are making a new Open Ephys Doc site, besides obviously customizing the content of the pages, you will need to make sure to update:
+Each documentation page is saved as an individual .rst file in the :code:`source` folder. Docs are written primarily in reStructuredText, and HTML can be used within the .rst file. Images are saved under :code:`_static`. Assuming you are making a new Open Ephys Doc site, besides obviously customizing the content of the pages, you will need to make sure to update:
 
 * source/index.rst
    * Insert a new main image
@@ -66,7 +66,7 @@ Each site should include the Open Ephys logo in the navigation bar, with custom 
 Building remotely
 ########################
 
-Pushing to the main branch of the repo triggers GitHub Actions. Gh-actions will generate a virtual environment, build the HTML pages, and then commit and push these to the 'gh-pages' branch, by following the instructions under .github/workflows/sphinx-build. Finally, if under repo settings gh pages is enabled and is set to be deployed from the 'gh-pages' branch, the docs site will be generated at https://username.github.io/reponame. To activate gh pages, go to your repo settings, Pages menu, and under "Build and Deployment", choose gh-pages in the dropdown menu. It should say "Your GitHub Pages sites is currently being built from the gh-pages branch".
+Pushing to the main branch of the repo triggers GitHub Actions. Gh-actions will generate a virtual environment, build the HTML pages, and then commit and push these to the 'gh-pages' branch, by following the instructions under .github/workflows/sphinx-build. Finally, if under repo settings gh pages is enabled and is set to be deployed from the 'gh-pages' branch, the docs site will be generated at https://username.github.io/reponame. To activate gh pages, go to your repo settings, Pages menu, and under "Build and Deployment", choose gh-pages in the dropdown menu. It should say "Your GitHub Pages site is currently being built from the gh-pages branch".
 
 Building locally
 ######################
@@ -117,8 +117,8 @@ Exit the virtualenv with
 Troubleshooting 
 ######################################
 
-No :code:`gh-pages`` branch? 
-If the :code:`gh-pages`` branch is not automatically created, the build will fail and complain that there is no such branch. In that case, make an empty branch as follows: 
+No :code:`gh-pages` branch?
+If the :code:`gh-pages` branch is not automatically created, the build will fail and complain that there is no such branch. In that case, make an empty branch as follows: 
 
 .. code:: empty
 
