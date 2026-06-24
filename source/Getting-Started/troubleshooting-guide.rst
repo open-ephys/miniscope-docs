@@ -3,7 +3,7 @@
 Troubleshooting Guide
 ##########################################
 
-Here is a guide to help you troubleshoot common error scenarios that can occur when using the Miniscope system. It is focused on the UCLA Miniscope v4 with the OE DAQ, and Bonsai running on Windows.
+Here is a guide to help you troubleshoot common error scenarios that can occur when using the Miniscope system. It is focused on the UCLA Miniscope v4 with the Open Ephys Miniscope DAQ.
 
 If issues persist after following this guide, the scenario you encountered is not in this guide, or you believe your Miniscope or DAQ needs repair, please reach out as detailed under :ref:`help`.
 
@@ -11,8 +11,8 @@ General recommendations
 ###################################
 
 - Keep the software and packages updated to the latest version.
-- Keep the firmware updated to the latest version.
-- Keep an eye out for warnings and errors in the software console during operation.
+- Keep the Miniscope DAQ firmware updated to the latest version.
+- Keep an eye out for warnings in the software console during operation.
 
 .. _troubleshooting:
 
@@ -20,14 +20,14 @@ Initial troubleshooting steps
 ###################################
 
 1. Check the hardware USB connection
-******************************************************************
+*************************************************
 
-Always use a USB 3.0-compatible port on your computer using the high-speed USB cable provided. USB 3.0-compatible port are usually indicated by a blue color and are often at the back of PCs. Ensure you establish a reliable USB connection by connecting directly to the port instead of through a hub or extension. USB cables longer than 2 meters are not recommended.
+Always use a USB 3.0-compatible port on your computer using the high-speed USB cable provided. USB 3.0-compatible port are usually indicated by a blue color and are often at the back of PCs. Ensure you establish a reliable USB connection by connecting directly to the port instead of through a hub or extension.
 
-*All three LEDs on the DAQ and the red LED on the miniscope body itself must be continuously on.*
+*All three indicator lights on the DAQ and the red LED on the miniscope body itself must be continuously on.*
 
 2. Check that the DAQ is recognized properly in the Device Manager
-*******************************************************************************
+***************************************************************************
 
 If the Miniscope DAQ is working normally, it should be listed as `UCLA/Open Ephys Miniscope DAQ v3`, under `Cameras`.
 
@@ -37,8 +37,8 @@ If the Miniscope DAQ is working normally, it should be listed as `UCLA/Open Ephy
 
 If not, refer to the :ref:`daq_firmware_details` section of this documentation.
 
-3. Check your coaxial tether and connectors
-*******************************************************************************
+3. Check your cable, coaxial tether and connectors
+******************************************************
 
 Always ensure that the connectors on both the DAQ and the miniscope are fully seated. Inspect the coaxial tether and its connector for any damage, dirt, or signs of wear.
 
@@ -66,20 +66,38 @@ Insufficient power
 
 Depending on your settings and tether length, the USB supply may not provide sufficient power to operate the miniscope reliably.
 
-Horizontal stripes artifacts can occur due to insufficient or unstable power delivery and are typically more pronounced at higher LED intensity settings.
+Horizontal stripes artifacts can occur due to insufficient or unstable power delivery and are typically more pronounced at higher LED intensity settings. You can check that no other devices are drawing significant power from the same USB ports.
 
 .. image:: /_static/images/stripes.gif
     :width: 50%
     :align: center
 
-This issue can usually be resolved by switching to an external power supply. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source.
-
-*Note: If the LED brightness is within the expected operating range, horizontal stripes should not occur even when powered via USB only. In this case, check that no other devices are drawing significant power from the same USB ports.*
-
+This can be resolved by externally adjusting the power supplied to the DAQ. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source, while carefully monitoring the voltage at the miniscope.
 
 EWL focus not functioning
 ###################################
 
+1. Inspect your PCB and EWL connection.
+
+Check whether the flex PCB is bent or damaged near the EWL and verify that the objective module is properly tightened.
+A mechanical impact can cause the PCB to move slightly, preventing proper contact between the EWL and the PCB. Ensure the screws are secure and that the circular contact pads on the PCB are correctly seated within the objective module and making firm contact with the EWL.
+
+
+2. EWL driver component.
+
+The focus issue can be related to the power switch/driver responsible for controlling the EWL. If this component isn't functioning properly, it can cause the focus to stop working, vertical line artifacts, and in some cases, heating of the PCB. 
+This failure is typically caused by a crack or physical damage to the component. Such damage is usually not visible to the naked eye and requires inspection under a microscope.
+
+Inspect the component to look for any cracks or signs of damage. In particular, examining the side view of the component to check for a chipped edge or fine fracture lines particularly around the corners.
+This component is located on the outside of the PCB, on the LED PCB side, circled in red in the image below. It is on the opposite side of the miniscope from the coaxial tether connector.
+
+.. image:: /_static/images/ewldriver.png
+    :width: 50%
+    :align: center
+
+Check if this area of the PCB is generating noticeable heat.
+
+If the component is cracked or damaged, the recommended solution is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement. Alternatively, the component can sometimes be replaced without changing the entire PCB. For more details, you can contact us regarding our repair services.
 
 Radial banding artifact
 ###################################
@@ -94,8 +112,7 @@ The solution for this is to replace the PCB. You can follow our :ref:`disassembl
 Dust particles
 ###################################
 
-
-
+After assembling your miniscope kit, if you see dark marks or dust particles or dirt, refer to the :ref:`hardware-guide/miniscope-v4/miniscope-assembly-guide:troubleshooting assembly` section.
 
 .. _help:
 
