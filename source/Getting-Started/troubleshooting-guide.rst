@@ -3,7 +3,7 @@
 Troubleshooting Guide
 ##########################################
 
-Here is a guide to help you troubleshoot common error scenarios that can occur when using the Miniscope system. It is focused on the UCLA Miniscope v4 with the Open Ephys Miniscope DAQ.
+Here is a guide to help you troubleshoot common error scenarios that can occur when using the Miniscope system. It is focused on the UCLA Miniscope v4 with the Open Ephys Miniscope DAQ, and Bonsai usage in Windows.
 
 If issues persist after following this guide, the scenario you encountered is not in this guide, or you believe your Miniscope or DAQ needs repair, please reach out as detailed under :ref:`help`.
 
@@ -73,6 +73,17 @@ Horizontal stripes artifacts can occur due to insufficient or unstable power del
     :align: center
 
 This can be resolved by externally adjusting the power supplied to the DAQ. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source, while carefully monitoring the voltage at the miniscope.
+
+Wrong Miniscope Index/ID
+###################################
+
+If your miniscope index is set incorrectly, image acquisition will fail and no signal will be received.
+
+.. image:: /_static/images/wrongindex.png
+    :width: 40%
+    :align: center
+
+Make sure the ``UCLAMiniscopeV4 operator``’s ``Index`` property matches the index assigned to your miniscope. Refer to :ref:`getting-started/index:testing the miniscope's functionality` section.
 
 EWL focus not functioning
 ###################################
