@@ -10,9 +10,9 @@ If issues persist after following this guide, the scenario you encountered is no
 General recommendations
 ###################################
 
-- Keep the software and packages updated to the latest version.
+- Keep the software and packages and the Miniscope DAQ firmware updated to the latest version.
 - Keep the Miniscope DAQ firmware updated to the latest version.
-- Keep an eye out for warnings in the software console during operation.
+- Keep an eye out for warnings in the software during operation.
 
 .. _troubleshooting:
 
@@ -110,19 +110,6 @@ Runtime Error messages
 
 3. 
 
-Excess power
-###################################
-
-We always recommend using a variable power supply and closely monitor the voltage delivered to the miniscope to avoid damage. Refer to the :ref:`externalpower` section for details.
-
-Using an incorrect supply (e.g., 9V, 12V, or higher) exceeds the operating limits and is likely to damage the miniscope. In such cases, the miniscope may fail to connect or may not function properly. If this occurs, the PCB may be damaged and require replacement.
-
-The solution for this is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
-
-.. note:: This applies only to DAQs before version 3.4 and miniscopes before version 4.5. From Miniscope DAQ version 3.4 onwards and miniscope version 4.5, the DAQ includes a voltage regulator that limits the voltage delivered to the miniscope, and the miniscope includes voltage detection circuitry compatible with newer DAQ versions, so this issue should not occur.
-
-The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
-
 EWL focus not functioning
 ###################################
 
@@ -157,6 +144,19 @@ Radial banding artifacts indicate a defect on the PCB. This issue is commonly ca
     :align: center
 
 The solution for this is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
+
+Excess power
+###################################
+
+We always recommend using a variable power supply and closely monitor the voltage delivered to the miniscope to avoid damage. Refer to the :ref:`externalpower` section for details.
+
+Using an incorrect supply (e.g., 9V, 12V, or higher) exceeds the operating limits and is likely to damage the miniscope. In such cases, the miniscope may fail to connect or may not function properly. If this occurs, the PCB may be damaged and require replacement.
+
+The solution for this is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
+
+.. note:: This applies only to DAQs before version 3.4 and miniscopes before version 4.5. From Miniscope DAQ version 3.4 onwards and miniscope version 4.5, the DAQ includes a voltage regulator that limits the voltage delivered to the miniscope, and the miniscope includes voltage detection circuitry compatible with newer DAQ versions, so this issue should not occur.
+
+The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
 
 Dust particles
 ###################################
