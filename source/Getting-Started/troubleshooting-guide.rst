@@ -5,7 +5,7 @@ Troubleshooting Guide
 
 Here is a guide to help you troubleshoot common error scenarios that can occur when using the Miniscope system. It is focused on the UCLA Miniscope v4 with the Open Ephys Miniscope DAQ, and Bonsai usage in Windows.
 
-If issues persist after following this guide, the scenario you encountered is not in this guide, or you believe your Miniscope or DAQ needs repair, please reach out as detailed under :ref:`help`.
+If issues persist after following this guide, the scenario you encountered is not in this guide, or you believe your Miniscope and/or DAQ needs repair, please reach out as detailed under :ref:`help`.
 
 General recommendations
 ###################################
@@ -42,21 +42,29 @@ If not, refer to the :ref:`daq_firmware_details` section of this documentation.
 
 Always ensure that the connectors on both the DAQ and the miniscope are fully seated. Inspect the coaxial tether and its connector for any damage, dirt, or signs of wear.
 
+4. Review order of operations
+********************************************
+After disconnecting all components and closing the software, reconnect the system in the following order: first, plug the coaxial tether into the miniscope. Then connect the miniscope to the DAQ. Next, connect the DAQ to your computer.
+Only once all three DAQ LEDs and the red LED on the miniscope are on should you open the software.
+
+Refer to :ref:`getting-started/index:connecting the hardware` for additional details.
 
 Connection problems
 ###################################
 
-Connection errors occur when the DAQ detects a powered device but is unable to receive continuous signal from it. This typically indicates a communication problem between the miniscope and the DAQ, or the DAQ.
+Connection errors occur when the DAQ detects a powered device but is unable to receive continuous signal from it. Problems like dropped frames, inconsistent frame rate and stripes artifacts indicate that there is a connection issue. 
 
-Problems like dropped frames, inconsistent frame rate and banding artifacts indicate that there is a connection issue.
+This typically indicates a communication problem between the miniscope and the DAQ.
 
-.. image:: /_static/images/banding2.png
-    :width: 50%
+.. image:: /_static/images/stripes.png
+    :width: 40%
     :align: center
+
+These stripes appear when there is a mismatch between frames coming to the DAQ.
 
 These issues are commonly caused by connectors that are not fully seated, a damaged coaxial tether, or an unstable USB connection.
 
-To resolve this, disconnect and reconnect the miniscope, restart the software and ensure the DAQ USB connection is reconnected.
+To resolve this, disconnect and reconnect the miniscope, restart the software and ensure the DAQ USB connection is also reconnected.
 
 Follow the :ref:`troubleshooting` above to identify and resolve the source of the connection issue.
 
@@ -64,15 +72,15 @@ Follow the :ref:`troubleshooting` above to identify and resolve the source of th
 Insufficient power
 ###################################
 
-Depending on your settings and tether length, the USB supply may not provide sufficient power to operate the miniscope reliably.
+Using the DAQ via USB can only supply 5V. Depending on your setup and settings such as cable length, type of cable, commutation and LED Brightness, the USB supply may not provide sufficient power to operate the miniscope reliably.
 
-Horizontal stripes artifacts can occur due to insufficient or unstable power delivery and are typically more pronounced at higher LED intensity settings. You can check that no other devices are drawing significant power from the same USB ports.
+Horizontal banding artifacts can occur due to insufficient or unstable power delivery and are typically more pronounced at higher LED intensity settings. You can check that no other devices are drawing significant power from the same USB ports.
 
-.. image:: /_static/images/stripes.gif
-    :width: 50%
+.. image:: /_static/images/banding.gif
+    :width: 40%
     :align: center
 
-This can be resolved by externally adjusting the power supplied to the DAQ. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source, while carefully monitoring the voltage at the miniscope.
+This can be resolved by externally powering the DAQ. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source, while carefully monitoring the voltage at the miniscope.
 
 Wrong Miniscope Index/ID
 ###################################
@@ -80,10 +88,40 @@ Wrong Miniscope Index/ID
 If your miniscope index is set incorrectly, image acquisition will fail and no signal will be received.
 
 .. image:: /_static/images/wrongindex.png
-    :width: 40%
+    :width: 30%
     :align: center
 
 Make sure the ``UCLAMiniscopeV4 operator``’s ``Index`` property matches the index assigned to your miniscope. Refer to :ref:`getting-started/index:testing the miniscope's functionality` section.
+
+Runtime Error messages
+###################################
+
+1. Error acquiring frames
+
+.. image:: /_static/images/erroracquiringframes.png
+    :width: 30%
+    :align: center
+
+2. Frame timeout
+
+.. image:: /_static/images/frametimeout.png
+    :width: 30%
+    :align: center
+
+3. 
+
+Excess power
+###################################
+
+We always recommend using a variable power supply and closely monitor the voltage delivered to the miniscope to avoid damage. Refer to the :ref:`externalpower` section for details.
+
+Using an incorrect supply (e.g., 9V, 12V, or higher) exceeds the operating limits and is likely to damage the miniscope. In such cases, the miniscope may fail to connect or may not function properly. If this occurs, the PCB may be damaged and require replacement.
+
+The solution for this is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
+
+.. note:: This applies only to DAQs before version 3.4 and miniscopes before version 4.5. From Miniscope DAQ version 3.4 onwards and miniscope version 4.5, the DAQ includes a voltage regulator that limits the voltage delivered to the miniscope, and the miniscope includes voltage detection circuitry compatible with newer DAQ versions, so this issue should not occur.
+
+The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
 
 EWL focus not functioning
 ###################################
@@ -91,7 +129,7 @@ EWL focus not functioning
 1. Inspect your PCB and EWL connection.
 
 Check whether the flex PCB is bent or damaged near the EWL and verify that the objective module is properly tightened.
-A mechanical impact can cause the PCB to move slightly, preventing proper contact between the EWL and the PCB. Ensure the screws are secure and that the circular contact pads on the PCB are correctly seated within the objective module and making firm contact with the EWL.
+An impact to the miniscope can cause the PCB to move slightly, preventing proper contact between the EWL and the PCB. Ensure the screws are secure and that the circular contact pads on the PCB are correctly seated within the objective module and making firm contact with the EWL.
 
 
 2. EWL driver component.
@@ -99,14 +137,14 @@ A mechanical impact can cause the PCB to move slightly, preventing proper contac
 The focus issue can be related to the power switch/driver responsible for controlling the EWL. If this component isn't functioning properly, it can cause the focus to stop working, vertical line artifacts, and in some cases, heating of the PCB. 
 This failure is typically caused by a crack or physical damage to the component. Such damage is usually not visible to the naked eye and requires inspection under a microscope.
 
-Inspect the component to look for any cracks or signs of damage. In particular, examining the side view of the component to check for a chipped edge or fine fracture lines particularly around the corners.
+Inspect the component to look for any cracks or signs of damage, particularly around the corners to check for a chipped edge or fine fracture lines.
 This component is located on the outside of the PCB, on the LED PCB side, circled in red in the image below. It is on the opposite side of the miniscope from the coaxial tether connector.
 
 .. image:: /_static/images/ewldriver.png
     :width: 50%
     :align: center
 
-Check if this area of the PCB is generating noticeable heat.
+Also check if this area of the PCB is generating noticeable heat.
 
 If the component is cracked or damaged, the recommended solution is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement. Alternatively, the component can sometimes be replaced without changing the entire PCB. For more details, you can contact us regarding our repair services.
 
@@ -123,7 +161,7 @@ The solution for this is to replace the PCB. You can follow our :ref:`disassembl
 Dust particles
 ###################################
 
-After assembling your miniscope kit, if you see dark marks or dust particles or dirt, refer to the :ref:`hardware-guide/miniscope-v4/miniscope-assembly-guide:troubleshooting assembly` section.
+After assembling your miniscope kit, if you see dark marks or dust particles or dirt on your miniscope image, refer to the :ref:`hardware-guide/miniscope-v4/miniscope-assembly-guide:troubleshooting assembly` section.
 
 .. _help:
 
