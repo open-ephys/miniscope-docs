@@ -10,7 +10,7 @@ If issues persist after following this guide, the scenario you encountered is no
 General recommendations
 ###################################
 
-- Keep the software and packages and the Miniscope DAQ firmware updated to the latest version.
+- Keep the software and packages updated to the latest version.
 - Keep the Miniscope DAQ firmware updated to the latest version.
 - Keep an eye out for warnings in the software during operation.
 
@@ -40,12 +40,12 @@ If not, refer to the :ref:`daq_firmware_details` section of this documentation.
 3. Check your cable, coaxial tether and connectors
 ******************************************************
 
-Always ensure that the connectors on both the DAQ and the miniscope are fully seated. Inspect the coaxial tether and its connector for any damage, dirt, or signs of wear.
+Always ensure that all connectors on the DAQ, miniscope and commutator (if using one) are fully seated. Inspect the USB cable, the coaxial tether and its connector, and the miniscope connector for any signs of damage, debris or wear.
 
 4. Review order of operations
 ********************************************
 After disconnecting all components and closing the software, reconnect the system in the following order: first, plug the coaxial tether into the miniscope. Then connect the miniscope to the DAQ. Next, connect the DAQ to your computer.
-Only once all three DAQ LEDs and the red LED on the miniscope are on should you open the software.
+Only once all three light on the DAQ and the red LED on the miniscope are on should you open the software.
 
 Refer to :ref:`getting-started/index:connecting the hardware` for additional details.
 
@@ -152,9 +152,9 @@ We always recommend using a variable power supply and closely monitor the voltag
 
 Using an incorrect supply (e.g., 9V, 12V, or higher) exceeds the operating limits and is likely to damage the miniscope. In such cases, the miniscope may fail to connect or may not function properly. If this occurs, the PCB may be damaged and require replacement.
 
-The solution for this is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
+You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
 
-.. note:: This applies only to DAQs before version 3.4 and miniscopes before version 4.5. From Miniscope DAQ version 3.4 onwards and miniscope version 4.5, the DAQ includes a voltage regulator that limits the voltage delivered to the miniscope, and the miniscope includes voltage detection circuitry compatible with newer DAQ versions, so this issue should not occur.
+.. note:: This applies only to DAQs before version 3.4 being used with miniscopes before version 4.5. From Miniscope DAQ version 3.4 onwards and miniscope version 4.5, the DAQ includes a voltage regulator that limits the voltage delivered to the miniscope, and the miniscope includes voltage detection circuitry compatible with this DAQ, so this issue should not occur.
 
 The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
 
