@@ -154,7 +154,7 @@ Using an incorrect supply (e.g., 9V, 12V, or higher) exceeds the operating limit
 
 You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
 
-.. note:: This applies only to DAQs before version 3.4 being used with miniscopes before version 4.5. From Miniscope DAQ version 3.4 onwards and miniscope version 4.5, the DAQ includes a voltage regulator that limits the voltage delivered to the miniscope, and the miniscope includes voltage detection circuitry compatible with this DAQ, so this issue should not occur.
+.. note:: This applies only to DAQs before version 3.4 being used with miniscopes before version 4.5. From Miniscope DAQ version 3.4 with miniscope version 4.5 onwards, the DAQ includes a voltage regulator that limits the voltage delivered to the miniscope, and the miniscope includes voltage detection circuitry compatible with this DAQ, so this issue should not occur.
 
 The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
 
