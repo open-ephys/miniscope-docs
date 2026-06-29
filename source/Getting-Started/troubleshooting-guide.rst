@@ -56,7 +56,7 @@ Connection errors occur when the DAQ detects a powered device but is unable to r
 
 This typically indicates a communication problem between the miniscope and the DAQ.
 
-.. image:: /_static/images/stripes.png
+.. image:: /_static/images/badconnection.gif
     :width: 40%
     :align: center
 
