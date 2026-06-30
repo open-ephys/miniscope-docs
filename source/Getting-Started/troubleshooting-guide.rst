@@ -26,7 +26,24 @@ Always use a USB 3.0-compatible port on your computer using the high-speed USB c
 
 *All three indicator lights on the DAQ and the red LED on the miniscope body itself must be continuously on.*
 
-2. Check that the DAQ is recognized properly in the Device Manager
+2. Check that the DAQ is recognized properly by the Operating System
+***************************************************************************
+
+After making sure to follow step 1., the Miniscope DAQ should be recognized by the Operating System. Go to :code:`Start Menu > Settings > Devices > Bluetooth & other devices` and check that the DAQ is listed as *Connected to USB3.0*, with no additional warnings.
+
+..  image:: /_static/images/connectedtousb.png
+    :width: 60%
+    :align: center
+
+If not, refer to :ref:`getting-started/index:connecting the hardware` for additional details.
+
+
+USB Configuration
+***********************
+The Miniscope DAQ works via USB, and the PC's power management both in laptops and desktops can interfere with USB communication. This can be experienced as a sudden interruption during an otherwise stable period acquisition that can be traced back to USB communication errors and not a hardware disconnection.
+Always ensure that the USB settings are configured to avoid suspension.
+
+3. Check that the DAQ is recognized properly in the Device Manager
 ***************************************************************************
 
 If the Miniscope DAQ is working normally, it should be listed as `UCLA/Open Ephys Miniscope DAQ v3`, under `Cameras`.
@@ -37,19 +54,19 @@ If the Miniscope DAQ is working normally, it should be listed as `UCLA/Open Ephy
 
 If not, refer to the :ref:`daq_firmware_details` section of this documentation.
 
-3. Check your cable, coaxial tether and connectors
+4. Check your cable, coaxial tether and connectors
 ******************************************************
 
 Always ensure that all connectors on the DAQ, miniscope and commutator (if using one) are fully seated. Inspect the USB cable, the coaxial tether and its connector, and the miniscope connector for any signs of damage, debris or wear.
 
-4. Review order of operations
+5. Review order of operations
 ********************************************
 After disconnecting all components and closing the software, reconnect the system in the following order: first, plug the coaxial tether into the miniscope. Then connect the miniscope to the DAQ. Next, connect the DAQ to your computer.
 Only once all three light on the DAQ and the red LED on the miniscope are on should you open the software.
 
 Refer to :ref:`getting-started/index:connecting the hardware` for additional details.
 
-Connection problems
+Horizontal stripes
 ###################################
 
 Connection errors occur when the DAQ detects a powered device but is unable to receive continuous signal from it. Problems like dropped frames, inconsistent frame rate and stripes artifacts indicate that there is a connection issue. 
@@ -60,16 +77,13 @@ This typically indicates a communication problem between the miniscope and the D
     :width: 40%
     :align: center
 
-These stripes appear when there is a mismatch between frames coming to the DAQ.
-
-These issues are commonly caused by connectors that are not fully seated, a damaged coaxial tether, or an unstable USB connection.
+Horizontal stripes appear when there is a mismatch between frames coming to the DAQ. These issues are commonly caused by connectors that are not fully seated, a damaged coaxial tether, or an unstable USB connection.
 
 To resolve this, disconnect and reconnect the miniscope, restart the software and ensure the DAQ USB connection is also reconnected.
 
 Follow the :ref:`troubleshooting` above to identify and resolve the source of the connection issue.
 
-
-Insufficient power
+Horizontal banding artifacts
 ###################################
 
 Using the DAQ via USB can only supply 5V. Depending on your setup and settings such as cable length, type of cable, commutation and LED Brightness, the USB supply may not provide sufficient power to operate the miniscope reliably.
@@ -82,7 +96,7 @@ Horizontal banding artifacts can occur due to insufficient or unstable power del
 
 This can be resolved by externally powering the DAQ. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source, while carefully monitoring the voltage at the miniscope.
 
-Wrong Miniscope Index/ID
+No image signal
 ###################################
 
 If your miniscope index is set incorrectly, image acquisition will fail and no signal will be received.
@@ -96,19 +110,23 @@ Make sure the ``UCLAMiniscopeV4 operator``’s ``Index`` property matches the in
 Runtime Error messages
 ###################################
 
-1. Error acquiring frames
+1. Stopped receiving frames
 
-.. image:: /_static/images/erroracquiringframes.png
+.. .. image:: /_static/images/frametimeout.png
     :width: 30%
     :align: center
 
-2. Frame timeout
+This error points to a connection issue, indicating that the communication with the miniscope has been lost, most commonly due to a disconnected or loose USB or coaxial tether connection. Follow the :ref:`troubleshooting` above to identify and resolve the source of the connection issue.
 
-.. image:: /_static/images/frametimeout.png
+2. Invalid quaternion value
+
+This error points to a connection issue, indicating that the communication with the miniscope has been lost, most commonly due to a disconnected or loose USB or coaxial tether connection. Follow the :ref:`troubleshooting` above to identify and resolve the source of the connection issue.
+
+.. 3. Error acquiring frames
+
+.. .. image:: /_static/images/erroracquiringframes.png
     :width: 30%
     :align: center
-
-3. 
 
 EWL focus not functioning
 ###################################
@@ -135,9 +153,9 @@ Also check if this area of the PCB is generating noticeable heat.
 
 If the component is cracked or damaged, the recommended solution is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement. Alternatively, the component can sometimes be replaced without changing the entire PCB. For more details, you can contact us regarding our repair services.
 
-Radial banding artifact
+Radial pixelation artifacts
 ###################################
-Radial banding artifacts indicate a defect on the PCB. This issue is commonly caused by damage to the flexPCB between the image sensor and the serializer, which leads to corrupted or missing bits in the pixel data stream.
+Radial pixelated artifacts indicate a defect on the PCB. This issue is commonly caused by damage to the flexPCB between the image sensor and the serializer, which leads to corrupted or missing bits in the pixel data stream.
 
 .. image:: /_static/images/radialbanding.png
     :width: 100%
@@ -154,14 +172,7 @@ Using an incorrect supply (e.g., 9V, 12V, or higher) exceeds the operating limit
 
 You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
 
-.. note:: This applies only to DAQs before version 3.4 being used with miniscopes before version 4.5. From Miniscope DAQ version 3.4 with miniscope version 4.5 onwards, the DAQ includes a voltage regulator that limits the voltage delivered to the miniscope, and the miniscope includes voltage detection circuitry compatible with this DAQ, so this issue should not occur.
-
 The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
-
-Dust particles
-###################################
-
-After assembling your miniscope kit, if you see dark marks or dust particles or dirt on your miniscope image, refer to the :ref:`hardware-guide/miniscope-v4/miniscope-assembly-guide:troubleshooting assembly` section.
 
 .. _help:
 
