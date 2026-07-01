@@ -130,17 +130,16 @@ EWL focus not functioning
 
 1. Inspect your PCB and EWL connection
 
-Check whether the flex PCB is bent or damaged near the EWL and verify that the objective module is properly tightened.
-An impact to the miniscope can cause the PCB to move slightly, preventing proper contact between the EWL and the PCB. Ensure the screws are secure and that the circular contact pads on the PCB are correctly seated within the objective module and making firm contact with the EWL.
+   Check whether the flex PCB is bent or damaged near the EWL and verify that the objective module is properly tightened.
+   An impact to the miniscope can cause the PCB to move slightly, preventing proper contact between the EWL and the PCB. Ensure the screws are secure and that the circular contact pads on the PCB are correctly seated within the objective module and making firm contact with the EWL.
 
+2. EWL driver
 
-1. EWL driver
-
-The focus issue can be related to the power switch/driver responsible for controlling the EWL. If this component isn't functioning properly, it can cause the focus to stop working, produce vertical line artifacts, and in some cases heat the PCB.
-This failure is typically caused by a crack or physical damage to the component.
-
-Such damage is usually not visible to the naked eye and requires inspection under a microscope. Inspect the component to look for any cracks or signs of damage, particularly around the corners to check for a chipped edge or fine fracture lines.
-This component is located on the outside of the PCB, on the LED PCB side, circled in red in the image below. It is on the opposite side of the miniscope from the coaxial tether connector. Also check if this area of the PCB is generating noticeable heat.
+   The focus issue can be related to the power switch/driver responsible for controlling the EWL. If this component isn't functioning properly, it can cause the focus to stop working, produce vertical line artifacts, and in some cases heat the PCB.
+   This failure is typically caused by a crack or physical damage to the component.
+   
+   Such damage is usually not visible to the naked eye and requires inspection under a microscope. Inspect the component to look for any cracks or signs of damage, particularly around the corners to check for a chipped edge or fine fracture lines.
+   This component is located on the outside of the PCB, on the LED PCB side, circled in red in the image below. It is on the opposite side of the miniscope from the coaxial tether connector. Also check if this area of the PCB is generating noticeable heat.
 
 .. image:: /_static/images/ewldriver.png
     :width: 50%
