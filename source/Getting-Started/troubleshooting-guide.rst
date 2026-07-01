@@ -22,7 +22,7 @@ Initial troubleshooting steps
 1. Check the hardware USB connection
 *************************************************
 
-Always use a USB 3.0-compatible port on your computer using the high-speed USB cable provided. USB 3.0-compatible port are usually indicated by a blue color and are often at the back of PCs. Ensure you establish a reliable USB connection by connecting directly to the port instead of through a hub or extension.
+Always use a USB 3.0-compatible port on your computer with the high-speed USB cable provided. USB 3.0-compatible ports are usually indicated by a blue color and are often at the back of PCs. Ensure you establish a reliable USB connection by connecting directly to the port instead of through a hub or extension.
 
 *All three indicator lights on the DAQ and the red LED on the miniscope body itself must be continuously on.*
 
@@ -40,7 +40,7 @@ If not, refer to the :ref:`daq_firmware_details` section of this documentation.
 3. Check that the DAQ is recognized properly by the Operating System
 ***************************************************************************
 
-After making sure to follow step 1., the DAQ and Miniscope should be recognized by the Operating System. Go to :code:`Start Menu > Settings > Devices > Bluetooth & other devices` and check that the DAQ and Miniscope are listed as *Connected to USB3.0*, with no additional warnings.
+After following step 1, the DAQ and Miniscope should be recognized by the Operating System. Go to :code:`Start Menu > Settings > Devices > Bluetooth & other devices` and check that the DAQ and Miniscope are listed as *Connected to USB3.0*, with no additional warnings.
 
 ..  image:: /_static/images/connectedtousb.png
     :width: 60%
@@ -51,7 +51,7 @@ If not, refer to :ref:`getting-started/index:connecting the hardware` for additi
 
 USB Configuration
 ***********************
-The Miniscope DAQ works via USB, and the PC's power management both in laptops and desktops can interfere with USB communication. This can be experienced as a sudden interruption during an otherwise stable period acquisition that can be traced back to USB communication errors and not a hardware disconnection.
+The Miniscope DAQ works via USB, and the PC's power management, on both laptops and desktops, can interfere with USB communication. This can be experienced as a sudden interruption during an otherwise stable period of acquisition that can be traced back to USB communication errors and not a hardware disconnection.
 Always ensure that the USB settings are configured to avoid suspension.
 
 On Windows desktops, go to :code:`Control Panel > Hardware and Sound > Power Options > Edit Plan Settings`, and into the Advanced Power Settings. 
@@ -79,15 +79,15 @@ Always ensure that all connectors on the DAQ, miniscope and commutator (if using
 
 5. Review order of operations
 ********************************************
-After disconnecting all components and closing the software, reconnect the system in the following order: first, plug the coaxial tether into the miniscope. Then connect the miniscope to the DAQ. Next, connect the DAQ to your computer.
-Only once all three light on the DAQ and the red LED on the miniscope are on should you open the software.
+After disconnecting all components and closing the software, reconnect the system in the following order: first, plug the coaxial tether into the miniscope. Next, connect the miniscope to the DAQ. Finally, connect the DAQ to your computer.
+Only once all three lights on the DAQ and the red LED on the miniscope are on should you open the software.
 
 Refer to :ref:`getting-started/index:connecting the hardware` for additional details.
 
 Horizontal stripes
 ###################################
 
-Connection errors occur when the DAQ detects a powered device but is unable to receive continuous signal from it. Problems like dropped frames, inconsistent frame rate and stripes artifacts indicate that there is a connection issue. 
+Connection errors occur when the DAQ detects a powered device but is unable to receive a continuous signal from it. Problems like dropped frames, inconsistent frame rate and stripe artifacts indicate that there is a connection issue.
 
 This typically indicates a communication problem between the miniscope and the DAQ.
 
@@ -104,7 +104,7 @@ Follow the :ref:`troubleshooting` above to identify and resolve the source of th
 Horizontal banding artifacts
 ###################################
 
-Using the DAQ via USB can only supply 5V. Depending on your setup and settings such as cable length, type of cable, commutation and LED Brightness, the USB supply may not provide sufficient power to operate the miniscope reliably.
+When powered via USB, the DAQ can only supply 5V. Depending on your setup and settings such as cable length, type of cable, commutation and LED brightness, the USB supply may not provide sufficient power to operate the miniscope reliably.
 
 Horizontal banding artifacts can occur due to insufficient or unstable power delivery and are typically more pronounced at higher LED intensity settings. You can check that no other devices are drawing significant power from the same USB ports.
 
@@ -136,7 +136,7 @@ An impact to the miniscope can cause the PCB to move slightly, preventing proper
 
 1. EWL driver
 
-The focus issue can be related to the power switch/driver responsible for controlling the EWL. If this component isn't functioning properly, it can cause the focus to stop working, vertical line artifacts, and in some cases, heating of the PCB. 
+The focus issue can be related to the power switch/driver responsible for controlling the EWL. If this component isn't functioning properly, it can cause the focus to stop working, produce vertical line artifacts, and in some cases heat the PCB.
 This failure is typically caused by a crack or physical damage to the component.
 
 Such damage is usually not visible to the naked eye and requires inspection under a microscope. Inspect the component to look for any cracks or signs of damage, particularly around the corners to check for a chipped edge or fine fracture lines.
@@ -146,11 +146,11 @@ This component is located on the outside of the PCB, on the LED PCB side, circle
     :width: 50%
     :align: center
 
-If the component is cracked or damaged, the recommended solution is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement. Alternatively, the component can sometimes be replaced without changing the entire PCB. For more details, you can contact us regarding our repair services.
+If the component is cracked or damaged, the recommended solution is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement. Alternatively, the component can sometimes be replaced without changing the entire PCB. For more details, contact us about our repair services.
 
 Radial pixelation artifacts
 ###################################
-Radial pixelated artifacts indicate a defect on the PCB. This issue is commonly caused by damage to the flexPCB between the image sensor and the serializer, which leads to corrupted or missing bits in the pixel data stream.
+Radial pixelation artifacts indicate a defect on the PCB. This issue is commonly caused by damage to the flexPCB between the image sensor and the serializer, which leads to corrupted or missing bits in the pixel data stream.
 
 .. image:: /_static/images/radialbanding.png
     :width: 100%
@@ -161,9 +161,9 @@ The solution for this is to replace the PCB. You can follow our :ref:`disassembl
 Excess power
 ###################################
 
-We always recommend using a variable power supply and closely monitor the voltage delivered to the miniscope to avoid damage. Refer to the :ref:`externalpower` section for details.
+We always recommend using a variable power supply and closely monitoring the voltage delivered to the miniscope to avoid damage. Refer to the :ref:`externalpower` section for details.
 
-Using an incorrect supply (e.g., 9V, 12V, or higher) exceeds the operating limits and is likely to damage the miniscope. In such cases, the miniscope may fail to connect or may not function properly. If this occurs, the PCB may be damaged and require replacement.
+Using an incorrect supply (e.g. 9V, 12V, or higher) exceeds the operating limits and is likely to damage the miniscope. In such cases, the miniscope may fail to connect or may not function properly. If this occurs, the PCB may be damaged and require replacement.
 
 You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
 
