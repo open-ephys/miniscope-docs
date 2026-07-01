@@ -10,7 +10,7 @@ If issues persist after following this guide, the scenario you encountered is no
 General recommendations
 ###################################
 
-- Keep the software and packages updated to the latest version.
+- Keep Bonsai and package updated to the latest version.
 - Keep the Miniscope DAQ firmware updated to the latest version.
 - Keep an eye out for warnings in the software during operation.
 
@@ -26,10 +26,21 @@ Always use a USB 3.0-compatible port on your computer using the high-speed USB c
 
 *All three indicator lights on the DAQ and the red LED on the miniscope body itself must be continuously on.*
 
-2. Check that the DAQ is recognized properly by the Operating System
+2. Check that the DAQ is recognized properly in the Device Manager
 ***************************************************************************
 
-After making sure to follow step 1., the Miniscope DAQ should be recognized by the Operating System. Go to :code:`Start Menu > Settings > Devices > Bluetooth & other devices` and check that the DAQ is listed as *Connected to USB3.0*, with no additional warnings.
+If the Miniscope DAQ is working normally, it should be listed as `UCLA/Open Ephys Miniscope DAQ v3`, under `Cameras`.
+
+..  image:: /_static/images/firmware/driver-update-1a-listed-miniscope.png
+    :width: 60%
+    :align: center
+
+If not, refer to the :ref:`daq_firmware_details` section of this documentation.
+
+3. Check that the DAQ is recognized properly by the Operating System
+***************************************************************************
+
+After making sure to follow step 1., the DAQ and Miniscope should be recognized by the Operating System. Go to :code:`Start Menu > Settings > Devices > Bluetooth & other devices` and check that the DAQ and Miniscope are listed as *Connected to USB3.0*, with no additional warnings.
 
 ..  image:: /_static/images/connectedtousb.png
     :width: 60%
@@ -43,16 +54,6 @@ USB Configuration
 The Miniscope DAQ works via USB, and the PC's power management both in laptops and desktops can interfere with USB communication. This can be experienced as a sudden interruption during an otherwise stable period acquisition that can be traced back to USB communication errors and not a hardware disconnection.
 Always ensure that the USB settings are configured to avoid suspension.
 
-3. Check that the DAQ is recognized properly in the Device Manager
-***************************************************************************
-
-If the Miniscope DAQ is working normally, it should be listed as `UCLA/Open Ephys Miniscope DAQ v3`, under `Cameras`.
-
-..  image:: /_static/images/firmware/driver-update-1a-listed-miniscope.png
-    :width: 60%
-    :align: center
-
-If not, refer to the :ref:`daq_firmware_details` section of this documentation.
 
 4. Check your cable, coaxial tether and connectors
 ******************************************************
@@ -96,60 +97,37 @@ Horizontal banding artifacts can occur due to insufficient or unstable power del
 
 This can be resolved by externally powering the DAQ. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source, while carefully monitoring the voltage at the miniscope.
 
-No image signal
+Error messages
 ###################################
 
-If your miniscope index is set incorrectly, image acquisition will fail and no signal will be received.
+This table can help you understand and troubleshoot Bonsai error messages.
 
-.. image:: /_static/images/wrongindex.png
-    :width: 30%
-    :align: center
-
-Make sure the ``UCLAMiniscopeV4 operator``’s ``Index`` property matches the index assigned to your miniscope. Refer to :ref:`getting-started/index:testing the miniscope's functionality` section.
-
-Runtime Error messages
-###################################
-
-1. Stopped receiving frames
-
-.. .. image:: /_static/images/frametimeout.png
-    :width: 30%
-    :align: center
-
-This error points to a connection issue, indicating that the communication with the miniscope has been lost, most commonly due to a disconnected or loose USB or coaxial tether connection. Follow the :ref:`troubleshooting` above to identify and resolve the source of the connection issue.
-
-2. Invalid quaternion value
-
-This error points to a connection issue, indicating that the communication with the miniscope has been lost, most commonly due to a disconnected or loose USB or coaxial tether connection. Follow the :ref:`troubleshooting` above to identify and resolve the source of the connection issue.
-
-.. 3. Error acquiring frames
-
-.. .. image:: /_static/images/erroracquiringframes.png
-    :width: 30%
-    :align: center
+.. csv-table:: 
+   :file: /_static/images/errormessages.csv
+   :widths: 12, 20, 16
+   :header-rows: 1
+   :stub-columns: 1
 
 EWL focus not functioning
 ###################################
 
-1. Inspect your PCB and EWL connection.
+1. Inspect your PCB and EWL connection
 
 Check whether the flex PCB is bent or damaged near the EWL and verify that the objective module is properly tightened.
 An impact to the miniscope can cause the PCB to move slightly, preventing proper contact between the EWL and the PCB. Ensure the screws are secure and that the circular contact pads on the PCB are correctly seated within the objective module and making firm contact with the EWL.
 
 
-2. EWL driver component.
+1. EWL driver
 
 The focus issue can be related to the power switch/driver responsible for controlling the EWL. If this component isn't functioning properly, it can cause the focus to stop working, vertical line artifacts, and in some cases, heating of the PCB. 
-This failure is typically caused by a crack or physical damage to the component. Such damage is usually not visible to the naked eye and requires inspection under a microscope.
+This failure is typically caused by a crack or physical damage to the component.
 
-Inspect the component to look for any cracks or signs of damage, particularly around the corners to check for a chipped edge or fine fracture lines.
-This component is located on the outside of the PCB, on the LED PCB side, circled in red in the image below. It is on the opposite side of the miniscope from the coaxial tether connector.
+Such damage is usually not visible to the naked eye and requires inspection under a microscope. Inspect the component to look for any cracks or signs of damage, particularly around the corners to check for a chipped edge or fine fracture lines.
+This component is located on the outside of the PCB, on the LED PCB side, circled in red in the image below. It is on the opposite side of the miniscope from the coaxial tether connector. Also check if this area of the PCB is generating noticeable heat.
 
 .. image:: /_static/images/ewldriver.png
     :width: 50%
     :align: center
-
-Also check if this area of the PCB is generating noticeable heat.
 
 If the component is cracked or damaged, the recommended solution is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement. Alternatively, the component can sometimes be replaced without changing the entire PCB. For more details, you can contact us regarding our repair services.
 
