@@ -54,6 +54,23 @@ USB Configuration
 The Miniscope DAQ works via USB, and the PC's power management both in laptops and desktops can interfere with USB communication. This can be experienced as a sudden interruption during an otherwise stable period acquisition that can be traced back to USB communication errors and not a hardware disconnection.
 Always ensure that the USB settings are configured to avoid suspension.
 
+On Windows desktops, go to :code:`Control Panel > Hardware and Sound > Power Options > Edit Plan Settings`, and into the Advanced Power Settings. 
+
+.. image:: /_static/images/power-settings.png
+    :width: 80%
+    :align: center
+
+Change the settings for the power plan that you are using to ensure that the USB selective suspend setting is Disabled.
+
+.. image:: /_static/images/power-advanced-settings.png
+    :width: 40%
+    :align: center
+
+On Windows laptops, a similar option to disable the USB battery saver is available under :code:`Settings > Bluetooth & Devices > USB`
+
+.. image:: /_static/images/usb-settings-laptop.png
+    :width: 70%
+    :align: center
 
 4. Check your cable, coaxial tether and connectors
 ******************************************************
