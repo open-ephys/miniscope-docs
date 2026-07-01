@@ -149,7 +149,7 @@ If the component is cracked or damaged, the recommended solution is to replace t
 
 Radial pixelation artifacts
 ###################################
-Radial pixelation artifacts indicate a defect on the PCB. This issue is commonly caused by damage to the flexPCB between the image sensor and the serializer, which leads to corrupted or missing bits in the pixel data stream.
+Radial pixelation artifacts indicate a defect on the PCB. This issue is commonly caused by damage to the flex PCB between the image sensor and the serializer, which leads to corrupted or missing bits in the pixel data stream.
 
 .. image:: /_static/images/radialbanding.png
     :width: 100%
@@ -179,4 +179,4 @@ How to ask for help
    
    - Details of your hardware setup and all hardware connections.
    - A photo or a screen video capture showing the issue.
-   - A description of what happened as the issue occurred.
+   - A description of how to recreate the issue.
