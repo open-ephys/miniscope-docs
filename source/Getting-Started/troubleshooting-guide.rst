@@ -177,7 +177,7 @@ How to ask for help
 1. Make sure that you have read through this guide.
 2. Check for any errors or warnings.
 3. Write to our `support channel <https://open-ephys.org/contact>`_ with the following information:
-
-- Details of your hardware setup and all hardware connections.
-- A photo or a screen video capture showing the issue.
-- A description of what happened as the issue occurred.
+   
+   - Details of your hardware setup and all hardware connections.
+   - A photo or a screen video capture showing the issue.
+   - A description of what happened as the issue occurred.
