@@ -241,6 +241,8 @@ You want the center of your image to be very clean, however some dust/dirt can b
 
 These are often Delrin burrs that have come loose in the 525 pocket. The only solution is to unscrew the PCB flaps and remove the epoxy so that you can clean the sensor again. The easiest way to remove the epoxy is to very gently twist the Miniscope relative to the PCB to loosen the epoxy, the PCB should come loose. You can then remove the remaining epoxy with forceps so that you are free to reattach the PCB after cleaning.
 
+.. _disassembly:
+
 ***********************************
 Disassembly for PCB Replacement
 ***********************************
