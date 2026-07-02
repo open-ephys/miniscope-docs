@@ -10,9 +10,10 @@ If issues persist after following this guide, the scenario you encountered is no
 General recommendations
 ###################################
 
-- Keep Bonsai and package updated to the latest version.
-- Keep the Miniscope DAQ firmware updated to the latest version.
-- Keep an eye out for warnings in the software during operation.
+- Keep Bonsai and the OpenEphys.Miniscope package up to date with the latest version.
+- Keep the Miniscope DAQ firmware up to date with the latest version.
+- Keep an eye out for warnings and errors in the software during operation.
+- :ref:`Configure the USB settings <usb-config>` to avoid suspension due to power management, which interferes with USB communication.
 
 .. _troubleshooting:
 
@@ -48,6 +49,7 @@ After following step 1, the DAQ and Miniscope should be recognized by the Operat
 
 If not, refer to :ref:`getting-started/index:connecting the hardware` for additional details.
 
+.. _usb-config:
 
 USB Configuration
 ***********************
@@ -117,7 +119,7 @@ This can be resolved by externally powering the DAQ. Refer to the :ref:`external
 Error messages
 ###################################
 
-This table can help you understand and troubleshoot Bonsai error messages.
+This table can help you understand and troubleshoot error messages from the OpenEphys.Miniscope Bonsai package.
 
 .. csv-table:: 
    :file: /_static/images/errormessages.csv
@@ -160,9 +162,9 @@ The solution for this is to replace the PCB. You can follow our :ref:`disassembl
 Excess power
 ###################################
 
-We always recommend using a variable power supply and closely monitoring the voltage delivered to the miniscope to avoid damage. Refer to the :ref:`externalpower` section for details.
+When using external power, we recommend using a variable power supply and closely monitoring the voltage delivered to the miniscope to avoid damage. Refer to the :ref:`externalpower` section for details.
 
-Using an incorrect supply (e.g. 9V, 12V, or higher) exceeds the operating limits and is likely to damage the miniscope. In such cases, the miniscope may fail to connect or may not function properly. If this occurs, the PCB may be damaged and require replacement.
+Supplying voltage to the Miniscope DAQ that results in exceeding the miniscope operating voltage can damage the device. The maximum supply voltage will depend on your tether length and configuration. In such cases, the miniscope may fail to connect or may not function properly. If this occurs, the PCB is likely damaged and requires replacement.
 
 You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
 
@@ -178,5 +180,5 @@ How to ask for help
 3. Write to our `support channel <https://open-ephys.org/contact>`_ with the following information:
    
    - Details of your hardware setup and all hardware connections.
-   - A photo or a screen video capture showing the issue.
-   - A description of how to recreate the issue.
+   - A screenshot or a screen video capture showing the issues in the software. A photo of any issues with the hardware. Photos of the computer screen are generally not helpful for troubleshooting.
+   - A description of what happened as the issue occurred, or steps on how to recreate the issue.
