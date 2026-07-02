@@ -23,11 +23,11 @@ Initial troubleshooting steps
 1. Check the hardware USB connection
 *************************************************
 
-Always use a USB 3.0-compatible port on your computer with the high-speed USB cable provided. USB 3.0-compatible ports are usually indicated by a blue color and are often at the back of PCs. Ensure you establish a reliable USB connection by connecting directly to the port instead of through a hub or extension.
+Always use a USB 3.0-compatible port on your computer with the high-speed USB cable provided. USB 3.0-compatible ports are usually indicated by a blue color. Ensure you establish a reliable USB connection by connecting directly to the port instead of through a hub or extension.
 
 *All three indicator lights on the DAQ and the red LED on the miniscope body itself must be continuously on.*
 
-2. Check that the DAQ is recognized properly in the Device Manager
+1. Check that the DAQ is recognized properly in the Device Manager
 ***************************************************************************
 
 If the Miniscope DAQ is working normally, it should be listed as `UCLA/Open Ephys Miniscope DAQ v3`, under `Cameras`.
@@ -93,9 +93,11 @@ Connection errors occur when the DAQ detects a powered device but is unable to r
 
 This typically indicates a communication problem between the miniscope and the DAQ.
 
-.. image:: /_static/images/badconnection.gif
-    :width: 40%
-    :align: center
+.. raw:: html
+
+  <center><video width="340" height="340" controls>
+  <source src="../../_static/videos/stripes.mp4" type="video/mp4">
+  </video></center>
 
 Horizontal stripes appear when there is a mismatch between frames coming to the DAQ. These issues are commonly caused by connectors that are not fully seated, a damaged coaxial tether, or an unstable USB connection.
 
@@ -110,9 +112,11 @@ When powered via USB, the DAQ can only supply 5V. Depending on your setup and se
 
 Horizontal banding artifacts can occur due to insufficient or unstable power delivery and are typically more pronounced at higher LED intensity settings. You can check that no other devices are drawing significant power from the same USB ports.
 
-.. image:: /_static/images/banding.gif
-    :width: 40%
-    :align: center
+.. raw:: html
+
+  <center><video width="340" height="340" controls>
+  <source src="../../_static/videos/banding.mp4" type="video/mp4">
+  </video></center>
 
 This can be resolved by externally powering the DAQ. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source, while carefully monitoring the voltage at the miniscope.
 
