@@ -8,7 +8,7 @@ Here is a guide to help you troubleshoot common error scenarios that can occur w
 If issues persist after following this guide, the scenario you encountered is not in this guide, or you believe your Miniscope and/or DAQ needs repair, please reach out as detailed under :ref:`help`.
 
 General recommendations
-###################################
+============================
 
 - Keep Bonsai and the OpenEphys.Miniscope package up to date with the latest version.
 - Keep the Miniscope DAQ firmware up to date with the latest version.
@@ -18,28 +18,17 @@ General recommendations
 .. _troubleshooting:
 
 Initial troubleshooting steps
-###################################
+==================================
 
 1. Check the hardware USB connection
-*************************************************
+-----------------------------------------
 
 Always use a USB 3.0-compatible port on your computer with the high-speed USB cable provided. USB 3.0-compatible ports are usually indicated by a blue color. Ensure you establish a reliable USB connection by connecting directly to the port instead of through a hub or extension.
 
 *All three indicator lights on the DAQ and the red LED on the miniscope body itself must be continuously on.*
 
-1. Check that the DAQ is recognized properly in the Device Manager
-***************************************************************************
-
-If the Miniscope DAQ is working normally, it should be listed as `UCLA/Open Ephys Miniscope DAQ v3`, under `Cameras`.
-
-..  image:: /_static/images/firmware/driver-update-1a-listed-miniscope.png
-    :width: 60%
-    :align: center
-
-If not, refer to the :ref:`daq_firmware_details` section of this documentation.
-
-3. Check that the DAQ is recognized properly by the Operating System
-***************************************************************************
+2. Check that the DAQ is recognized properly by the Operating System
+--------------------------------------------------------------------------
 
 After following step 1, the DAQ and Miniscope should be recognized by the Operating System. Go to :code:`Start Menu > Settings > Devices > Bluetooth & other devices` and check that the DAQ and Miniscope are listed as *Connected to USB3.0*, with no additional warnings.
 
@@ -52,7 +41,7 @@ If not, refer to :ref:`getting-started/index:connecting the hardware` for additi
 .. _usb-config:
 
 USB Configuration
-***********************
+^^^^^^^^^^^^^^^^^^^^
 The Miniscope DAQ works via USB, and the PC's power management, on both laptops and desktops, can interfere with USB communication. This can be experienced as a sudden interruption during an otherwise stable period of acquisition that can be traced back to USB communication errors and not a hardware disconnection.
 Always ensure that the USB settings are configured to avoid suspension.
 
@@ -74,20 +63,23 @@ On Windows laptops, a similar option to disable the USB battery saver is availab
     :width: 70%
     :align: center
 
-4. Check your cable, coaxial tether and connectors
-******************************************************
+3. Check your cable, coaxial tether and connectors
+-----------------------------------------------------
 
 Always ensure that all connectors on the DAQ, miniscope and commutator (if using one) are fully seated. Inspect the USB cable, the coaxial tether and its connector, and the miniscope connector for any signs of damage, debris or wear.
 
-5. Review order of operations
-********************************************
+4. Review order of operations
+-------------------------------------
 After disconnecting all components and closing the software, reconnect the system in the following order: first, plug the coaxial tether into the miniscope. Next, connect the miniscope to the DAQ. Finally, connect the DAQ to your computer.
 Only once all three lights on the DAQ and the red LED on the miniscope are on should you open the software.
 
 Refer to :ref:`getting-started/index:connecting the hardware` for additional details.
 
+Some error scenarios and solutions
+=========================================
+
 Horizontal stripes
-###################################
+--------------------------
 
 Connection errors occur when the DAQ detects a powered device but is unable to receive a continuous signal from it. Problems like dropped frames, inconsistent frame rate and stripe artifacts indicate that there is a connection issue.
 
@@ -101,12 +93,14 @@ This typically indicates a communication problem between the miniscope and the D
 
 Horizontal stripes appear when there is a mismatch between frames coming to the DAQ. These issues are commonly caused by connectors that are not fully seated, a damaged coaxial tether, or an unstable USB connection.
 
-To resolve this, disconnect and reconnect the miniscope, restart the software and ensure the DAQ USB connection is also reconnected.
+To resolve this, disconnect and reconnect the miniscope and restart the software.
 
 Follow the :ref:`troubleshooting` above to identify and resolve the source of the connection issue.
 
+..  note::  In case this happens during acquisition in the middle of an experiment, the affected frames can sometimes be recovered and corrected offline by shifting the affected image buffers back into place. You can try using this post-hoc correction script provided by the Cai Lab that can fix this buffer mismatch artifact in some cases.
+
 Horizontal banding artifacts
-###################################
+-----------------------------------
 
 When powered via USB, the DAQ can only supply 5V. Depending on your setup and settings such as cable length, type of cable, commutation and LED brightness, the USB supply may not provide sufficient power to operate the miniscope reliably.
 
@@ -121,7 +115,7 @@ Horizontal banding artifacts can occur due to insufficient or unstable power del
 This can be resolved by externally powering the DAQ. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source, while carefully monitoring the voltage at the miniscope.
 
 Error messages
-###################################
+---------------------
 
 This table can help you understand and troubleshoot error messages from the OpenEphys.Miniscope Bonsai package.
 
@@ -132,7 +126,7 @@ This table can help you understand and troubleshoot error messages from the Open
    :stub-columns: 1
 
 EWL focus not functioning
-###################################
+------------------------------
 
 1. Inspect your PCB and EWL connection
 
@@ -154,7 +148,7 @@ EWL focus not functioning
 If the component is cracked or damaged, the recommended solution is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement. Alternatively, the component can sometimes be replaced without changing the entire PCB. For more details, contact us about our repair services.
 
 Radial pixelation artifacts
-###################################
+---------------------------------
 Radial pixelation artifacts indicate a defect on the PCB. This issue is commonly caused by damage to the flex PCB between the image sensor and the serializer, which leads to corrupted or missing bits in the pixel data stream.
 
 .. image:: /_static/images/radialbanding.png
@@ -164,7 +158,7 @@ Radial pixelation artifacts indicate a defect on the PCB. This issue is commonly
 The solution for this is to replace the PCB. You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
 
 Excess power
-###################################
+---------------------
 
 When using external power, we recommend using a variable power supply and closely monitoring the voltage delivered to the miniscope to avoid damage. Refer to the :ref:`externalpower` section for details.
 
@@ -177,7 +171,7 @@ The DAQ itself is powered via USB even when external power is connected, so it s
 .. _help:
 
 How to ask for help
-###################################
+=======================
 
 1. Make sure that you have read through this guide.
 2. Check for any errors or warnings.
