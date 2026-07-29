@@ -10,33 +10,23 @@ If issues persist after following this guide, the scenario you encountered is no
 General recommendations
 ============================
 
-- Keep Bonsai and the OpenEphys.Miniscope package up to date with the latest version.
-- Keep the Miniscope DAQ firmware up to date with the latest version.
+- Keep :ref:`Bonsai and the OpenEphys.Miniscope package <getting-started/index:installation>` up to date with the latest version.
+- Keep the :ref:`Miniscope DAQ firmware <daq_firmware_update>` up to date with the latest version.
 - Keep an eye out for warnings and errors in the software during operation.
 - :ref:`Configure the USB settings <usb-config>` to avoid suspension due to power management, which interferes with USB communication.
 
 .. _troubleshooting:
 
 Initial troubleshooting steps
-==================================
+=====================================
 
 1. Check the hardware USB connection
 -----------------------------------------
 
 Always use a USB 3.0-compatible port on your computer with the high-speed USB cable provided. USB 3.0-compatible ports are usually indicated by a blue color. Ensure you establish a reliable USB connection by connecting directly to the port instead of through a hub or extension.
+You can try a different USB 3.0 port and test with a different USB cable, as faulty cables are a common cause of connection problems.
 
 *All three indicator lights on the DAQ and the red LED on the miniscope body itself must be continuously on.*
-
-2. Check that the DAQ is recognized properly by the Operating System
---------------------------------------------------------------------------
-
-After following step 1, the DAQ and Miniscope should be recognized by the Operating System. Go to :code:`Start Menu > Settings > Devices > Bluetooth & other devices` and check that the DAQ and Miniscope are listed as *Connected to USB3.0*, with no additional warnings.
-
-..  image:: /_static/images/connectedtousb.png
-    :width: 60%
-    :align: center
-
-If not, refer to :ref:`getting-started/index:connecting the hardware` for additional details.
 
 .. _usb-config:
 
@@ -62,6 +52,17 @@ On Windows laptops, a similar option to disable the USB battery saver is availab
 .. image:: /_static/images/usb-settings-laptop.png
     :width: 70%
     :align: center
+
+2. Check that the DAQ is recognized properly by the Operating System
+--------------------------------------------------------------------------
+
+After following step 1, the DAQ and Miniscope should be recognized by the Operating System. Go to :code:`Start Menu > Settings > Devices > Bluetooth & other devices` and check that the DAQ and Miniscope are listed as *Connected to USB3.0*, with no additional warnings.
+
+..  image:: /_static/images/connectedtousb.png
+    :width: 60%
+    :align: center
+
+If not, refer to :ref:`getting-started/index:connecting the hardware` for additional details.
 
 3. Check your cable, coaxial tether and connectors
 -----------------------------------------------------
@@ -167,6 +168,18 @@ Supplying voltage to the Miniscope DAQ that results in exceeding the miniscope o
 You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
 
 The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
+
+DAQ Data Link light not turning on or flickering
+--------------------------------------------------------
+- L13 inductor
+- you might be able to replace it yourself
+
+Damage on the coaxial tether
+--------------------------------------------------------
+- if animal chews on the tether
+- dent or damage
+check for continuity for shorts
+
 
 .. _help:
 
