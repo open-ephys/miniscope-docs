@@ -88,7 +88,7 @@ This typically indicates a communication problem between the miniscope and the D
 .. raw:: html
 
   <center><video width="340" height="340" controls>
-  <source src="../../_static/videos/stripes.mp4" type="video/mp4">
+  <source src="../_static/videos/stripes.mp4" type="video/mp4">
   </video></center>
 
 Horizontal stripes appear when there is a mismatch between frames coming to the DAQ. These issues are commonly caused by connectors that are not fully seated, a damaged coaxial tether, or an unstable USB connection.
@@ -109,7 +109,7 @@ Horizontal banding artifacts can occur due to insufficient or unstable power del
 .. raw:: html
 
   <center><video width="340" height="340" controls>
-  <source src="../../_static/videos/banding.mp4" type="video/mp4">
+  <source src="../_static/videos/banding.mp4" type="video/mp4">
   </video></center>
 
 This can be resolved by externally powering the DAQ. Refer to the :ref:`externalpower` section for instructions on how to connect and use an external power source, while carefully monitoring the voltage at the miniscope.
