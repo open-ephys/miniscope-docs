@@ -24,6 +24,7 @@ Initial troubleshooting steps
 -----------------------------------------
 
 Always use a USB 3.0-compatible port on your computer with the high-speed USB cable provided. USB 3.0-compatible ports are usually indicated by a blue color. Ensure you establish a reliable USB connection by connecting directly to the port instead of through a hub or extension.
+
 You can try a different USB 3.0 port and test with a different USB cable, as faulty cables are a common cause of connection problems.
 
 *All three indicator lights on the DAQ and the red LED on the miniscope body itself must be continuously on.*
@@ -67,7 +68,7 @@ If not, refer to :ref:`getting-started/index:connecting the hardware` for additi
 3. Check your cable, coaxial tether and connectors
 -----------------------------------------------------
 
-Always ensure that all connectors on the DAQ, miniscope and commutator (if using one) are fully seated. Inspect the USB cable, the coaxial tether and its connector, and the miniscope connector for any signs of damage, debris or wear.
+Always ensure that all connectors on the DAQ, miniscope and commutator (if using one) are fully seated. Inspect the USB cable, the coaxial tether and its connector, and the miniscope connector for any signs of damage, debris or wear. Test your coaxial tether for shorts.
 
 4. Review order of operations
 -------------------------------------
@@ -98,7 +99,7 @@ To resolve this, disconnect and reconnect the miniscope and restart the software
 
 Follow the :ref:`troubleshooting` above to identify and resolve the source of the connection issue.
 
-..  note::  In case this happens during acquisition in the middle of an experiment, the affected frames can sometimes be recovered and corrected offline by shifting the affected image buffers back into place. You can try using this post-hoc correction script provided by the Cai Lab that can fix this buffer mismatch artifact in some cases.
+.. ..  note::  In case this happens during acquisition in the middle of an experiment, the affected frames can sometimes be recovered and corrected offline by shifting the affected image buffers back into place. You can try using this post-hoc correction script provided by the Cai Lab that can fix this buffer mismatch artifact in some cases.
 
 Horizontal banding artifacts
 -----------------------------------
@@ -165,21 +166,28 @@ When using external power, we recommend using a variable power supply and closel
 
 Supplying voltage to the Miniscope DAQ that results in exceeding the miniscope operating voltage can damage the device. The maximum supply voltage will depend on your tether length and configuration. In such cases, the miniscope may fail to connect or may not function properly. If this occurs, the PCB is likely damaged and requires replacement.
 
+
 You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
 
-The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
+.. The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
 
 DAQ Data Link light not turning on or flickering
 --------------------------------------------------------
-- L13 inductor
-- you might be able to replace it yourself
+If the Data Link LED flickers very rapidly, the data transmitted over the coaxial tether may be corrupted, preventing the DAQ from establishing a connection. This is usually caused by a damaged L13 inductor (noise filter) on the DAQ PCB, most often due to a short circuit in the coaxial tether.
+
+Open the DAQ case and inspect the PCB, paying particular attention to the L13 inductor and the area close to the coaxial tether connector.
+
+.. image:: /_static/images/L13inductor.png
+    :width: 50%
+    :align: center
+
+If the L13 inductor is damaged, replacing it should resolve the issue. If you have the appropriate tools and soldering experience, you should be able to replace it yourself.
+
+..  note::  Before connecting any coaxial tether to a DAQ, always test it for shorts. A faulty tether can damage the L13 inductor and cause the same issue again. 
 
 Damage on the coaxial tether
 --------------------------------------------------------
-- if animal chews on the tether
-- dent or damage
-check for continuity for shorts
-
+If your tether has any sharp bends, has been chewed by the animal or has any other visible damage, you should test it for continuity and shorts before connecting it to the DAQ.
 
 .. _help:
 
