@@ -169,7 +169,7 @@ Supplying voltage to the Miniscope DAQ that results in exceeding the miniscope o
 
 You can follow our :ref:`disassembly` guide and :ref:`miniscope_assembly_guide` guide for step-by-step instructions to complete the replacement.
 
-.. The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
+The DAQ itself is powered via USB even when external power is connected, so it should not be affected or damaged by higher voltages applied to the external power input.
 
 DAQ Data Link light not turning on or flickering
 --------------------------------------------------------
@@ -186,7 +186,7 @@ If the L13 inductor is damaged, replacing it should resolve the issue. If you ha
 ..  note::  Before connecting any coaxial tether to a DAQ, always test it for shorts. A faulty tether can damage the L13 inductor and cause the same issue again. 
 
 Damage on the coaxial tether
---------------------------------------------------------
+-------------------------------------
 If your tether has any sharp bends, has been chewed by the animal or has any other visible damage, you should test it for continuity and shorts before connecting it to the DAQ.
 
 .. _help:
