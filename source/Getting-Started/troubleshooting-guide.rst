@@ -10,7 +10,7 @@ If issues persist after following this guide, the scenario you encountered is no
 General recommendations
 ============================
 
-- Keep :ref:`Bonsai and the OpenEphys.Miniscope package <getting-started/index:installation>` up to date with the latest version.
+- Keep the acquisition software, such as :ref:`Bonsai and the OpenEphys.Miniscope package <getting-started/index:installation>` up to date with the latest version.
 - Keep the :ref:`Miniscope DAQ firmware <daq_firmware_update>` up to date with the latest version.
 - Keep an eye out for warnings and errors in the software during operation.
 - :ref:`Configure the USB settings <usb-config>` to avoid suspension due to power management, which interferes with USB communication.
@@ -175,7 +175,7 @@ DAQ Data Link light not turning on or flickering
 --------------------------------------------------------
 If the Data Link LED flickers very rapidly, the data transmitted over the coaxial tether may be corrupted, preventing the DAQ from establishing a connection. This is usually caused by a damaged L13 inductor (noise filter) on the DAQ PCB, most often due to a short circuit in the coaxial tether.
 
-Open the DAQ case and inspect the PCB, paying particular attention to the L13 inductor and the area close to the coaxial tether connector.
+Open the DAQ case and inspect the PCB, paying particular attention to the L13 inductor and the area close to the coaxial tether connector. Sometimes, the damage can be seen by eye as a burn mark or discoloration.
 
 .. image:: /_static/images/L13inductor.png
     :width: 50%
@@ -187,7 +187,7 @@ If the L13 inductor is damaged, replacing it should resolve the issue. If you ha
 
 Damage on the coaxial tether
 -------------------------------------
-If your tether has any sharp bends, has been chewed by the animal or has any other visible damage, you should test it for continuity and shorts before connecting it to the DAQ.
+If your tether shows any signs of damage, such as cuts, kinks, or chew marks, use a multimeter to verify continuity between the connector pins and confirm that there are no shorts before connecting it to the DAQ.
 
 .. _help:
 
