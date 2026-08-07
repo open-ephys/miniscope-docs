@@ -100,20 +100,33 @@ hold the Miniscope DAQ at a time, so the GUI must be stopped before your workflo
 Start from the GUI's Own Workflow
 ==========================================
 
-The Miniscope GUI is itself a Bonsai workflow (``MiniscopeGui.bonsai``) and the installer
-lays down a complete Bonsai environment, editor included, alongside it. That means you can
-open the GUI in the editor and extend it, rather than rebuilding its display around your
-own workflow.
+The Miniscope GUI is itself a Bonsai workflow (``MiniscopeGui.bonsai``), and that workflow
+ships inside the ``OpenEphys.MiniscopeV4.Gui`` package as an embedded workflow. You can drop
+it straight into a workflow of your own, which gives you the entire GUI as a single node
+rather than rebuilding its display around your acquisition logic.
 
-#.  Run ``Bonsai.exe`` from your local environment.
+#.  Start Bonsai and open the workflow you want to add the GUI to.
 
-#.  Ensure that the ``OpenEphys.Miniscope`` package is installed through the package manager.
+#.  Install the ``OpenEphys.MiniscopeV4.Gui`` package from the Bonsai package manager, if it
+    is not already installed.
 
-#.  Place the ``MiniscopeGui.bonsai`` from the embedded workflows found in the toolbox.
+#.  Find ``MiniscopeGui`` under the package's embedded workflows in the toolbox, and place
+    it on the canvas.
 
-#.  Running the workflow at this point, with just the ``MiniscopeGui.bonsai`` workflow, will give
-    the exact same functionality as the MiniscopeV4 GUI described in the
-    :doc:`/Software-Guide/index`.
-    
-#.  The output of the included workflow is the MiniscopeV4 data frame; this can be connected to any
-    custom logic, and viewed at the same time as a behavioral camera that is acquired by the workflow.
+#.  Run the workflow. With nothing but this node, you get exactly the functionality
+    described in the :doc:`/Software-Guide/index`.
+
+#.  The node's output is the Miniscope data frame, so you can connect it to any custom logic
+    you like. Because it is just another node, the GUI can run alongside the rest of your
+    workflow: a behavior camera acquired in the same workflow displays at the same time.
+
+..  TODO(media): screenshot — the Bonsai toolbox with the embedded ``MiniscopeGui`` workflow
+..      located under the ``OpenEphys.MiniscopeV4.Gui`` package. 
+..      Suggested file: /_static/images/miniscopev4_gui/bonsai-toolbox-embedded-workflow.png
+
+..  TODO(media): screenshot — a small example workflow with the ``MiniscopeGui`` node placed
+..      and its output branching into custom logic, ideally beside a behavior camera source.
+..      This makes the "GUI as one node in a bigger workflow" idea concrete.
+..      Suggested file: /_static/images/miniscopev4_gui/bonsai-gui-node-in-workflow.png
+
+.. TODO: Multiple GUIs in one workflow, using higher-order operators

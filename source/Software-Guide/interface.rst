@@ -7,10 +7,14 @@ Miniscope GUI Interface Reference
 This page describes every control in the Miniscope GUI. For installation and a first
 acquisition walkthrough, see the :doc:`/Software-Guide/index`.
 
-The window is divided into four regions:
+The window is divided into six regions:
 
-..  image:: /_static/images/miniscopv4_gui/miniscope-gui-layout.png
-    :alt:   schematic of the Miniscope GUI window with numbered regions
+..  TODO(media): annotated screenshot — overlay numbered callouts (1-6) on this screenshot,
+..      one per region in the list below, so the numbering has something to point at. 
+..      Suggested file: /_static/images/miniscopev4_gui/miniscope-gui-layout-annotated.png
+
+..  image:: /_static/images/miniscopev4_gui/miniscope-gui-layout.png
+    :alt:   the Miniscope GUI window, showing the status bar, control panel, data panel and console
     :align: center
     :width: 100%
 
@@ -40,9 +44,19 @@ dragged to resize them.
     valid range of its values, its keyboard shortcut if it has one, and, if it is greyed
     out, the reason it is currently unavailable.
 
+..  TODO(media): screenshot — a tooltip open over a greyed-out control (for example the Record
+..      button while acquisition is stopped), showing both the description and the
+..      "Unavailable while..." note.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-tooltip-disabled.png
+
 ***********************
 Status Bar
 ***********************
+
+..  TODO(media): cropped screenshot — the status bar alone, at full width, so the Index field,
+..      Start Acquisition button, timers, and Freeze Display button can be pointed at
+..      individually. Repeat this crop pattern for each region below.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-status-bar.png
 
 :Index:                 The index of the Miniscope to acquire from, in the order the
                         cameras are detected by the computer, where ``0`` is the first
@@ -88,6 +102,11 @@ format.
 Miniscope
 ===================
 
+..  TODO(media): cropped screenshot — the Miniscope section expanded, showing Focus, LED
+..      Brightness, Frame Rate, Sensor Gain, LED Trigger, and the Status line reading
+..      "Acquiring" in green.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-miniscope-section.png
+
 :Focus:             Adjusts the electrowetting lens (EWL) around its nominal focal plane,
                     from -100% to 100%. The relationship between this percentage and the
                     resulting focal plane shift is non-linear.
@@ -122,6 +141,13 @@ required to operate the Miniscope; see :doc:`/Hardware-Guide/commutators` for th
 and `the commutator documentation
 <https://open-ephys.github.io/commutator-docs/user-guide/mount-connect.html?commutator=coax#connecting>`__
 for how to mount and connect it.
+
+..  TODO(media): cropped screenshot — the Commutator section with a commutator found and
+..      connected, so the populated COM port dropdown, the red Disconnect button, the enabled
+..      Enable/Enable LED checkboxes, and the green "Connected" status are all visible. A
+..      second capture of the empty "No commutator found" state would help users confirm
+..      whether their commutator was detected.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-commutator-section.png
 
 :COM Port:      The serial port Windows assigned to the commutator's USB connection.
 
@@ -172,6 +198,14 @@ them.
     These views are display-only. The data written to file is always the raw sensor image.
     None of the processing below is saved in the recording.
 
+..  TODO(media): screenshot grid — the same field of view captured in all five image tabs
+..      (Image, Saturation, dF/F, Max Projection, Reference Image), laid out side by side.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-image-tabs-comparison.png
+
+..  TODO(media): animated gif — pressing :kbd:`E` to expand the image to fill the window and
+..      pressing it again to restore the panels.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-expand-collapse.webp
+
 Image
 ===================
 
@@ -204,6 +238,10 @@ a glance.
 Use this together with the *Histogram* signal tab while setting LED brightness and sensor
 gain.
 
+..  TODO(media): animated gif — dragging the Threshold slider while the highlighted region
+..      grows and shrinks over a real sample.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-saturation-threshold.webp
+
 dF/F
 ===================
 
@@ -224,6 +262,10 @@ positioning the Miniscope.
                         spatial extent of a region of interest (e.g., a cell body) to smooth
                         out pixel-level noise. Set to 0 to disable blurring.
 
+..  TODO(media): side-by-side screenshot — the same live sample in the Image tab and the dF/F
+..      tab, captured at the same moment, so the background suppression is obvious.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-dff-comparison.png
+
 ..  warning::
 
     This is a display aid for finding cells during setup, not an analysis result. Use a
@@ -232,6 +274,11 @@ positioning the Miniscope.
 
 Max Projection
 ===================
+
+..  TODO(media): animated gif — a max projection accumulating over roughly 30 seconds of real
+..      data, from a nearly blank frame to a clear map of cells, ending with a press of
+..      :kbd:`R` to reset. This is the clearest demonstration of what the tab does.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-max-projection-accumulating.webp
 
 Accumulates the maximum value each pixel has reached, continuously, since the last reset.
 Because active cells are bright at some point in time and the background is not, a max
@@ -249,6 +296,12 @@ current field of view can be aligned with a previous one. This is how you return
 same field of view across sessions: capture an image at the end of one session, then load
 it as the reference at the start of the next and adjust the Miniscope until the two colors
 line up.
+
+..  TODO(media): animated gif — the highest-value clip on this page. Start with the live and
+..      reference images clearly misaligned (green and red offset from one another), then
+..      adjust the Miniscope until the two channels converge and the overlay turns yellow
+..      where they agree.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-reference-overlay-align.webp
 
 :Reference Image:       The path to the reference image. Click ``...`` to choose an image saved
                         earlier with *Capture Current Image*. To check out all saved images, click
@@ -272,11 +325,19 @@ colored swatch to show or hide that trace.
 A yellow vertical line marks the current write position: traces to its left are the most
 recent samples, and the data sweeps across the plot rather than scrolling.
 
+..  TODO(media): animated gif — a few seconds of live traces sweeping past the yellow write
+..      marker.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-sweep-marker.webp
+
 ..  tip::
 
     :kbd:`Shift` + mouse wheel steps the timebase up and down without opening the dropdown.
     Freeze the display with :kbd:`Space` to make the plots interactive, then drag to scroll
     back through the buffer and use the mouse wheel to zoom.
+
+..  TODO(media): animated gif — pressing :kbd:`Space` to freeze, then dragging back through
+..      the buffer and zooming with the mouse wheel
+..      Suggested file: /_static/images/miniscopev4_gui/gui-freeze-scrollback.webp
 
 Euler Angles
 ===================
@@ -308,6 +369,11 @@ bin fills the plot. It shows the *relative* distribution of pixel values, not th
 pixels at each intensity. Use it to set exposure: a histogram bunched against the right
 edge means the image is saturating.
 
+..  TODO(media): three-panel screenshot — the histogram under-exposed (piled against the left
+..      edge), well exposed (spread across the range), and saturating (piled against the
+..      right), each next to the image that produced it.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-histogram-exposure.png
+
 ***********************
 Console
 ***********************
@@ -315,6 +381,11 @@ Console
 The console records everything the GUI does: recordings started and stopped, files
 written, hardware settings changed, warnings, and errors. It is the first place to look
 when something does not behave as expected.
+
+..  TODO(media): screenshot — the console populated with a realistic mix of messages,
+..      including at least one warning (yellow), one error (red), and several property changes
+..      (blue), so the color coding described below can actually be seen.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-console-messages.png
 
 :Filters:       *Info*, *Warnings*, *Errors*, and *Property Changes* checkboxes show and
                 hide each category of message. Warnings appear in yellow, errors in red,

@@ -11,14 +11,18 @@ Software Guide
     recording
     custom-workflows
 
-The **MiniscopeV4 GUI** is the recommended way to acquire data from the UCLA Miniscope V4
+The **Miniscope GUI** is the recommended way to acquire data from the UCLA Miniscope v4
 and the Miniscope DAQ. It is a free, open-source, Windows application developed by Open
 Ephys that gives you everything needed to run an imaging session (live image and
 orientation display, hardware control, commutation, and recording to file) without
 writing or editing a workflow.
 
-..  image:: /_static/images/miniscopv4_gui/miniscope-gui-layout.png
-    :alt:   schematic of the Miniscope GUI window
+..  TODO(media): screenshot — replace with the GUI mid-acquisition, showing live image data,
+..      running Euler angle traces, and a few console messages. The current capture is of an
+..      idle, disconnected GUI, so the landing page never shows the software actually working.
+
+..  image:: /_static/images/miniscopev4_gui/miniscope-gui-layout.png
+    :alt:   the Miniscope GUI window
     :align: center
     :width: 100%
 
@@ -70,11 +74,18 @@ Installation
 #.  Run the installer. It installs per-user into
     ``%LOCALAPPDATA%\MiniscopeV4Gui``, so no administrator rights are required.
 
-    - This application is currently not code signed. As a result, Windows may display
-      a "Windows protected your PC" or "Unknown publisher" warning the first time you 
-      run it. This is expected, even if you downloaded it from the project's official
-      GitHub Releases page. To continue, click *More Info*, verify that the correct
-      program is trying to run, and click *Run anyway*.
+    ..  note::
+
+        This application is currently not code signed. As a result, Windows may display
+        a "Windows protected your PC" or "Unknown publisher" warning the first time you
+        run it. This is expected, even if you downloaded it from the project's official
+        GitHub Releases page. To continue, click *More info*, verify that the correct
+        program is trying to run, and click *Run anyway*.
+
+    ..  TODO(media): screenshot — the Windows SmartScreen "Windows protected your PC" dialog,
+    ..      with a second capture after clicking *More info* showing the *Run anyway* button
+    ..      and the publisher line.
+    ..      Suggested file: /_static/images/miniscopev4_gui/install-smartscreen-warning.png
 
 #.  At the end of installation, the setup downloads Bonsai and the acquisition packages
     the GUI depends on into the install folder. This step needs an internet connection
@@ -141,14 +152,28 @@ Starting Acquisition
 
     :Sensor Gain:       The image sensor's analog gain.
 
+    ..  TODO(media): animated gif — one clip per setting, showing the live image responding
+    ..      as the slider or dropdown is dragged.
+    ..      Suggested files: /_static/images/miniscopev4_gui/gui-{focus,led,gain,fps}-demo.webp
+
 #.  **Check for saturation.** Switch to the *Saturation* tab to see which pixels exceed
     the intensity threshold, and to the *Histogram* signal tab to see the overall
     distribution of pixel intensities. Lower the LED brightness or the sensor gain if a
     large fraction of the image is saturated.
 
+    ..  TODO(media): animated gif — the Saturation tab beside the Histogram tab while LED
+    ..      brightness is raised, so the highlighted pixels spread and the histogram piles up
+    ..      against the right edge.
+    ..      Suggested file: /_static/images/miniscopev4_gui/gui-saturation-demo.webp
+
 #.  **Check the orientation data.** Check the *Euler Angles* signal
     tab and rotate the Miniscope. The traces should respond immediately. This confirms
     the on-board IMU is streaming data, which is also what drives automatic commutation.
+
+    ..  TODO(media): animated gif — a hand rotating the Miniscope beside the Euler Angles
+    ..      traces responding. A split view showing both the physical scope and the plot is
+    ..      ideal; the existing quaternion-demo.webp is the model.
+    ..      Suggested file: /_static/images/miniscopev4_gui/gui-euler-angles-demo.webp
 
 #.  **Record.** In the **Recording** section at the bottom of the Control Panel, click
     ``...`` to choose a folder and base file name, then click **Record** (or press

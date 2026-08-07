@@ -37,8 +37,9 @@ Workflow Description
 
 The ``Quaternion`` node connects to the ``Commutator`` node, which represents a ``GroupWorkflow`` named *Commutator*. A ``GroupWorkflow`` operator has a workflow nested inside, and its configurable properties can be exposed. To inspect the grouped workflow, double-click the ``Commutator`` node. You will see nodes from the OpenEphys.Commutator Bonsai package that transform quaternion measurements into twists, as well as nodes to capture keyboard keypresses to drive the commutator automatically or manually, respectively.
 
-The quaternion stream feeding the commutator here is the same one the GUI plots in its
-*Quaternion* signal tab, and the same one the :doc:`Miniscope GUI</Software-Guide/index>` uses to drive the commutator.
+The quaternion stream feeding the commutator here is the same one the
+:doc:`Miniscope GUI </Software-Guide/index>` plots in its *Quaternion* signal tab, and the
+same one it uses to drive the commutator.
 
 ***********************
 Configure the Hardware
@@ -107,7 +108,8 @@ alongside the quaternion, plots the digital inputs on the same time axis, and le
 freeze the display to inspect a rotation after the fact.
 
 Since only one program can hold the Miniscope DAQ at a time, close the GUI before running
-this workflow.
+this workflow. Alternatively, place the GUI's embedded workflow directly into this one to
+get its display without giving anything up; see :ref:`gui_visualizer_in_workflows`.
 
 ***********************
 Next Steps

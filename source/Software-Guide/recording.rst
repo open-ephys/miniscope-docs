@@ -8,6 +8,11 @@ This page covers the **Recording** section of the Miniscope GUI's control panel:
 data goes, the three recording modes, and the files each recording produces. For the rest
 of the interface, see :doc:`/Software-Guide/interface`.
 
+..  TODO(media): cropped screenshot — the Recording section with a data path filled in and a
+..      recording in progress, so the red Stop Recording button and the running recording
+..      timer are both visible.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-recording-section.png
+
 **************************************
 Choosing Where Data Goes
 **************************************
@@ -76,6 +81,11 @@ choose how the segments behave:
                     until you press **Stop Recording**. Use this for open-ended sessions
                     where you still want bounded file sizes.
 
+..  TODO(media): cropped screenshot — the Recording section in Segmented mode with **Multiple
+..      Files** selected, showing the Duration and Total fields alongside the
+..      "N files · ends HH:MM:SS" readout.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-recording-segmented.png
+
 Trigger
 ===================
 
@@ -91,11 +101,20 @@ high period produces its own set of files.
 Connect the trigger source to the corresponding *Dig. In* port using an SMA cable, or an
 adapter such as a BNC-SMA adapter.
 
+..  TODO(media): cropped screenshot — the Recording section in Trigger mode, armed, showing
+..      the Digital Input dropdown and the button reading **Disarm**. Pair it with a capture
+..      of the same section before arming so the state change is clear.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-recording-trigger-armed.png
+
 ..  tip::
 
     The state of both digital inputs is plotted beneath the orientation traces in the
     *Euler Angles* and *Quaternion* signal tabs. Watch those plots to confirm the trigger
     is reaching the DAQ before arming.
+
+..  TODO(media): animated gif — the digital-input plot stepping high and low as a trigger
+..      source is toggled, with the recording timer starting and stopping in step.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-trigger-digital-in.webp
 
 ..  note::
 
@@ -133,6 +152,11 @@ easy to identify:
 
 Recording a configuration snapshot alongside every recording means the exact acquisition
 settings for any dataset can always be recovered, and reloaded, later.
+
+..  TODO(media): screenshot — a File Explorer window showing the output of several recordings
+..      (run_0.avi/.csv/.log/.yml, run_1.*, and so on) so the shared-base-name convention and
+..      the FileCount suffix are visible at a glance.
+..      Suggested file: /_static/images/miniscopev4_gui/gui-output-files-explorer.png
 
 Per-Frame Metadata
 ===================

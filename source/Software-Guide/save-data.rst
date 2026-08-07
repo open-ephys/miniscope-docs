@@ -217,12 +217,12 @@ which is enough to confirm data is flowing. Judging image quality is another mat
 hard to tell by eye whether an image is clipping, or where the cells are in a noisy field
 of view.
 
-The :doc:`Miniscope GUI </Software-Guide/index>` can show saturation
-view and histogram for exposure, :math:`\Delta F/F` and the max projection for finding
-cells, and the reference-image overlay for returning to a field of view across sessions.
-Because only one program can hold the Miniscope DAQ at a time, use the GUI to focus and
-dial in LED brightness, sensor gain, and frame rate, export the configuration, then close
-it and run this workflow with those settings. See :ref:`gui_visualizer_in_workflows`.
+The :doc:`Miniscope GUI </Software-Guide/index>` gives you the saturation view and histogram
+for exposure, :math:`\Delta F/F` and the max projection for finding cells, and the
+reference-image overlay for returning to a field of view across sessions. Because only one
+program can hold the Miniscope DAQ at a time, use the GUI to focus and dial in LED
+brightness, sensor gain, and frame rate, export the configuration, then close it and run
+this workflow with those settings. See :ref:`gui_visualizer_in_workflows`.
 
 ***********************
 Next Steps
