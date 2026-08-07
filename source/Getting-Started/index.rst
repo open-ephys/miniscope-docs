@@ -10,7 +10,11 @@ Getting Started
     additional-resources
     troubleshooting-guide
 
-Follow the Quick Start Guide below to get started with the Miniscope System right away. It uses Bonsai to connect to a Miniscope v4 via a Miniscope DAQ and validate its functionality. To learn more about the software's functionality and other software options to acquire from the Miniscope v4, read the :doc:`/Software-Guide/index`. For information on using miniscopes for experiments, please refer to the :doc:`/User-Guide/index`. You can find more information about the system at large among the :doc:`additional-resources`.
+Follow the Quick Start Guide below to get started with the Miniscope System right away. It connects a Miniscope v4 to a Miniscope DAQ and validates its functionality using a minimal Bonsai workflow, so that each part of the system can be checked on its own. To learn more about the software's functionality and other software options to acquire from the Miniscope v4, read the :doc:`/Software-Guide/index`. For information on using miniscopes for experiments, please refer to the :doc:`/User-Guide/index`. You can find more information about the system at large among the :doc:`additional-resources`.
+
+..  tip::
+
+    To run experiments rather than validate the hardware, the :doc:`Miniscope GUI </Software-Guide/index>` is the recommended software, and it does not require Bonsai to be installed separately. Follow *Connecting the Hardware* below, then install the GUI as described in the :doc:`/Software-Guide/index`; the Bonsai installation and workflow steps in this guide are only needed to build :doc:`custom workflows </Software-Guide/custom-workflows>`.
 
 .. _quickstartguide:
 

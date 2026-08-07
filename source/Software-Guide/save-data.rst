@@ -61,9 +61,9 @@ Workflow Description
 
     The Miniscope GUI uses the same ``Bonsai.Vision.VideoWriter`` operator, with the
     ``Y800`` codec by default and ``MJPG`` when *Compress Video* is enabled. The FFV1
-    option shown here is one the GUI does not expose, as it requires a separate Bonsai package
-    (``Bonsai.Ffmpeg``) to handle encoding. It does require playback
-    software that supports the codec.
+    option shown here is one the GUI does not expose, because it requires a separate Bonsai
+    package (``Bonsai.Ffmpeg``) to handle the encoding, and playback software that supports
+    the codec.
 
 **Save Timestamped Orientation (Quaternion) Data**
 

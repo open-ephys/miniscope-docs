@@ -65,7 +65,7 @@ writing or editing a workflow.
 Installation
 *********************************************
 
-*Requirements: 64-bit Windows 10 or 11, and an internet connection for the first launch.*
+*Requirements: 64-bit Windows 10 or 11, and an internet connection during installation.*
 
 #.  Download the latest ``MiniscopeGui-Setup-<version>.exe`` installer from the
     `bonsai-miniscopev4-gui releases page
@@ -136,6 +136,12 @@ Starting Acquisition
 
 #.  **Start acquiring.** Click **Start Acquisition**. The *Image* tab begins showing live
     frames, and the acquisition timer in the status bar starts counting.
+
+    ..  tip::
+
+        If you are using a commutator, check **Auto Connect** in the *Commutator* section before
+        starting to ensure the commutator is connected when acquisition starts. When enabled,
+        acquisition cannot start until a commutator is found.
 
 #.  **Set up the optics.** In the *Control Panel* on the left, open the **Miniscope**
     section and adjust:
@@ -247,7 +253,7 @@ Other Acquisition Software
         acquisition from the Miniscope v4 and the MiniCAM via the Miniscope DAQ, as well
         as webcams.
 
-        This software is deprecated and not supported by Open Ephys. It has been updated to
-        support commutation.
+        It has since been updated by the UCLA Miniscope Team to support commutation, but it
+        is deprecated and is not supported by Open Ephys.
 
         *Click to navigate to its documentation site.*

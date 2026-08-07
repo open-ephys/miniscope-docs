@@ -50,7 +50,9 @@ Sensor (Python480) Features:
 
 Software Features:
 
-*   **GUI Compatibility:** Bonsai GUI (recommended) or UCLA-Miniscope-DAQ-Software (deprecated)
+*   **Software Compatibility:** the :doc:`Miniscope GUI </Software-Guide/index>` (recommended),
+    custom :doc:`Bonsai workflows </Software-Guide/custom-workflows>`, or
+    UCLA-Miniscope-DAQ-Software (deprecated)
 
 *   Sensor settings and imaging depth adjustable through software
 

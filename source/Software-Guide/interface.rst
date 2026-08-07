@@ -66,7 +66,10 @@ Status Bar
 
 :Start / Stop Acquisition:  Starts and stops streaming frames from the Miniscope. Most
                             other controls only become available once acquisition is
-                            running.
+                            running. If **Auto Connect** is checked in the Commutator
+                            section but no commutator has been found, this button is
+                            unavailable, because that setting makes the commutator
+                            required for acquisition.
 
 :Timers:                *Acquiring* counts the seconds since acquisition started (and
                         shows *Stopped* with the duration of the last run when idle).
@@ -155,15 +158,27 @@ for how to mount and connect it.
                 the machine: it probes each one and keeps only those that answer with a
                 valid commutator response, so anything appearing in the dropdown is a
                 commutator. If the list is empty, check the USB cable and click *Refresh*
-                again. Note that the commutator must be charged before it can respond to commands;
-                if a commutator does not appear in the list, wait a few seconds and try again.
+                again. Note that a recently plugged-in commutator charges its internal
+                capacitors before it will respond to commands, which can take up to
+                30 seconds; if it does not appear in the list, wait for its status LED to
+                stop indicating charging and click *Refresh* again.
 
-:Auto Connect:  Connects the selected commutator automatically when acquisition starts. If
-                the stored port is no longer valid, a warning is written to the console
-                rather than silently doing nothing.
+:Auto Connect:  Connects the selected commutator automatically when acquisition starts, and
+                makes the commutator required for acquisition: **Start Acquisition** is
+                unavailable while no commutator has been found, and any commutator error
+                stops acquisition. Use this when a session is not worth running without
+                commutation, so a commutator that fails partway through cannot leave you
+                with a recording of a tangled tether.
+
+                The checkbox itself is always available, whether or not a commutator has
+                been found, so it can be set before the commutator is plugged in. Leave it
+                unchecked to run the Miniscope without a commutator.
 
 :Connect / Disconnect:  Opens or closes the connection to the selected commutator. The
-                        port cannot be changed while connected.
+                        port cannot be changed while connected. **Disconnect** is
+                        unavailable while acquisition is running with Auto Connect checked,
+                        since the commutator is required; uncheck Auto Connect first to
+                        disconnect without stopping acquisition.
 
 :Enable:        Enables the commutator motor so it counteracts cable twist as the animal
                 rotates. The commutator is driven by the same quaternion orientation data
@@ -318,9 +333,13 @@ line up.
 Signal Tabs
 ***********************
 
-The signal tabs plot the non-image data streaming from the Miniscope. They each have an independent
-**Timebase** control that sets how many seconds of data are shown, and a clickable legend. Click a
-colored swatch to show or hide that trace.
+The signal tabs plot the non-image data streaming from the Miniscope. *Euler Angles* and
+*Quaternion* show the Miniscope's orientation as a time series; *Histogram* shows the
+distribution of pixel intensities in the current image.
+
+The two time-series tabs each have an independent **Timebase** control that sets how many
+seconds of data are shown, and a clickable legend. Click a colored swatch to show or hide
+that trace. The timebase options available depend on the frame rate.
 
 A yellow vertical line marks the current write position: traces to its left are the most
 recent samples, and the data sweeps across the plot rather than scrolling.
@@ -356,10 +375,11 @@ Open Ephys Wiki.
 Digital Inputs
 ===================
 
-Both orientation tabs include a second plot beneath them showing the state of the Miniscope
-DAQ's digital inputs, ``DigitalIn0`` and ``DigitalIn1``, on the same time axis. This is how
-you verify that a trigger source is actually reaching the DAQ, and where you can see the
-relationship between an external trigger and the recorded data, if any.
+This is not a tab of its own: both orientation tabs carry a second plot beneath the
+orientation traces, showing the state of the Miniscope DAQ's digital inputs, ``DigitalIn0``
+and ``DigitalIn1``, on the same time axis. This is how you verify that a trigger source is
+actually reaching the DAQ, and where you can see the relationship between an external
+trigger and the recorded data, if any.
 
 Histogram
 ===================
