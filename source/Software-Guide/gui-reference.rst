@@ -1,11 +1,15 @@
 .. _gui_interface:
 
 ####################################################################
-Miniscope GUI Interface Reference
+Miniscope GUI Reference
 ####################################################################
 
-This page describes every control in the Miniscope GUI. For installation and a first
-acquisition walkthrough, see the :doc:`/Software-Guide/index`.
+..  important::
+
+    .. include:: beta-banner.rst
+
+This page describes every control in the Open Ephys Miniscope V4 GUI. For installation and a
+first acquisition walkthrough, see :doc:`/Software-Guide/installing-and-using-the-gui`.
 
 The window is divided into six regions:
 
@@ -18,7 +22,7 @@ The window is divided into six regions:
     :align: center
     :width: 100%
 
-#.  The **status bar** across the top, which selects the Miniscope and starts and stops
+#.  The **status bar** across the top, which selects the Miniscope index and starts and stops
     acquisition.
 
 #.  The **control panel** on the left, holding the Miniscope and commutator hardware
@@ -26,13 +30,12 @@ The window is divided into six regions:
 
 #.  The **recording section**, anchored to the bottom of the control panel.
 
-#.  The **image tabs** of the data panel, showing the live image in several
-    representations.
+#.  The **image tabs** of the data panel, showing the live image and basic visualizations of the image.
 
 #.  The **signal tabs** of the data panel, plotting orientation, digital inputs, and the
     pixel intensity histogram.
 
-#.  The **console** along the bottom, logging everything the GUI does.
+#.  The **console** along the bottom, logging information about GUI events.
 
 Both the control panel and the console can be collapsed with the arrow button in their
 corner, and the boundaries between the image pane, the signal pane, and the console can be
@@ -40,14 +43,43 @@ dragged to resize them.
 
 ..  tip::
 
-    Every control in the GUI has a tooltip. Hover over a control to see what it does, the
-    valid range of its values, its keyboard shortcut if it has one, and, if it is greyed
-    out, the reason it is currently unavailable.
+    Every control in the GUI has a tooltip. Hover over a control to see what it does, the valid
+    range of its values, and its keyboard shortcut if it has one. If the control is greyed out, the
+    tooltip will also display the reason why it is currently unavailable.
 
 ..  TODO(media): screenshot — a tooltip open over a greyed-out control (for example the Record
 ..      button while acquisition is stopped), showing both the description and the
 ..      "Unavailable while..." note.
 ..      Suggested file: /_static/images/miniscopev4_gui/gui-tooltip-disabled.png
+
+***********************
+Keyboard Shortcuts
+***********************
+
+These shortcuts work anywhere in the GUI, regardless of which tab is open, and are ignored
+while the cursor is in a text field.
+
+..  list-table::
+    :header-rows: 1
+    :widths: 20 80
+
+    *   - Key
+        - Action
+    *   - :kbd:`Ctrl+R`
+        - Start or stop recording (arm or disarm in Trigger mode).
+    *   - :kbd:`Space`
+        - Freeze or resume the live display, without affecting acquisition or recording.
+    *   - :kbd:`C`
+        - Capture the current image to the data folder.
+    *   - :kbd:`E`
+        - Expand the image to fill the window, or collapse it back.
+    *   - :kbd:`Shift` + mouse wheel
+        - Step the time-series timebase up or down.
+    *   - :kbd:`Ctrl+C`
+        - Copy the selected console messages to the clipboard.
+
+A few other shortcuts only apply on a specific image tab, and are documented alongside the
+control they belong to.
 
 ***********************
 Status Bar
@@ -58,11 +90,12 @@ Status Bar
 ..      individually. Repeat this crop pattern for each region below.
 ..      Suggested file: /_static/images/miniscopev4_gui/gui-status-bar.png
 
-:Index:                 The index of the Miniscope to acquire from, in the order the
-                        cameras are detected by the computer, where ``0`` is the first
-                        camera. If several Miniscope DAQs are connected, step through the indices to find
-                        the one that corresponds to your Miniscope. This cannot be changed
-                        while acquiring.
+:Index:                 The index of the Miniscope to acquire from, in the order the cameras are
+                        detected by the computer, where ``0`` is the first camera. If several
+                        Miniscope DAQs are connected, step through the indices to find the one that
+                        corresponds to your Miniscope. This cannot be changed while acquiring. There
+                        is no way to tell which index corresponds to which physical Miniscope ahead
+                        of time: with more than one connected you have to try each index in turn.
 
 :Start / Stop Acquisition:  Starts and stops streaming frames from the Miniscope. Most
                             other controls only become available once acquisition is
@@ -287,6 +320,8 @@ positioning the Miniscope.
     dedicated analysis pipeline on the recorded video for quantitative work; see
     :doc:`/User-Guide/data-analysis`.
 
+.. _gui_max_projection:
+
 Max Projection
 ===================
 
@@ -303,6 +338,8 @@ view.
 :Reset:     Clears the accumulated projection and starts building it again from the
             current frame. Shortcut: :kbd:`R`.
 
+.. _gui_reference_image:
+
 Reference Image
 ===================
 
@@ -318,12 +355,14 @@ line up.
 ..      where they agree.
 ..      Suggested file: /_static/images/miniscopev4_gui/gui-reference-overlay-align.webp
 
-:Reference Image:       The path to the reference image. Click ``...`` to choose an image saved
-                        earlier with *Capture Current Image*. To check out all saved images, click
-                        **Browse** to open the data folder in File Explorer.
+:Reference Image:       The path to the reference image. Click **Select** to choose an image saved
+                        earlier with *Capture Current Image*, **Clear** to remove the current path
+                        (for example if the file was since moved or deleted), or **Browse** to open
+                        the data folder in File Explorer to check out all saved images.
 
 :Apply Live Overlay:    Blends the live image into the view. With this off, only the
-                        reference image is shown. Shortcut: :kbd:`O`.
+                        reference image is shown. Unavailable until a reference image is chosen.
+                        Shortcut: :kbd:`O`.
 
 :Reference Color:       The color used to tint the reference image.
 

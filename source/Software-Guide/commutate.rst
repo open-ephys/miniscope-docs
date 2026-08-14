@@ -7,10 +7,10 @@ Automate tether commutation using 3D orientation data
     This tutorial builds on the :ref:`quickstartguide` and is part of the
     :doc:`custom Bonsai workflows </Software-Guide/custom-workflows>` series.
 
-    **You do not need this workflow to use a commutator.** The :doc:`Miniscope GUI
-    </Software-Guide/index>` connects to and drives an Open Ephys commutator from its
+    **You do not need this workflow to use a commutator.** The :doc:`Open Ephys Miniscope
+    V4 GUI </Software-Guide/openephys-gui>` connects to and drives an Open Ephys commutator from its
     Control Panel, with no workflow to build: see the
-    :doc:`interface reference </Software-Guide/interface>`. Follow this tutorial when you
+    :doc:`GUI reference </Software-Guide/gui-reference>`. Follow this tutorial when you
     want to understand how commutation works, or when you need to modify it: to add manual
     keyboard control, to change the twist calculation, or to drive the commutator from
     something other than the Miniscope's IMU.
@@ -38,7 +38,7 @@ Workflow Description
 The ``Quaternion`` node connects to the ``Commutator`` node, which represents a ``GroupWorkflow`` named *Commutator*. A ``GroupWorkflow`` operator has a workflow nested inside, and its configurable properties can be exposed. To inspect the grouped workflow, double-click the ``Commutator`` node. You will see nodes from the OpenEphys.Commutator Bonsai package that transform quaternion measurements into twists, as well as nodes to capture keyboard keypresses to drive the commutator automatically or manually, respectively.
 
 The quaternion stream feeding the commutator here is the same one the
-:doc:`Miniscope GUI </Software-Guide/index>` plots in its *Quaternion* signal tab, and the
+:doc:`Miniscope GUI </Software-Guide/openephys-gui>` plots in its *Quaternion* signal tab, and the
 same one it uses to drive the commutator.
 
 ***********************
@@ -87,7 +87,7 @@ Operate the Workflow
 
     ..  tip::
 
-        The :doc:`Miniscope GUI </Software-Guide/index>` identifies commutator ports for you: its
+        The :doc:`Miniscope GUI </Software-Guide/openephys-gui>` identifies commutator ports for you: its
         **Refresh** button probes every serial port and lists only those that answer as a
         commutator. If you are unsure which port to use here, open the GUI once and read
         the port out of its Commutator section. If there are multiple commutators connected,
@@ -103,7 +103,7 @@ Viewing the Data
 
 Double-clicking the ``Quaternion`` node opens Bonsai's built-in quaternion visualizer,
 which is enough to confirm the IMU is reporting. For anything more, use the
-:doc:`Miniscope GUI </Software-Guide/index>`, which shows the orientation as Euler angles
+:doc:`Miniscope GUI </Software-Guide/openephys-gui>`, which shows the orientation as Euler angles
 alongside the quaternion, plots the digital inputs on the same time axis, and lets you
 freeze the display to inspect a rotation after the fact.
 

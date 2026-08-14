@@ -7,8 +7,8 @@ Record image and orientation data to file
     This tutorial builds on the :ref:`quickstartguide` and previous tutorials, and is part
     of the :doc:`custom Bonsai workflows </Software-Guide/custom-workflows>` series.
 
-    **You do not need this workflow to record data.** The :doc:`Miniscope GUI
-    </Software-Guide/index>` records video, per-frame orientation and digital-input
+    **You do not need this workflow to record data.** The :doc:`Open Ephys Miniscope V4
+    GUI </Software-Guide/openephys-gui>` records video, per-frame orientation and digital-input
     metadata, a session log, and a configuration snapshot from a single **Record** button,
     with all file names kept in sync; see :doc:`/Software-Guide/recording`. Follow this
     tutorial when you want to understand how the writers work, or when you need file
@@ -217,7 +217,7 @@ which is enough to confirm data is flowing. Judging image quality is another mat
 hard to tell by eye whether an image is clipping, or where the cells are in a noisy field
 of view.
 
-The :doc:`Miniscope GUI </Software-Guide/index>` gives you the saturation view and histogram
+The :doc:`Miniscope GUI </Software-Guide/openephys-gui>` gives you the saturation view and histogram
 for exposure, :math:`\Delta F/F` and the max projection for finding cells, and the
 reference-image overlay for returning to a field of view across sessions. Because only one
 program can hold the Miniscope DAQ at a time, use the GUI to focus and dial in LED

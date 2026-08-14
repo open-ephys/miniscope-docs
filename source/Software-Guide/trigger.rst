@@ -7,8 +7,8 @@ Trigger recordings with a hardware digital signal
     This tutorial builds on the :ref:`quickstartguide` and previous tutorials, and is part
     of the :doc:`custom Bonsai workflows </Software-Guide/custom-workflows>` series.
 
-    **You do not need this workflow to trigger recordings.** The :doc:`Miniscope GUI
-    </Software-Guide/index>` has a **Trigger** recording mode that does the same thing:
+    **You do not need this workflow to trigger recordings.** The :doc:`Open Ephys
+    Miniscope V4 GUI </Software-Guide/openephys-gui>` has a **Trigger** recording mode that does the same thing:
     pick a digital input, press **Arm Recording**, and one set of files is written per
     trigger pulse; see :ref:`gui_recording_modes`. Follow this tutorial when you want to
     understand how the gating works, or when you need trigger logic the GUI does not offer:
@@ -96,7 +96,7 @@ Additionally, connect a 0-3.3V or 0-5V trigger source to the Dig. In 0 port usin
 ..  tip::
 
     Before wiring this workflow up, confirm the trigger is actually reaching the DAQ. Open
-    the :doc:`Miniscope GUI </Software-Guide/index>`, start acquisition, and watch the
+    the :doc:`Miniscope GUI </Software-Guide/openephys-gui>`, start acquisition, and watch the
     digital-input plot beneath the orientation traces in the *Euler Angles* or *Quaternion*
     tab. If the trace does not step high and low with your trigger source, the problem is
     in the cabling or the source, not in the workflow.
@@ -143,20 +143,10 @@ Viewing the Data
 
 Verifying trigger logic means watching the image and the digital line together, which
 Bonsai's separate visualizer windows can make difficult. The :doc:`Miniscope GUI
-</Software-Guide/index>` plots both digital inputs on the same time axis as the orientation
+</Software-Guide/openephys-gui>` plots both digital inputs on the same time axis as the orientation
 data, and the display can be frozen with :kbd:`Space` without interrupting acquisition
 so a trigger event can be scrolled back to and inspected after it happens.
 
 Only one program can hold the Miniscope DAQ at a time, so use the GUI to verify the trigger
 source and set up the Miniscope, then close it and run this workflow. See
 :ref:`gui_visualizer_in_workflows`.
-
-***********************
-Next Steps
-***********************
-
-*   :ref:`gui_recording_modes` describes the GUI's Manual, Segmented, and Trigger modes,
-    including timer-driven segmentation this workflow does not implement.
-
-*   :doc:`/Software-Guide/custom-workflows` covers extending the GUI's own workflow if you
-    need its full interface plus custom logic.

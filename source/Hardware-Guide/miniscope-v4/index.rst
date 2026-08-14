@@ -50,7 +50,7 @@ Sensor (Python480) Features:
 
 Software Features:
 
-*   **Software Compatibility:** the :doc:`Miniscope GUI </Software-Guide/index>` (recommended),
+*   **Software Compatibility:** the :doc:`Open Ephys Miniscope V4 GUI </Software-Guide/openephys-gui>`,
     custom :doc:`Bonsai workflows </Software-Guide/custom-workflows>`, or
     UCLA-Miniscope-DAQ-Software (deprecated)
 

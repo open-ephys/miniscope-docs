@@ -4,9 +4,13 @@
 Recording Data with the Miniscope GUI
 ####################################################################
 
+..  important::
+
+    .. include:: beta-banner.rst
+
 This page covers the **Recording** section of the Miniscope GUI's control panel: where
 data goes, the three recording modes, and the files each recording produces. For the rest
-of the interface, see :doc:`/Software-Guide/interface`.
+of the interface, see :doc:`/Software-Guide/gui-reference`.
 
 ..  TODO(media): cropped screenshot — the Recording section with a data path filled in and a
 ..      recording in progress, so the red Stop Recording button and the running recording
@@ -121,7 +125,7 @@ adapter such as a BNC-SMA adapter.
     The **LED Trigger** setting in the Miniscope section is separate from this mode. It
     gates the *excitation LED* on a digital input, and can be pointed at the same input to
     keep the LED off — and so reduce photobleaching — between triggered recordings. See
-    :doc:`/Software-Guide/interface`.
+    :doc:`/Software-Guide/gui-reference`.
 
 .. _gui_output_files:
 
@@ -217,7 +221,7 @@ settings.
 These files are used in three ways:
 
 *   **Automatically, between sessions.** The GUI saves its state to
-    ``default_minscopev4_config.yml`` in its install folder and reloads it on the next
+    ``default_miniscopev4_config.yml`` in its install folder and reloads it on the next
     launch, so the GUI comes back exactly as you left it. If that file is missing or
     unreadable, the GUI warns in the console and falls back to defaults.
 

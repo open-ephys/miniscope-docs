@@ -14,7 +14,10 @@ Follow the Quick Start Guide below to get started with the Miniscope System righ
 
 ..  tip::
 
-    To run experiments rather than validate the hardware, the :doc:`Miniscope GUI </Software-Guide/index>` is the recommended software, and it does not require Bonsai to be installed separately. Follow *Connecting the Hardware* below, then install the GUI as described in the :doc:`/Software-Guide/index`; the Bonsai installation and workflow steps in this guide are only needed to build :doc:`custom workflows </Software-Guide/custom-workflows>`.
+    To run experiments rather than validate the hardware, the :doc:`Miniscope GUI
+    </Software-Guide/index>` highglights two software options that can be used to visualize and
+    record data. Follow *Connecting the Hardware* below, then install either GUI as
+    described in the :doc:`/Software-Guide/index`.
 
 .. _quickstartguide:
 
@@ -190,7 +193,7 @@ Testing the Miniscope's Functionality
                             :align: center
                             :height: 400px
 
-Find out how to record image and orientation data, how to perform automatic commutation to avoid the tether from twisting, how to gate data acquisition with a hardware trigger, and more in the :doc:`/Software-Guide/index`.
+Find out how to record image and orientation data, how to perform automatic commutation to avoid the tether from twisting, how to gate data acquisition with a hardware trigger, and more in the :doc:`/Software-Guide/openephys-gui`.
 
 Powering off the system
 -------------------------------------------
