@@ -45,11 +45,11 @@ The I/O on the Miniscope DAQ operate at a 3.3V logic level and the inputs are 5V
 External Power
 --------------
 
-By default, the Miniscope-DAQ is set to use USB power. However, it can be set to use an external power source for particularly power-intensive applications in which USB3.0 cannot provide sufficient power. To use an external power source instead of USB3.0:
+The Miniscope-DAQ is powered via USB. An external power supply can be connected when additional power is required for particularly power-intensive applications in which USB3.0 cannot provide sufficient power to the miniscope. To configure the system to use an external power source:
 
 #.  Unscrew all four fasteners that fasten the Miniscope-DAQ's enclosure. It might be necessary to apply gentle pressure on the nuts on the bottom of the DAQ to prevent them from turning when unscrewing the screws.
 
-#.  Set the jumper according to which power source you would like to use, either Jack or USB following to the silk screen:
+#.  Set the jumper to the desired configuration, *JACK*, following to the silk screen:
 
     ..  image:: /_static/images/miniscope-daq-jump.webp
         :alt:   power jumper animation
@@ -57,15 +57,15 @@ By default, the Miniscope-DAQ is set to use USB power. However, it can be set to
 
 #.  Replace the four fasteners. 
 
-..  note::  If the Miniscope DAQ is set to use external power, the barrel jack must be plugged in to use the device. Conversely, when the Miniscope DAQ is set to USB power, the barrel jack has no effect.
+..  note::  The Miniscope-DAQ itself remains powered via USB, even when an external power source is connected. The barrel jack must be plugged in for external power to be available. When the jumper is set to USB, the barrel jack has no effect.
 
 Recommended specifications for an external power supply are as follows:
 
 *   Output voltage
 
-    .. warning:: Do not exceed 9.0 VDC at the external power jack to the Miniscope DAQ. Exceeding this voltage can damage the device.
+    .. warning:: Do not exceed 9.0 VDC at the external power jack to the Miniscope DAQ. Exceeding this voltage can damage the miniscope.
 
-    To dial in the ideal power supply voltage for your application, you can use an adjustable power supply to power the DAQ and monitor the voltage at the miniscope as described in :ref:`measure_voltage` to stay within the operating voltage range of the miniscope and the DAQ. If you don't have a variable power supply, in most cases a `6V power adapter <https://open-ephys.org/power-supplies/oeps-5906>`__ is sufficient to account for the voltage drop. 
+    To dial in the ideal power supply voltage for your application, you can use an adjustable power supply and monitor the voltage at the miniscope as described in :ref:`measure_voltage` to stay within the operating voltage range of the system. If you don't have a variable power supply, in most cases a `6V power adapter <https://open-ephys.org/power-supplies/oeps-5906>`__ is sufficient to account for the voltage drop. 
     
 *   Output current
 
