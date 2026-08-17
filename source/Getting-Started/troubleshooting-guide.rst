@@ -103,7 +103,7 @@ To resolve this, disconnect and reconnect the miniscope and restart the software
 
 Follow the :ref:`troubleshooting` above to identify and resolve the source of the connection issue.
 
-.. ..  note::  In case this happens during acquisition in the middle of an experiment, the affected frames can sometimes be recovered and corrected offline by shifting the affected image buffers back into place. You can try using this post-hoc correction script provided by the Cai Lab that can fix this buffer mismatch artifact in some cases.
+..  note::  In case this happens during acquisition in the middle of an experiment, the affected frames can sometimes be recovered and corrected offline by shifting the affected image buffers back into place. You might want to try using this `post-hoc correction tool <https://github.com/LukasOesch/stripe_correction_tools>`_ that can help fix this buffer mismatch artifact in some cases.
 
 Horizontal banding artifacts
 -----------------------------------

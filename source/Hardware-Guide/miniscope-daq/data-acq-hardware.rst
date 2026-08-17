@@ -63,7 +63,7 @@ Recommended specifications for an external power supply are as follows:
 
 *   Output voltage
 
-    .. warning:: Do not exceed 9.0 VDC at the external power jack to the Miniscope DAQ. Exceeding this voltage can damage the miniscope.
+    .. warning:: Be careful not to supply excessive power, as this may damage your miniscope.
 
     To dial in the ideal power supply voltage for your application, you can use an adjustable power supply and monitor the voltage at the miniscope as described in :ref:`measure_voltage` to stay within the operating voltage range of the system. If you don't have a variable power supply, in most cases a `6V power adapter <https://open-ephys.org/power-supplies/oeps-5906>`__ is sufficient to account for the voltage drop. 
     
