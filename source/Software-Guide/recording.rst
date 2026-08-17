@@ -12,10 +12,10 @@ This page covers the **Recording** section of the Miniscope GUI's control panel:
 data goes, the three recording modes, and the files each recording produces. For the rest
 of the interface, see :doc:`/Software-Guide/gui-reference`.
 
-..  TODO(media): cropped screenshot — the Recording section with a data path filled in and a
-..      recording in progress, so the red Stop Recording button and the running recording
-..      timer are both visible.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-recording-section.png
+..  image:: /_static/images/miniscopev4_gui/gui-recording-section.png
+    :alt:   the Recording section with a data path filled in and a recording in progress
+    :align: center
+    :width: 60%
 
 **************************************
 Choosing Where Data Goes
@@ -85,10 +85,10 @@ choose how the segments behave:
                     until you press **Stop Recording**. Use this for open-ended sessions
                     where you still want bounded file sizes.
 
-..  TODO(media): cropped screenshot — the Recording section in Segmented mode with **Multiple
-..      Files** selected, showing the Duration and Total fields alongside the
-..      "N files · ends HH:MM:SS" readout.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-recording-segmented.png
+..  image:: /_static/images/miniscopev4_gui/gui-recording-segmented.png
+    :alt:   the Recording section in Segmented mode with **Multiple Files** selected
+    :align: center
+    :width: 50%
 
 Trigger
 ===================
@@ -105,10 +105,10 @@ high period produces its own set of files.
 Connect the trigger source to the corresponding *Dig. In* port using an SMA cable, or an
 adapter such as a BNC-SMA adapter.
 
-..  TODO(media): cropped screenshot — the Recording section in Trigger mode, armed, showing
-..      the Digital Input dropdown and the button reading **Disarm**. Pair it with a capture
-..      of the same section before arming so the state change is clear.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-recording-trigger-armed.png
+..  image:: /_static/images/miniscopev4_gui/gui-recording-trigger.png
+    :alt:   the Recording section in Trigger mode
+    :align: center
+    :width: 50%
 
 ..  tip::
 
@@ -122,10 +122,9 @@ adapter such as a BNC-SMA adapter.
 
 ..  note::
 
-    The **LED Trigger** setting in the Miniscope section is separate from this mode. It
-    gates the *excitation LED* on a digital input, and can be pointed at the same input to
-    keep the LED off — and so reduce photobleaching — between triggered recordings. See
-    :doc:`/Software-Guide/gui-reference`.
+    The **LED Trigger** setting in the Miniscope section is separate from this mode. It gates the
+    *excitation LED* on a digital input, and can be pointed at the same input to keep the LED off
+    between triggered recordings. See :doc:`/Software-Guide/gui-reference`.
 
 .. _gui_output_files:
 
@@ -156,11 +155,6 @@ easy to identify:
 
 Recording a configuration snapshot alongside every recording means the exact acquisition
 settings for any dataset can always be recovered, and reloaded, later.
-
-..  TODO(media): screenshot — a File Explorer window showing the output of several recordings
-..      (run_0.avi/.csv/.log/.yml, run_1.*, and so on) so the shared-base-name convention and
-..      the FileCount suffix are visible at a glance.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-output-files-explorer.png
 
 Per-Frame Metadata
 ===================
@@ -237,21 +231,3 @@ These files are used in three ways:
 
     To resume from a previous recording's exact settings, import that recording's ``.yml``
     file.
-
-***********************
-Building It Yourself
-***********************
-
-Everything on this page is implemented with standard Bonsai operators —
-``Bonsai.Vision.VideoWriter`` for the video, ``Bonsai.IO.CsvWriter`` for the metadata, and
-Bonsai's own file-naming helpers for the suffixes. If you need behavior the GUI does not
-offer, the same pieces can be assembled by hand:
-
-*   :doc:`/Software-Guide/save-data` builds the video and metadata writers from scratch,
-    including compression options the GUI does not expose.
-
-*   :doc:`/Software-Guide/trigger` builds the hardware-triggered recording logic that
-    Trigger mode implements.
-
-*   :doc:`/Software-Guide/commutate` builds the commutation the GUI's Commutator section
-    performs.

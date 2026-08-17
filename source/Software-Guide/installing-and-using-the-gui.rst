@@ -147,10 +147,13 @@ Starting Acquisition
     tab and rotate the Miniscope. The traces should respond immediately. This confirms
     the on-board IMU is streaming data, which is also what drives automatic commutation.
 
-    ..  TODO(media): animated gif — a hand rotating the Miniscope beside the Euler Angles
-    ..      traces responding. A split view showing both the physical scope and the plot is
-    ..      ideal; the existing quaternion-demo.webp is the model.
-    ..      Suggested file: /_static/images/miniscopev4_gui/gui-euler-angles-demo.webp
+    ..  raw:: html
+
+        <center>
+          <video width="690" height="284" controls muted>
+            <source src="../_static/videos/miniscopev4-gui/gui-euler-angles-demo.mp4" type="video/mp4">
+          </video>
+        </center>
 
 #.  **Record.** In the **Recording** section at the bottom of the Control Panel, click
     ``...`` to choose a folder and base file name, then click **Record** (or press

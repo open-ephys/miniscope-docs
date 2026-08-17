@@ -13,10 +13,6 @@ first acquisition walkthrough, see :doc:`/Software-Guide/installing-and-using-th
 
 The window is divided into six regions:
 
-..  TODO(media): annotated screenshot — overlay numbered callouts (1-6) on this screenshot,
-..      one per region in the list below, so the numbering has something to point at. 
-..      Suggested file: /_static/images/miniscopev4_gui/miniscope-gui-layout-annotated.png
-
 ..  image:: /_static/images/miniscopev4_gui/miniscope-gui-layout.png
     :alt:   the Miniscope GUI window, showing the status bar, control panel, data panel and console
     :align: center
@@ -28,9 +24,9 @@ The window is divided into six regions:
 #.  The **control panel** on the left, holding the Miniscope and commutator hardware
     settings.
 
-#.  The **recording section**, anchored to the bottom of the control panel.
-
 #.  The **image tabs** of the data panel, showing the live image and basic visualizations of the image.
+
+#.  The **recording section**, anchored to the bottom of the control panel.
 
 #.  The **signal tabs** of the data panel, plotting orientation, digital inputs, and the
     pixel intensity histogram.
@@ -46,11 +42,6 @@ dragged to resize them.
     Every control in the GUI has a tooltip. Hover over a control to see what it does, the valid
     range of its values, and its keyboard shortcut if it has one. If the control is greyed out, the
     tooltip will also display the reason why it is currently unavailable.
-
-..  TODO(media): screenshot — a tooltip open over a greyed-out control (for example the Record
-..      button while acquisition is stopped), showing both the description and the
-..      "Unavailable while..." note.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-tooltip-disabled.png
 
 ***********************
 Keyboard Shortcuts
@@ -85,10 +76,10 @@ control they belong to.
 Status Bar
 ***********************
 
-..  TODO(media): cropped screenshot — the status bar alone, at full width, so the Index field,
-..      Start Acquisition button, timers, and Freeze Display button can be pointed at
-..      individually. Repeat this crop pattern for each region below.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-status-bar.png
+..  image:: /_static/images/miniscopev4_gui/status-bar-cropped.png
+    :alt:   the Miniscope GUI status bar, showing the available controls
+    :align: center
+    :width: 100%
 
 :Index:                 The index of the Miniscope to acquire from, in the order the cameras are
                         detected by the computer, where ``0`` is the first camera. If several
@@ -138,10 +129,10 @@ format.
 Miniscope
 ===================
 
-..  TODO(media): cropped screenshot — the Miniscope section expanded, showing Focus, LED
-..      Brightness, Frame Rate, Sensor Gain, LED Trigger, and the Status line reading
-..      "Acquiring" in green.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-miniscope-section.png
+..  image:: /_static/images/miniscopev4_gui/gui-miniscope-section.png
+    :alt:   the Miniscope section expanded, showing Focus, LED Brightness, Frame Rate, Sensor Gain, LED Trigger, and the Status line
+    :align: center
+    :width: 60%
 
 :Focus:             Adjusts the electrowetting lens (EWL) around its nominal focal plane,
                     from -100% to 100%. The relationship between this percentage and the
@@ -178,12 +169,10 @@ and `the commutator documentation
 <https://open-ephys.github.io/commutator-docs/user-guide/mount-connect.html?commutator=coax#connecting>`__
 for how to mount and connect it.
 
-..  TODO(media): cropped screenshot — the Commutator section with a commutator found and
-..      connected, so the populated COM port dropdown, the red Disconnect button, the enabled
-..      Enable/Enable LED checkboxes, and the green "Connected" status are all visible. A
-..      second capture of the empty "No commutator found" state would help users confirm
-..      whether their commutator was detected.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-commutator-section.png
+..  image:: /_static/images/miniscopev4_gui/gui-commutator-section.png
+    :alt:   the Commutator section with a commutator found and connected
+    :align: center
+    :width: 60%
 
 :COM Port:      The serial port Windows assigned to the commutator's USB connection.
 
@@ -246,13 +235,13 @@ them.
     These views are display-only. The data written to file is always the raw sensor image.
     None of the processing below is saved in the recording.
 
+..  image:: /_static/images/miniscopev4_gui/gui-image-tabs.png
+    :alt:   the Commutator section with a commutator found and connected
+    :align: center
+    :width: 80%
+
 ..  TODO(media): screenshot grid — the same field of view captured in all five image tabs
 ..      (Image, Saturation, dF/F, Max Projection, Reference Image), laid out side by side.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-image-tabs-comparison.png
-
-..  TODO(media): animated gif — pressing :kbd:`E` to expand the image to fill the window and
-..      pressing it again to restore the panels.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-expand-collapse.webp
 
 Image
 ===================
@@ -349,7 +338,7 @@ same field of view across sessions: capture an image at the end of one session, 
 it as the reference at the start of the next and adjust the Miniscope until the two colors
 line up.
 
-..  TODO(media): animated gif — the highest-value clip on this page. Start with the live and
+..  TODO(media): animated gif — Start with the live and
 ..      reference images clearly misaligned (green and red offset from one another), then
 ..      adjust the Miniscope until the two channels converge and the overlay turns yellow
 ..      where they agree.
@@ -403,6 +392,11 @@ Euler Angles
 The Miniscope's orientation as Yaw, Pitch, and Roll in degrees, following the Tait-Bryan
 formalism. This is generally the easier of the two orientation views to interpret by eye.
 
+..  image:: /_static/images/miniscopev4_gui/euler-angles-demo.png
+    :alt:   the Euler angles signal tab with orientation changes
+    :align: center
+    :width: 80%
+
 Quaternion
 ===================
 
@@ -410,6 +404,11 @@ The raw quaternion (X, Y, Z, W) reported by the Miniscope's on-board IMU. This i
 used to drive an attached commutator. To learn more about interpreting quaternion data,
 see the `IMU Data article <https://github.com/open-ephys/wiki/wiki/IMU-Data>`__ in the
 Open Ephys Wiki.
+
+..  image:: /_static/images/miniscopev4_gui/quaternion-demo.png
+    :alt:   the Quaternion signal tab with orientation changes
+    :align: center
+    :width: 80%
 
 Digital Inputs
 ===================
@@ -424,7 +423,7 @@ Histogram
 ===================
 
 The distribution of pixel intensities across the current image, normalized so the tallest
-bin fills the plot. It shows the *relative* distribution of pixel values, not the number of
+bin fills the plot. It shows the relative distribution of pixel values, not the number of
 pixels at each intensity. Use it to set exposure: a histogram bunched against the right
 edge means the image is saturating.
 
@@ -438,13 +437,12 @@ Console
 ***********************
 
 The console records everything the GUI does: recordings started and stopped, files
-written, hardware settings changed, warnings, and errors. It is the first place to look
-when something does not behave as expected.
+written, hardware settings changed, warnings, and errors.
 
-..  TODO(media): screenshot — the console populated with a realistic mix of messages,
-..      including at least one warning (yellow), one error (red), and several property changes
-..      (blue), so the color coding described below can actually be seen.
-..      Suggested file: /_static/images/miniscopev4_gui/gui-console-messages.png
+..  image:: /_static/images/miniscopev4_gui/gui-console.png
+    :alt:   the Console with no messages yet
+    :align: center
+    :width: 100%
 
 :Filters:       *Info*, *Warnings*, *Errors*, and *Property Changes* checkboxes show and
                 hide each category of message. Warnings appear in yellow, errors in red,
