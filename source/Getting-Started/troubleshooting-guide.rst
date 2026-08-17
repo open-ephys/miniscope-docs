@@ -70,7 +70,11 @@ If not, refer to :ref:`getting-started/index:connecting the hardware` for additi
 
 Always ensure that all connectors on the DAQ, miniscope and commutator (if using one) are fully seated. Inspect the USB cable, the coaxial tether and its connector, and the miniscope connector for any signs of damage, debris or wear. Test your coaxial tether for shorts.
 
-4. Review order of operations
+Even if a USB cable shows no visible damage, it can still cause issues, especially when flashing the DAQ. If problems persist, try a different USB cable, preferably the one supplied with the DAQ.
+
+Although we generally recommend keeping the Miniscope connected to the coax tether, the U.FL connection should feel firm and click into place when connected. If it does not, the tether’s U.FL connector may be bent or damaged, which can prevent a reliable connection.
+
+1. Review order of operations
 -------------------------------------
 After disconnecting all components and closing the software, reconnect the system in the following order: first, plug the coaxial tether into the miniscope. Next, connect the miniscope to the DAQ. Finally, connect the DAQ to your computer.
 Only once all three lights on the DAQ and the red LED on the miniscope are on should you open the software.
