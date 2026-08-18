@@ -29,7 +29,8 @@ is deprecated and is not supported by Open Ephys.
 
         Free, open-source software from Open Ephys with live display, hardware control,
         automatic commutator control, and recording to file. Built on Bonsai, so it can be
-        run headless or extended in a custom workflow. Currently in beta.
+        run headless, extended in a custom workflow, or dropped into one you have already
+        built. Currently in beta.
 
         *Click to get started.*
 

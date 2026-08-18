@@ -7,6 +7,7 @@ Open Ephys Miniscope V4 GUI
 .. toctree::
     :hidden:
 
+    beta-downloads
     installing-and-using-the-gui
     gui-reference
     recording
@@ -17,12 +18,16 @@ Open Ephys Miniscope V4 GUI
 
 The `Open Ephys Miniscope V4 GUI <https://github.com/open-ephys/bonsai-miniscopev4-gui>`__ is a
 free, open-source application developed by Open Ephys for acquiring data from the UCLA Miniscope v4
-and the Miniscope DAQ. It gives you everything needed to run an imaging session in one place (live
-image and orientation display, hardware control, automatic commutator control, recording to file, etc.) and it can be launched headless from a shortcut or embedded in a custom Bonsai workflow.
+and the Miniscope DAQ. It puts everything an imaging session needs in one place: live image and
+orientation display, hardware control, automatic commutator control, and recording to file.
+
+The GUI is itself a Bonsai workflow. Launch it headless from a shortcut and it behaves like a
+standalone application; drop that same workflow into a Bonsai workflow of your own and it behaves
+like any other node, so it can stand in for the ``UclaMiniscopeV4`` hardware node without
+disturbing anything downstream.
 
 ..  TODO(media): screenshot — replace with the GUI mid-acquisition, showing live image data,
-..      running Euler angle traces, and a few console messages. The current capture is of an
-..      idle, disconnected GUI, so the landing page never shows the software actually working.
+..      running Euler angle traces, and a few console messages. 
 
 ..  image:: /_static/images/miniscopev4_gui/miniscope-gui-layout.png
     :alt:   the Open Ephys Miniscope V4 GUI window
@@ -39,7 +44,7 @@ image and orientation display, hardware control, automatic commutator control, r
         :link-type: doc
         :class-card: intro-card
 
-        Install the GUI, launch it, and run a first acquisition.
+        Download the GUI, install it, and run a first acquisition.
 
     ..  grid-item-card:: GUI Reference
         :link:      /Software-Guide/gui-reference

@@ -39,6 +39,9 @@ Choosing Where Data Goes
 
                 *   **Timestamp** appends the recording's date and time.
 
+:Mode:          Chooses how a recording is started and stopped: **Manual**, **Segmented**,
+                or **Trigger**. Each is described in :ref:`gui_recording_modes` below.
+
 :Compress Video:    Encodes the video with the ``MJPG`` compression codec instead of the
                     uncompressed ``Y800`` codec. This produces substantially smaller files at the
                     cost of higher CPU usage during recording, and, because MJPEG is a lossy codec,
@@ -86,7 +89,7 @@ choose how the segments behave:
                     where you still want bounded file sizes.
 
 ..  image:: /_static/images/miniscopev4_gui/gui-recording-segmented.png
-    :alt:   the Recording section in Segmented mode with **Multiple Files** selected
+    :alt:   the Recording section in Segmented mode with Multiple Files selected
     :align: center
     :width: 50%
 

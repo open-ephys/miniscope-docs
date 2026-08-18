@@ -20,43 +20,8 @@ Acquisition Within Bonsai
     The Open Ephys Miniscope V4 GUI is built on the ``OpenEphys.Miniscope`` Bonsai package, and
     everything it does can be done by working in Bonsai directly.
 
-.. _gui_visualizer_in_workflows:
-
-***************************************************
-Embed the GUI as a Single Node
-***************************************************
-
-The GUI is itself a Bonsai workflow (``MiniscopeGui.bonsai``), and it ships inside the
-``OpenEphys.MiniscopeV4.Gui`` package as an embedded workflow. Drop it straight into a
-workflow of your own and you get the entire GUI as a single node, with exactly the same
-functionality as launching it headless; see :ref:`headless_vs_custom_workflow` for why.
-
-#.  Start Bonsai and open the workflow you want to add the GUI to.
-
-#.  Install the ``OpenEphys.MiniscopeV4.Gui`` package from the Bonsai package manager, if it
-    is not already installed.
-
-#.  Find ``MiniscopeGui`` under the package's embedded workflows in the toolbox, and place
-    it on the canvas.
-
-#.  Run the workflow. With nothing but this node, you get exactly the functionality
-    described in :doc:`/Software-Guide/installing-and-using-the-gui`.
-
-#.  The node's output is the Miniscope data frame, so you can connect it to any custom logic you
-    like. Because it is just another node, the GUI can run alongside the rest of your workflow: a
-    behavior camera acquired in the same workflow displays at the same time in a different window.
-
-..  TODO(media): screenshot — the Bonsai toolbox with the embedded ``MiniscopeGui`` workflow
-..      located under the ``OpenEphys.MiniscopeV4.Gui`` package.
-..      Suggested file: /_static/images/miniscopev4_gui/bonsai-toolbox-embedded-workflow.png
-
-..  TODO(media): screenshot — a small example workflow with the ``MiniscopeGui`` node placed
-..      and its output branching into custom logic, ideally beside a behavior camera source.
-..      This makes the "GUI as one node in a bigger workflow" idea concrete.
-..      Suggested file: /_static/images/miniscopev4_gui/bonsai-gui-node-in-workflow.png
-
-Working in Bonsai three levels to build at, roughly in order of how much of the
-GUI's own tooling you bring along:
+There are three levels to build at, roughly in order of how much of the GUI's own tooling you
+bring along:
 
 :Base:      Talk directly to the hardware with the raw ``OpenEphys.Miniscope`` operators and
             Bonsai's own built-in visualizers. See :ref:`acquisition_base`.
@@ -65,9 +30,8 @@ GUI's own tooling you bring along:
             time (commutation, recording, triggering) without pulling in the rest of the
             GUI. See :ref:`acquisition_design`.
 
-:GUI:       Embed the GUI's own workflow, as just shown, for its complete display and
-            hardware control in a single node. See :ref:`acquisition_gui` for two more ways
-            to build around it.
+:GUI:       Embed the GUI's own workflow for its complete display and hardware control in a
+            single node. See :ref:`acquisition_gui`.
 
 .. _acquisition_base:
 
@@ -81,6 +45,8 @@ visualizers on the operator's output is enough to confirm data is flowing, but e
 data stream opens in its own window, with no shared time axis. See :ref:`acquisition_swap` below for
 what the same acquisition looks like with the GUI's display dropped in instead, with the rest of the
 workflow unchanged.
+
+.. _acquisition_design:
 
 ***********************************************
 Design: Visualizer-Focused Tutorials
@@ -107,85 +73,12 @@ is built on, for one task at a time: commutation, recording, or triggering.
     Guide <https://bonsai-rx.org/docs/articles/observables.html>`__ before working through
     these tutorials.
 
-.. _acquisition_gui:
-
-***********************************************
-GUI: Building Around the Full Interface
-***********************************************
-
-The example above embeds the whole GUI as one node. Two more ways to build around it:
-
-.. _gui_workflow_bandwidth:
-
-Alongside Other Processing
-===================================
-
-Because the GUI is just another node, it can run in the same workflow as an entirely
-separate piece of processing: for example, a behavior-tracking tool like SLEAP watching a
-second camera, each with its own display:
-
-..  mermaid::
-
-    flowchart LR
-        subgraph workflow["One Bonsai Workflow"]
-            direction LR
-            A["MiniscopeGui<br/>(IncludeWorkflow)"] --> AW["GUI window"]
-            B["Behavior camera<br/>source"] --> C["SLEAP-style<br/>tracking"]
-            C --> CW["Tracking window"]
-        end
-
-Running two independent capture/encode pipelines side by side has the potential for
-USB bandwidth and CPU contention to show up. This is the same effect you'd see running a video call
-over a webcam while also acquiring from the Miniscope. To minimize any disruption, put any hardware on separate USB
-controllers where possible, and avoid running other encode/decode-heavy software (video
-calls, screen recording) during acquisition if you can.
-
-..  TODO(workflow): a workflow combining ``MiniscopeGui`` with a second camera source
-..      feeding a behavior-tracking pipeline, demonstrating that both can run and display
-..      at once.
-..      Suggested file: /_static/downloads/miniscopegui-with-behavior-tracking.bonsai
-
-.. _acquisition_swap:
-
-Swapping the Hardware Node for the GUI
-=======================================
-
-Because the GUI's output is the same per-frame Miniscope data stream the raw
-``UclaMiniscopeV4`` node produces, the two are interchangeable in a workflow: whatever you
-build downstream keeps working whether it's fed by the bare hardware node or the GUI.
-
-..  mermaid::
-
-    flowchart LR
-        subgraph baseVariant["Base tier"]
-            direction LR
-            H["UclaMiniscopeV4"] --> P1["Your custom<br/>processing"]
-        end
-        subgraph guiVariant["GUI tier"]
-            direction LR
-            G["MiniscopeGui<br/>(IncludeWorkflow)"] --> P2["Your custom<br/>processing"]
-        end
-
-Start with the raw node while you're building and debugging your processing logic, then
-drop the GUI in over it once you also want the live display and hardware control —
-everything downstream is unaffected.
-
-..  TODO(workflow): two variants of the same downstream processing workflow, one fed by
-..      ``UclaMiniscopeV4`` and one fed by ``MiniscopeGui``, to show they're interchangeable.
-..      Suggested files: /_static/downloads/uclaminiscopev4-basic-processing.bonsai and
-..      /_static/downloads/miniscopegui-basic-processing.bonsai
-
-.. TODO: Multiple GUIs in one workflow, using higher-order operators
-
-.. _acquisition_design:
-
 Before You Start
 ===================================
 
 These tutorials build on the :ref:`quickstartguide`, which covers connecting the hardware,
-installing Bonsai, and installing the ``OpenEphys.Miniscope.Design`` and
-``Bonsai.StarterPack`` packages. Each tutorial adds more functionality to the last, so it
-is best to follow them in order.
+installing Bonsai, and installing the ``OpenEphys.Miniscope.Design`` and ``Bonsai.StarterPack``
+packages. Each tutorial adds more functionality to the last, so it is best to follow them in order.
 
 The Tutorials
 ===================================
@@ -216,3 +109,101 @@ The Tutorials
 
         Gate recording with a hardware digital signal, producing one file set per trigger
         pulse.
+
+.. _acquisition_gui:
+
+***********************************************
+GUI: Embedding the Full Interface
+***********************************************
+
+.. _gui_visualizer_in_workflows:
+
+Embed the GUI as a Single Node
+===================================
+
+The GUI is itself a Bonsai workflow (``MiniscopeGui.bonsai``), and it ships inside the
+``OpenEphys.MiniscopeV4.Gui`` package as an embedded workflow. Drop it straight into a
+workflow of your own and you get the entire GUI as a single node, with exactly the same
+functionality as launching it headless; see :ref:`headless_vs_custom_workflow` for why.
+
+#.  Start Bonsai and open the workflow you want to add the GUI to.
+
+#.  Install the ``OpenEphys.MiniscopeV4.Gui`` package, if it is not already installed. During
+    the beta this package is not on NuGet, so it has to be installed from a local file rather
+    than the Bonsai package manager; see :doc:`/Software-Guide/beta-downloads`.
+
+#.  Find ``MiniscopeGui`` under the package's embedded workflows in the toolbox, and place
+    it on the canvas.
+
+    ..  image:: /_static/images/miniscopev4_gui/bonsai-toolbox-embedded-workflow.png
+        :alt:   the Bonsai toolbox with the embedded MiniscopeGui workflow located under the OpenEphys.MiniscopeV4.Gui package
+        :align: center
+        :width: 60%
+
+#.  Run the workflow. With nothing but this node, you get exactly the functionality
+    described in :doc:`/Software-Guide/installing-and-using-the-gui`.
+
+#.  The node's output is the Miniscope data frame, so you can connect it to any custom logic you
+    like. Because it is just another node, the GUI can run alongside the rest of your workflow: a
+    behavior camera acquired in the same workflow displays at the same time in a different window.
+
+    ..  image:: /_static/downloads/bonsai-gui-node-in-workflow.svg
+        :alt:   the MiniscopeGui workflow placed next to a CameraCapture node
+        :align: center
+        :width: 20%
+
+.. TODO: This is currently just an SVG; we cannot embed this as a regular workflow and make
+    use of the `{% include 'workflow.html' %}` HTML snippet until the NuGet package is published.
+    Once the Bonsai.config file includes the OpenEphys.MiniscopeV4.Gui package, we can swap this SVG for a workflow
+
+.. _acquisition_swap:
+
+Swapping the Hardware Node for the GUI
+=======================================
+
+The GUI's output is the same per-frame Miniscope data stream the raw ``UclaMiniscopeV4`` node
+produces, so the GUI workflow is a drop-in replacement for that node: whatever you build
+downstream keeps working whether it is fed by the bare hardware node or by the GUI.
+
+If you have already developed a processing pipeline around ``UclaMiniscopeV4``, put the GUI
+workflow in the same position to gain its visualizations. Nothing downstream has to change.
+Here is the :doc:`/Software-Guide/trigger` workflow with the ``UclaMiniscopeV4`` node replaced
+by the ``MiniscopeGui`` workflow:
+
+..  image:: /_static/downloads/miniscope-gui-swapped-in-for-hardware-node-commutator.svg
+    :alt:   the MiniscopeGui workflow replacing the UclaMiniscopeV4 node in the trigger workflow
+    :align: center
+    :width: 50%
+
+.. _gui_workflow_bandwidth:
+
+Alongside Other Processing
+===================================
+
+Because the GUI is just another node, it can run in the same workflow as an entirely
+separate piece of processing: for example, a behavior-tracking tool like SLEAP watching a
+second camera, each with its own display.
+
+Running two independent capture/encode pipelines side by side has the potential for USB bandwidth
+and CPU contention to show up. This is the same effect you'd see running a video call over a webcam
+while also acquiring from the Miniscope. To minimize any disruption, put any hardware on separate
+USB controllers where possible, and avoid running other encode/decode-heavy software (video calls,
+screen recording) during acquisition if you can.
+
+..  TODO(workflow): a workflow combining ``MiniscopeGui`` with a second camera source
+..      feeding a behavior-tracking pipeline, demonstrating that both can run and display
+..      at once.
+..      Suggested file: /_static/downloads/miniscopegui-with-behavior-tracking.bonsai
+
+Running Multiple GUIs Simultaneously
+=======================================
+
+If you have multiple Miniscopes connected to one computer and want to visualize all of them from
+one workflow, wrap the included workflow inside higher-order operators and run them side by side.
+In the following workflow, each ``SelectMany`` contains a ``MiniscopeGui.bonsai`` embedded
+workflow and nothing else.
+
+..  image:: /_static/downloads/two-miniscope-guis-running-simultaneously.svg
+    :alt:   two MiniscopeGui workflows running simultaneously, one inside each SelectMany operator
+    :align: center
+    :width: 20%

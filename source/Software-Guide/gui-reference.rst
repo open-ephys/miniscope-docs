@@ -170,11 +170,11 @@ and `the commutator documentation
 for how to mount and connect it.
 
 ..  image:: /_static/images/miniscopev4_gui/gui-commutator-section.png
-    :alt:   the Commutator section with a commutator found and connected
+    :alt:   the Commutator section with a commutator found on COM3, not yet connected
     :align: center
     :width: 60%
 
-:COM Port:      The serial port Windows assigned to the commutator's USB connection.
+:Commutator:    The serial port Windows assigned to the commutator's USB connection.
 
 :Refresh:       Rescans the serial ports. The GUI does not list every COM port on
                 the machine: it probes each one and keeps only those that answer with a
@@ -201,6 +201,10 @@ for how to mount and connect it.
                         unavailable while acquisition is running with Auto Connect checked,
                         since the commutator is required; uncheck Auto Connect first to
                         disconnect without stopping acquisition.
+
+:Status:        *Connected* once the commutator is connected, *Disconnected* otherwise,
+                and *Connecting...* or *Disconnecting...* while a connection is being
+                opened or closed.
 
 :Enable:        Enables the commutator motor so it counteracts cable twist as the animal
                 rotates. The commutator is driven by the same quaternion orientation data
@@ -236,7 +240,7 @@ them.
     None of the processing below is saved in the recording.
 
 ..  image:: /_static/images/miniscopev4_gui/gui-image-tabs.png
-    :alt:   the Commutator section with a commutator found and connected
+    :alt:   the five image tabs, with the Image tab selected and its acquisition statistics alongside
     :align: center
     :width: 80%
 

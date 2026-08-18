@@ -11,15 +11,13 @@ Trigger recordings with a hardware digital signal
     Miniscope V4 GUI </Software-Guide/openephys-gui>` has a **Trigger** recording mode that does the same thing:
     pick a digital input, press **Arm Recording**, and one set of files is written per
     trigger pulse; see :ref:`gui_recording_modes`. Follow this tutorial when you want to
-    understand how the gating works, or when you need trigger logic the GUI does not offer:
-    triggering on falling edges, combining multiple inputs, or gating on a software
-    condition rather than a hardware line.
+    understand how the gating works, or when you need trigger logic the GUI does not offer.
 
-The Miniscope DAQ Digital Input ports receives 3.3V or 5V level digital inputs.
+The Miniscope DAQ Digital Input ports receive 3.3V or 5V level digital inputs.
 That signal can be used to gate recording to file. After following this
 tutorial, the user will be able to record both image and orientation data to
 file following a hardware trigger signal. In this workflow, recording to file is
-initiated at the each rising edge and terminated at each falling edge of digital
+initiated at each rising edge and terminated at each falling edge of digital
 input 0, as depicted below. The LED on/off state can optionally follow the
 trigger.
 
@@ -33,6 +31,12 @@ trigger.
     {% with static_path = '../_static', name = 'uclaminiscopev4-miniscopedaq-trigger' %}
         {% include 'workflow.html' %}
     {% endwith %}
+
+.. hint::
+
+    The ``MiniscopeGui`` workflow is a drop-in replacement for the ``UclaMiniscopeV4`` node in
+    this workflow: swap it in to gain the GUI's visualizations, with no changes to anything
+    downstream. :ref:`acquisition_swap` shows this workflow with the swap made.
 
 ***********************
 Workflow Description
@@ -57,7 +61,7 @@ on the state of the ``DigitalIn`` member, which corresponds to the status of
 the DAQ's digital input ports. A ``Condition`` node named
 ``TriggerAsserted`` contains logic checking if a rising edge (LOW → HIGH
 transition) has occurred on digital input 0. The condition node fires once
-per rising edge as determined the logic in the subworkflow:
+per rising edge, as determined by the logic in the subworkflow:
 
 ..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger-trigger-asserted.svg
     :alt:   exported svg of TriggerAsserted node
@@ -111,14 +115,14 @@ No additional packages besides the ones listed in the :ref:`quickstartguide` and
 Operate the Workflow
 ***********************
 
-#.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that
+#.  Set the ``UclaMiniscopeV4`` operator's ``Index`` property to the value that
     corresponds to the index of your miniscope.
 
 #.  If using a commutator, set the COM port associated with your commutator in
     the workflow. If not using a commutator, delete the nodes corresponding to
     the commutation.
 
-#.  Set the ``UCLAMiniscopeV4`` operator's ``LEDRespectsTrigger`` property to
+#.  Set the ``UclaMiniscopeV4`` operator's ``LEDRespectsTrigger`` property to
     True if you intend to use the LED only during the triggered recording. This
     can help reduce photobleaching during long experimental sessions with
     multiple triggered recordings, but means the LED will be off during

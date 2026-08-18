@@ -7,13 +7,11 @@ Record image and orientation data to file
     This tutorial builds on the :ref:`quickstartguide` and previous tutorials, and is part
     of the :doc:`custom Bonsai workflows </Software-Guide/custom-workflows>` series.
 
-    **You do not need this workflow to record data.** The :doc:`Open Ephys Miniscope V4
-    GUI </Software-Guide/openephys-gui>` records video, per-frame orientation and digital-input
-    metadata, a session log, and a configuration snapshot from a single **Record** button,
-    with all file names kept in sync; see :doc:`/Software-Guide/recording`. Follow this
-    tutorial when you want to understand how the writers work, or when you need file
-    outputs the GUI does not produce: a different codec, additional data streams, or a
-    different file layout.
+    **You do not need this workflow to record data.** The :doc:`Open Ephys Miniscope V4 GUI
+    </Software-Guide/openephys-gui>` records video, per-frame orientation / digital-input metadata,
+    a session log, and a configuration snapshot from a single **Record** button, with all file names
+    kept in sync; see :doc:`/Software-Guide/recording`. Follow this tutorial when you want to
+    understand how the writers work, or when you need to modify what is saved.
 
 After following this tutorial, the user will be able to save image data and timestamped orientation data from the UCLA Miniscope v4.
 
@@ -22,6 +20,12 @@ After following this tutorial, the user will be able to save image data and time
     {% with static_path = '../_static', name = 'uclaminiscopev4-miniscopedaq-savedata' %}
         {% include 'workflow.html' %}
     {% endwith %}
+
+.. hint::
+
+    The ``MiniscopeGui`` workflow is a drop-in replacement for the ``UclaMiniscopeV4`` node in
+    this workflow: swap it in to gain the GUI's visualizations, with no changes to anything
+    downstream. See :ref:`acquisition_swap`.
 
 ***********************
 Workflow Description
@@ -62,7 +66,7 @@ Workflow Description
     The Miniscope GUI uses the same ``Bonsai.Vision.VideoWriter`` operator, with the
     ``Y800`` codec by default and ``MJPG`` when *Compress Video* is enabled. The FFV1
     option shown here is one the GUI does not expose, because it requires a separate Bonsai
-    package (``Bonsai.Ffmpeg``) to handle the encoding, and playback software that supports
+    package (``Bonsai.FFmpeg``) to handle the encoding, and playback software that supports
     the codec.
 
 **Save Timestamped Orientation (Quaternion) Data**
@@ -101,13 +105,15 @@ In addition to the setup steps outlined in previous tutorials, install the follo
 
 * *Bonsai.FFmpeg*: controls video output encoding.
 
-This package requires installing `FFmpeg <https://ffmpeg.org/>`_ separately in order to work. Follow the FFmpeg installation guide available in `documentation for the Bonsai.FFmpeg package <https://bonsai-rx.org/ffmpeg/>`_.
+This package requires installing `FFmpeg <https://ffmpeg.org/>`_ separately in order to work. Follow
+the FFmpeg installation guide available in `documentation for the Bonsai.FFmpeg package
+<https://bonsai-rx.org/ffmpeg/>`_.
 
 ***********************
 Operate the Workflow
 ***********************
 
-#.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope.
+#.  Set the ``UclaMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope.
 
 #.  If using a commutator, set the COM port associated with your commutator in the workflow. If not using a commutator, delete the nodes corresponding to the commutation.
 
@@ -119,10 +125,10 @@ Operate the Workflow
 
         ..  grid-item::
 
-            Left-click the enabled ``VideoWriter`` node and edit fields under
-            the properties pane. Confirm the frame rate matches that of the ``UCLAMiniscopeV4`` operator. Make sure the file name has a valid extension
-            (".avi"). "Y800", an uncompressed greyscale codec, is specified as
-            the ``FourCC``.
+            Left-click the enabled ``VideoWriter`` node and edit fields under the properties pane.
+            Confirm the frame rate matches that of the ``UclaMiniscopeV4`` operator. Make sure the
+            file name has a valid extension (".avi"). "Y800", an uncompressed greyscale codec, is
+            specified as the ``FourCC``.
 
         ..  grid-item::
 
@@ -138,12 +144,14 @@ Operate the Workflow
 
         ..  grid-item::
 
-            Disable the first ``VideoWriter`` node and enable the second one. The description of the node in the properties pane can help you distinguish between them. Left-click the enabled
-            ``VideoWriter`` node and edit fields under the properties pane.
-            Confirm frame rate matches that of the UCLA Miniscope v4. Make sure
-            the file name has a valid extension (".avi"). The parameters in
-            ``OutputArguments`` specify an 8-bit video with "FFV1", a lossless
-            compression codec, as the FourCC. Here are FFmpeg settings that output a compressed grayscale 8-bit video: "-c: ffv1 -pix_fmt gray -bits_per_raw_sample 8".
+            Disable the first ``VideoWriter`` node and enable the second one. The description of the
+            node in the properties pane can help you distinguish between them. Left-click the
+            enabled ``VideoWriter`` node and edit fields under the properties pane. Confirm frame
+            rate matches that of the UCLA Miniscope v4. Make sure the file name has a valid
+            extension (".avi"). The parameters in ``OutputArguments`` specify an 8-bit video with
+            "FFV1", a lossless compression codec, as the FourCC. Here are FFmpeg settings that
+            output a compressed grayscale 8-bit video: "-c: ffv1 -pix_fmt gray -bits_per_raw_sample
+            8".
 
         ..  grid-item::
 

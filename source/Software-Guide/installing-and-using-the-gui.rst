@@ -4,15 +4,18 @@
 Installing and Using the GUI
 ####################################################################
 
+..  important::
+
+    .. include:: beta-banner.rst
+
 *********************************************
 Installation
 *********************************************
 
 *Requirements: 64-bit Windows 10 or 11, and an internet connection during installation.*
 
-#.  Download the latest ``MiniscopeGui-Setup-<version>.exe`` installer from the
-    `bonsai-miniscopev4-gui releases page
-    <https://github.com/open-ephys/bonsai-miniscopev4-gui/releases>`__.
+#.  Download the ``MiniscopeV4Gui-Setup-<version>.exe`` installer from the beta share
+    folder; see :doc:`/Software-Guide/beta-downloads`.
 
 #.  Run the installer. It installs per-user into
     ``%LOCALAPPDATA%\MiniscopeV4Gui``, so no administrator rights are required.
@@ -21,9 +24,8 @@ Installation
 
         This application is currently not code signed. As a result, Windows may display
         a "Windows protected your PC" or "Unknown publisher" warning the first time you
-        run it. This is expected, even if you downloaded it from the project's official
-        GitHub Releases page. To continue, click *More info*, verify that the correct
-        program is trying to run, and click *Run anyway*.
+        run it. This is expected. To continue, click *More info*, verify that the
+        correct program is trying to run, and click *Run anyway*.
 
         ..  image:: /_static/images/miniscopev4_gui/windows-smart-screen.png
             :alt:   Windows Defender SmartScreen when installing the GUI
@@ -52,7 +54,8 @@ Installation
 
 ..  tip::
 
-    To uninstall, use *Add or remove programs* and uninstall the Miniscope V4 GUI.
+    To uninstall, use *Add or remove programs* and uninstall
+    *Open Ephys Miniscope V4 GUI*.
 
 *********************************************
 Launching the GUI
@@ -76,9 +79,10 @@ it behaves identically whichever way it's launched: nothing about the GUI's own 
 changes between the two.
 
 What differs is extensibility. Headless mode gives you the whole GUI and nothing else.
-Embedding it in a workflow lets you build around it. For example, running a behavior
-camera in the same workflow so its feed displays in its own window alongside the GUI's. See
-:doc:`/Software-Guide/custom-workflows` for how.
+Embedding it in a workflow lets you build around it: run a behavior camera in the same
+workflow so its feed displays in its own window alongside the GUI's, or use the GUI as a
+drop-in replacement for the ``UclaMiniscopeV4`` node in a workflow you have already
+built. See :doc:`/Software-Guide/custom-workflows` for how.
 
 *********************************************
 Starting Acquisition
@@ -120,7 +124,7 @@ Starting Acquisition
     :Sensor Gain:       The image sensor's analog gain.
 
     :LED Trigger:       Turn on the LED when the selected DigitalIn pin is high. To keep the LED on
-                        continuously, choose ``None``
+                        continuously, choose ``None``.
 
     ..  raw:: html
 
