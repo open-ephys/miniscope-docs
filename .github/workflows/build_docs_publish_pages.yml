@@ -13,10 +13,10 @@ jobs:
     steps:
       # 1. Generate HTML files
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v7
         with:
           python-version: "3.12.10"
 
@@ -25,7 +25,7 @@ jobs:
           python -m pip install --upgrade pipenv wheel
 
       - id: cache-pipenv
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ~/.local/share/virtualenvs
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
@@ -45,7 +45,7 @@ jobs:
           pipenv run make linkcheck SPHINXOPTS="-W --keep-going"
   
       - name: Upload GitHub Pages Artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: docs/html/
 
@@ -62,4 +62,4 @@ jobs:
       
     steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
