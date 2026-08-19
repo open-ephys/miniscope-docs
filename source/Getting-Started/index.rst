@@ -10,7 +10,13 @@ Getting Started
     additional-resources
     troubleshooting-guide
 
-Follow the Quick Start Guide below to get started with the Miniscope System right away. It uses Bonsai to connect to a Miniscope v4 via a Miniscope DAQ and validate its functionality. To learn more about the software's functionality and other software options to acquire from the Miniscope v4, read the :doc:`/Software-Guide/index`. For information on using miniscopes for experiments, please refer to the :doc:`/User-Guide/index`. You can find more information about the system at large among the :doc:`additional-resources`.
+Follow the Quick Start Guide below to get started with the Miniscope System right away. It connects a Miniscope v4 to a Miniscope DAQ and validates its functionality using a minimal Bonsai workflow, so that each part of the system can be checked on its own. To learn more about the software's functionality and other software options to acquire from the Miniscope v4, read the :doc:`/Software-Guide/index`. For information on using miniscopes for experiments, please refer to the :doc:`/User-Guide/index`. You can find more information about the system at large among the :doc:`additional-resources`.
+
+..  tip::
+
+    This guide validates the hardware. To run experiments, the :doc:`/Software-Guide/index`
+    covers two applications for visualizing and recording data. Follow *Connecting the
+    Hardware* below, then install one of them as described there.
 
 .. _quickstartguide:
 
@@ -101,12 +107,12 @@ Testing the Miniscope's Functionality
             {% include 'workflow.html' %}
         {% endwith %}
 
-    *   The ``UCLAMiniscopeV4`` node represents a ``UCLAMiniscopeV4`` *source* operator as indicated by its
+    *   The ``UclaMiniscopeV4`` node represents a ``UclaMiniscopeV4`` *source* operator as indicated by its
         node's green color and the orientation of its grey arc. Source operators
         produce data. 
 
-    *   The ``UCLAMiniscopeV4`` operator's output (``Bonsai.Miniscope.V4Frame``) has
-        four members. They can be accessed by right-clicking the ``UCLAMiniscopeV4``
+    *   The ``UclaMiniscopeV4`` operator's output (``Bonsai.Miniscope.V4Frame``) has
+        four members. They can be accessed by right-clicking the ``UclaMiniscopeV4``
         node and hovering the cursor over the *Output* option in the pop-up menu.
         Left-clicking on one of these members automatically places a new
         ``MemberSelector`` nodes. These nodes can also be placed by searching
@@ -122,11 +128,11 @@ Testing the Miniscope's Functionality
         selected from ``Bonsai.Miniscope.V4Frame`` to be visualized.
 
 
-#.  Using the drop-down list, set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope. 
+#.  Using the drop-down list, set the ``UclaMiniscopeV4`` operator's ``Index`` property to the value that corresponds to the index of your miniscope. 
 
     ..  image:: /_static/images/uclaminiscopev4-properties.webp
         :align: center
-        :alt:   screenshot of UCLAMiniscopeV4 node properties for index
+        :alt:   screenshot of UclaMiniscopeV4 node properties for index
 
     ..  note::  If there is no value populated in the drop-down, check the hardware connections. If there are multiple Miniscope DAQs connected to your PC, iterate through the index values while testing the node's functionality to verify what index corresponds to each miniscope. 
 
@@ -152,9 +158,14 @@ Testing the Miniscope's Functionality
 
     **Miniscope Settings Configuration**
 
-    Left-click the ``UCLAMiniscopeV4`` node to access the Properties pane on the right.
+    Left-click the ``UclaMiniscopeV4`` node to access the Properties pane on the right.
 
-    :Frame Rate:    Change the ``FramesPerSecond`` value by left-clicking the corresponding field’s drop-down menu located in the *Properties* pane and selecting a different option. Frame rate and exposure-duration-per-frame are inversely related, so higher frame rates produce darker images. Use this information and look at the ``Image`` node visualizer to confirm that the frame rate adjusts according to the ``FramesPerSecond`` value. A discerning eye can also notice changes in frame rate, but that requires a moving image.
+    :Frame Rate:    Change the ``FramesPerSecond`` value by left-clicking the corresponding field's
+       drop-down menu located in the *Properties* pane and selecting a different option. Frame rate
+       and exposure-duration-per-frame are inversely related, so higher frame rates produce darker
+       images. Use this information and look at the ``Image`` node visualizer to confirm that the
+       frame rate adjusts according to the ``FramesPerSecond`` value. A discerning eye can also
+       notice changes in frame rate, but that requires a moving image.
 
                     ..  image:: /_static/images/fps-demo.webp
                         :alt:   animation of changing miniscope fps
@@ -186,7 +197,7 @@ Testing the Miniscope's Functionality
                             :align: center
                             :height: 400px
 
-Find out how to record image and orientation data, how to perform automatic commutation to avoid the tether from twisting, how to gate data acquisition with a hardware trigger, and more in the :doc:`/Software-Guide/index`.
+Find out how to record image and orientation data, how to perform automatic commutation to avoid the tether from twisting, how to gate data acquisition with a hardware trigger, and more in the :doc:`/Software-Guide/openephys-gui`.
 
 Powering off the system
 -------------------------------------------

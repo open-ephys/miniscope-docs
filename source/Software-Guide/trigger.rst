@@ -1,14 +1,23 @@
 ##########################################################
-Trigger recordings with a hardware digital signal 
+Trigger recordings with a hardware digital signal
 ##########################################################
 
-..  note::  This tutorial builds on the :ref:`quickstartguide` and previous tutorials.
+..  note::
 
-The Miniscope DAQ Digital Input ports receives 3.3V or 5V level digital inputs.
+    This tutorial builds on the :ref:`quickstartguide` and previous tutorials, and is part
+    of the :doc:`custom Bonsai workflows </Software-Guide/custom-workflows>` series.
+
+    **You do not need this workflow to trigger recordings.** The :doc:`Open Ephys
+    Miniscope V4 GUI </Software-Guide/openephys-gui>` has a **Trigger** recording mode that does the same thing:
+    pick a digital input, press **Arm Recording**, and one set of files is written per
+    trigger pulse; see :ref:`gui_recording_modes`. Follow this tutorial when you want to
+    understand how the gating works, or when you need trigger logic the GUI does not offer.
+
+The Miniscope DAQ Digital Input ports receive 3.3V or 5V level digital inputs.
 That signal can be used to gate recording to file. After following this
 tutorial, the user will be able to record both image and orientation data to
 file following a hardware trigger signal. In this workflow, recording to file is
-initiated at the each rising edge and terminated at each falling edge of digital
+initiated at each rising edge and terminated at each falling edge of digital
 input 0, as depicted below. The LED on/off state can optionally follow the
 trigger.
 
@@ -22,6 +31,12 @@ trigger.
     {% with static_path = '../_static', name = 'uclaminiscopev4-miniscopedaq-trigger' %}
         {% include 'workflow.html' %}
     {% endwith %}
+
+.. hint::
+
+    The ``MiniscopeGui`` workflow is a drop-in replacement for the ``UclaMiniscopeV4`` node in
+    this workflow: swap it in to gain the GUI's visualizations, with no changes to anything
+    downstream. :ref:`acquisition_swap` shows this workflow with the swap made.
 
 ***********************
 Workflow Description
@@ -46,7 +61,7 @@ on the state of the ``DigitalIn`` member, which corresponds to the status of
 the DAQ's digital input ports. A ``Condition`` node named
 ``TriggerAsserted`` contains logic checking if a rising edge (LOW → HIGH
 transition) has occurred on digital input 0. The condition node fires once
-per rising edge as determined the logic in the subworkflow:
+per rising edge, as determined by the logic in the subworkflow:
 
 ..  image:: /_static/images/uclaminiscopev4-miniscopedaq-trigger-trigger-asserted.svg
     :alt:   exported svg of TriggerAsserted node
@@ -69,6 +84,9 @@ This mechanism creates one recording session per hardware trigger pulse. After e
 ..  note::
     This workflow can just as easily be configured to trigger on Digital Input 1 instead. Simply change the Value property of the ``HasFlag`` node in the "TriggerAsserted" ``Condition`` subworkflow and the ``HasFlag`` node in the ``TakeWhile`` subworkflow to "DigitalIn1".
 
+    This is the same choice the GUI presents as its **Digital Input** dropdown in Trigger
+    mode.
+
 ***********************
 Configure the Hardware
 ***********************
@@ -79,30 +97,60 @@ Configure the hardware as in the :ref:`quickstartguide` or as in the :doc:`commu
 
 Additionally, connect a 0-3.3V or 0-5V trigger source to the Dig. In 0 port using the SMA cable or a suitable adapter such as a BNC-SMA adapter.
 
+..  tip::
+
+    Before wiring this workflow up, confirm the trigger is actually reaching the DAQ. Open
+    the :doc:`Miniscope GUI </Software-Guide/openephys-gui>`, start acquisition, and watch the
+    digital-input plot beneath the orientation traces in the *Euler Angles* or *Quaternion*
+    tab. If the trace does not step high and low with your trigger source, the problem is
+    in the cabling or the source, not in the workflow.
+
 **********************
 Get Started in Bonsai
 **********************
 
-No additional packages besides the ones listed in the :ref:`quickstartguide` and previous tutorials are required. 
+No additional packages besides the ones listed in the :ref:`quickstartguide` and previous tutorials are required.
 
 ***********************
 Operate the Workflow
 ***********************
 
-#.  Set the ``UCLAMiniscopeV4`` operator's ``Index`` property to the value that
+#.  Set the ``UclaMiniscopeV4`` operator's ``Index`` property to the value that
     corresponds to the index of your miniscope.
 
 #.  If using a commutator, set the COM port associated with your commutator in
     the workflow. If not using a commutator, delete the nodes corresponding to
     the commutation.
 
-#.  Set the ``UCLAMiniscopeV4`` operator's ``LEDRespectsTrigger`` property to
+#.  Set the ``UclaMiniscopeV4`` operator's ``LEDRespectsTrigger`` property to
     True if you intend to use the LED only during the triggered recording. This
     can help reduce photobleaching during long experimental sessions with
     multiple triggered recordings, but means the LED will be off during
     acquisition periods that are not being recorded to file. To be able to
     monitor the brain activity during acquisition, toggle this property to False.
 
+    ..  note::
+
+        The GUI exposes this as the **LED Trigger** setting in its Miniscope section, where
+        it is chosen independently of the recording trigger, so the LED can be gated on one
+        input while recording is gated on another.
+
 #.  Run the workflow and verify that images that are visualized by clicking
     "ChunkData" are emitted only when digital input 0 is HIGH, and that the LED
-    behaves according to the previous step
+    behaves according to the previous step.
+
+.. _trigger_viewing_data:
+
+***********************
+Viewing the Data
+***********************
+
+Verifying trigger logic means watching the image and the digital line together, which
+Bonsai's separate visualizer windows can make difficult. The :doc:`Miniscope GUI
+</Software-Guide/openephys-gui>` plots both digital inputs on the same time axis as the orientation
+data, and the display can be frozen with :kbd:`Space` without interrupting acquisition
+so a trigger event can be scrolled back to and inspected after it happens.
+
+Only one program can hold the Miniscope DAQ at a time, so use the GUI to verify the trigger
+source and set up the Miniscope, then close it and run this workflow. See
+:ref:`gui_visualizer_in_workflows`.
