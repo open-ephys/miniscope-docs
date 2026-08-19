@@ -11,32 +11,80 @@ Acquisition Within Bonsai
     save-data
     trigger
 
-..  important::
-
-    .. include:: beta-banner.rst
-
 ..  note::
 
     The Open Ephys Miniscope V4 GUI is built on the ``OpenEphys.Miniscope`` Bonsai package, and
     everything it does can be done by working in Bonsai directly.
 
-There are three levels to build at, roughly in order of how much of the GUI's own tooling you
-bring along:
+********************
+Before You Start
+********************
 
-:Base:      Talk directly to the hardware with the raw ``OpenEphys.Miniscope`` operators and
-            Bonsai's own built-in visualizers. See :ref:`acquisition_base`.
+These tutorials assume the hardware is connected as described in the :ref:`quickstartguide`, and
+that Bonsai, ``OpenEphys.Miniscope.Design``, and ``Bonsai.StarterPack`` are installed as described
+in :ref:`bonsai_installation` above.
 
-:Design:    Add the visualizer tooling from ``OpenEphys.Miniscope.Design`` for one task at a
-            time (commutation, recording, triggering) without pulling in the rest of the
-            GUI. See :ref:`acquisition_design`.
+.. _bonsai_installation:
 
-:GUI:       Embed the GUI's own workflow for its complete display and hardware control in a
-            single node. See :ref:`acquisition_gui`.
+**************
+Installation
+**************
+
+Everything on this page needs Bonsai and the ``OpenEphys.Miniscope`` packages installed. This
+is the same setup described in the :ref:`quickstartguide`.
+
+..  note::
+
+    Bonsai, the ``OpenEphys.Miniscope`` packages, and the Miniscope V4 GUI all run on 64-bit Windows
+    only.
+
+#.  The Miniscope DAQ works over USB, so configure the operating system's USB settings to
+    avoid suspending the device due to power management.
+
+#.  `Download and install Bonsai <https://bonsai-rx.org/docs/articles/installation.html>`__,
+    either as a portable environment or as a system-wide application.
+
+#.  Install the following packages from the `Bonsai Package Manager
+    <https://bonsai-rx.org/docs/articles/packages.html>`__:
+
+    *   ``OpenEphys.Miniscope.Design``: an extension of the ``OpenEphys.Miniscope`` library that
+        includes graphical user interfaces (GUIs). Installing ``OpenEphys.Miniscope.Design``
+        automatically installs ``OpenEphys.Miniscope`` as a dependency.
+
+    *   ``Bonsai.StarterPack``: the "standard library" for Bonsai, containing tools used in
+        almost every workflow.
+
+.. _installing_the_gui_package:
+
+Installing the GUI Package
+===============================
+
+The GUI ships in its own package, ``OpenEphys.MiniscopeV4.Gui``, which is only needed for
+:ref:`acquisition_gui` below. During the beta this package is not published to NuGet, so it
+does not appear in the Bonsai package manager and has to be installed from a local file
+instead.
+
+..  button-link:: https://gofile.me/7cMIw/2yLWwRnWM
+    :color: primary
+    :expand:
+
+    Download the OpenEphys.MiniscopeV4.Gui package
+
+Unzip the download to get ``OpenEphys.MiniscopeV4.Gui.<version>.nupkg``, then point Bonsai at
+the folder you unzipped it into and install from there. The `Installing a Local NuGet Package
+in Bonsai
+<https://github.com/open-ephys/wiki/wiki/Installing-a-Local-Nuget-Package-in-Bonsai>`__
+article in the Open Ephys Wiki walks through it.
+
+..  tip::
+
+    If you only want to run the GUI as a standalone application, you can install the standalone
+    installer. See :doc:`/Software-Guide/openephys-gui`.
 
 .. _acquisition_base:
 
 ***********************************************
-Base: Talking Directly to the Hardware
+Connecting to the Hardware
 ***********************************************
 
 The ``OpenEphys.Miniscope`` package's acquisition operators (e.g., ``UclaMiniscopeV4``) are the
@@ -46,74 +94,10 @@ data stream opens in its own window, with no shared time axis. See :ref:`acquisi
 what the same acquisition looks like with the GUI's display dropped in instead, with the rest of the
 workflow unchanged.
 
-.. _acquisition_design:
-
-***********************************************
-Design: Visualizer-Focused Tutorials
-***********************************************
-
-These tutorials are for the cases the full GUI doesn't cover: when acquisition has to be
-interleaved with other hardware, when you need online processing or closed-loop control, or
-when the recording logic has to differ from the modes the GUI provides. They use the
-``OpenEphys.Miniscope.Design`` Bonsai package, the same visualizer tooling the GUI itself
-is built on, for one task at a time: commutation, recording, or triggering.
-
-*   **Build in Bonsai** when you need behavior the GUI does not offer.
-
-*   **View with the GUI** while you do. Bonsai's built-in visualizers show one member of the
-    data stream at a time, in separate windows. The GUI shows all of it at once, with the
-    display tools you actually need at the rig (i.e., the saturation view, :math:`\Delta F/F`,
-    max projection, reference-image overlay, histogram, and the orientation and
-    digital-input plots on a shared time axis). Each tutorial below notes how to use the GUI
-    to view the data it acquires.
-
-..  note::
-
-    While not strictly required, it is highly recommended to study the `Bonsai Language
-    Guide <https://bonsai-rx.org/docs/articles/observables.html>`__ before working through
-    these tutorials.
-
-Before You Start
-===================================
-
-These tutorials build on the :ref:`quickstartguide`, which covers connecting the hardware,
-installing Bonsai, and installing the ``OpenEphys.Miniscope.Design`` and ``Bonsai.StarterPack``
-packages. Each tutorial adds more functionality to the last, so it is best to follow them in order.
-
-The Tutorials
-===================================
-
-..  grid:: 3
-    :gutter: 3
-
-    ..  grid-item-card:: 1. Automate Commutation
-        :link:      /Software-Guide/commutate
-        :link-type: doc
-        :class-card: intro-card
-
-        Rotate the coaxial tether automatically from the Miniscope's orientation data, and
-        control the commutator manually with keypresses.
-
-    ..  grid-item-card:: 2. Record Data to File
-        :link:      /Software-Guide/save-data
-        :link-type: doc
-        :class-card: intro-card
-
-        Write image data and timestamped orientation data to disk, with a choice of video
-        codecs.
-
-    ..  grid-item-card:: 3. Trigger Recordings
-        :link:      /Software-Guide/trigger
-        :link-type: doc
-        :class-card: intro-card
-
-        Gate recording with a hardware digital signal, producing one file set per trigger
-        pulse.
-
 .. _acquisition_gui:
 
 ***********************************************
-GUI: Embedding the Full Interface
+Using the GUI in Bonsai
 ***********************************************
 
 .. _gui_visualizer_in_workflows:
@@ -128,9 +112,8 @@ functionality as launching it headless; see :ref:`headless_vs_custom_workflow` f
 
 #.  Start Bonsai and open the workflow you want to add the GUI to.
 
-#.  Install the ``OpenEphys.MiniscopeV4.Gui`` package, if it is not already installed. During
-    the beta this package is not on NuGet, so it has to be installed from a local file rather
-    than the Bonsai package manager; see :doc:`/Software-Guide/beta-downloads`.
+#.  Install the ``OpenEphys.MiniscopeV4.Gui`` package, if it is not already installed; see
+    :ref:`installing_the_gui_package`.
 
 #.  Find ``MiniscopeGui`` under the package's embedded workflows in the toolbox, and place
     it on the canvas.
@@ -207,3 +190,40 @@ workflow and nothing else.
     :alt:   two MiniscopeGui workflows running simultaneously, one inside each SelectMany operator
     :align: center
     :width: 20%
+
+
+Tutorials
+==============
+
+To understand how the ``UclaMiniscopeV4`` can be used directly, check out the following tutorials.
+Remember that everywhere the ``UclaMiniscopeV4`` node is placed, the ``MiniscopeGui.bonsai``
+included workflow can be swapped in without changing the downstream logic while allowing for full
+visualization with the GUI.
+
+..  grid:: 3
+    :gutter: 3
+
+    ..  grid-item-card:: 1. Automate Commutation
+        :link:      /Software-Guide/commutate
+        :link-type: doc
+        :class-card: intro-card
+
+        Rotate the coaxial tether automatically from the Miniscope's orientation data, and
+        control the commutator manually with keypresses.
+
+    ..  grid-item-card:: 2. Record Data to File
+        :link:      /Software-Guide/save-data
+        :link-type: doc
+        :class-card: intro-card
+
+        Write image data and timestamped orientation data to disk, with a choice of video
+        codecs.
+
+    ..  grid-item-card:: 3. Trigger Recordings
+        :link:      /Software-Guide/trigger
+        :link-type: doc
+        :class-card: intro-card
+
+        Gate recording with a hardware digital signal, producing one file set per trigger
+        pulse.
+

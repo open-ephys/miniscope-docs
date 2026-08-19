@@ -4,9 +4,13 @@
 Installing and Using the GUI
 ####################################################################
 
-..  important::
+********************
+Before You Start
+********************
 
-    .. include:: beta-banner.rst
+These tutorials assume the hardware is connected as described in the :ref:`quickstartguide`, and
+that Bonsai, ``OpenEphys.Miniscope.Design``, and ``Bonsai.StarterPack`` are installed as described
+in :ref:`bonsai_installation` above.
 
 *********************************************
 Installation
@@ -14,8 +18,8 @@ Installation
 
 *Requirements: 64-bit Windows 10 or 11, and an internet connection during installation.*
 
-#.  Download the ``MiniscopeV4Gui-Setup-<version>.exe`` installer from the beta share
-    folder; see :doc:`/Software-Guide/beta-downloads`.
+#.  Download the GUI `here <https://gofile.me/7cMIw/lQe4F0dBX>`__ and unzip it to get the
+    ``MiniscopeV4Gui-Setup-<version>.exe`` installer.
 
 #.  Run the installer. It installs per-user into
     ``%LOCALAPPDATA%\MiniscopeV4Gui``, so no administrator rights are required.
@@ -33,17 +37,14 @@ Installation
             :width: 40%
 
 #.  At the end of installation, the setup downloads Bonsai and the acquisition packages the GUI
-    depends on. This step needs an internet connection and can take a few minutes.
+    depends on. 
+
+    .. note:: 
+
+        This step needs an internet connection and can take a few minutes.
 
 #.  The installer creates an **Open Ephys Miniscope V4 GUI** shortcut on your Desktop and in the
     Start Menu.
-
-..  note::
-
-    The Miniscope DAQ works over USB, so make sure the operating system's USB settings are
-    configured to avoid suspending the device due to power management. See the
-    :ref:`quickstartguide` for details on connecting the hardware and verifying that
-    Windows recognizes the board.
 
 ..  note::
 
@@ -68,21 +69,6 @@ On startup the GUI restores the settings from the last session, which are kept i
 acquisition and saves the current configuration to the same configuration file.
 
 .. _headless_vs_custom_workflow:
-
-Headless Mode vs. Custom Workflows
-=====================================
-
-The shortcut above launches the GUI **headless**: no Bonsai editor is visible, just the GUI window
-itself. This isn't a separate version of the software; the GUI is itself a Bonsai workflow. The same
-workflow can instead be embedded as a single node inside a custom Bonsai workflow of your own, and
-it behaves identically whichever way it's launched: nothing about the GUI's own functionality
-changes between the two.
-
-What differs is extensibility. Headless mode gives you the whole GUI and nothing else.
-Embedding it in a workflow lets you build around it: run a behavior camera in the same
-workflow so its feed displays in its own window alongside the GUI's, or use the GUI as a
-drop-in replacement for the ``UclaMiniscopeV4`` node in a workflow you have already
-built. See :doc:`/Software-Guide/custom-workflows` for how.
 
 *********************************************
 Starting Acquisition
