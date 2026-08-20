@@ -4,6 +4,13 @@
 Open Ephys Miniscope V4 GUI
 ####################################################################
 
+.. toctree::
+    :hidden:
+
+    installing-and-using-the-gui
+    gui-reference
+    recording
+
 The `Open Ephys Miniscope V4 GUI <https://github.com/open-ephys/bonsai-miniscopev4-gui>`__ is a
 free, open-source application developed by Open Ephys for acquiring data from the UCLA Miniscope V4
 and the Miniscope DAQ. It puts everything an imaging session needs in one place: live image and
@@ -44,10 +51,3 @@ installation and a first acquisition.
 To build your own acquisition around the GUI instead of running it on its own, see
 :doc:`/Software-Guide/custom-workflows`, which also covers installing the GUI as a Bonsai
 package.
-
-.. toctree::
-    :hidden:
-
-    installing-and-using-the-gui
-    gui-reference
-    recording
