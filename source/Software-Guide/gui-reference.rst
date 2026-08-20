@@ -4,10 +4,6 @@
 Miniscope GUI Reference
 ####################################################################
 
-..  important::
-
-    .. include:: beta-banner.rst
-
 This page describes every control in the Open Ephys Miniscope V4 GUI. For installation and a
 first acquisition walkthrough, see :doc:`/Software-Guide/installing-and-using-the-gui`.
 

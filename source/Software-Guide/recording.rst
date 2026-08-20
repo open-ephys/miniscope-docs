@@ -4,10 +4,6 @@
 Recording Data with the Miniscope GUI
 ####################################################################
 
-..  important::
-
-    .. include:: beta-banner.rst
-
 This page covers the **Recording** section of the Miniscope GUI's control panel: where
 data goes, the three recording modes, and the files each recording produces. For the rest
 of the interface, see :doc:`/Software-Guide/gui-reference`.
@@ -15,7 +11,7 @@ of the interface, see :doc:`/Software-Guide/gui-reference`.
 ..  image:: /_static/images/miniscopev4_gui/gui-recording-section.png
     :alt:   the Recording section with a data path filled in and a recording in progress
     :align: center
-    :width: 60%
+    :width: 40%
 
 **************************************
 Choosing Where Data Goes
@@ -25,10 +21,6 @@ Choosing Where Data Goes
                 produced during acquisition is written. Click ``...`` to pick them with a
                 file dialog, or type the path directly. **Browse** opens the folder in File
                 Explorer so you can check previously saved data.
-
-                You do not add an extension: the GUI appends one per file type. A data path
-                of ``C:\data\mouse12\run_`` produces ``run_0.avi``, ``run_0.csv``,
-                ``run_0.log``, and ``run_0.yml``.
 
 :Suffix:        The text inserted between the base name and the extension to keep
                 successive recordings from overwriting one another:
