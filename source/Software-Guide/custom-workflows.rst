@@ -11,19 +11,6 @@ Acquisition Within Bonsai
     save-data
     trigger
 
-..  note::
-
-    The Open Ephys Miniscope V4 GUI is built on the ``OpenEphys.Miniscope`` Bonsai package, and
-    everything it does can be done by working in Bonsai directly.
-
-********************
-Before You Start
-********************
-
-These tutorials assume the hardware is connected as described in the :ref:`quickstartguide`, and
-that Bonsai, ``OpenEphys.Miniscope.Design``, and ``Bonsai.StarterPack`` are installed as described
-in :ref:`bonsai_installation` above.
-
 .. _bonsai_installation:
 
 **************
@@ -62,19 +49,11 @@ Installing the GUI Package
 The GUI ships in its own package, ``OpenEphys.MiniscopeV4.Gui``, which is only needed for
 :ref:`acquisition_gui` below. During the beta this package is not published to NuGet, so it
 does not appear in the Bonsai package manager and has to be installed from a local file
-instead.
+instead. Click `here <https://gofile.me/7cMIw/2yLWwRnWM>`__ to download the package.
 
-..  button-link:: https://gofile.me/7cMIw/2yLWwRnWM
-    :color: primary
-    :expand:
-
-    Download the OpenEphys.MiniscopeV4.Gui package
-
-Unzip the download to get ``OpenEphys.MiniscopeV4.Gui.<version>.nupkg``, then point Bonsai at
-the folder you unzipped it into and install from there. The `Installing a Local NuGet Package
-in Bonsai
-<https://github.com/open-ephys/wiki/wiki/Installing-a-Local-Nuget-Package-in-Bonsai>`__
-article in the Open Ephys Wiki walks through it.
+Follow the `Installing a Local NuGet Package in Bonsai
+<https://github.com/open-ephys/wiki/wiki/Installing-a-Local-Nuget-Package-in-Bonsai>`__ article in
+the Open Ephys Wiki to see how to install the package you just downloaded in Bonsai.
 
 ..  tip::
 

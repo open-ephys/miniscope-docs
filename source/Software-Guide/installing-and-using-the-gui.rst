@@ -4,59 +4,34 @@
 Installing and Using the GUI
 ####################################################################
 
-********************
-Before You Start
-********************
-
-These tutorials assume the hardware is connected as described in the :ref:`quickstartguide`, and
-that Bonsai, ``OpenEphys.Miniscope.Design``, and ``Bonsai.StarterPack`` are installed as described
-in :ref:`bonsai_installation` above.
-
 *********************************************
 Installation
 *********************************************
 
 *Requirements: 64-bit Windows 10 or 11, and an internet connection during installation.*
 
-#.  Download the GUI `here <https://gofile.me/7cMIw/lQe4F0dBX>`__ and unzip it to get the
+#.  Download the GUI `here <https://gofile.me/7cMIw/lQe4F0dBX>`__ and extract the
     ``MiniscopeV4Gui-Setup-<version>.exe`` installer.
 
-#.  Run the installer. It installs per-user into
-    ``%LOCALAPPDATA%\MiniscopeV4Gui``, so no administrator rights are required.
+#.  Run the installer. It installs per-user into ``%LOCALAPPDATA%\MiniscopeV4Gui``, so no
+    administrator rights are required. The GUI is only installed to this folder, and will not affect
+    files or programs stored anywhere else on the computer.
 
-    ..  note::
+    * When installing, Windows may display a "Windows protected your PC" or "Unknown publisher"
+      warning. This is expected. To continue, click *More info*, verify that the correct program is
+      trying to run, and click *Run anyway*.
 
-        This application is currently not code signed. As a result, Windows may display
-        a "Windows protected your PC" or "Unknown publisher" warning the first time you
-        run it. This is expected. To continue, click *More info*, verify that the
-        correct program is trying to run, and click *Run anyway*.
-
-        ..  image:: /_static/images/miniscopev4_gui/windows-smart-screen.png
-            :alt:   Windows Defender SmartScreen when installing the GUI
-            :align: center
-            :width: 40%
-
-#.  At the end of installation, the setup downloads Bonsai and the acquisition packages the GUI
-    depends on. 
-
-    .. note:: 
-
-        This step needs an internet connection and can take a few minutes.
+#.  At the end of installation, the setup downloads all necessary dependencies. This step needs an
+    internet connection and can take a few minutes.
 
 #.  The installer creates an **Open Ephys Miniscope V4 GUI** shortcut on your Desktop and in the
     Start Menu.
 
-..  note::
-
-    Avoid USB hubs, including the ones built into some laptops, docks, and monitors; they introduce
-    the possibility of dropped frames, especially if anything else sharing the hub is also streaming
-    high bandwidth information. Connect the Miniscope DAQ directly to a USB 3.0 port on the computer
-    instead.
-
 ..  tip::
 
-    To uninstall, use *Add or remove programs* and uninstall
-    *Open Ephys Miniscope V4 GUI*.
+    To uninstall, use *Add or remove programs* and uninstall *Open Ephys Miniscope V4 GUI*. Or,
+    delete the ``%LOCALAPPDATA%\MiniscopeV4Gui`` folder, which would fully remove the GUI from the
+    computer as well.
 
 *********************************************
 Launching the GUI
@@ -78,6 +53,11 @@ Starting Acquisition
     order the Miniscopes are detected by the computer. ``0`` is the first Miniscope; if you only
     have one Miniscope connected, ``0`` will be correct.
 
+    ..  image:: /_static/images/miniscopev4_gui/status-bar-cropped-index-highlighted.png
+        :alt:   the Miniscope GUI status bar, showing the available controls
+        :align: center
+        :width: 100%
+ 
     ..  note::
 
         There is no way to tell which index corresponds to which physical Miniscope ahead of
@@ -88,6 +68,11 @@ Starting Acquisition
 #.  **Start acquiring.** Click **Start Acquisition**. The *Image* tab begins showing live
     frames, and the acquisition timer in the status bar starts counting.
 
+    ..  image:: /_static/images/miniscopev4_gui/status-bar-cropped-start-highlighted.png
+        :alt:   the Miniscope GUI status bar, showing the available controls
+        :align: center
+        :width: 100%
+ 
     ..  tip::
 
         If you are using a commutator, check **Auto Connect** in the *Commutator* section before
@@ -96,6 +81,14 @@ Starting Acquisition
 
 #.  **Set up the optics.** In the *Control Panel* on the left, open the **Miniscope**
     section and adjust:
+
+    ..  raw:: html
+
+        <center>
+          <video width="362" height="258" controls muted>
+            <source src="../_static/videos/miniscopev4-gui/control-panel-miniscope-settings.mp4" type="video/mp4">
+          </video>
+        </center>
 
     :LED Brightness:    The excitation LED level, as a percentage of maximum current.
                         Start low and increase until the sample is visible; the
@@ -111,14 +104,6 @@ Starting Acquisition
 
     :LED Trigger:       Turn on the LED when the selected DigitalIn pin is high. To keep the LED on
                         continuously, choose ``None``.
-
-    ..  raw:: html
-
-        <center>
-          <video width="362" height="258" controls muted>
-            <source src="../_static/videos/miniscopev4-gui/control-panel-miniscope-settings.mp4" type="video/mp4">
-          </video>
-        </center>
 
 #.  **Check for saturation.** Switch to the *Saturation* tab to see which pixels exceed
     the intensity threshold, and to the *Histogram* signal tab to see the overall
@@ -145,9 +130,14 @@ Starting Acquisition
           </video>
         </center>
 
-#.  **Record.** In the **Recording** section at the bottom of the Control Panel, click
-    ``...`` to choose a folder and base file name, then click **Record** (or press
+#.  **Record.** In the **Recording** section at the bottom of the Control Panel, (1) click
+    ``...`` to choose a folder and base file name, then (2) click **Record** (or press
     :kbd:`Ctrl+R`). See :doc:`/Software-Guide/recording` for the recording modes and the
     files produced.
 
+    ..  image:: /_static/images/miniscopev4_gui/gui-recording-blank-data-path.png
+        :alt:   the recording section, highlighting where to click
+        :align: center
+        :width: 60%
+ 
 #.  **Stop.** Click **Stop Recording**, then **Stop Acquisition**.
