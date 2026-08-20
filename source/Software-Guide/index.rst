@@ -5,7 +5,7 @@ Software Guide
 ##############################
 
 .. toctree::
-  :hidden:
+    :hidden:
 
     openephys-gui
     custom-workflows
