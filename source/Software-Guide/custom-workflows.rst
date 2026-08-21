@@ -49,7 +49,7 @@ Installing the GUI Package
 The GUI ships in its own package, ``OpenEphys.MiniscopeV4.Gui``, which is only needed for
 :ref:`acquisition_gui` below. During the beta this package is not published to NuGet, so it
 does not appear in the Bonsai package manager and has to be installed from a local file
-instead. Click `here <https://gofile.me/7cMIw/2yLWwRnWM>`__ to download the package.
+instead. Click `here <https://gofile.me/7cMIw/0BZJIhCfh>`__ to download the package.
 
 Follow the `Installing a Local NuGet Package in Bonsai
 <https://github.com/open-ephys/wiki/wiki/Installing-a-Local-Nuget-Package-in-Bonsai>`__ article in

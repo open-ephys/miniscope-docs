@@ -10,7 +10,7 @@ Installation
 
 *Requirements: 64-bit Windows 10 or 11, and an internet connection during installation.*
 
-#.  Download the GUI `here <https://gofile.me/7cMIw/lQe4F0dBX>`__ and extract the
+#.  Download the GUI `here <https://gofile.me/7cMIw/uoFCjHjIE>`__ and extract the
     ``MiniscopeV4Gui-Setup-<version>.exe`` installer.
 
 #.  Run the installer. It installs per-user into ``%LOCALAPPDATA%\MiniscopeV4Gui``, so no
@@ -57,7 +57,7 @@ Starting Acquisition
         :alt:   the Miniscope GUI status bar, showing the available controls
         :align: center
         :width: 100%
- 
+
     ..  note::
 
         There is no way to tell which index corresponds to which physical Miniscope ahead of
@@ -72,7 +72,7 @@ Starting Acquisition
         :alt:   the Miniscope GUI status bar, showing the available controls
         :align: center
         :width: 100%
- 
+
     ..  tip::
 
         If you are using a commutator, check **Auto Connect** in the *Commutator* section before
@@ -139,5 +139,5 @@ Starting Acquisition
         :alt:   the recording section, highlighting where to click
         :align: center
         :width: 60%
- 
+
 #.  **Stop.** Click **Stop Recording**, then **Stop Acquisition**.
