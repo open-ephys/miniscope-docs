@@ -32,7 +32,7 @@ Open Ephys Miniscope V4 GUI
         :columns: 4
         :class: sd-d-flex-column sd-align-major-center sd-align-minor-center
 
-        ..  button-link:: https://gofile.me/7cMIw/lQe4F0dBX
+        ..  button-link:: https://gofile.me/7cMIw/uoFCjHjIE
             :color: primary
             :shadow:
 

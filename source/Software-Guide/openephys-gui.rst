@@ -21,7 +21,7 @@ workflow of your own and it behaves like any other node, so it can stand in for 
 ``UclaMiniscopeV4`` hardware node without disturbing anything downstream.
 
 ..  TODO(media): screenshot — replace with the GUI mid-acquisition, showing live image data,
-..      running Euler angle traces, and a few console messages. 
+..      running Euler angle traces, and a few console messages.
 
 ..  grid:: 2
     :gutter: 2
@@ -38,7 +38,7 @@ workflow of your own and it behaves like any other node, so it can stand in for 
         :columns: 4
         :class: sd-d-flex-column sd-align-major-center sd-align-minor-center
 
-        ..  button-link:: https://gofile.me/7cMIw/lQe4F0dBX
+        ..  button-link:: https://gofile.me/7cMIw/uoFCjHjIE
             :color: primary
             :shadow:
 
