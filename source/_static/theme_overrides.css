@@ -259,6 +259,12 @@ h6 {
   margin-top: 2em;
 }
 
+.card-img-top.card-img-top-sm {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .card {
   border: 0;
 }
@@ -433,4 +439,11 @@ img {
     text-align: center;
     font-size: 1.1rem;
     padding: 0.1rem 0.1rem;
+}
+
+.wide-button {
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
 }

@@ -307,7 +307,7 @@ positioning the Miniscope.
 
     This is a display aid for finding cells during setup, not an analysis result. Use a
     dedicated analysis pipeline on the recorded video for quantitative work; see
-    :doc:`/User-Guide/data-analysis`.
+    :ref:`faq_data_analysis`.
 
 .. _gui_max_projection:
 

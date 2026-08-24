@@ -17,7 +17,7 @@ and experiments.
 Necessary Equipment for Miniscope Assembly
 ******************************************
 
-It is recommended to have this equipment for assembling and servicing the UCLA Miniscope v4: 
+It is recommended to have this equipment for assembling and servicing the UCLA Miniscope v4:
 
 *   ESD gloves (to safely handle the PCB and maintain cleanliness of optics)
 
@@ -25,9 +25,9 @@ It is recommended to have this equipment for assembling and servicing the UCLA M
 
 *   Compressed air spray (to maintain cleanliness of optics)
 
-*   Fine tweezers/forceps 
+*   Fine tweezers/forceps
 
-*   Torx T2 screwdriver 
+*   Torx T2 screwdriver
 
 *   Scalpel/biopsy punch
 
@@ -35,7 +35,7 @@ It is recommended to have this equipment for assembling and servicing the UCLA M
 
 *   Data acquisition hardware (e.g. Miniscope-DAQ) and tether
 
-Below is a visualization of the equipment that can be used to assemble and service the UCLA Miniscope v4: 
+Below is a visualization of the equipment that can be used to assemble and service the UCLA Miniscope v4:
 
 ..  image:: /_static/images/v4_assembly/necessary-tools.webp
     :alt:  image of necessary tools
@@ -224,19 +224,19 @@ Test the scope one final time, and you are ready to image!
 Troubleshooting Assembly
 ******************************************
 
-1) When I change the focus setting, the image does not change.
+Issue: When I change the focus setting, the image does not change.
 =============================================================================================
 
 This is almost always due to the PCB being incorrectly placed around the electrowetting lens and therefore not making full contact. Take a look at your objective module- do the screws need tightening so that the PCB and the lens are pushed closer together? Can you see any PCB stick out at the side? The circles of the PCB must fit neatly inside the objective module and touch the electrowetting lens.
 
-1) There are marks on my image
+Issue: There are marks on my image
 =============================================================================================
 
 Dust and other debris can make their way into the scope at various positions. If the mark on your image is in focus, it is most likely a mark on the CMOS sensor of the PCB or the 525 filter. Clean both with a soft optics-safe cloth and test the image again.
 If the mark is large, see-through and out-of-focus, it could be dust on the lenses or the 495 dichroic. You will have to disassemble the scope to find the culprit, using compressed air to clean out places that are difficult to access.
 You want the center of your image to be very clean, however some dust/dirt can be inevitable, and users often reach a point where cleaning the scope more just introduces new marks. As long as marks are small and not in the center of the image, they should not greatly affect your imaging, but this depends on the application and is up to you to decide.
 
-1) My scope looked clean, but now I see dark, in-focus marks/hairs
+Issue: My scope looked clean, but now I see dark, in-focus marks/hairs
 =============================================================================================
 
 These are often Delrin burrs that have come loose in the 525 pocket. The only solution is to unscrew the PCB flaps and remove the epoxy so that you can clean the sensor again. The easiest way to remove the epoxy is to very gently twist the Miniscope relative to the PCB to loosen the epoxy, the PCB should come loose. You can then remove the remaining epoxy with forceps so that you are free to reattach the PCB after cleaning.

@@ -14,8 +14,8 @@ Automate tether commutation using 3D orientation data
     want to understand how commutation works, or when you need to modify it.
 
 After following this tutorial, the user will be able to automatically rotate the coaxial
-tether when the UCLA Miniscope v4 rotates, as well as control the commutator turns manually
-using keyboard keypresses.
+tether when the UCLA Miniscope v4 rotates, as well as manually control the commutator's
+turns using keyboard keypresses.
 
 .. raw:: html
 
@@ -31,9 +31,10 @@ using keyboard keypresses.
 
 .. hint::
 
-    The ``MiniscopeGui`` workflow is a drop-in replacement for the ``UclaMiniscopeV4`` node in
-    this workflow: swap it in to gain the GUI's visualizations, with no changes to anything
-    downstream. See :ref:`acquisition_swap`.
+    The ``MiniscopeV4Gui`` workflow is a drop-in replacement for the
+    ``UclaMiniscopeV4`` node in this workflow: swap it in to gain the GUI's
+    visualizations, with no changes to anything downstream. See
+    :ref:`acquisition_swap`.
 
 ***********************
 Workflow Description
@@ -100,7 +101,7 @@ Operate the Workflow
         #.  Click on ``Commutator`` node and look at the options available in the ``PortName`` property drop-down menu.
 
         #.  Unplug the commutator, observe any changes in the list, and plug it back in. The COM
-            port that disappears and appears in drop-down list when doing so is the COM port
+            port that disappears and appears in the drop-down list when doing so is the COM port
             associated with your commutator.
 
     ..  tip::

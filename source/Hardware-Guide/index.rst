@@ -15,7 +15,6 @@ This section describes each hardware component of the Miniscope System. Read abo
     miniscope-daq/data-acq-hardware
     tethers
     commutators
-    minicam
 
 .. implant-gear
 .. miniscope-daq
@@ -40,7 +39,7 @@ Miniscope System Components
 
 A complete UCLA Miniscope data acquisition system consists of the following hardware, most of which you can order from the `Open Ephys store <https://open-ephys.org/store>`_:
 
-* A Miniscope V4, which you can order from the Open Ephys store either as a pre-assembled device or as an assembly kit to build yourself following the :ref:`miniscope_assembly_guide`. 
+* A Miniscope V4, which you can order from the Open Ephys store either as a pre-assembled device or as an assembly kit to build yourself following the :ref:`miniscope_assembly_guide`.
 
 * One :ref:`coaxial tether <tethers>` to connect the Miniscope to the Miniscope DAQ, which you can order from the Open Ephys store assembled (custom lengths available) or as an assembly kit to build yourself.
 
@@ -56,8 +55,10 @@ A complete UCLA Miniscope data acquisition system consists of the following hard
 
 Additional external hardware that you might consider to complete an experimental setup are behavioral cameras, behavioral arena control units, and stimulation devices.
 
-If you already have these components, follow the :ref:`quickstartguide` to learn how to start collecting data right away.
-The :doc:`/Hardware-Guide/index` goes into each system component in detail. To interface with an animal, you will need :ref:`additional components <interfacecomponents>` listed below. The :doc:`/User-Guide/index` can help you understand everything you need to carry out a complete experimental protocol.
+If you already have these components, follow the :ref:`quickstartguide` to learn
+how to start collecting data right away. The :doc:`/Hardware-Guide/index` goes
+into each system component in detail. To interface with an animal, you will need
+:ref:`additional components <interfacecomponents>` listed below.
 
 ..  note::  The Miniscope V4 is also compatible with the ONIX Acquisition System. ONIX has two ports that can be used for data acquisition simultaneously. Read about ONIX hardware in the `ONIX documentation <https://open-ephys.github.io/onix-docs/index.html>`_. To use the Miniscope with ONIX you will still need the additional interface components and accessories listed below.
 

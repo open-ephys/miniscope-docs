@@ -10,7 +10,7 @@ Electrical Design
 Electrical Overview
 *******************
 
-It is helpful to understand the working principle of the UCLA Miniscope v4's PCB if you desire to design your own. Explore the following drop-down menu to learn about the UCLA Miniscope v4's PCB modules. 
+It is helpful to understand the working principle of the UCLA Miniscope v4's PCB if you desire to design your own. Explore the following drop-down menu to learn about the UCLA Miniscope v4's PCB modules.
 
 ..  dropdown::  UCLA Miniscopes v4 Electrical Modules
 
@@ -22,7 +22,7 @@ It is helpful to understand the working principle of the UCLA Miniscope v4's PCB
                 :alt:   image of pcb schematic (serializer-power)
                 :align: center
 
-            *   The PCB is organized into the following modules: serializer-power module, Python480 (camera sensor) module, microcontroller module, LED-EWL module, and IMU module
+            *   The PCB is organized into the following modules: serializer-power module, Python480 (image sensor) module, microcontroller module, LED-EWL module, and IMU module
 
             *   These modules are each a self-contained flap in the flex-rigid UCLA Miniscope v4 PCB and connect through copper traces embedded in the flex-PCB material
 
@@ -32,7 +32,7 @@ It is helpful to understand the working principle of the UCLA Miniscope v4's PCB
                 :alt:   image of pcb schematic (serializer-power)
                 :align: center
 
-            *   The serializer with its peripheral circuitry (some passives and an oscillator) serialize parallel data from the camera sensor so that it can be sent to the data acquisition hardware via coax. The serializer also converts commands from the data acquisition hardware (which forwards commands from the PC) to i2c for processing by other hardware on the PCB.
+            *   The serializer converts parallel data from the camera into a radio frequency stream that can be sent to the data acquisition hardware via coax. The serializer also converts commands from the data acquisition hardware (which forwards commands from the PC) to i2c for processing by other hardware on the PCB.
 
             *   The bottom circuit filters the main supply rail.
 
@@ -44,7 +44,7 @@ It is helpful to understand the working principle of the UCLA Miniscope v4's PCB
                 :alt:   image of pcb schematic (python480)
                 :align: center
 
-            *   The Python480 with its peripheral circuitry (some passives and a voltage reference) collects light from the sample.
+            *   The Python480 image sensor collects light from the sample.
 
             *   The status LED is toggled by the microcontroller via the Q1 transistor.
 
@@ -54,7 +54,7 @@ It is helpful to understand the working principle of the UCLA Miniscope v4's PCB
                 :alt:   image of pcb schematic (microcontroller)
                 :align: center
 
-            *   The microcontroller with its peripheral circuitry (some passives) processes commands from Bonsai or Miniscope-DAQ-QT-GUI which are forwarded to the serializer through the data acquisition hardware. Such commands are forwarded on the i2c bus and include:
+            *   The microcontroller processes commands from Bonsai or Miniscope-DAQ-QT-GUI which are forwarded to the serializer through the data acquisition hardware. Such commands are forwarded on the i2c bus and include:
 
                 *   setting the Python480's registers to control exposure, frame rate, gain, and LED timing by operating as an SPI master.
 
@@ -68,7 +68,7 @@ It is helpful to understand the working principle of the UCLA Miniscope v4's PCB
                 :alt:   image of pcb schematic (led/ewl drivers)
                 :align: center
 
-            *   The LED driver with its peripheral circuitry (some passives and a digital potentiometer that is set by i2c commands from the serializer) controls the excitation light intensity.
+            *   The LED driver, together with a digital potentiometer set by i2c commands from the serializer, controls the excitation light intensity.
 
             *   The electrotunable/electrowetting lens (ETL/EWL) driver with its peripheral circuitry (i.e. passives and an i2c buffer IC to convert the 1.8V i2c bus to a 3.3V i2c bus for compatibility with the EWL driver) drives the lens that operates as the UCLA Miniscope v4's dynamic focusing mechanism. It is configured by i2c directly by the serializer.
 
@@ -78,7 +78,7 @@ It is helpful to understand the working principle of the UCLA Miniscope v4's PCB
                 :alt:   image of pcb schematic (imu)
                 :align: center
 
-            *   The BNO055 with its peripheral circuitry senses orientation and sends quaternion data to the serializer over i2c 
+            *   The BNO055 with its peripheral circuitry senses orientation and sends quaternion data to the serializer over i2c
 
 *************************
 Design & Production Files
@@ -98,7 +98,7 @@ The .sch and .kicad_pcb files above can be opened in `KiCAD <https://www.kicad.o
 Production Files
 ================
 
-*   `BoM file <https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Output/BOM/Miniscope-v4-Rigid-Flex_bom_4_41.csv>`__    
+*   `BoM file <https://github.com/Aharoni-Lab/Miniscope-v4/blob/master/Miniscope-v4-Rigid-Flex/KiCad/Output/BOM/Miniscope-v4-Rigid-Flex_bom_4_41.csv>`__
 
 *   `Gerbers files <https://github.com/Aharoni-Lab/Miniscope-v4/tree/master/Miniscope-v4-Rigid-Flex/KiCad/Output/Gerbers_4_41>`__
 

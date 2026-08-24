@@ -10,9 +10,9 @@ Optomechanical Design
 Optomechanical Overview
 ***********************
 
-The UCLA Miniscope v4 is a miniaturized epifluorescent/widefield microscope. An LED serves as the excitation light source. The excitation filter filters the excitation light to prevent undesired wavelengths from entering the miniscope. Excitation light is reflected by the dichroic mirror and refracted by a series of lenses such that it illuminates the imaging target sufficiently uniformly. Fluoresced (emission) light is collected by the miniscope's objective, refracted by the tube lens, and transmitted through the dichroic mirror to form an image of the specimen's fluoresced light on the miniscope's sensor. The electro-tunable lens ETL (sometimes also referred to as electrowetting lens, EWL) is a lens formed by fluid in a membrane that changes shape according to the average voltage applied across the membrane, providing dynamic imaging depth adjustment.
+The UCLA Miniscope v4 is a miniaturized epifluorescent/widefield microscope. An LED serves as the excitation light source. The excitation filter filters the excitation light to prevent undesired wavelengths from entering the miniscope. Excitation light is reflected by the dichroic mirror and refracted by a series of lenses such that it illuminates the imaging target sufficiently uniformly. Fluoresced (emission) light is collected by the miniscope's objective, refracted by the tube lens, and transmitted through the dichroic mirror to form an image of the specimen's fluoresced light on the miniscope's sensor. The electro-tunable lens (ETL; sometimes also referred to as electrowetting lens, EWL) is a lens formed by fluid in a membrane that changes shape according to the average voltage applied across the membrane, providing dynamic imaging depth adjustment.
 
-For a more comprehensive description of the UCLA Miniscope v4's constituent parts and optomechanical design, visit the `Parts List <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Parts-List>`__ from the UCLA Miniscope v4 GitHub wiki. 
+For a more comprehensive description of the UCLA Miniscope v4's constituent parts and optomechanical design, visit the `Parts List <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Parts-List>`__ from the UCLA Miniscope v4 GitHub wiki.
 
 For more information, please refer to the relevant parts of the 2021 Miniscope Workshop video `Imaging principles & Miniscope design <https://www.youtube.com/watch?v=bHA08xrshHo>`__.
 
@@ -47,7 +47,7 @@ The UCLA Miniscope v4 mechanics can be thought of as comprised from four modules
 
                 *   Help illuminate the sample with excitation light from the excitation light source
 
-                *   Collect emission light from the sample and roughly collimate it into the excitation module  
+                *   Collect emission light from the sample and roughly collimate it into the excitation module
 
         .. tab-item:: Emission Module
 
@@ -86,7 +86,7 @@ All the design and production files for the UCLA Miniscope v4 PCB are available 
 
 Some operating systems come with free software that can be used to visualize STEP or STL files. There are also online viewers for these kinds of files. Common MCAD software for editing these kinds of files include Solidworks and Autodesk.
 
-The UCLA Miniscope v4 body parts can be produced in-house with a Formlabs SLA printer or outsourced to a 3D printing service. In either case, ensure the miniscope is printed with black, non-fluorescent resin. The baseplate parts are milled from aluminum. 
+The UCLA Miniscope v4 body parts can be produced in-house with a Formlabs SLA printer or outsourced to a 3D printing service. In either case, ensure the miniscope is printed with black, non-fluorescent resin. The baseplate parts are milled from aluminum.
 
 For more information about procuring parts for building your own miniscope, visit the `Parts Procurement page <https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Part-Procurement>`__ from the UCLA Miniscope v4 GitHub wiki.
 

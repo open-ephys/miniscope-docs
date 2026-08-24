@@ -10,7 +10,7 @@ Installation
 
 *Requirements: 64-bit Windows 10 or 11, and an internet connection during installation.*
 
-#.  Download the GUI `here <https://gofile.me/7cMIw/uoFCjHjIE>`__ and extract the
+#.  Download the GUI `here <https://gofile.me/7cMIw/xMQ4LKVI3>`__ and extract the
     ``MiniscopeV4Gui-Setup-<version>.exe`` installer.
 
 #.  Run the installer. It installs per-user into ``%LOCALAPPDATA%\MiniscopeV4Gui``, so no

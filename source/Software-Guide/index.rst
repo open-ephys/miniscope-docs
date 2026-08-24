@@ -1,6 +1,6 @@
+
 .. _software_guide:
 
-##############################
 Software Guide
 ##############################
 
@@ -10,59 +10,54 @@ Software Guide
     openephys-gui
     custom-workflows
 
-There are currently two methods of acquiring data from a Miniscope V4: the **Open Ephys Miniscope V4
-GUI**, which can be run as an application or embedded as a group workflow in Bonsai, or the
-**Miniscope-DAQ-QT-Software**, created by the UCLA Miniscope Team.
+The `Open Ephys Miniscope V4 GUI
+<https://github.com/open-ephys/bonsai-miniscope-gui>`__ is free, open-source
+software for controlling and acquiring data from the UCLA Miniscope V4. It
+provides automatic integration with :ref:`torque-free commutators
+<commutators>`, hardware synchronization of scope data with external equipment,
+triggered recordings, and a variety of real-time processing and data plotting
+features.
 
-Open Ephys Miniscope V4 GUI
-##############################
+..  button-link:: https://gofile.me/7cMIw/xMQ4LKVI3
+    :color: primary
+    :class: wide-button
+    :shadow:
 
-..  grid:: 2
-    :gutter: 2
-    :margin: 0
+    Download Open Ephys Miniscope V4 GUI (Windows)
 
-    ..  grid-item::
-        :columns: 8
 
-        ..  image:: /_static/images/miniscopev4_gui/miniscope-gui-window.png
-            :alt:   the Open Ephys Miniscope V4 GUI window
-            :width: 100%
+..  image:: /_static/images/miniscopev4_gui/miniscopev4-gui-all-streams.png
+    :alt:   the Open Ephys Miniscope V4 GUI window
+    :width: 80%
+    :align: center
 
-    ..  grid-item::
-        :columns: 4
-        :class: sd-d-flex-column sd-align-major-center sd-align-minor-center
+.. important::
 
-        ..  button-link:: https://gofile.me/7cMIw/uoFCjHjIE
-            :color: primary
-            :shadow:
+   The **Open Ephys Miniscope V4 GUI** requires the :ref:`latest DAQ firmware
+   <daq_firmware_update>`. This firmware provides hardware-level synchronization
+   signals, hardware-generated frame counts, and greatly improved IMU sampling
+   regularity.
 
-            Download the Open Ephys Miniscope V4 GUI (Windows)
+   The Open Ephys Miniscope V4 GUI is currently in **alpha**. Its interface and
+   behavior may change in future releases, and this documentation will be
+   updated to match. Some screenshots and workflow examples are still
+   placeholders and will be filled in as they become available.
 
-..  important::
+   **We welcome your feedback.** While the GUI is in alpha, issues and comments
+   can be directed to the `GitHub issues page
+   <https://github.com/open-ephys/bonsai-miniscope-gui/issues>`__. Please file
+   any comment, concern, or feature request as its own new issue, so we can
+   prioritize what to add or fix next.
 
-    The Open Ephys Miniscope V4 GUI is currently in **beta**. Its interface and behavior
-    may change in future releases, and this documentation will be updated to match. Some
-    screenshots and workflow examples are still placeholders and will be filled in as
-    they become available.
+The GUI is built on `Bonsai <https://bonsai-rx.org/>`__, but runs entirely on
+its own: no Bonsai knowledge required. It can also be dropped into a Bonsai
+workflow as a single node for fully custom acquisition; see
+:doc:`/Software-Guide/custom-workflows`.
 
-Open Ephys develops the free, open-source **Open Ephys Miniscope V4 GUI** for acquiring data
-from the UCLA Miniscope v4 and the Miniscope DAQ. It puts everything an imaging session needs
-in one place: live image and orientation display, hardware control, automatic commutator
-control, and recording to file.
+Miniscope-DAQ-QT-Software (Deprecated)
+-------------------------------------------
 
-Feedback from beta testers
--------------------------------------
-
-While the GUI is in beta, all issues and comments should be directed to the `GitHub issues page
-<https://github.com/open-ephys/bonsai-miniscopev4-gui/issues>`__ so we can track any and all issues
-found. Please put any comments or concerns as a new issues, as well as any requests for features, so
-we can prioritize what to add or fix next.
-
-Miniscope-DAQ-QT-Software (deprecated)
-#######################################
-
-The original software developed by the UCLA Miniscope Team that enables data acquisition from the
-Miniscope v4 and the MiniCAM via the Miniscope DAQ, as well as webcams. It supports commutation, but
-it is deprecated and is not supported by Open Ephys. Click `here
-<https://github.com/Aharoni-Lab/Miniscope-DAQ-QT-Software/releases>`__ to download the appropriate
-application.
+The original acquisition software for the Miniscope v4 and MiniCAM, from the
+UCLA Miniscope Team. It supports commutation and works with webcams as well as
+Miniscope hardware. The QT software remains available `here
+<https://github.com/Aharoni-Lab/Miniscope-DAQ-QT-Software/releases>`__
