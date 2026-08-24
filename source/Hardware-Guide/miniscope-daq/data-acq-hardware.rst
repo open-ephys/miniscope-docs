@@ -14,10 +14,10 @@ inputs and a sync output, and data acquisition from a single Miniscope v4 or
 MiniCAM. It optionally accepts an external power supply for more power-intensive
 applications. The Miniscope-DAQ is supported by Bonsai and the
 Miniscope-DAQ-QT-Software (deprecated), as detailed in the
-:doc:`/Software-Guide/index`. To acquire miniscope or MiniCAM data with the
-Miniscope-DAQ, refer to the :ref:`quickstartguide` and :doc:`/User-Guide/index`.
+:doc:`/Software-Guide/index`. To acquire Miniscope  data with the
+Miniscope-DAQ, refer to the :ref:`quickstartguide`.
 To learn more about the Miniscope-DAQ, refer to the `UCLA Miniscope v4 Wiki
-<https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__. 
+<https://github.com/Aharoni-Lab/Miniscope-v4/wiki/DAQ-Hardware>`__.
 
 Miniscope-DAQ Functionality
 ===========================
@@ -32,9 +32,9 @@ The I/O on the Miniscope DAQ operate at a 3.3V logic level and the inputs are 5V
 
 *   **Digital Inputs:** two digital input channels that can be used to log
     events, gate data acquisition, recording to file, LED on/off state, toggle
-    the excitation light, etc. The functionality is defined by the bonsai
-    workflow. 
-   
+    the excitation light, etc. The functionality is defined by the Bonsai
+    workflow.
+
 *   **Sync Output:** a digital output channel in which every rising and falling
     edge indicates a new frame captured by the connected device. This output is
     recommended for synchronization of multiple hardware with an external
@@ -55,7 +55,7 @@ The Miniscope-DAQ is powered via USB. An external power supply can be connected 
         :alt:   power jumper animation
         :align: center
 
-#.  Replace the four fasteners. 
+#.  Replace the four fasteners.
 
 ..  note::  The Miniscope-DAQ itself remains powered via USB, even when an external power source is connected. The barrel jack must be plugged in for external power to be available. When the jumper is set to USB, the barrel jack has no effect.
 
@@ -65,8 +65,8 @@ Recommended specifications for an external power supply are as follows:
 
     .. warning:: Be careful not to supply excessive power, as this may damage your miniscope.
 
-    To dial in the ideal power supply voltage for your application, you can use an adjustable power supply and monitor the voltage at the miniscope as described in :ref:`measure_voltage` to stay within the operating voltage range of the system. If you don't have a variable power supply, in most cases a `6V power adapter <https://open-ephys.org/power-supplies/oeps-5906>`__ is sufficient to account for the voltage drop. 
-    
+    To dial in the ideal power supply voltage for your application, you can use an adjustable power supply and monitor the voltage at the miniscope as described in :ref:`measure_voltage` to stay within the operating voltage range of the system. If you don't have a variable power supply, in most cases a `6V power adapter <https://open-ephys.org/power-supplies/oeps-5906>`__ is sufficient to account for the voltage drop.
+
 *   Output current
 
     Power adapters up to 1A are used even though the current draw by the devices is less.
@@ -102,7 +102,7 @@ Data from the Miniscope is transmitted over USB to the PC. While these frames ca
 
 To address this, the Miniscope DAQ provides a Sync Output signal: a digital TTL line that toggles its state within microseconds of capturing each frame. However, frames can drop in transit between the Miniscope DAQ and the computer when the computer is busy, in which case a TTL toggle appears on the Sync Output channel with no corresponding image or quaternion data in the recorded file. The Sync Output alone therefore cannot tell you which sync edge corresponds to which frame when frames are dropped. That is why the v1.1 version of the Miniscope DAQ introduced a ``FrameNumber`` member in the ``UclaMiniscopeV4DataFrame``: an integer carried on each frame emitted by the UclaMiniscopeV4 node and incremented by one for every frame captured by the Miniscope DAQ. Now, each Sync Output toggle can easily be matched to specific frames in the Miniscope video stream by counting edges on the Sync Output signal.
 
-For strict data syncing requirements, best practice is to timestamp the Sync Output with external hardware and record ``FrameNumber`` alongside the video. You can then determine which rising/falling edge on the Sync Output corresponds to which frame by counting the Sync Output edges in the external hardware data and corroborating them against the frame numbers in the recorded file. The Sync Output starts toggling once Bonsai subscribes to the UclaMiniscopeV4 node, and frame numbers start at 0. Frame dropped on the the way to the PC are reflected by non-consecutive frame numbers or larger inter-frame intervals in software timestamps. For example, Windows often internally skips the first frame received from the Miniscope, so even though you observe a TTL toggle on the Sync Output at the start of the session, you might not receive a frame corresponding to frame 0, in which case ``FrameNumber`` in the recorded file will start at 1.
+For strict data syncing requirements, best practice is to timestamp the Sync Output with external hardware and record ``FrameNumber`` alongside the video. You can then determine which rising/falling edge on the Sync Output corresponds to which frame by counting the Sync Output edges in the external hardware data and corroborating them against the frame numbers in the recorded file. The Sync Output starts toggling once Bonsai subscribes to the UclaMiniscopeV4 node, and frame numbers start at 0. Frames dropped on the way to the PC are reflected by non-consecutive frame numbers or larger inter-frame intervals in software timestamps. For example, Windows often internally skips the first frame received from the Miniscope, so even though you observe a TTL toggle on the Sync Output at the start of the session, you might not receive a frame corresponding to frame 0, in which case ``FrameNumber`` in the recorded file will start at 1.
 
 If you are struggling with dropped frames, try changing USB ports, USB drivers, and removing other devices sharing the USB bus. Dropped frames are due to limited USB bandwidth and timing constraints; on a proper setup, expect a dropped frame every few thousand frames.
 

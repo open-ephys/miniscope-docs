@@ -208,8 +208,8 @@ Operate the Workflow
 
 #.  Run the workflow for some time to collect data.
 
-#.  Navigate to the directory where data was saved which was specified in step
-    3. Confirm the data exists and comports with expectations. The image can be
+#.  Navigate to the directory specified in step 3, where the data was saved.
+    Confirm the data exists and comports with expectations. The image can be
     easily viewed in any media playback software that supports the ``FourCC``
     value specified in step 3. The orientation data can be easily viewed in any
     spreadsheet software that supports .csv files.

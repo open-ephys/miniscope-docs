@@ -1,3 +1,5 @@
+:orphan:
+
 #####################
 Compatible Devices
 #####################
@@ -16,8 +18,8 @@ Miniscope-DAQ, and it can be used with both the Miniscope-DAQ-QT-GUI or the Open
 `IR MiniCAM LED Ring <https://open-ephys.org/minicam/minicam-led-ring?rq=minicam>`__ and the
 `MiniCAM Lenses Kit <https://open-ephys.org/minicam/lens-kit?rq=minicam>`__. The *IR MiniCAM LED
 Ring* facilitates adjustment of the intensity of the illumination of the behavioral setup. IR
-illumination does not contaminate the sensor that would be like light of lower wavelengths i.e.
-visible light. The *MiniCAM Lenses Kit* enables lens swapping to adjust the field-of-view
+illumination does not contaminate the sensor the way light of lower wavelengths (i.e.,
+visible light) would. The *MiniCAM Lenses Kit* enables lens swapping to adjust the field-of-view
 according to the behavioral experiments. The lenses included in the *MiniCAM Lenses Kit* are:
 
 ..  image:: /_static/images/minicam-lenses.jpg
@@ -41,4 +43,4 @@ supported by Bonsai and the Miniscope-DAQ-QT-Software. To acquire MiniCAM data
 with the MiniDAQ, follow the same user guides as the Miniscope-DAQ. While
 recording data from the Miniscope v4 with the MiniDAQ is possible, it is not
 recommended. The Miniscope DAQ has more extensive functionality and power
-management specific to integrate Miniscopes into an experimental setup.
+management specific to integrating Miniscopes into an experimental setup.

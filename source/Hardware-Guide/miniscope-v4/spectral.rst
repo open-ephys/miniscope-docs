@@ -85,15 +85,15 @@ It is also possible to adapt the UCLA Miniscope v4 to fluorophores with spectral
 
             *   maximize the area under the product of itself and the fluorophore's excitation spectrum. Ideally, its peak is centered around the fluorophore's excitation spectrum's peak.
         
-            *   minimize the area under the product of itself and the fluorophore's emission spectrum. Ideally, it does not overlap with the fluorophre's emission epectrum.
+            *   minimize the area under the product of itself and the fluorophore's emission spectrum. Ideally, it does not overlap with the fluorophore's emission spectrum.
 
             .. note:: Attempting simultaneous optimization of both above bullet points is a contradictory process because there is often significant overlap between a fluorophore's excitation spectrum and its emission spectrum. If in doubt, prioritize the second bullet point. It is likely more detrimental to the experiment to filter out emission light (which might end up happening if your excitation light source's transmission spectrum bleeds into the flourophore's emission spectrum) than to filter out excitation light. After all, it is also possible to increase the intensity of excitation light to compensate for filtered-out excitation light as long as heat dissipation doesn't become an issue. 
 
     *   When selecting an excitation filter for your particular fluorophore, confirm that its upper-bound cut-off wavelength transmits as much excitation light as possible into the sample while being below the emission filter's lower-bound cut-off wavelength. Ideally, the filter's bandpass spectrum spans the entire range in which the excitation light source's transmission spectrum is significantly more than zero.
 
-    *   When selecting an emission filter for your particular fluorophore, confirm that its lower-bound cut-off wavelength transmits as much emission light as possible into the sensor while being above the the excitation filter's upper-bound cut-off wavelength. Ideally, the filter's bandpass spans the entire range in which the fluorophor's emission transmission spectrum is significantly more than zero.
+    *   When selecting an emission filter for your particular fluorophore, confirm that its lower-bound cut-off wavelength transmits as much emission light as possible into the sensor while being above the excitation filter's upper-bound cut-off wavelength. Ideally, the filter's bandpass spans the entire range in which the fluorophor's emission transmission spectrum is significantly more than zero.
 
-    *   When selecting a dichroic filter for your particular fluorophore, confirm its cut-off wavelength is between the exictation filter's upper cut-off wavelength and emission filter's lower cut-off wavelength. To comply with the UCLA Miniscope v4's optical layout, choose a high-pass dichroic filter.
+    *   When selecting a dichroic filter for your particular fluorophore, confirm its cut-off wavelength is between the excitation filter's upper cut-off wavelength and emission filter's lower cut-off wavelength. To comply with the UCLA Miniscope v4's optical layout, choose a high-pass dichroic filter.
 
 ************************************
 How To Modify Spectral Compatibility
