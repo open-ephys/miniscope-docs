@@ -185,6 +185,9 @@ d) You can now put an EWL in between these circles and attach the objective modu
 e) Finally, use compressed air to clean out the sides of the pocket at the top of the scope. Make sure it is very clean, as any pieces that come loose here later on, will fall directly on your sensor and interfere with your imaging. Place the 525 nm filter in the pocket, with the arrow pointing down.
 
 .. important::
+  To help prevent any light from entering around the emission filter, you can add an extra step of blackening the sides of the filter. Using a black filter marker, carefully paint all four sides of the emission filter, while avoiding the optical surfaces of the filter.
+
+.. important::
   Sometimes the emission filter may have dust or debris, particularly if it is handled or placed on a surface that is not completely clean. Inspect the filter under a microscope. If you see any debris or dust, clean the filter on a clean, dust-free surface. You can use a soft cloth wrapped around the tip of a plastic tool and lightly moisten the cloth with ethanol. Gently wipe the filter with a few strokes always in the same direction until clean.
 
 f) Remove the protective film from the PCB and close the sensor over the top of the scope. You will probably have to hold the PCB in place while you do a first test of the scope.
