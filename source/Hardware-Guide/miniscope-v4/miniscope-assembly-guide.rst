@@ -50,7 +50,7 @@ Assembly Steps
 
 1. Prepare
 ===============================
-a) Check all parts for any Delrin burrs sticking out. Scrape them off with a biopsy punch or tweezers.
+a) Check all parts for any Delrin burrs sticking out. Scrape them off carefully with a scalpel, tweezers or a biopsy punch. You can then wrap a soft cloth around the tip of the tweezers and gently move it around the interior of each module to remove any burrs. Use compressed air and tap the module to remove loose burrs or debris. Inspect each part under a magnifier over a clean white surface.
 
 .. image:: /_static/images/v4_assembly/mscope_fig-2.png
   :align: center
@@ -183,6 +183,12 @@ d) You can now put an EWL in between these circles and attach the objective modu
 .. _step_5e:
 
 e) Finally, use compressed air to clean out the sides of the pocket at the top of the scope. Make sure it is very clean, as any pieces that come loose here later on, will fall directly on your sensor and interfere with your imaging. Place the 525 nm filter in the pocket, with the arrow pointing down.
+
+.. important::
+  To help prevent any light from entering around the emission filter, you can add an extra step of blackening the sides of the filter. Using a black filter marker, carefully paint all four sides of the emission filter, while avoiding the optical surfaces of the filter.
+
+.. important::
+  Sometimes the emission filter may have dust or debris, particularly if it is handled or placed on a surface that is not completely clean. Inspect the filter under a microscope. If you see any debris or dust, clean the filter on a clean, dust-free surface. You can use a soft cloth wrapped around the tip of a plastic tool and lightly moisten the cloth with ethanol. Gently wipe the filter with a few strokes always in the same direction until clean.
 
 f) Remove the protective film from the PCB and close the sensor over the top of the scope. You will probably have to hold the PCB in place while you do a first test of the scope.
 
