@@ -186,6 +186,6 @@ For all three lens configurations, the differences are contained within the obje
 
 #.  Procure the lenses you desire to use and an empty objective module
 
-#.  Follow the steps outlined in the Objective Module section (coming soon) of the *Assembly Guide* (coming soon) using the lenses you desire instead of the default ones 
+#.  Follow the steps outlined in the :ref:`hardware-guide/miniscope-v4/miniscope-assembly-guide:2. objective module` section of the :ref:`miniscope_assembly_guide` guide using the lenses you desire instead of the default ones 
 
 ..  [1] https://github.com/Aharoni-Lab/Miniscope-v4/wiki/Lens-Configurations
