@@ -60,7 +60,7 @@ Lime
     | **Color**     | Blue      | Red       | Black     |
     +---------------+-----------+-----------+-----------+
 
-The lime UCLA Miniscope v4 is sold by Open Ephys in DIY kits with LED (already soldered) included. **Filters and dichroic mirror are excluded and must be acquired separately.**
+The Lime UCLA Miniscope v4 is sold by Open Ephys already assembled with LED (already soldered), filters and dichroic mirror included.
 
 *****
 Other
