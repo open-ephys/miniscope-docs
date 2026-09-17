@@ -99,6 +99,6 @@ It is also possible to adapt the UCLA Miniscope v4 to fluorophores with spectral
 How To Modify Spectral Compatibility
 ************************************
 
-To reconfigure the spectral compatibility (e.g. the LED/Dichroic/Filters combination), follow the *Assembly Guide* (coming soon) instructions while substituting standard excitation/emission filters and dichroic mirror with the ones you'd like to use. It is easier and recommended to perform this modification starting with an unassembled UCLA Miniscope v4 than starting with an already-assembled UCLA Miniscope v4.
+To reconfigure the spectral compatibility (e.g. the LED/Dichroic/Filters combination), follow the :ref:`miniscope_assembly_guide` instructions while substituting standard excitation/emission filters and dichroic mirror with the ones you'd like to use. It is easier and recommended to perform this modification starting with an unassembled UCLA Miniscope v4 than starting with an already-assembled UCLA Miniscope v4.
 
 Note that if you desire to use an LED that is not included in the lime or standard configurations, you must solder it yourself which requires additional materials and know-how during the assembly process.
