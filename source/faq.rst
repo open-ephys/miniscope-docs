@@ -201,7 +201,7 @@ What Fluorophores Are Compatible with the UCLA Miniscope v4 from Open Ephys?
 The UCLA Miniscope v4 as sold off-the-shelf by Open Ephys is compatible with
 green fluorophores (e.g. GCAMP6f) in our :ref:`standard configuration
 <Hardware-Guide/miniscope-v4/spectral:Standard>` or red fluorophores (e.g.
-jRGECO1a) in our :ref:`lime configuration
+jRGECO1a, PinkyCaMP) in our :ref:`lime configuration
 <Hardware-Guide/miniscope-v4/spectral:Lime>`. It is also possible to adapt the
 UCLA Miniscope v4 to :ref:`other <Hardware-Guide/miniscope-v4/spectral:Other>`
 fluorophores that don't share spectral characteristics with the fluorophores
