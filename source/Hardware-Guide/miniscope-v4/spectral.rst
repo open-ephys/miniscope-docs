@@ -2,9 +2,9 @@
 Spectral Modification
 #####################
 
-..  warning::   Performing this modification voids any active Open Ephys warranty for this product.
+..  warning::   Check warranty terms before performing any modifications to your Miniscope.
 
-The UCLA Miniscope v4 as sold by Open Ephys is compatible with green indicators e.g. GCaMP6f (:ref:`Hardware-Guide/miniscope-v4/spectral:Standard`) or red indicators e.g. jRGECO1a (:ref:`Hardware-Guide/miniscope-v4/spectral:Lime`), though it can also be modified for :ref:`other <Hardware-Guide/miniscope-v4/spectral:Other>` fluorophores as well.
+The UCLA Miniscope v4 as sold by Open Ephys is compatible with green indicators e.g. GCaMP6f in its Standard configuration (:ref:`Hardware-Guide/miniscope-v4/spectral:Standard`) or red indicators e.g. jRGECO1a, PinkyCaMP in its Lime configuration (:ref:`Hardware-Guide/miniscope-v4/spectral:Lime`). It can also be modified for :ref:`other <Hardware-Guide/miniscope-v4/spectral:Other>` fluorophores.
 
 ********
 Standard
@@ -32,13 +32,13 @@ Standard
     | **Color**   | Blue      | Red       | Black     |
     +-------------+-----------+-----------+-----------+
 
-The standard UCLA Miniscope v4 is sold by Open Ephys in DIY kits and already assembled with LED (already soldered), filters, and dichroic mirror included.
+The standard UCLA Miniscope v4 is sold by Open Ephys both as a pre-assembled, fully-tested unit and as an assembly kit for self-construction, with all components included.
 
 ****
 Lime
 ****
 
-560nm (yellow-green) LED excitation light source (`LXZ1-PX01 <https://luxeonstar.com/wp-content/uploads/documentation/ds105.pdf>`__) to image a red indicator e.g. `jRGECO1a <https://www.fpbase.org/protein/jrgeco1a/>`__:
+560nm (yellow-green) LED excitation light source (`LXZ1-PX01 <https://luxeonstar.com/wp-content/uploads/documentation/ds105.pdf>`__) to image a red indicator e.g. `jRGECO1a <https://www.fpbase.org/protein/jrgeco1a/>`__, `PinkyCaMP <https://www.nature.com/articles/s41592-026-03065-2>`__, etc.:
 
 .. figure:: /_static/images/jrgeco1a.svg
     :alt:   plot of emission/excitation spectra of jRGECO1a
@@ -60,7 +60,7 @@ Lime
     | **Color**     | Blue      | Red       | Black     |
     +---------------+-----------+-----------+-----------+
 
-The Lime UCLA Miniscope v4 is sold by Open Ephys already assembled with LED (already soldered), filters and dichroic mirror included.
+The Lime UCLA Miniscope v4 is sold by Open Ephys as a pre-assembled, fully-tested unit.
 
 *****
 Other
