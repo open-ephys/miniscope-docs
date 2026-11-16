@@ -47,21 +47,6 @@ is the same setup described in the :ref:`quickstartguide`.
        <gui_interface>` can be used as Bonsai operator and launched from a
        Bonsai workflow.
 
-       .. note::
-
-        The MiniscopeV4 GUI is currently in alpha. During this time the
-        package is not published to NuGet, so it does not appear in the Bonsai
-        package manager and has to be installed from a local file instead. Click
-        `here <https://gofile.me/7cMIw/xWpCInTog>`__ to download the package and
-        follow the `Installing a Local NuGet Package in Bonsai
-        <https://github.com/open-ephys/wiki/wiki/Installing-a-Local-Nuget-Package-in-Bonsai>`__
-        article in the Open Ephys Wiki to see how to install the package you just
-        downloaded in Bonsai.
-
-        If you only want to run the GUI as a standalone application, you can
-        install the standalone installer. See
-        :doc:`/Software-Guide/openephys-gui`.
-
 .. _acquisition_base:
 
 Basic Miniscope Control and Acquisition

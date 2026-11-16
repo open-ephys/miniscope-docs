@@ -10,8 +10,17 @@ Installation
 
 *Requirements: 64-bit Windows 10 or 11, and an internet connection during installation.*
 
-#.  Download the GUI `here <https://gofile.me/7cMIw/xMQ4LKVI3>`__ and extract the
-    ``MiniscopeV4Gui-Setup-<version>.exe`` installer.
+The GUI can be installed with a standalone installer, which needs no prior Bonsai installation, or
+through the Bonsai package manager, for those who already use Bonsai.
+
+Standalone Installer
+=============================================
+
+.. TODO: point at https://github.com/open-ephys/bonsai-miniscope-gui/releases/latest once 0.1.0 is
+    released; that link skips pre-releases, so it cannot reach a release candidate.
+
+#.  Download ``MiniscopeV4Gui-Setup-<version>.exe`` from the *Assets* of the `v0.1.0-rc.1 release
+    <https://github.com/open-ephys/bonsai-miniscope-gui/releases/tag/v0.1.0-rc.1>`__.
 
 #.  Run the installer. It installs per-user into ``%LOCALAPPDATA%\MiniscopeV4Gui``, so no
     administrator rights are required. The GUI is only installed to this folder, and will not affect
@@ -32,6 +41,29 @@ Installation
     To uninstall, use *Add or remove programs* and uninstall *Open Ephys Miniscope V4 GUI*. Or,
     delete the ``%LOCALAPPDATA%\MiniscopeV4Gui`` folder, which would fully remove the GUI from the
     computer as well.
+
+Bonsai Package Manager
+=============================================
+
+The GUI is also published to NuGet as the ``OpenEphys.Miniscope.Gui`` package, which installs into
+an existing `Bonsai <https://bonsai-rx.org/docs/articles/installation.html>`__ environment.
+
+#.  Start Bonsai and open the `Bonsai Package Manager
+    <https://bonsai-rx.org/docs/articles/packages.html>`__ (*Tools* > *Manage Packages*).
+
+#.  With the package source set to "All", search for ``OpenEphys.Miniscope.Gui`` and click
+    *Install*. Its dependencies, including ``OpenEphys.Miniscope``, are installed with it.
+
+    ..  note::
+
+        While the GUI is a release candidate, the package is published as a pre-release, which the
+        package manager hides by default. Tick *Include prerelease* to find it.
+
+#.  Restart Bonsai when prompted. The GUI is now available as the ``MiniscopeV4Gui`` workflow in
+    the toolbox. Place it on an empty canvas and run the workflow to open the GUI, as described in
+    :doc:`/Software-Guide/gui-in-workflow`.
+
+The package can be updated from the *Updates* tab of the package manager.
 
 *********************************************
 Launching the GUI

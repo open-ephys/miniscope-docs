@@ -18,7 +18,10 @@ provides automatic integration with :ref:`torque-free commutators
 triggered recordings, and a variety of real-time processing and data plotting
 features.
 
-..  button-link:: https://gofile.me/7cMIw/xMQ4LKVI3
+.. TODO: point at https://github.com/open-ephys/bonsai-miniscope-gui/releases/latest once 0.1.0 is
+    released; that link skips pre-releases, so it cannot reach a release candidate.
+
+..  button-link:: https://github.com/open-ephys/bonsai-miniscope-gui/releases/tag/v0.1.0-rc.1
     :color: primary
     :class: wide-button
     :shadow:
@@ -38,12 +41,13 @@ features.
    signals, hardware-generated frame counts, and greatly improved IMU sampling
    regularity.
 
-   The Open Ephys Miniscope V4 GUI is currently in **alpha**. Its interface and
-   behavior may change in future releases, and this documentation will be
-   updated to match. Some screenshots and workflow examples are still
-   placeholders and will be filled in as they become available.
+   The Open Ephys Miniscope V4 GUI is currently a **release candidate**. Its
+   interface and behavior may change before the full release, and this
+   documentation will be updated to match. Some screenshots and workflow
+   examples are still placeholders and will be filled in as they become
+   available.
 
-   **We welcome your feedback.** While the GUI is in alpha, issues and comments
+   **We welcome your feedback.** While the GUI is a release candidate, issues and comments
    can be directed to the `GitHub issues page
    <https://github.com/open-ephys/bonsai-miniscope-gui/issues>`__. Please file
    any comment, concern, or feature request as its own new issue, so we can
